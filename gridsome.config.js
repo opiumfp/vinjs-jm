@@ -15,8 +15,7 @@ module.exports = {
         path: 'content/blog/**/*.md',
         typeName: 'Post',
         resolveAbsolutePaths: true,
-        remark: {
-        }
+        remark: {}
       }
     },
     {
@@ -25,8 +24,16 @@ module.exports = {
         path: 'content/conf/**/*.md',
         typeName: 'Conf',
         resolveAbsolutePaths: true,
-        remark: {
-        }
+        remark: {}
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/nav/**/*.md',
+        typeName: 'Nav',
+        resolveAbsolutePaths: true,
+        remark: {}
       }
     }
   ],

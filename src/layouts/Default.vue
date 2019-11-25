@@ -19,8 +19,20 @@ query {
   metadata {
     siteName
   }
+  navData: nav (path: "/content/nav/main-menu") {
+    title
+  }
 }
 </static-query>
+
+<script>
+export default {
+  mounted() {
+    console.log('this.$static.navData ::: ', this.$static.navData);
+    // debugger
+  }
+}
+</script>
 
 <style>
 body {

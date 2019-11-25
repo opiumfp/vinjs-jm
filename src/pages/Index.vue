@@ -57,7 +57,8 @@ export default {
     title: 'Hello, world!'
   },
   mounted() {
-    debugger
+    console.log('this.$page.pageData ::: ', this.$page.pageData)
+    // debugger
   },
 }
 </script>
