@@ -4,6 +4,9 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import BlogLayout from '~/layouts/Blog.vue'
 
+import '../assets/styles/bootstrap.scss'
+// import '../node_modules/bootstrap/js/src/dropdown'
+
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

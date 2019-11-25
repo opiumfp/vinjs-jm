@@ -1,5 +1,6 @@
 <template>
   <div class="layout">
+    <nav-bar></nav-bar>
     <header class="header">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
@@ -26,7 +27,12 @@ query {
 </static-query>
 
 <script>
+import NavBar from "@/components/NavBar"
+
 export default {
+  components: {
+    NavBar
+  },
   mounted() {
     console.log('this.$static.navData ::: ', this.$static.navData);
     // debugger
@@ -34,31 +40,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>
