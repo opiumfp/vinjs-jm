@@ -1,19 +1,26 @@
 ---
 title: Main Menu
 items:
-  - src: 'http://vinnytsiajs.org'
+  - active: true
+    src: 'http://vinnytsiajs.org'
     title: Home
-  - src: '#about'
+  - active: true
+    src: '#about'
     title: About Us
-  - src: '#speakers'
+  - active: true
+    src: '#speakers'
     title: Speakers
-  - src: '#schedule'
+  - active: true
+    src: '#schedule'
     title: Schedule
-  - src: '#partners'
+  - active: true
+    src: '#partners'
     title: Partners
-  - src: '#pricing'
+  - active: true
+    src: '#pricing'
     title: Pricing
-  - src: '#contact'
+  - active: true
+    src: '#contact'
     title: Contact Us
 ---
 
