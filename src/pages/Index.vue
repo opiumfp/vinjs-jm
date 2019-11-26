@@ -9,13 +9,13 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
         </p>
-      <ul>
+      <!-- <ul>
         <li v-for="post in $page.posts.edges" :key="post.id">
           <g-link :to="post.node.path">
             {{ post.node.title }}
           </g-link>
         </li>
-      </ul>
+      </ul> -->
 
 
       <ul>
@@ -35,15 +35,6 @@
 
 <page-query>
 query Posts {
-  posts: allPost {
-    edges {
-      node {
-        id
-        title
-        path
-      }
-    }
-  }
   pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
     title
   }

@@ -1,47 +1,46 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="http://vinnytsiajs.org">
+        <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="150" fit="contain" background="none" />
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+                <!-- <li v-for="post in $page.posts.edges" :key="post.id">
+                <g-link :to="post.node.path">
+                    {{ post.node.title }}
+                </g-link>
+                </li> -->
+            <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
+                <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Link</a>
+            </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
     </nav>
 </template>
 
 <script>
 export default {
-
+    props: {
+        navData: {
+        type: Object,
+        required: true
+        }
+    },
+    mounted() {
+      console.log('this.$props.navData ::: ', this.$props.navData);
+    //   debugger
+    }
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    
 </style>

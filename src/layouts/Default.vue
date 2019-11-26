@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <nav-bar></nav-bar>
+    <nav-bar :navData="$static.navData"></nav-bar>
     <header class="header">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
@@ -22,6 +22,7 @@ query {
   }
   navData: nav (path: "/content/nav/main-menu") {
     title
+    items {title, src,active }
   }
 }
 </static-query>

@@ -12,15 +12,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/blog/**/*.md',
-        typeName: 'Post',
-        resolveAbsolutePaths: true,
-        remark: {}
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
         path: 'content/conf/**/*.md',
         typeName: 'Conf',
         resolveAbsolutePaths: true,
