@@ -3,14 +3,15 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import '../assets/styles/main.scss'
-import BootstrapVue from 'bootstrap-vue'
+// import BootstrapVue from 'bootstrap-vue'
 
 // import '../node_modules/bootstrap/js/src/collapse'
 
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  Vue.use(BootstrapVue)
+  // Vue.use(BootstrapVue)
+  // Vue.use(CollapsePlugin)
   Vue.component('Layout', DefaultLayout)
 
 }
