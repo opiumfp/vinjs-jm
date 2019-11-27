@@ -10,12 +10,10 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "bootstrap": "^4.3.1",
-    "gridsome": "^0.7.0",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
-  },
-  "devDependencies": {
+    "bootstrap-vue": "^2.0.4",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0"
-  }
+    "sass-loader": "^8.0.0",
+    "gridsome": "^0.7.0"
+  },
+  "devDependencies": {}
 }

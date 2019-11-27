@@ -2,12 +2,15 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import '../assets/styles/main.scss'
+import BootstrapVue from 'bootstrap-vue'
 
-import '../assets/styles/bootstrap.scss'
-// import '../node_modules/bootstrap/js/src/dropdown'
-import '../node_modules/bootstrap/js/src/collapse'
+// import '../node_modules/bootstrap/js/src/collapse'
+
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+  Vue.use(BootstrapVue)
   Vue.component('Layout', DefaultLayout)
+
 }

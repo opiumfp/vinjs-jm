@@ -1,32 +1,26 @@
 <template>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="http://vinnytsiajs.org">
+<div>
+  <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar-brand href="http://vinnytsiajs.org">
         <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="150" fit="contain" background="none" />
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    </b-navbar-brand>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-                <!-- <li v-for="post in $page.posts.edges" :key="post.id">
-                <g-link :to="post.node.path">
-                    {{ post.node.title }}
-                </g-link>
-                </li> -->
-            <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-                <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </div>
-    </nav>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="mr-auto">
+            <b-nav-item v-for="item in $props.navData.items" :key="item.id" :href="item.src" v-if="item.active">{{item.title}}</b-nav-item>
+        </b-navbar-nav>
+        <b-button variant="outline-success" class="btn my-2 my-sm-0">Tickets</b-button>
+    </b-collapse>
+  </b-navbar>
+
+
+</div>
 </template>
 
 <script>
+
 export default {
     props: {
         navData: {
