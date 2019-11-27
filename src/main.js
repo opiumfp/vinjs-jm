@@ -2,7 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
-// import '../assets/styles/main.scss'
+import '../assets/styles/main.scss'
 import BootstrapVue from 'bootstrap-vue'
 
 // import '../node_modules/bootstrap/js/src/collapse'
