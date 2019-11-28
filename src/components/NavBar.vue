@@ -48,9 +48,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+@import "assets/styles/base.scss";
 
 @include media-breakpoint-down(lg) {
   #navbar_dropmenu {
