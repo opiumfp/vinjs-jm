@@ -1,13 +1,13 @@
 <template>
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
   <a class="navbar-brand" href="http://vinnytsiajs.org">
-      <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="150" fit="contain" background="none" />
+      <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="100" fit="contain" background="none" />
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button @click="toggleDropNav" class="navbar-toggler" type="button"  data-target="#navbar_dropmenu" aria-controls="navbar_dropmenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="navbar-collapse" id="navbar_dropmenu">
       <ul class="navbar-nav mr-auto">
               <!-- <li v-for="post in $page.posts.edges" :key="post.id">
               <g-link :to="post.node.path">
@@ -38,10 +38,30 @@ export default {
     mounted() {
       console.log('this.$props.navData ::: ', this.$props.navData);
     //   debugger
-    }
+    },
+    methods: {
+      toggleDropNav: () => {
+        document.querySelector('body').classList.toggle('nav_dropmenu-show')
+      }
+    },
 }
 </script>
 
 <style scoped lang="scss">
-    
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@include media-breakpoint-down(lg) {
+  #navbar_dropmenu {
+    display: none;
+    height: 100vh;
+    .nav_dropmenu-show & {
+      display: block;
+    }
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+}
 </style>
