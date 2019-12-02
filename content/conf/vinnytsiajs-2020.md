@@ -9,8 +9,8 @@ hero:
   button:
     link: ''
     title: ''
-  image: ''
-  subtitle: ''
-  title: ''
+  image: /uploads/wp4.jpg
+  subtitle: Open Air Conference
+  title: VinnytsiaJS 2020
 ---
 
