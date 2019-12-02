@@ -10,7 +10,7 @@ hero:
     title: Buy Ticket
   image: >-
     /uploads/_2019-10-01-01_34_25-3.0_sustainability_mobile-gaf-residential-update-2019-zeplin.png
-  subtitle: Open Air Conference
+  subtitle: ' '
   title: VinnytsiaJS 2020
 ---
 
