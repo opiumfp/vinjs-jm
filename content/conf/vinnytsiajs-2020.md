@@ -7,8 +7,8 @@ nav: >-
   Us"}]}
 hero:
   button:
-    link: ''
-    title: ''
+    link: '#'
+    title: Buy Tickets
   image: /uploads/wp4.jpg
   subtitle: Open Air Conference
   title: VinnytsiaJS 2020
