@@ -35,6 +35,33 @@ collections:
   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
+    - label: "Conference Date"
+      name: "startDate"
+      widget: "datetime"
+      default: ''
+      format: "LLLL"
+      required: false
+    - label: "Nav Menu"
+      name: "nav"
+      widget: "relation"
+      collection: "nav"
+      searchFields: ["title"]
+      valueField: "data"
+      displayFields: ["title"]
+    - label: "Hero"
+      name: "hero"
+      widget: "object"
+      fields:
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Sub title", name: "subtitle", widget: "string", required: false, default: ''}
+      - {label: "Image", name: "image", widget: "image", required: false, default: ''}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "link", name: "link", widget: "string", required: false, default: ''}
+
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI
   folder: "content/nav" # The path to the folder where the documents are stored
@@ -42,10 +69,14 @@ collections:
   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Title", name: "title", widget: "string"}
-    - label: "Nav Menu Items"
-      name: "items"
-      widget: "list"
-      fields: 
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Link", name: "src", widget: "string"}
-        - {label: "Active", name: "active", widget: "boolean", default: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      fields:
+      - label: "Nav Menu Items"
+        name: "items"
+        widget: "list"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Link", name: "src", widget: "string"}
+          - {label: "Active", name: "active", widget: "boolean", default: true}

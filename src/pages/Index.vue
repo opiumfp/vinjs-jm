@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
     <div class="container">
 
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
@@ -34,18 +35,33 @@
 </template>
 
 <page-query>
-query Posts {
+query Conf {
   pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
     title
+    startDate
+    hero {
+      title
+      subtitle
+      image (width: 1920, quality: 20)
+      button {
+        title
+        link
+      }
+    }
   }
 }
 
 </page-query>
 
 <script>
+import Hero from "@/components/Hero"
+
 export default {
   metaInfo: {
     title: 'Hello, world!'
+  },
+  components: {
+    Hero
   },
   mounted() {
     console.log('this.$page.pageData ::: ', this.$page.pageData)

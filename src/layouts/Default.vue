@@ -1,13 +1,13 @@
 <template>
   <div class="layout">
-    <nav-bar :navData="$static.navData"></nav-bar>
     <header class="header">
-      <strong>
+      <nav-bar :navData="getNav($static.pageData.nav)"></nav-bar>
+      <!-- <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
+      </strong> -->
+      <!-- <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
-      </nav>
+      </nav> -->
     </header>
     <slot/>
   </div>
@@ -18,9 +18,8 @@ query {
   metadata {
     siteName
   }
-  navData: nav (path: "/content/nav/main-menu") {
-    title
-    items {title, src,active }
+  pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
+    nav
   }
 }
 </static-query>
@@ -32,8 +31,12 @@ export default {
   components: {
     NavBar
   },
+  methods: {
+    getNav: (str) => {
+      return JSON.parse(str)
+    }
+  },
   mounted() {
-    console.log('this.$static.navData ::: ', this.$static.navData);
     // debugger
   }
 }

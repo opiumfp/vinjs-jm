@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
   <a class="navbar-brand" href="http://vinnytsiajs.org">
       <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="100" fit="contain" background="none" />
   </a>
