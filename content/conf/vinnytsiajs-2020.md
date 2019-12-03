@@ -9,7 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
-  image: /uploads/wp1.jpg
+  image: /uploads/vinnytsiajs-2019-intro-0001.jpg
   subtitle: Open Air Conference
   title: VinnytsiaJS 2020
 ---
