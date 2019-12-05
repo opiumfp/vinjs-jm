@@ -46,7 +46,8 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      background-image: url('../../assets/images/misc/grid_stripes_left.png');
+      background-color: rgba(0,0,0,.3);
+      background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
       opacity: 0.5;
     }
     &_image {

@@ -9,7 +9,9 @@
         <g-link class="nav__link" to="/">Home</g-link>
       </nav> -->
     </header>
-    <slot/>
+    <div id="main">
+      <slot/>
+    </div>
   </div>
 </template>
 
