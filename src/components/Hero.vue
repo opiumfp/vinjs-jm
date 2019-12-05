@@ -37,6 +37,7 @@ export default {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: $dark;
   }
   &_bg {
     &::after {

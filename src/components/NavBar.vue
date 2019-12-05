@@ -29,7 +29,7 @@
           </li> -->
       </ul>
       <div class="vjs-navbar_button-wrap">
-        <button class="btn btn-outline-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>
+        <button class="btn btn-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>
       </div>
   </div>
 </nav>
@@ -74,12 +74,12 @@ $nav-height: 72px;
 .vjs-navbar {
   height: $nav-height;
   background-color: rgba($dark, .3) !important;
-  @include transition(background-color linear .2s);
+  @include transition(background-color linear .15s);
   .nav_dropmenu-show & {
-    background-color: rgba($dark, .5) !important;
+    background-color: rgba($dark, .6) !important;
     height: auto;
   }
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     top: 0;
     bottom: auto;
     padding-top: 0;
@@ -87,13 +87,13 @@ $nav-height: 72px;
   }
   &_collaplse {
     justify-content: space-between;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       display: none;
       height: calc(100vh - #{$nav-height});
       flex-direction: column;
+      justify-content: space-around;
       .nav_dropmenu-show & {
         display: flex;
-        justify-content: space-around;
       }
     }
   }
@@ -106,19 +106,38 @@ $nav-height: 72px;
       min-height: $nav-height;
     }
     @include media-breakpoint-down(lg) {
+      header & .nav-link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        @include media-breakpoint-between(sm, md) {
+          @media (max-height: 768px) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(md) {
       flex-grow: 1;
+    }
+    @include media-breakpoint-between(sm, md) {
+      @media (max-height: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
     }
   }
   &_social-wrap,
   &_button-wrap {
-    min-width: 20%;
-    @include media-breakpoint-down(lg) {
+    min-width: 18%;
+    @include media-breakpoint-down(md) {
       flex-grow: 1;
     }
   }
-  @include media-breakpoint-down(lg) {
-    &_social-wrap {
+  &_social-wrap {
+    @include media-breakpoint-down(md) {
       order: 1;
+      margin-bottom: 3rem;
     }
   }
 }
