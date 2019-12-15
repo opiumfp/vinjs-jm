@@ -15,6 +15,7 @@ hero:
   title: VinnytsiaJS 2020
 about:
   link: 'http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf'
+  link-title: Code of Conduct
   logo: /uploads/vinnytsiajs-2019-logo-transparent2-.jpg
   paragraph: "The fifth annual Javascript conference, that will be held in the usual Open-Air format. The event is organized and driven by Vinnytsia JavaScript Community.\r\n\n\rThis summer meet the Conference dedicated to JavaScript development. We took care of everything to provide all conference guests with a comfortable location, appropriate meeting spaces, for you just to have summer rest and enjoy networking."
   title: VinnytsiaJS 2020
