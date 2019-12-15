@@ -31,7 +31,7 @@ stat:
         Learn, explore, connect and enjoy the summer vibes by swimming in the
         pool.
       title: Open Air
-    - paragraph: General + Lightnings
+    - paragraph: General + Lightnings. The emphasis on the latest trends
       title: 2 Streams
 ---
 
