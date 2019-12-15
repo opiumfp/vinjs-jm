@@ -26,8 +26,7 @@ stat:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
       title: 300+ Attendees
     - paragraph: |-
-        General + Lightnings. 
-
+        General + **Lightnings**. \
         The emphasis on the latest trends
       title: 2 Streams
     - paragraph: High-level talks by speakers from Ukraine and abroad.
