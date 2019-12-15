@@ -61,7 +61,6 @@ collections:
         fields:
         - {label: "Title", name: "title", widget: "string", required: false, default: ''}
         - {label: "link", name: "link", widget: "string", required: false, default: ''}
-
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI
   folder: "content/nav" # The path to the folder where the documents are stored
@@ -80,3 +79,46 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Link", name: "src", widget: "string"}
           - {label: "Active", name: "active", widget: "boolean", default: true}
+      - label: "Social Icons"
+        name: "socialicons"
+        widget: "relation"
+        collection: "socialicons"
+        searchFields: ["title"]
+        valueField: "data"
+        required: false
+        default: ''
+        displayFields: ["title"] 
+- name: "socialicons" # Used in routes, e.g., /admin/collections/blog
+  label: "Social Icons" # Used in the UI
+  folder: "content/socialicons" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - label: "Social Icons"
+        name: "items"
+        widget: "list"
+        fields: 
+          - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+          - {label: "Link", name: "src", widget: "string", required: false, default: ''}
+          - label: "Icon"
+            name: "icon"
+            widget: "select"
+            required: true
+            default: "icon-facebook-square"
+            options:
+              - { label: "icon-facebook-square", value: "icon-facebook-square"}      
+              - { label: "icon-twitter", value: "icon-twitter"}
+              - { label: "icon-youtube-play", value: "icon-youtube-play"}
+              - { label: "icon-instagram", value: "icon-instagram"}
+              - { label: "icon-github", value: "icon-github"}
+              - { label: "icon-telegram", value: "icon-telegram"}
+              - { label: "icon-phone", value: "icon-phone"}
+              - { label: "icon-envelope", value: "icon-envelope"}
+          - {label: "Active", name: "active", widget: "boolean", required: false, default: true}          

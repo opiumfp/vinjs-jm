@@ -10,45 +10,52 @@
   </div>
 
   <div class="vjs-navbar_collaplse navbar-collapse" id="navbar_dropmenu">
-      <div class="vjs-navbar_social-wrap">
-        <div style="width:150px; height:24px; background: red;">
-
-        </div>
-      </div>
-      <ul class="vjs-navbar_nav navbar-nav">
-              <!-- <li v-for="post in $page.posts.edges" :key="post.id">
-              <g-link :to="post.node.path">
-                  {{ post.node.title }}
-              </g-link>
-              </li> -->
-          <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-              <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Link</a>
-          </li> -->
-      </ul>
-      <div class="vjs-navbar_button-wrap">
-        <button class="btn btn-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>
-      </div>
+    <div class="vjs-navbar_social-wrap">
+      <social-icons :socialIconsData="getSocialIcons(this.$props.navData.socialicons)"></social-icons>
+    </div>
+    <ul class="vjs-navbar_nav navbar-nav">
+            <!-- <li v-for="post in $page.posts.edges" :key="post.id">
+            <g-link :to="post.node.path">
+                {{ post.node.title }}
+            </g-link>
+            </li> -->
+        <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
+            <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Link</a>
+        </li> -->
+    </ul>
+    <div class="vjs-navbar_button-wrap">
+      <button class="btn btn-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>
+    </div>
   </div>
 </nav>
 </template>
 
 <script>
+import SocialIcons from "@/components/SocialIcons"
+
 
 export default {
     props: {
-        navData: {
+      navData: {
         type: Object,
         required: true
-        }
+      }
+    },
+    components: {
+      SocialIcons
     },
     mounted() {
-      console.log('this.$props.navData ::: ', this.$props.navData);
-    //   debugger
+      window.addEventListener("orientationchange", function() {
+        document.querySelector('body').classList.remove('nav_dropmenu-show')
+      }, false);
     },
     methods: {
+      getSocialIcons: (str) => {
+        return JSON.parse(str)
+      },
       toggleDropNav: () => {
         document.querySelector('body').classList.toggle('nav_dropmenu-show')
       }
@@ -58,6 +65,7 @@ export default {
 
 <style lang="scss">
 @import "assets/styles/base.scss";
+
 #main {
   @include transition(all linear .2s);
   .nav_dropmenu-show &{
@@ -119,12 +127,18 @@ $nav-height: 72px;
     }
     @include media-breakpoint-down(md) {
       flex-grow: 1;
+      margin-bottom: 2em;
     }
     @include media-breakpoint-between(sm, md) {
       @media (max-height: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 2em;
       }
+    }
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
   }
   &_social-wrap,
@@ -138,6 +152,19 @@ $nav-height: 72px;
     @include media-breakpoint-down(md) {
       order: 1;
       margin-bottom: 3rem;
+    }
+  }
+  .social-icons {
+    @include media-breakpoint-down(lg) {
+      flex-direction: row;
+      font-size: 1.25rem;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 1em;
+    }
+    ::v-deep .social-icons_link {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
     }
   }
 }
