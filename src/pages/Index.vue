@@ -1,6 +1,8 @@
 <template>
   <Layout>
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
+    <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
+    <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
     <div class="container">
 
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
@@ -49,6 +51,21 @@ query Conf {
         link
       }
     }
+    about {
+      id
+      title
+      paragraph
+      linkTitle
+      link
+      logo
+    }
+    stat {
+      image
+      items {
+        title
+        paragraph
+      }
+    }
   }
 }
 
@@ -56,13 +73,17 @@ query Conf {
 
 <script>
 import Hero from "@/components/Hero"
+import About from "@/components/About"
+import Stat from "@/components/Stat"
 
 export default {
   metaInfo: {
     title: 'Hello, world!'
   },
   components: {
-    Hero
+    Hero,
+    About,
+    Stat
   },
   mounted() {
     console.log('this.$page.pageData ::: ', this.$page.pageData)

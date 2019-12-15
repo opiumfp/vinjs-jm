@@ -40,9 +40,24 @@ export default {
       SocialIcons
     },
     mounted() {
+      
       window.addEventListener("orientationchange", function() {
         document.querySelector('body').classList.remove('nav_dropmenu-show')
       }, false);
+
+      window.onscroll = function(ev) {
+          let pageScrolled = false;
+
+          if ( window.scrollY === 0 ) {
+            document.querySelector('body').classList.remove('page-scrolled')
+            pageScrolled = false;
+          } else {
+            if (pageScrolled) return;
+
+            document.querySelector('body').classList.add('page-scrolled')
+            pageScrolled = true;
+          }
+      };
     },
     methods: {
       getSocialIcons: (str) => {
@@ -74,6 +89,9 @@ $nav-height: 72px;
 .vjs-navbar {
   height: $nav-height;
   background-color: rgba($dark, .3) !important;
+  .page-scrolled & {
+    background-color: rgba($dark, .8) !important;
+  }
   @include transition(background-color linear .15s);
   .nav_dropmenu-show & {
     background-color: rgba($dark, .6) !important;

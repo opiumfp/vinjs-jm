@@ -62,6 +62,30 @@ collections:
         fields:
         - {label: "Title", name: "title", widget: "string", required: false, default: ''}
         - {label: "link", name: "link", widget: "string", required: false, default: ''}
+    - label: "About"
+      name: "about"
+      widget: "object"
+      fields:
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
+        - {label: "logo", name: "logo", widget: "image", required: false, default: ''}
+        - {label: "Button Title", name: "linkTitle", widget: "string", required: false, default: ''}
+        - {label: "Button Link", name: "link", widget: "string", required: false, default: ''}
+    - label: "Stat"
+      name: "stat"
+      widget: "object"
+      fields:
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Background", name: "image", widget: "image", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          required: false
+          default: ''
+          fields:
+          - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+          - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI
   folder: "content/nav" # The path to the folder where the documents are stored
