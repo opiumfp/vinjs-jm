@@ -10,7 +10,7 @@ hero:
     link: '#'
     title: Buy Tickets
   image: /uploads/vinnytsiajs-2019-intro-0003.jpg
-  imageLand: ''
+  imageLand: /uploads/vjs-portrait.jpg
   subtitle: Open Air Conference
   title: VinnytsiaJS 2020
 ---
