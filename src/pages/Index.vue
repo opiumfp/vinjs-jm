@@ -42,7 +42,8 @@ query Conf {
     hero {
       title
       subtitle
-      image (width: 1920, quality:40)
+      image (width: 1920, quality:70)
+      imagePt (width: 768, quality:70)
       button {
         title
         link

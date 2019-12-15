@@ -14,17 +14,9 @@
       <social-icons :socialIconsData="getSocialIcons(this.$props.navData.socialicons)"></social-icons>
     </div>
     <ul class="vjs-navbar_nav navbar-nav">
-            <!-- <li v-for="post in $page.posts.edges" :key="post.id">
-            <g-link :to="post.node.path">
-                {{ post.node.title }}
-            </g-link>
-            </li> -->
-        <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-            <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
-        </li>
-        <!-- <li class="nav-item active">
-            <a class="nav-link" href="#">Link</a>
-        </li> -->
+      <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
+        <a v-if="item.active" class="nav-link" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
+      </li>
     </ul>
     <div class="vjs-navbar_button-wrap">
       <button class="btn btn-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>

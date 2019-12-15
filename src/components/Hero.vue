@@ -2,7 +2,8 @@
 <div class="hero">
   <div class="hero_wrapper">
     <div class="hero_bg">
-      <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/>
+      <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
     </div>
     <div class="hero_content">
       <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1>
@@ -10,6 +11,7 @@
       <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a>
     </div>
   </div>
+      <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
 </div>
 </template>
 
@@ -58,6 +60,19 @@ export default {
       min-height: 100%;
       top: 50%;
       left: 50%;
+      &-portrait {
+        display: none;
+      }
+      @include media-breakpoint-down(md) {
+        @media (orientation: portrait) {
+          &-landscape {
+            display: none;
+          }
+          &-portrait {
+            display: block;
+          }
+        }
+      }
     }
   }
   &_content {
