@@ -2,7 +2,7 @@
 <section class="stat" :id="data.id">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
-      <div v-parallax="0.2">
+      <div v-prlx="{ fromBottom: true }">
         <g-image class="about_bg_img" :src="data.image"/>
       </div>
     </div>
@@ -25,12 +25,9 @@
 <script>
 import VueMarkdown from 'vue-markdown'
 
-// import Vue and vue-parallax-js
 import Vue from 'vue'
-import VueParallaxJs from 'vue-parallax-js'
-
-// add vue-parallax-js to vue
-Vue.use(VueParallaxJs)
+import VuePrlx from 'vue-prlx'
+Vue.use(VuePrlx);
 
 export default {
     props: {
