@@ -51,7 +51,6 @@ export default {
       right: 0;
       background-color: rgba(0,0,0,.3);
       background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
-      opacity: 0.5;
     }
     &_image {
       position: absolute;
