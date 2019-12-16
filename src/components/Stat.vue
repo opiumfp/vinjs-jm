@@ -2,7 +2,8 @@
 <section class="stat" :id="data.id">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
-      <div v-prlx="{ fromBottom: true }">
+      <!-- <div v-prlx="{ fromBottom: true }"> -->
+      <div>
         <g-image class="about_bg_img" :src="data.image"/>
       </div>
     </div>
