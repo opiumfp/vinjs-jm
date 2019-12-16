@@ -2,9 +2,9 @@
 <section class="stat" :id="data.id">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
-      <parallax :speed-factor="0.1">
+      <div v-parallax="0.2">
         <g-image class="about_bg_img" :src="data.image"/>
-      </parallax>
+      </div>
     </div>
   </div>
   <div class="container pt-5 pb-5">
@@ -23,8 +23,14 @@
 </template>
 
 <script>
-import Parallax from 'vue-parallaxy'
 import VueMarkdown from 'vue-markdown'
+
+// import Vue and vue-parallax-js
+import Vue from 'vue'
+import VueParallaxJs from 'vue-parallax-js'
+
+// add vue-parallax-js to vue
+Vue.use(VueParallaxJs)
 
 export default {
     props: {
@@ -34,8 +40,7 @@ export default {
         }
     },
     components: {
-      VueMarkdown,
-      Parallax
+      VueMarkdown
     },
     methods: {
     },

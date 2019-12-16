@@ -7,7 +7,6 @@ import '../assets/styles/main.scss'
 
 // import '../node_modules/bootstrap/js/src/collapse'
 
-
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   // Vue.use(BootstrapVue)
