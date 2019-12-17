@@ -22,6 +22,7 @@ about:
   title: VinnytsiaJS 2020
 stat:
   image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
+  imagePt: /uploads/vjs-portrait.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
       title: 300+ Attendees
