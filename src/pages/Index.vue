@@ -61,6 +61,7 @@ query Conf {
     }
     stat {
       image (quality:40)
+      imagePt (quality:40)
       items {
         title
         paragraph

@@ -2,9 +2,10 @@
 <section class="stat" :id="data.id">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
-      <!-- <div v-prlx="{ fromBottom: true }"> -->
-      <div>
-        <g-image class="about_bg_img" :src="data.image"/>
+      <div class="stat_bg_prlx" v-prlx="{ fromBottom: true }">
+      <!-- <div> -->
+        <g-image v-if="data.image" class="stat_bg_img stat_bg_img-landscape" :src="data.image"/>
+        <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt"/>
       </div>
     </div>
   </div>
@@ -73,6 +74,24 @@ export default {
     right: 0;
     bottom: 0;
     overflow: hidden;
+    &_prlx {
+      transition: none!important;
+    }
+    &_img {
+      &-portrait {
+        display: none;
+      }
+      @include media-breakpoint-down(md) {
+        @media (orientation: portrait) {
+          &-landscape {
+            display: none;
+          }
+          &-portrait {
+            display: block;
+          }
+        }
+      }
+    }
     &_wrap {
       position: absolute;
       top: 50%;
