@@ -67,22 +67,22 @@ mediaTiles:
       image: /uploads/vinnytsiajs-2019-intro-0001.jpg
       src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
       title: VinntysiaJS 2019 - Highlights
-      type: gallery
+      type: youtube
     - active: 'true'
       image: /uploads/wp1.jpg
       src: 'https://www.youtube.com/watch?v=2bAmvd337CM'
       title: VinntysiaJS 2018 - Highlights
-      type: gallery
+      type: youtube
     - active: 'true'
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
       title: VinntysiaJS 2017 - Highlights
-      type: gallery
+      type: youtube
     - active: 'true'
       image: /uploads/wp1.jpg
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: VinntysiaJS 2016- Highlights
-      type: gallery
+      type: youtube
   title: Feel The Vibes
 ---
 
