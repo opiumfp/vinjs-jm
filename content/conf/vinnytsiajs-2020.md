@@ -36,5 +36,53 @@ stat:
         Learn, explore, connect and enjoy the summer vibes by swimming in the
         pool.
       title: Open Air
+mediaTiles:
+  id: vibes
+  items:
+    - active: 'true'
+      image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
+      src: >-
+        https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=887519681617950
+      title: VinntysiaJS 2019
+      type: gallery
+    - active: 'true'
+      image: /uploads/vinnytsiajs-2019-intro-0003.jpg
+      src: >-
+        https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=645568395813081
+      title: VinntysiaJS 2018
+      type: gallery
+    - active: 'true'
+      image: /uploads/wp1.jpg
+      src: >-
+        https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=468145436888712
+      title: VinntysiaJS 2017
+      type: gallery
+    - active: 'true'
+      image: /uploads/wp4.jpg
+      src: >-
+        https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=276730176030240
+      title: VinntysiaJS 2016
+      type: gallery
+    - active: 'true'
+      image: /uploads/vinnytsiajs-2019-intro-0001.jpg
+      src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
+      title: VinntysiaJS 2019 - Highlights
+      type: gallery
+    - active: 'true'
+      image: /uploads/wp1.jpg
+      src: 'https://www.youtube.com/watch?v=2bAmvd337CM'
+      title: VinntysiaJS 2018 - Highlights
+      type: gallery
+    - active: 'true'
+      image: /uploads/vinnytsiajs-2019-intro-0003.jpg
+      src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
+      title: VinntysiaJS 2017 - Highlights
+      type: gallery
+    - active: 'true'
+      image: /uploads/wp1.jpg
+      src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
+      title: VinntysiaJS 2016- Highlights
+      type: gallery
+  title: Feel The Vibes
 ---
 
