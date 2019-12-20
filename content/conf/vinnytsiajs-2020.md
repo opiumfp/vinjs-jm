@@ -84,5 +84,29 @@ mediaTiles:
       title: VinntysiaJS 2016- Highlights
       type: youtube
   title: Feel The Vibes
+playlists:
+  id: playlists
+  items:
+    - active: 'true'
+      image: ''
+      src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSXcW3cPKt21szFrstVWiQxM'
+      title: Videos 2019
+      type: gallery
+    - active: 'true'
+      image: ''
+      src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSXPe93ZHYMnn9FHwNlwC1yO'
+      title: Videos 2018
+      type: gallery
+    - active: 'true'
+      image: ''
+      src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSU-daVXdg16AgKi_ED7n1Td'
+      title: Videos 2017
+      type: gallery
+    - active: 'true'
+      image: ''
+      src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSV3M0bAmCS9TdRNWtayhmxc'
+      title: Videos 2016
+      type: gallery
+  title: Playlists
 ---
 
