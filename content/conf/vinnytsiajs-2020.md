@@ -73,7 +73,7 @@ mediaTiles:
       title: VinntysiaJS 2017
       type: gallery
     - active: 'true'
-      colDesk: 7
+      colDesk: 4
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
       title: VinntysiaJS 2017 - Highlights
