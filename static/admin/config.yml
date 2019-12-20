@@ -102,16 +102,17 @@ collections:
           fields: 
             - {label: "Title", name: "title", widget: "string"}
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            - {label: "Coumn Width (desktop)", name: "colDesk", widget: "number", default: 4, required: false}
             - label: "Type"
               name: "type"
               widget: "select"
               required: true
               default: "gallery"
               options:
-                - {label: "Image/Video Gallary", value: "gallery", default: '', required: false}
-                - {label: "Youtube Video", value: "youtube", default: '', required: false}
+                - {label: "Image/Video Gallary", value: "gallery"}
+                - {label: "Youtube Video", value: "youtube"}
             - {label: "Link", name: "src", widget: "string", default: '', required: false}
-            - {label: "Image", name: "image", widget: "image", default: '', required: false}
+            - {label: "Image", name: "image", widget: "image", default: null, required: false}
     - label: "Playlists"
       name: "playlists"
       widget: "object"
@@ -127,16 +128,18 @@ collections:
           fields: 
             - {label: "Title", name: "title", widget: "string"}
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            - {label: "Coumn Width (desktop)", name: "colDesk", widget: "number", default: 4, required: false}
             - label: "Type"
               name: "type"
               widget: "select"
               required: true
               default: "gallery"
               options:
-                - {label: "Image/Video Gallary", value: "gallery", default: '', required: false}
-                - {label: "Youtube Video", value: "youtube", default: '', required: false}
+                - {label: "Image/Video Gallary", value: "gallery"}
+                - {label: "Youtube Video", value: "youtube"}
+                - {label: "Static text", value: "text"}
             - {label: "Link", name: "src", widget: "string", default: '', required: false}
-            - {label: "Image", name: "image", widget: "image", default: '', required: false}
+            - {label: "Image", name: "image", widget: "image", default: null, required: false}
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI
   folder: "content/nav" # The path to the folder where the documents are stored

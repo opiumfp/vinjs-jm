@@ -3,6 +3,10 @@
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
     <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
     <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
+    <section :id="$page.pageData.mediaTiles.id">
+      <page-title class="pt-5 pb-4" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
+      <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
+    </section>
     <div class="container">
 
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
@@ -67,6 +71,31 @@ query Conf {
         paragraph
       }
     }
+    mediaTiles {
+      title
+      subtitle
+      id
+      items {
+        title
+        active
+        type
+        src
+        colDesk
+        image (quality:40, width:640, height:360)
+      }
+    }
+    playlists {
+      title
+      subtitle
+      id
+      items {
+        title
+        active
+        type
+        src
+        image (quality:40)
+      }
+    }
   }
 }
 
@@ -76,6 +105,8 @@ query Conf {
 import Hero from "@/components/Hero"
 import About from "@/components/About"
 import Stat from "@/components/Stat"
+import PageTitle from "@/components/PageTitle"
+import MediaTiles from "@/components/MediaTiles"
 
 export default {
   metaInfo: {
@@ -84,7 +115,9 @@ export default {
   components: {
     Hero,
     About,
-    Stat
+    Stat,
+    PageTitle,
+    MediaTiles
   },
   mounted() {
     console.log('this.$page.pageData ::: ', this.$page.pageData)

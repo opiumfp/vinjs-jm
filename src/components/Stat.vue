@@ -13,7 +13,7 @@
     <div class="row justify-content-center">
       <div v-for="item in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth} pt-3 pb-3 pt-lg-5 pb-lg-5`">
         <div class="stat_item text-center">
-          <h3 class="stat_title" v-if="item.title">{{ item.title }}</h3>
+          <div class="h3 stat_title" v-if="item.title">{{ item.title }}</div>
           <p class="stat_paragraph" v-if="item.paragraph">
             <vue-markdown>{{item.paragraph}}</vue-markdown>
           </p>
@@ -105,7 +105,7 @@ export default {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($black, .5);
+        background-color: rgba($black, .4);
       }
     }
   }

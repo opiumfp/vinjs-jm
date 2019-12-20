@@ -41,6 +41,9 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 .about {
+  &_logo {
+    max-width: 100%;
+  }
   @include media-breakpoint-down(lg) {}
 }
 
