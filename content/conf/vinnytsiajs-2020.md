@@ -40,18 +40,20 @@ mediaTiles:
   id: vibes
   items:
     - active: 'true'
+      colDesk: 4
       image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=887519681617950
       title: VinntysiaJS 2019
       type: gallery
     - active: 'true'
+      colDesk: 4
       image: /uploads/vinnytsiajs-2019-intro-0001.jpg
       src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
       title: VinntysiaJS 2019 - Highlights
       type: youtube
     - active: 'true'
-      colDesk: ''
+      colDesk: 4
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=645568395813081
@@ -71,17 +73,20 @@ mediaTiles:
       title: VinntysiaJS 2017
       type: gallery
     - active: 'true'
+      colDesk: 7
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
       title: VinntysiaJS 2017 - Highlights
       type: youtube
     - active: 'true'
+      colDesk: 6
       image: /uploads/wp4.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=276730176030240
       title: VinntysiaJS 2016
       type: gallery
     - active: 'true'
+      colDesk: 4
       image: /uploads/wp1.jpg
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: VinntysiaJS 2016- Highlights
