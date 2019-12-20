@@ -89,7 +89,7 @@ playlists:
   id: playlists
   items:
     - active: 'true'
-      image: ''
+      image: /uploads/vinnytsiajs-2019-intro-0001.jpg
       src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSXcW3cPKt21szFrstVWiQxM'
       title: Videos 2019
       type: gallery
@@ -99,7 +99,7 @@ playlists:
       title: Videos 2018
       type: gallery
     - active: 'true'
-      image: ''
+      image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
       src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSU-daVXdg16AgKi_ED7n1Td'
       title: Videos 2017
       type: gallery
