@@ -79,7 +79,7 @@ mediaTiles:
       title: VinntysiaJS 2017 - Highlights
       type: youtube
     - active: 'true'
-      colDesk: 6
+      colDesk: 4
       image: /uploads/wp4.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=276730176030240
