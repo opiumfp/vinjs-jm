@@ -112,6 +112,31 @@ collections:
                 - {label: "Youtube Video", value: "youtube", default: '', required: false}
             - {label: "Link", name: "src", widget: "string", default: '', required: false}
             - {label: "Image", name: "image", widget: "image", default: '', required: false}
+    - label: "Playlists"
+      name: "playlists"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            - label: "Type"
+              name: "type"
+              widget: "select"
+              required: true
+              default: "gallery"
+              options:
+                - {label: "Image/Video Gallary", value: "gallery", default: '', required: false}
+                - {label: "Youtube Video", value: "youtube", default: '', required: false}
+            - {label: "Link", name: "src", widget: "string", default: '', required: false}
+            - {label: "Image", name: "image", widget: "image", default: '', required: false}
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI
   folder: "content/nav" # The path to the folder where the documents are stored
