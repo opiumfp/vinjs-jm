@@ -83,6 +83,7 @@ mediaTiles:
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: VinntysiaJS 2016- Highlights
       type: youtube
+  subtitle: ss
   title: Feel The Vibes
 playlists:
   id: playlists
