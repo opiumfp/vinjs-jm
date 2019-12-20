@@ -108,6 +108,7 @@ playlists:
       src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSV3M0bAmCS9TdRNWtayhmxc'
       title: Videos 2016
       type: gallery
+  subtitle: ss
   title: Playlists
 ---
 
