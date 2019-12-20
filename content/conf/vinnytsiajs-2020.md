@@ -104,7 +104,7 @@ playlists:
       title: Videos 2017
       type: gallery
     - active: 'true'
-      image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
+      image: ''
       src: 'https://www.youtube.com/playlist?list=PL7GMpyIlGWSV3M0bAmCS9TdRNWtayhmxc'
       title: Videos 2016
       type: gallery
