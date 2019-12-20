@@ -118,5 +118,26 @@ playlists:
       type: gallery
   subtitle: ''
   title: Playlists
+partners:
+  id: partners
+  items:
+    - active: 'true'
+      parnter: >-
+        {"descrition":"","image":"/uploads/matrica-b.svg","src":"http://matrica.vn.ua/","title":"Матриця
+        - Цифрові технології"}
+    - active: 'true'
+      parnter: >-
+        {"descrition":"","image":"/uploads/dm.jpg","src":"https://dev-meetups.org/","title":"Dev
+        Meetups"}
+    - active: 'true'
+      parnter: >-
+        {"descrition":"","image":"/uploads/hostpro.png","src":"https://hostpro.ua/","title":"Best
+        hosting from HOSTPRO"}
+    - active: 'true'
+      parnter: >-
+        {"descrition":"","image":"/uploads/it-association.png","src":"https://www.it-association.vn.ua/","title":"IT
+        Association Vinnytsia"}
+  subtitle: Who Makes This Event Possible!
+  title: Partners
 ---
 
