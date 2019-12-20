@@ -51,7 +51,7 @@ mediaTiles:
       title: VinntysiaJS 2019 - Highlights
       type: youtube
     - active: 'true'
-      colDesk: 5
+      colDesk: 6
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=645568395813081
