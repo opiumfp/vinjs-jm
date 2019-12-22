@@ -96,6 +96,15 @@ query Conf {
         image (quality:40)
       }
     }
+    partners {
+      title
+      subtitle
+      id
+      items {
+        active
+        parnter
+      }
+    }
   }
 }
 
@@ -120,8 +129,8 @@ export default {
     MediaTiles
   },
   mounted() {
-    console.log('this.$page.pageData ::: ', this.$page.pageData)
-    // debugger
+    // console.log('this.$page.pageData ::: ', this.$page.pageData)
+    debugger
   },
 }
 </script>

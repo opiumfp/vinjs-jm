@@ -1,7 +1,7 @@
 ---
 title: Dev Meetups
 data:
-  descrition: ''
+  description: ''
   image: /uploads/dm.jpg
   src: 'https://dev-meetups.org/'
   title: Dev Meetups
