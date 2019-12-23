@@ -12,8 +12,26 @@
       <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
     </section>
     <section :id="$page.pageData.partners.id">
-      <page-title class="pt-5 pb-4" :title="$page.pageData.partners.title" :subtitle="$page.pageData.partners.subtitle"></page-title>
-      <partners :partnersData="$page.pageData.partners"></partners>
+      <page-title 
+        class="pt-5 pb-4" 
+        :title="$page.pageData.partners.title" 
+        :subtitle="$page.pageData.partners.subtitle"
+        ></page-title>
+      <partners 
+        :partnersData="$page.pageData.partners"
+        mode="inline"
+        ></partners>
+    </section>
+    <section :id="$page.pageData.partners.id">
+      <page-title 
+        class="pt-5 pb-4" 
+        :title="$page.pageData.partners.title" 
+        :subtitle="$page.pageData.partners.subtitle"
+        ></page-title>
+      <partners 
+        :partnersData="$page.pageData.partners"
+        mode="carousel"
+        ></partners>
     </section>
     <div class="container">
 
@@ -111,7 +129,7 @@ query Conf {
       items {
         active
         fields
-        image (quality:80, width:200)
+        image (quality:90, width:200)
       }
     }
   }
