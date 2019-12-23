@@ -1,38 +1,17 @@
 <template>
 <div class="partners">
   <div class="container">
-    <carousel 
-      v-if="mode === 'carousel'"
-      :perPageCustom="[[320, 1], [768, 3], [1024, 4], [1199, 4]]"
-      :navigationEnabled="true"
-      :navigationClickTargetSize="8"
-      :center="true" 
-      :mouse-drag="false"
-      class=""
-      >
-      <slide 
-          v-for="item in data.items" 
-          :key="item.id" 
-          :set="partner = getJSONData(item.fields)"
-          class="d-flex justify-content-center align-items-center">
-
-          <div v-if="item.active" class="">
-            <a :href="partner.src">
-              <g-image v-if="partner.image" class="" :src="item.image"/>
-            </a>
-          </div>
-      </slide>
-    </carousel>
-    <div v-else class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center">
       <div 
         v-for="item in data.items" 
         :key="item.id" 
         :set="partner = getJSONData(item.fields)"
-        class="stat_col col-12 col-sm-6 col-md-4 col-lg-3">
+        class="stat_col"
+        :class="getBlockSizes(mode)">
 
-        <div v-if="item.active" class="partners_item text-center pb-4">
+        <div v-if="item.active" class="partners_item text-center pb-4 px-1">
           <a :href="partner.src">
-            <g-image v-if="partner.image" class="partners_bg_img" :src="item.image"/>
+            <g-image v-if="partner.image" class="partners_img" :src="item.image"/>
           </a>
         </div>
       </div>
@@ -42,11 +21,6 @@
 </template>
 
 <script>
-
-import Vue from 'vue';
-import VueCarousel from 'vue-carousel';
-
-import { Carousel, Slide } from 'vue-carousel'
 
 export default {
     props: {
@@ -59,10 +33,6 @@ export default {
         required: true
       }
     },
-    components:{
-      Carousel,
-      Slide
-    },
     mounted() {
       // debugger
     },
@@ -74,6 +44,18 @@ export default {
     methods: {
       getJSONData: (str) => {
         return JSON.parse(str);
+      },
+      getBlockSizes: (mode) => {
+        let result = ''
+
+        switch (mode) {
+          case 'xlarge': result = 'col-12 col-sm-6 col-md-4 col-lg-3'
+          break;
+          case 'large': result = 'col-12 col-sm-4 col-md-3 col-lg-2'
+          break;
+        }
+
+        return result
       }
     },
 }
@@ -82,7 +64,9 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 .partners {
-  
+  &_img{
+    max-width: 100%;
+  }
   @include media-breakpoint-down(lg) {}
 }
 

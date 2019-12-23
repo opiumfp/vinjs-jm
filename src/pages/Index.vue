@@ -19,7 +19,7 @@
         ></page-title>
       <partners 
         :partnersData="$page.pageData.partners"
-        mode="inline"
+        mode="xlarge"
         ></partners>
     </section>
     <section :id="$page.pageData.partners.id">
@@ -30,7 +30,7 @@
         ></page-title>
       <partners 
         :partnersData="$page.pageData.partners"
-        mode="carousel"
+        mode="large"
         ></partners>
     </section>
     <div class="container">
