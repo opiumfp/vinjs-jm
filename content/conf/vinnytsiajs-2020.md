@@ -126,6 +126,21 @@ partners:
         {"description":"","image":"/uploads/dm.jpg","src":"https://dev-meetups.org/","title":"Dev
         Meetups"}
       image: /uploads/dm.jpg
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/hostpro.png","src":"https://hostpro.ua/","title":"Best
+        hosting from HOSTPRO"}
+      image: /uploads/hostpro.png
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/it-association.png","src":"https://www.it-association.vn.ua/","title":"IT
+        Association Vinnytsia"}
+      image: /uploads/it-association.png
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/matrica-b.svg","src":"http://matrica.vn.ua/","title":"Матриця
+        - Цифрові технології"}
+      image: /uploads/matrica-b.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 ---
