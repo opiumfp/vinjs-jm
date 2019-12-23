@@ -120,6 +120,12 @@ playlists:
   title: Playlists
 partners:
   id: partners
+  items:
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/dm.jpg","src":"https://dev-meetups.org/","title":"Dev
+        Meetups"}
+      image: /uploads/dm.jpg
   subtitle: Who Makes This Event Possible!
   title: Partners
 ---
