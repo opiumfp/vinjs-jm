@@ -1,15 +1,16 @@
 <template>
 <div class="partners">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center">
       <div 
         v-for="item in data.items" 
         :key="item.id" 
-        :set="partner = getJSONData(item.parnter)"
+        :set="partner = getJSONData(item.fields)"
         class="stat_col col-12 col-lg-3">
-        <div v-if="item.active" class="partners_item text-center">
+
+        <div v-if="item.active" class="partners_item text-center pb-4">
           <a :href="partner.src">
-            <!-- <g-image v-if="partner.image" class="partners_bg_img" :src="getImageSrc()"/> -->
+            <g-image v-if="partner.image" class="partners_bg_img" :src="item.image"/>
           </a>
         </div>
       </div>
@@ -38,9 +39,6 @@ export default {
     methods: {
       getJSONData: (str) => {
         return JSON.parse(str);
-      },
-      getImageSrc: () => {
-        return '/assets/static/uploads/matrica-b.svg'
       }
     },
 }

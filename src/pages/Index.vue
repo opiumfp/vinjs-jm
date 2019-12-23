@@ -110,7 +110,8 @@ query Conf {
       id
       items {
         active
-        parnter
+        fields
+        image (quality:80, width:200)
       }
     }
   }
