@@ -161,12 +161,19 @@ collections:
           default: ''
           required: false
           fields:
-            - label: "Parner"
-              name: "parnter"
+            - label: "Fields"
+              name: "fields"
               widget: "relation"
               collection: "partners"
               searchFields: ["title"]
               valueField: "data"
+              displayFields: ["title"]
+            - label: "Logo"
+              name: "image"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data.image"
               displayFields: ["title"]
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
 

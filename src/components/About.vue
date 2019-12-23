@@ -1,5 +1,5 @@
 <template>
-<section class="about mt-5 mb-5" :id="data.id">
+<div class="about">
  <div class="container">
    <div class="row">
     <div class="col-lg-5 mb-5 mb-lg-0 align-self-center">
@@ -16,7 +16,7 @@
     </div>
    </div>
  </div>
-</section>
+</div>
 </template>
 
 <script>

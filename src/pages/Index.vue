@@ -1,11 +1,19 @@
 <template>
   <Layout>
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
-    <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
-    <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
+    <section class="mt-5 mb-5" :id="$page.pageData.about.id">
+      <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
+    </section>
+    <section :id="$page.pageData.stat.id">
+      <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
+    </section>
     <section :id="$page.pageData.mediaTiles.id">
       <page-title class="pt-5 pb-4" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
       <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
+    </section>
+    <section :id="$page.pageData.partners.id">
+      <page-title class="pt-5 pb-4" :title="$page.pageData.partners.title" :subtitle="$page.pageData.partners.subtitle"></page-title>
+      <partners :partnersData="$page.pageData.partners"></partners>
     </section>
     <div class="container">
 
@@ -116,6 +124,7 @@ import About from "@/components/About"
 import Stat from "@/components/Stat"
 import PageTitle from "@/components/PageTitle"
 import MediaTiles from "@/components/MediaTiles"
+import Partners from "@/components/Partners"
 
 export default {
   metaInfo: {
@@ -126,11 +135,12 @@ export default {
     About,
     Stat,
     PageTitle,
-    MediaTiles
+    MediaTiles,
+    Partners
   },
   mounted() {
     // console.log('this.$page.pageData ::: ', this.$page.pageData)
-    debugger
+    // debugger
   },
 }
 </script>

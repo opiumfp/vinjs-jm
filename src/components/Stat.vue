@@ -1,5 +1,5 @@
 <template>
-<section class="stat" :id="data.id">
+<div class="stat">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
       <div class="stat_bg_prlx" v-prlx="{ fromBottom: true }">
@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 </template>
 
 <script>
@@ -41,11 +41,9 @@ export default {
     components: {
       VueMarkdown
     },
-    methods: {
-    },
     created() {
       const cols = 12;
-      this.data = this.$props.statData
+      // this.data = this.$props.statData
       this.colWidth = cols;
 
       if (this.data.items.length) {
@@ -55,7 +53,11 @@ export default {
     mounted() {
       // debugger
     },
-    methods: {},
+    computed: {
+      data() {
+        return this.$props.statData
+      }
+    },
 }
 </script>
 

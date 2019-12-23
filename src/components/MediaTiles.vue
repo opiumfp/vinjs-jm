@@ -63,8 +63,10 @@ export default {
             this.activeItem = i;
         },
     },
-    created() {
-      this.data = this.$props.mediaTilesData;
+    computed: {
+      data() {
+        return this.$props.mediaTilesData
+      }
     },
     mounted() {
       // debugger
