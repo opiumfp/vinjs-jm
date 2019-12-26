@@ -3,12 +3,15 @@
   <div class="container-fluid">
     <div class="row">
       <div 
-        class="media-tiles_item col-12 col-md-6 p-0" 
+        class="col-12 col-md-6 p-1" 
         v-for="item in data.items" 
         :key="item.id"
-        :class="(`col-lg-${( item.colDesk ?  item.colDesk : '4' )} media-tiles_item-${( item.type )}`)"
+        :class="(`col-lg-${( item.colDesk ?  item.colDesk : '4' )}`)"
         >
-        <div>
+        <div 
+          class="media-tiles_item"
+          :class="(`media-tiles_item-${( item.type )}`)"
+        >
           <template v-if="item.type === 'gallery'">
             <a :href="item.src" class="media-tiles_item_href" target="_blank">
               <g-image v-if="item.image" class="media-tiles_item_img" :src="item.image"/>
@@ -22,6 +25,7 @@
           </template>
 
           <template v-if="item.type === 'youtube'">
+            
             <youtube-video v-if="item.src" :src="item.src"></youtube-video>
           </template>
         </div>
@@ -78,10 +82,10 @@ export default {
 @import "assets/styles/base.scss";
 
 .media-tiles {
-  background-color: $dark;
   &_item {
     position: relative;
     overflow: hidden;
+    background-color: $dark;
     @include transition(all linear .15s);
     &:hover {
       .media-tiles_item_img {
@@ -110,7 +114,7 @@ export default {
         opacity: 1;
       }
     }
-    &-youtube {
+    &-youtube .youtube-video{
       opacity: .7;
       &:hover {
         opacity: .9;

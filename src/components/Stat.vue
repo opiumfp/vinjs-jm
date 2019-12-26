@@ -9,7 +9,7 @@
       </div>
     </div>
   </div>
-  <div class="container pt-5 pb-5">
+  <div class="container pt-6 pb-6">
     <div class="row justify-content-center">
       <div v-for="item in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth}`">
         <div class="stat_item text-center">

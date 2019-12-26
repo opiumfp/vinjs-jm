@@ -36,12 +36,12 @@
       </partners>
     </section>
     <section :id="$page.pageData.location.id">
-      <page-title 
+      <!-- <page-title 
         class="pt-5 pb-4" 
         :title="$page.pageData.location.title" 
         :subtitle="$page.pageData.location.subtitle"
         >
-      </page-title>
+      </page-title> -->
       <location 
         :locationData="$page.pageData.location"
         >
