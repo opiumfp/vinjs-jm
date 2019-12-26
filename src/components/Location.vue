@@ -17,7 +17,7 @@
       </div>
       <div class="row justify-content-md-center">
         <div class="col-12 col-md-11">
-          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" :src="data.mapLinkIframe"></iframe>
+          <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" :src="data.mapLinkIframe"></iframe>
           <br/>
           <small>
             <a class="location_map_link" :href="data.mapLinkDirect" target="blank">
@@ -59,6 +59,8 @@ export default {
   position: relative;
     &_logo {
       max-width: 100%;
+      // TMP
+      filter: grayscale(1) brightness(150%);
     }
   &_bg {
     position: absolute;
@@ -71,7 +73,7 @@ export default {
       transition: none!important;
     }
     &_img {
-      height: 100%;
+      min-height: 100%;
       &-portrait {
         display: none;
       }
@@ -88,6 +90,7 @@ export default {
     }
     &_wrap {
       position: absolute;
+      top: 50%;
       transform: translateY(-50%);
       width: 100%;
       &:after {
