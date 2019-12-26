@@ -50,7 +50,7 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(0,0,0,.3);
+      background-color: rgba($dark, .4);
       background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
     }
     &_image {

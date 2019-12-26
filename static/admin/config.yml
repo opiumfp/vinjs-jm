@@ -176,7 +176,24 @@ collections:
               valueField: "data.image"
               displayFields: ["title"]
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
-
+    - label: "Location"
+      name: "location"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Background", name: "image", widget: "image", required: false, default: ''}
+        - {label: "Backgound Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+        - {label: "Location Logo", name: "logo", widget: "image", required: false, default: ''}
+        - {label: "Location Name", name: "name", widget: "string", required: false, default: ''}
+        - {label: "Location Address", name: "address", widget: "string", required: false, default: ''}
+        - {label: "Map iframe Link", name: "mapLinkIframe", widget: "string", required: false, default: ''}
+        - {label: "Map Direct Link", name: "mapLinkDirect", widget: "string", required: false, default: ''}
+        - {label: "Map GoogleMap Link", name: "mapLinkGoogle", widget: "string", required: false, default: ''}
+        
 
 - name: "nav" # Used in routes, e.g., /admin/collections/blog
   label: "Nav Menu" # Used in the UI

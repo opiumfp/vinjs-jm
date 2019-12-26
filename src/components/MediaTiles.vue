@@ -78,12 +78,19 @@ export default {
 @import "assets/styles/base.scss";
 
 .media-tiles {
-  background-color: $black;
+  background-color: $dark;
   &_item {
     position: relative;
+    overflow: hidden;
     @include transition(all linear .15s);
+    &:hover {
+      .media-tiles_item_img {
+        transform: scale(1.1);
+       }
+    }
     &_img {
       width: 100%;
+      @include transition(all ease-in-out .3s);
     }
     &_overlay {
       position: absolute;
@@ -91,22 +98,22 @@ export default {
       left: 0;
       bottom: 0;
       right: 0;
-      opacity: 0;
-      background-color: rgba($black, 0);
-      @include transition(all linear .15s);
+      // opacity: 1;
+      background-color: rgba($dark, .4);
+      @include transition(all linear .2s);
       color: $white;
       &:hover {
         opacity: 1;
-        background-color: rgba($black, .3);
+        background-color: rgba($dark, .3);
       }
       @include media-breakpoint-down(lg) {
         opacity: 1;
       }
     }
     &-youtube {
-      opacity: 1;
+      opacity: .7;
       &:hover {
-        opacity: .7;
+        opacity: .9;
       }
     }
   }

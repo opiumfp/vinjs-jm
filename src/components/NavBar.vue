@@ -88,9 +88,9 @@ $nav-height: 72px;
 
 .vjs-navbar {
   height: $nav-height;
-  background-color: rgba($dark, .3) !important;
+  background-color: rgba($dark, .1) !important;
   .page-scrolled & {
-    background-color: rgba($dark, .8) !important;
+    background-color: rgba($dark, .7) !important;
   }
   @include transition(background-color linear .15s);
   .nav_dropmenu-show & {

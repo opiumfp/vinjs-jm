@@ -11,7 +11,7 @@
   </div>
   <div class="container pt-5 pb-5">
     <div class="row justify-content-center">
-      <div v-for="item in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth} pt-3 pb-3 pt-lg-5 pb-lg-5`">
+      <div v-for="item in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth}`">
         <div class="stat_item text-center">
           <div class="h3 stat_title" v-if="item.title">{{ item.title }}</div>
           <p class="stat_paragraph" v-if="item.paragraph">
@@ -107,7 +107,7 @@ export default {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($black, .4);
+        background-color: rgba($dark, .4);
       }
     }
   }

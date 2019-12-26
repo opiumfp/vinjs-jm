@@ -27,12 +27,27 @@
         class="pt-5 pb-4" 
         :title="$page.pageData.partners.title" 
         :subtitle="$page.pageData.partners.subtitle"
-        ></page-title>
+        >
+      </page-title>
       <partners 
         :partnersData="$page.pageData.partners"
         mode="large"
-        ></partners>
+        >
+      </partners>
     </section>
+    <section :id="$page.pageData.location.id">
+      <page-title 
+        class="pt-5 pb-4" 
+        :title="$page.pageData.location.title" 
+        :subtitle="$page.pageData.location.subtitle"
+        >
+      </page-title>
+      <location 
+        :locationData="$page.pageData.location"
+        >
+      </location>
+    </section>
+    
     <div class="container">
 
       <!-- Learn how to use images here: https://gridsome.org/docs/images -->
@@ -132,6 +147,18 @@ query Conf {
         image (quality:90, width:200)
       }
     }
+    location {
+      id
+      title
+      image (quality:40)
+      imagePt (quality:40)
+      logo (width: 380)
+      name
+      address
+      mapLinkDirect
+      mapLinkIframe
+      mapLinkGoogle
+    }
   }
 }
 
@@ -144,6 +171,7 @@ import Stat from "@/components/Stat"
 import PageTitle from "@/components/PageTitle"
 import MediaTiles from "@/components/MediaTiles"
 import Partners from "@/components/Partners"
+import Location from "@/components/Location"
 
 export default {
   metaInfo: {
@@ -155,7 +183,8 @@ export default {
     Stat,
     PageTitle,
     MediaTiles,
-    Partners
+    Partners,
+    Location
   },
   mounted() {
     // console.log('this.$page.pageData ::: ', this.$page.pageData)
