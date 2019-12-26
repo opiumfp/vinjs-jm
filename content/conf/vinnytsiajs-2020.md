@@ -91,7 +91,7 @@ mediaTiles:
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: VinntysiaJS 2016- Highlights
       type: youtube
-  subtitle: ''
+  subtitle: Best Meeting Experiences You've Ever Had
   title: Feel The Vibes
 playlists:
   id: playlists
