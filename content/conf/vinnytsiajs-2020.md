@@ -173,5 +173,18 @@ partners:
       image: /uploads/hostpro.png
   subtitle: Who Makes This Event Possible!
   title: Partners
+location:
+  address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
+  id: location
+  image: /uploads/20746341_468162943553628_6033740205683564980_o.jpg
+  imagePt: /uploads/wp2.jpg
+  logo: /uploads/foot_logo.png
+  mapLinkDirect: >-
+    https://www.openstreetmap.org/?mlat=49.32495&amp;mlon=28.12497#map=19/49.32495/28.12497&amp;layers=N
+  mapLinkGoogle: 'https://goo.gl/maps/4bEGz1ptRPf3FAnM9'
+  mapLinkIframe: >-
+    https://www.openstreetmap.org/export/embed.html?bbox=28.124053180217746%2C49.32419545092468%2C28.125877082347873%2C49.32569538826454&amp;layer=mapnik&amp;marker=49.32494542530611%2C28.124965131282806
+  name: Butterfly
+  title: Location
 ---
 
