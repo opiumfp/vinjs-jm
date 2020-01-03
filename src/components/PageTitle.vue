@@ -10,11 +10,11 @@ export default {
     props: {
         title: {
           type: String,
-          required: true
+          required: false
         },
         subtitle: {
           type: String,
-          required: true
+          required: false
         }
     },
     methods: {
