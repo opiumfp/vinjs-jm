@@ -1,14 +1,14 @@
 <template>
   <Layout>
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
-    <section class="mt-5 mb-5" :id="$page.pageData.about.id">
+    <section class="my-7" :id="$page.pageData.about.id">
       <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
     </section>
     <section :id="$page.pageData.stat.id">
       <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
     </section>
     <section :id="$page.pageData.mediaTiles.id">
-      <page-title class="pt-5 pb-4" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
+      <page-title class="py-7" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
       <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
     </section>
     <section :id="$page.pageData.partners.id">

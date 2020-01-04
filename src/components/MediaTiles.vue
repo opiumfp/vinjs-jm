@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row">
       <div 
-        class="col-12 col-md-6 p-1" 
+        class="col-12 col-md-6 p-0" 
         v-for="item in data.items" 
         :key="item.id"
         :class="(`col-lg-${( item.colDesk ?  item.colDesk : '4' )}`)"
@@ -86,7 +86,7 @@ export default {
     position: relative;
     overflow: hidden;
     background-color: $dark;
-    @include transition(all linear .15s);
+    @include transition(all ease-in-out .15s);
     &:hover {
       .media-tiles_item_img {
         transform: scale(1.1);

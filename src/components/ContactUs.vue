@@ -6,7 +6,7 @@
         <div class="text-center pb-4">
           <p class="h5 font-weight-normal">Follow us on social media for more information and news about the conference. See you soon!</p>
           <div class="contact-us_social-icons navbar-expand d-inline-block h4 my-3">
-            <social-icons :socialIconsData="getSocialIcons(this.socialIconsData.socialicons)"></social-icons>
+            <social-icons :socialIconsData="getSocialIcons(this.socialData.socialicons)"></social-icons>
           </div>
           <ul class="list-unstyled">
             <li> 
@@ -51,8 +51,8 @@ export default {
           required: true
         },
         socialIconsData: {
-          type: Object,
-          required: String
+          type: String,
+          required: false
         }
     },
     methods: {
@@ -67,7 +67,7 @@ export default {
       data() {
         return this.$props.contactUsData
       },
-      socialIconsData() {
+      socialData() {
         return JSON.parse(this.$props.socialIconsData)
       }
     },
