@@ -1,14 +1,17 @@
 <template>
   <Layout>
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
-    <section class="my-7" :id="$page.pageData.about.id">
+    <section 
+            class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white vh-100 d-flex align-items-center justify-content-center" 
+            :id="$page.pageData.about.id"
+    >
       <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
     </section>
     <section :id="$page.pageData.stat.id">
       <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
     </section>
-    <section :id="$page.pageData.mediaTiles.id">
-      <page-title class="py-7" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
+    <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
+      <page-title class="position-relative py-7" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
       <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
     </section>
     <section :id="$page.pageData.partners.id">
@@ -168,5 +171,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+  @import "assets/styles/base.scss";
 </style>

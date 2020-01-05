@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/functions";
+@import "assets/styles/bootstrap/custom/_variables.scss";
+@import "~bootstrap/scss/mixins";
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.vjs-bg-logo {
+  background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg');
+  background-position: 50% 60%;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: $black;
+  // background: #000 url(https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg) no-repeat fixed 50% 50%;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  &-purple:before {
+    background-color: rgba($vjs-purple, .95) ;
+  }
+  &-red:before {
+    background-color: rgba($vjs-red, .95) ;
+  }
+}

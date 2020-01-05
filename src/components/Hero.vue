@@ -14,9 +14,11 @@
       <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/> -->
       <!-- <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/> -->
     </div>
-    <div class="hero_content">
+    <div class="hero_content pt-4">
       <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
       <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
+      <h2 class="h1">Javascript Open Air</h2>
+      <h2 class="h4">July 25, 2020</h2>
       <g-image class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" immediate="true"/>
       <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
     </div>
@@ -50,7 +52,8 @@ export default {
     background-color: $dark;
   }
   &_logo {
-    width: calc(85vh - #{$nav-height});
+    width: calc(70vh - #{$nav-height});
+    opacity: 0;
   }
   &_bg {
     &::after {
@@ -60,8 +63,12 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
+      background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
+      background-position: 50% 60%, 0 0;
+      background-attachment: fixed, scroll;
+      background-size: 60vh, auto;
+      background-repeat: no-repeat, repeat;
       background-color: rgba($dark, .4);
-      background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
     }
     &_video,
     &_image {
