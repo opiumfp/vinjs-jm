@@ -2,13 +2,23 @@
 <div class="hero">
   <div class="hero_wrapper">
     <div class="hero_bg">
-      <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
-      <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
+      <video
+        class="hero_bg_video"
+        src="../tmp/vjs19.mp4"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="../tmp/vjs19.mp4" type="video/mp4">
+      </video>
+      <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/> -->
+      <!-- <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/> -->
     </div>
     <div class="hero_content">
-      <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1>
-      <h2 v-if="$props.heroData.subtitle" class="hero_subtitle">{{$props.heroData.subtitle}}</h2>
-      <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a>
+      <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
+      <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
+      <g-image class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" immediate="true"/>
+      <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
     </div>
   </div>
       <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
@@ -25,9 +35,6 @@ export default {
           required: true
         }
     },
-    mounted() {
-      // debugger
-    },
     methods: {},
 }
 </script>
@@ -42,6 +49,9 @@ export default {
     overflow: hidden;
     background-color: $dark;
   }
+  &_logo {
+    width: calc(85vh - #{$nav-height});
+  }
   &_bg {
     &::after {
       content: '';
@@ -53,6 +63,7 @@ export default {
       background-color: rgba($dark, .4);
       background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
     }
+    &_video,
     &_image {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -79,7 +90,8 @@ export default {
     position: absolute;
     color: $white;
     transform: translate(-50%, -50%);
-    top: 50%;
+    // top: calc(50% - $navbar-h);
+    top: calc(50% - #{$nav-height/2});
     left: 50%;
     text-align: center;
   }

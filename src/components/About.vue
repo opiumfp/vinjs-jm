@@ -1,6 +1,6 @@
 <template>
 <div class="about">
- <div class="container">
+ <div class="container" :style="`background: url(${this.$props.aboutData.logo.src}) no-repeat fixed 50% 50%;`">
    <div class="row">
     <div class="col-lg-5 mb-5 mb-lg-0 align-self-center">
       <div class="about_logo text-center">
@@ -10,7 +10,7 @@
     <div class="col-lg-7 align-self-center">
       <div class="about_descrition">
         <h1>{{ data.title }}</h1>
-        <p>{{ data.paragraph }}</p>
+        <p class="my-4">{{ data.paragraph }}</p>
         <a :href="data.link" class="btn btn-success my-2 my-sm-0">{{ data.linkTitle }}</a>
       </div>
     </div>

@@ -84,8 +84,6 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 
-$nav-height: 72px;
-
 .vjs-navbar {
   height: $nav-height;
   background-color: rgba($dark, .1) !important;
