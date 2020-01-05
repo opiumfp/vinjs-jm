@@ -21,7 +21,7 @@ about:
   paragraph: "The fifth annual Javascript conference, that will be held in the usual Open-Air format. The event is organized and driven by Vinnytsia JavaScript Community.\r\n\n\rThis summer meet the Conference dedicated to JavaScript development. We took care of everything to provide all conference guests with a comfortable location, appropriate meeting spaces, for you just to have summer rest and enjoy networking."
   title: VinnytsiaJS 2020
 stat:
-  image: /uploads/67446702_880678045635447_937811533625294848_o.jpg
+  image: /uploads/vinnytsiajs-2019-intro-0003.jpg
   imagePt: /uploads/vjs-portrait.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
