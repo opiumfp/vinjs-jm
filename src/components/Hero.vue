@@ -21,9 +21,9 @@
     <div class="hero_content pt-4">
       <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
       <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
-      <h2 class="h1">Javascript Open Air</h2>
-      <h2 class="h4">July 25, 2020</h2>
+      <h2 class="h3 text-uppercase">July 25, 2020</h2>
       <g-image class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" immediate="true"/>
+      <h2 class="h1 text-uppercase">Javascript Open Air</h2>
       <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
     </div>
   </div>
@@ -50,23 +50,27 @@ export default {
       }
     },
     mounted() {
+      const herovideo = this.$refs.herovideo;
+
       if (this.isBrowser && !this.isIE) {
-        this.$refs.herovideo.play();
+        herovideo.play();
       }
 
+      let videoHide = false;
+      let windowHeight = window.innerHeight+100;
+
       window.addEventListener('scroll', () => {
-          let pageScrolled = false;
-          let windowHeight = window.innerHeight;
-          // debugger
+          if ( window.scrollY < windowHeight ) {
+            
+            if (!videoHide) return false;
 
-          if ( window.scrollY < windowHeight) {
             document.querySelector('body').classList.remove('hero-hide')
-            pageScrolled = false;
-          } else {
-            if (pageScrolled) return;
-
+            herovideo.play();
+            videoHide = false;
+          } else if (!videoHide) {
             document.querySelector('body').classList.add('hero-hide')
-            pageScrolled = true;
+            herovideo.pause();
+            videoHide = true;
           }
       });
 
