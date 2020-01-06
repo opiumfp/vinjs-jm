@@ -3,6 +3,7 @@
   <div class="hero_wrapper">
     <div class="hero_bg">
       <video
+        v-if="isBrowser && !isIE"
         class="hero_bg_video"
         src="../tmp/vjs19.mp4"
         autoplay="autoplay"
@@ -10,9 +11,11 @@
         loop="loop"
       >
         <source src="../tmp/vjs19.mp4" type="video/mp4">
+        <source src="../tmp/vjs19.ogg" type="video/ogg">
+        <source src="../tmp/vjs19.webm" type="video/webm">
       </video>
-      <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/> -->
-      <!-- <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/> -->
+      <g-image v-else-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
     </div>
     <div class="hero_content pt-4">
       <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
@@ -29,6 +32,7 @@
 
 <script>
 
+import { isMobile, isIE, isBrowser } from 'mobile-device-detect'
 
 export default {
     props: {
@@ -36,6 +40,13 @@ export default {
           type: Object,
           required: true
         }
+    },
+    data () {
+      return {
+        isBrowser: isBrowser,
+        isMobile: isMobile,
+        isIE: isIE
+      }
     },
     methods: {},
 }
@@ -49,7 +60,7 @@ export default {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: $dark;
+    background-color: $black;
   }
   &_logo {
     width: calc(70vh - #{$nav-height});
