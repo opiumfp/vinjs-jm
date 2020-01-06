@@ -76,12 +76,17 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      // background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
+      background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
       background-position: 50% 60%, 0 0;
       background-attachment: fixed, scroll;
       background-size: 60vh, auto;
       background-repeat: no-repeat, repeat;
       background-color: rgba($dark, .4);
+    }
+    &_video {
+      html.ie & {
+        display: none;
+      }
     }
     &_video,
     &_image {
