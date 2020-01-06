@@ -2,8 +2,8 @@
 <div class="location">
   <div v-if="data.image" class="location_bg">
     <div class="location_bg_wrap">
-      <div class="location_bg_prlx" v-prlx="{ fromBottom: true }">
-        <g-image v-if="data.image" class="location_bg_img location_bg_img-landscape" :src="data.image" immediate="true"/>
+      <div class="location_bg_prlx" v-prlx="{ fromBottom: true, disabled: isNotPrlx }">
+        <g-image v-if="data.image" class="location_bg_img location_bg_img-landscape" :src="data.image"/>
         <g-image v-if="data.imagePt" class="location_bg_img location_bg_img-portrait" :src="data.imagePt"/>
       </div>
     </div>
@@ -61,12 +61,25 @@
 
 <script>
 
+import { isMobile, isIE, isBrowser, isEdge } from 'mobile-device-detect'
+
 export default {
     props: {
         locationData: {
           type: Object,
           required: true
         }
+    },
+    data () {
+      return {
+        isBrowser: isBrowser,
+        isMobile: isMobile,
+        isEdge: isEdge,
+        isIE: isIE
+      }
+    },
+    created() {
+      this.isNotPrlx = (this.isEdge || this.IE);
     },
     mounted() {
       // debugger

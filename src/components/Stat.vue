@@ -2,7 +2,7 @@
 <div class="stat">
   <div v-if="data.image" class="stat_bg">
     <div class="stat_bg_wrap">
-      <div class="stat_bg_prlx" v-prlx="{ fromBottom: true }">
+      <div class="stat_bg_prlx" v-prlx="{ fromBottom: true,  disabled: isNotPrlx }">
       <!-- <div> -->
         <g-image v-if="data.image" class="stat_bg_img stat_bg_img-landscape" :src="data.image" immediate="true"/>
         <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt"/>
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import { isMobile, isIE, isBrowser, isEdge } from 'mobile-device-detect'
+
 import VueMarkdown from 'vue-markdown'
 
 import Vue from 'vue'
@@ -41,7 +43,17 @@ export default {
     components: {
       VueMarkdown
     },
+    data () {
+      return {
+        isBrowser: isBrowser,
+        isMobile: isMobile,
+        isEdge: isEdge,
+        isIE: isIE
+      }
+    },
     created() {
+      this.isNotPrlx = (this.isEdge || this.IE);
+
       const cols = 12;
       // this.data = this.$props.statData
       this.colWidth = cols;

@@ -130,7 +130,7 @@ export default {
     }
     &_video {
       display: none;
-      html.browser & {
+      html.browser:not(.ie):not(.edge) & {
         display: block;
       }
     }
