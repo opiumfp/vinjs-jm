@@ -42,6 +42,7 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 .about {
+  width: 100%;
   &_logo {
     max-width: 100%;
   }

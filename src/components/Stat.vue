@@ -72,8 +72,8 @@ $circle: $spacer*12;
   background-color: $black;
   &_title {
     position: relative;
-    min-height: $circle;
-    max-width: $circle;
+    height: $circle;
+    width: $circle;
     display: flex;
     align-items: center;
     justify-content: center;

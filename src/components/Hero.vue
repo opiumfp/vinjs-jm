@@ -55,8 +55,10 @@ export default {
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 .hero {
+  height: 100vh;
   &_wrapper {
-    position: relative;
+    position: fixed;
+    // position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -74,7 +76,7 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
+      // background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
       background-position: 50% 60%, 0 0;
       background-attachment: fixed, scroll;
       background-size: 60vh, auto;
