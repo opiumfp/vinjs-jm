@@ -2,7 +2,10 @@
 <div class="hero">
   <div class="hero_wrapper">
     <div class="hero_bg">
-      <template v-if="isBrowser && !isIE && !isEdge">
+      <template v-if="!isBrowser || isIE || isEdge">
+        <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      </template>
+      <template v-else>
         <video
           ref="herovideo"
           class="hero_bg_video"
@@ -15,9 +18,6 @@
           <source src="../tmp/vjs19.ogg" type="video/ogg">
           <source src="../tmp/vjs19.webm" type="video/webm">
         </video>
-      </template>
-      <template v-else>
-        <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
       </template>
       <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
     </div>
@@ -129,13 +129,16 @@ export default {
       background-color: rgba($dark, .4);
     }
     &_video {
-      html.mobile &,
-      html.edge &,
-      html.ie & {
-        display: none;
+      display: none;
+      html.browser & {
+        display: block;
       }
     }
-    &_video,
+    &_video {
+      min-width: 100%;
+      min-height: 100vh;
+    }
+    // &_video,
     &_image {
       position: absolute;
       transform: translate(-50%, -50%);
