@@ -50,29 +50,28 @@ export default {
       }
     },
     mounted() {
+      const showVideo = (this.isBrowser && !this.isIE);
       const herovideo = this.$refs.herovideo;
 
-      if (this.isBrowser && !this.isIE) {
+      if (showVideo) {
         herovideo.play();
+
+        let videoHide = false;
+        let windowHeight = window.innerHeight;
+
+        window.addEventListener('scroll', () => {
+            if ( window.scrollY < windowHeight ) {
+
+              if (!videoHide) return false;
+              herovideo.play();
+              videoHide = false;
+            } else if (!videoHide) {
+              herovideo.pause();
+              videoHide = true;
+            }
+        });
       }
 
-      let videoHide = false;
-      let windowHeight = window.innerHeight+100;
-
-      window.addEventListener('scroll', () => {
-          if ( window.scrollY < windowHeight ) {
-            
-            if (!videoHide) return false;
-
-            document.querySelector('body').classList.remove('hero-hide')
-            herovideo.play();
-            videoHide = false;
-          } else if (!videoHide) {
-            document.querySelector('body').classList.add('hero-hide')
-            herovideo.pause();
-            videoHide = true;
-          }
-      });
 
     },
     methods: {},
@@ -84,9 +83,6 @@ export default {
 .hero {
   height: 100vh;
   &_wrapper {
-    .hero-hide & {
-      display: none;
-    }
     position: fixed;
     // position: relative;
     width: 100%;
