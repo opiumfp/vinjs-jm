@@ -1,7 +1,7 @@
 <template>
 <div class="page-title text-center">
-  <h2 v-if="$props.title">{{ $props.title }}</h2>
-  <h6 v-if="$props.subtitle">{{ $props.subtitle }}</h6>
+  <h2 v-if="$props.title" class="h2">{{ $props.title }}</h2>
+  <h4 v-if="$props.subtitle" class="h5">{{ $props.subtitle }}</h4>
 </div>
 </template>
 

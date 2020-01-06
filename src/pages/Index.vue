@@ -13,12 +13,12 @@
         <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
       </section>
       <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
-        <page-title class="position-relative py-7" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
+        <page-title class="position-relative py-8" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
       <section :id="$page.pageData.partners.id">
         <page-title 
-          class="pt-5 pb-4" 
+          class="pt-6 pb-4" 
           :title="$page.pageData.partners.title" 
           :subtitle="$page.pageData.partners.subtitle"
           ></page-title>
@@ -29,7 +29,7 @@
       </section>
       <section :id="$page.pageData.partners.id">
         <page-title 
-          class="pt-5 pb-4" 
+          class="pt-6 pb-4" 
           :title="$page.pageData.partners.title" 
           :subtitle="$page.pageData.partners.subtitle"
           >
