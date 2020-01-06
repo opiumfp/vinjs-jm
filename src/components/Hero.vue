@@ -2,20 +2,23 @@
 <div class="hero">
   <div class="hero_wrapper">
     <div class="hero_bg">
-      <video
-        ref="herovideo"
-        v-if="isVideoShow"
-        class="hero_bg_video"
-        src="../tmp/vjs19.mp4"
-        muted="muted"
-        loop="loop"
-      >
-        <!-- autoplay="autoplay" -->
-        <source src="../tmp/vjs19.mp4" type="video/mp4">
-        <source src="../tmp/vjs19.ogg" type="video/ogg">
-        <source src="../tmp/vjs19.webm" type="video/webm">
-      </video>
-      <g-image v-if="!isVideoShow && $props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      <template v-if="isBrowser && !isIE && !isEdge">
+        <video
+          ref="herovideo"
+          class="hero_bg_video"
+          src="../tmp/vjs19.mp4"
+          muted="muted"
+          loop="loop"
+        >
+          <!-- autoplay="autoplay" -->
+          <source src="../tmp/vjs19.mp4" type="video/mp4">
+          <source src="../tmp/vjs19.ogg" type="video/ogg">
+          <source src="../tmp/vjs19.webm" type="video/webm">
+        </video>
+      </template>
+      <template v-else>
+        <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      </template>
       <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
     </div>
     <div class="hero_content pt-4">
@@ -78,13 +81,7 @@ export default {
         });
       }
 
-
-    },
-    methods: {
-      isVideoShow: () => {
-        return (this.isBrowser && !this.isIE && !this.isEdge)
-      }
-    },
+    }
 }
 </script>
 
@@ -103,7 +100,7 @@ export default {
     height: 100vh;
     overflow: hidden;
     background-color: $black;
-    html.browser & {
+    html.browser:not(.edge):not(.ie) & {
       position: fixed;
     }
   }
