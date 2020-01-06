@@ -14,7 +14,7 @@
       <page-title class="position-relative py-7" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
       <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
     </section>
-    <section class="section-bg" :id="$page.pageData.partners.id">
+    <section :id="$page.pageData.partners.id">
       <page-title 
         class="pt-5 pb-4" 
         :title="$page.pageData.partners.title" 
@@ -25,7 +25,7 @@
         mode="xlarge"
         ></partners>
     </section>
-    <section class="section-bg" :id="$page.pageData.partners.id">
+    <section :id="$page.pageData.partners.id">
       <page-title 
         class="pt-5 pb-4" 
         :title="$page.pageData.partners.title" 
@@ -39,14 +39,14 @@
       </partners>
     </section>
     <hr>
-    <section class="section-bg">
+    <section>
       <page-title 
         class="pt-5 pb-3" 
         title="Contact Us"
       ></page-title>
       <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
     </section>
-    <section class="section-bg" :id="$page.pageData.location.id">
+    <section :id="$page.pageData.location.id">
       <location 
         :locationData="$page.pageData.location"
         >

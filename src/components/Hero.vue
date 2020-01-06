@@ -3,13 +3,14 @@
   <div class="hero_wrapper">
     <div class="hero_bg">
       <video
+        ref="herovideo"
         v-if="isBrowser && !isIE"
         class="hero_bg_video"
         src="../tmp/vjs19.mp4"
-        autoplay="autoplay"
         muted="muted"
         loop="loop"
       >
+        <!-- autoplay="autoplay" -->
         <source src="../tmp/vjs19.mp4" type="video/mp4">
         <source src="../tmp/vjs19.ogg" type="video/ogg">
         <source src="../tmp/vjs19.webm" type="video/webm">
@@ -48,6 +49,28 @@ export default {
         isIE: isIE
       }
     },
+    mounted() {
+      if (this.isBrowser && !this.isIE) {
+        this.$refs.herovideo.play();
+      }
+
+      window.addEventListener('scroll', () => {
+          let pageScrolled = false;
+          let windowHeight = window.innerHeight;
+          // debugger
+
+          if ( window.scrollY < windowHeight) {
+            document.querySelector('body').classList.remove('hero-hide')
+            pageScrolled = false;
+          } else {
+            if (pageScrolled) return;
+
+            document.querySelector('body').classList.add('hero-hide')
+            pageScrolled = true;
+          }
+      });
+
+    },
     methods: {},
 }
 </script>
@@ -57,6 +80,9 @@ export default {
 .hero {
   height: 100vh;
   &_wrapper {
+    .hero-hide & {
+      display: none;
+    }
     position: fixed;
     // position: relative;
     width: 100%;
@@ -89,6 +115,7 @@ export default {
       background-color: rgba($dark, .4);
     }
     &_video {
+      html.mobile &,
       html.ie & {
         display: none;
       }

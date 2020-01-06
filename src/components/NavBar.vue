@@ -45,19 +45,18 @@ export default {
         document.querySelector('body').classList.remove('nav_dropmenu-show')
       }, false);
 
-      window.onscroll = function(ev) {
-          let pageScrolled = false;
+      window.addEventListener('scroll', () => {
+        let pageScrolled = false;
+        if ( window.scrollY === 0 ) {
+          document.querySelector('body').classList.remove('page-scrolled')
+          pageScrolled = false;
+        } else {
+          if (pageScrolled) return;
 
-          if ( window.scrollY === 0 ) {
-            document.querySelector('body').classList.remove('page-scrolled')
-            pageScrolled = false;
-          } else {
-            if (pageScrolled) return;
-
-            document.querySelector('body').classList.add('page-scrolled')
-            pageScrolled = true;
-          }
-      };
+          document.querySelector('body').classList.add('page-scrolled')
+          pageScrolled = true;
+        }
+      })
     },
     methods: {
       getSocialIcons: (str) => {
