@@ -64,14 +64,14 @@ export default {
             if ( window.scrollY < windowHeight ) {
               
               if (!videoHide) return false;
-              console.log('HIDE')
+              // console.log('HIDE')
 
-              document.querySelector('body').classList.remove('hero-hide')
+              // document.querySelector('body').classList.remove('hero-hide')
               herovideo.play();
               videoHide = false;
             } else if (!videoHide) {
-              console.log('SHOW')
-              document.querySelector('body').classList.add('hero-hide')
+              // console.log('SHOW')
+              // document.querySelector('body').classList.add('hero-hide')
               herovideo.pause();
               videoHide = true;
             }
@@ -93,17 +93,19 @@ export default {
 .hero {
   height: 100vh;
   &_wrapper {
-    .hero-hide & {
-      display: none;
-      // visibility: hidden;
-      // z-index: -100;
-    }
-    // position: fixed;
+    // .hero-hide & {
+    //   display: none;
+    //   // visibility: hidden;
+    //   // z-index: -100;
+    // }
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: $black;
+    html.browser & {
+      position: fixed;
+    }
   }
   &_logo {
     width: calc(70vh - #{$nav-height});
