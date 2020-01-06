@@ -22,7 +22,7 @@ query {
 
 <script>
 import NavBar from "@/components/NavBar"
-import { isMobile, isMobileOnly, isTablet, isIE } from 'mobile-device-detect'
+import { isMobile, isMobileOnly, isTablet, isIE, isEdge } from 'mobile-device-detect'
 
 
 export default {
@@ -39,6 +39,7 @@ export default {
       isMobile: isMobile,
       isMobileOnly: isMobileOnly,
       isTablet: isTablet,
+      isEdge: isEdge,
       isIE: isIE
     }
   },
@@ -50,6 +51,7 @@ export default {
     isMobileOnly && htmlTag.classList.add('mobile-only');
     isTablet && htmlTag.classList.add('tablet');
     isIE && htmlTag.classList.add('ie');
+    isEdge && htmlTag.classList.add('edge');
     // debugger
   }
 }

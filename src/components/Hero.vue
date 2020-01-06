@@ -4,7 +4,7 @@
     <div class="hero_bg">
       <video
         ref="herovideo"
-        v-if="isBrowser && !isIE"
+        v-if="isVideoShow"
         class="hero_bg_video"
         src="../tmp/vjs19.mp4"
         muted="muted"
@@ -15,7 +15,7 @@
         <source src="../tmp/vjs19.ogg" type="video/ogg">
         <source src="../tmp/vjs19.webm" type="video/webm">
       </video>
-      <g-image v-else-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
+      <g-image v-if="!isVideoShow && $props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
       <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
     </div>
     <div class="hero_content pt-4">
@@ -33,7 +33,7 @@
 
 <script>
 
-import { isMobile, isIE, isBrowser } from 'mobile-device-detect'
+import { isMobile, isIE, isBrowser, isEdge } from 'mobile-device-detect'
 
 export default {
     props: {
@@ -46,11 +46,12 @@ export default {
       return {
         isBrowser: isBrowser,
         isMobile: isMobile,
+        isEdge: isEdge,
         isIE: isIE
       }
     },
     mounted() {
-      const showVideo = (this.isBrowser && !this.isIE);
+      const showVideo = (this.isBrowser && !this.isIE && !this.isEdge);
       const herovideo = this.$refs.herovideo;
 
       if (showVideo) {
@@ -61,11 +62,16 @@ export default {
 
         window.addEventListener('scroll', () => {
             if ( window.scrollY < windowHeight ) {
-
+              
               if (!videoHide) return false;
+              console.log('HIDE')
+
+              document.querySelector('body').classList.remove('hero-hide')
               herovideo.play();
               videoHide = false;
             } else if (!videoHide) {
+              console.log('SHOW')
+              document.querySelector('body').classList.add('hero-hide')
               herovideo.pause();
               videoHide = true;
             }
@@ -74,7 +80,11 @@ export default {
 
 
     },
-    methods: {},
+    methods: {
+      isVideoShow: () => {
+        return (this.isBrowser && !this.isIE && !this.isEdge)
+      }
+    },
 }
 </script>
 
@@ -83,8 +93,13 @@ export default {
 .hero {
   height: 100vh;
   &_wrapper {
-    position: fixed;
-    // position: relative;
+    .hero-hide & {
+      display: none;
+      // visibility: hidden;
+      // z-index: -100;
+    }
+    // position: fixed;
+    position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -116,6 +131,7 @@ export default {
     }
     &_video {
       html.mobile &,
+      html.edge &,
       html.ie & {
         display: none;
       }
