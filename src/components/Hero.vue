@@ -123,12 +123,13 @@ export default {
       // background-repeat: no-repeat, repeat;
 
 
-      background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
+      // background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
       background-repeat: repeat;
 
       background-color: rgba($dark, .4);
     }
     &_video {
+      filter: blur(5px);
       display: none;
       html.browser:not(.ie):not(.edge) & {
         display: block;
