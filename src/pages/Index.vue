@@ -2,10 +2,9 @@
   <Layout>
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
     <div class="layer layer-content">
-
-      <section 
-              class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white vh-100 d-flex align-items-center justify-content-center" 
-              :id="$page.pageData.about.id"
+      <section
+        class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white vh-100 d-flex align-items-center justify-content-center"
+        :id="$page.pageData.about.id"
       >
         <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
       </section>
@@ -13,46 +12,38 @@
         <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
       </section>
       <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
-        <page-title class="position-relative py-8" :title="$page.pageData.mediaTiles.title" :subtitle="$page.pageData.mediaTiles.subtitle"></page-title>
+        <page-title
+          class="position-relative py-8"
+          :title="$page.pageData.mediaTiles.title"
+          :subtitle="$page.pageData.mediaTiles.subtitle"
+        ></page-title>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
       <section :id="$page.pageData.partners.id">
-        <page-title 
-          class="pt-6 pb-4" 
-          :title="$page.pageData.partners.title" 
+        <page-title
+          class="pt-6 pb-4"
+          :title="$page.pageData.partners.title"
           :subtitle="$page.pageData.partners.subtitle"
-          ></page-title>
-        <partners 
-          :partnersData="$page.pageData.partners"
-          mode="xlarge"
-          ></partners>
+        ></page-title>
+        <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
       </section>
       <section :id="$page.pageData.partners.id">
-        <page-title 
-          class="pt-6 pb-4" 
-          :title="$page.pageData.partners.title" 
+        <page-title
+          class="pt-6 pb-4"
+          :title="$page.pageData.partners.title"
           :subtitle="$page.pageData.partners.subtitle"
-          >
-        </page-title>
-        <partners 
-          :partnersData="$page.pageData.partners"
-          mode="large"
-          >
-        </partners>
-      </section>
-      <hr>
-      <section>
-        <page-title 
-          class="pt-5 pb-3" 
-          title="Contact Us"
         ></page-title>
+        <partners :partnersData="$page.pageData.partners" mode="large"></partners>
+      </section>
+      <hr />
+      <section>
+        <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
         <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
       </section>
       <section :id="$page.pageData.location.id">
-        <location 
-          :locationData="$page.pageData.location"
-          >
-        </location>
+        <hr class="col-md-6">
+        <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
+        <location :locationData="$page.pageData.location"></location>
       </section>
     </div>
   </Layout>
@@ -143,18 +134,18 @@ query Conf {
 </page-query>
 
 <script>
-import Hero from "@/components/Hero"
-import About from "@/components/About"
-import Stat from "@/components/Stat"
-import PageTitle from "@/components/PageTitle"
-import MediaTiles from "@/components/MediaTiles"
-import Partners from "@/components/Partners"
-import Location from "@/components/Location"
-import ContactUs from "@/components/ContactUs"
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Stat from "@/components/Stat";
+import PageTitle from "@/components/PageTitle";
+import MediaTiles from "@/components/MediaTiles";
+import Partners from "@/components/Partners";
+import Location from "@/components/Location";
+import ContactUs from "@/components/ContactUs";
 
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Hello, world!"
   },
   components: {
     Hero,
@@ -169,15 +160,15 @@ export default {
   mounted() {
     // console.log('this.$page.pageData ::: ', this.$page.pageData)
     // debugger
-  },
-}
+  }
+};
 </script>
 
 <style scoped lang="scss">
-  @import "assets/styles/base.scss";
+@import "assets/styles/base.scss";
 
-  .layer {
-    position: relative;
-    background: $body-bg;
-  }
+.layer {
+  position: relative;
+  background: $body-bg;
+}
 </style>

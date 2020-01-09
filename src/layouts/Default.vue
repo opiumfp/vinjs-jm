@@ -21,40 +21,69 @@ query {
 </static-query>
 
 <script>
+import { store, mutations } from "~/stores/store";
 import NavBar from "@/components/NavBar"
 import { isMobile, isMobileOnly, isTablet, isIE, isEdge, isBrowser } from 'mobile-device-detect'
 
 
 export default {
+  data () {
+    return {
+      deviceData: {
+        isMobile: isMobile,
+        isMobileOnly: isMobileOnly,
+        isTablet: isTablet,
+        isEdge: isEdge,
+        isBrowser: isBrowser,
+        isIE: isIE
+      }
+    }
+  },
   components: {
     NavBar
   },
   methods: {
     getNav: (str) => {
       return JSON.parse(str)
+    },
+    setDevice: mutations.setDevice
+  },
+  computed: {
+    device() {
+      return store.device;
     }
   },
-  data () {
-    return {
-      isMobile: isMobile,
-      isMobileOnly: isMobileOnly,
-      isTablet: isTablet,
-      isEdge: isEdge,
-      isBrowser: isBrowser,
-      isIE: isIE
-    }
+  created() {
+    this.deviceData.noPrlx = this.deviceData.isEdge || this.deviceData.IE;
+    this.deviceData.isShowVideo = this.deviceData.isBrowser && !this.deviceData.isIE && !this.deviceData.isEdge;
+
+    this.setDevice(this.deviceData);
   },
   mounted() {
-    // debugger;
     let htmlTag = document.querySelector('html');
 
-    isMobile && htmlTag.classList.add('mobile');
-    isMobileOnly && htmlTag.classList.add('mobile-only');
-    isTablet && htmlTag.classList.add('tablet');
-    isIE && htmlTag.classList.add('ie');
-    isBrowser && htmlTag.classList.add('browser');
-    isEdge && htmlTag.classList.add('edge');
-    // debugger
+
+    this.device.isMobile && htmlTag.classList.add('mobile');
+    this.device.isMobileOnly && htmlTag.classList.add('mobile-only');
+    this.device.isTablet && htmlTag.classList.add('tablet');
+    this.device.isBrowser && htmlTag.classList.add('browser');
+    this.device.isIE && htmlTag.classList.add('ie');
+    this.device.isEdge && htmlTag.classList.add('edge');
+
+    // Anchor bahavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    	anchor.addEventListener('click', function (e) {
+
+          let target = document.querySelector(this.getAttribute('href'));
+          if (!target) return false;
+
+          e.preventDefault();
+          document.querySelector('body').classList.remove('nav_dropmenu-show');
+        	target.scrollIntoView({
+           	    behavior: 'smooth'
+        	});
+      	});
+});
   }
 }
 </script>

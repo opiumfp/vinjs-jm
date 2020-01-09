@@ -20,14 +20,6 @@
             <li>
               <a href="mailto:info@vinnytsiajs.org">info@vinnytsiajs.org</a>
             </li>
-            <li>
-              <address>
-                <hr class="my-4">
-                <span>Location: </span>
-                <a class="lead" href="http://butterfly.vn.ua/" target="_blank">Recreation base "Butterfly"</a>
-                <br/><span>20km Khmel'nyts'ke hwy, Sadove, Ukraine</span>
-              </address>
-            </li>
           </ul>
         </div>
       </div>

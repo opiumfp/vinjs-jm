@@ -27,6 +27,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    box-shadow: inset 0 0 15px rgba($black, .7);
   }
   &-purple:before {
     background-color: rgba($vjs-purple, .95) ;

@@ -1,88 +1,93 @@
 <template>
-<div class="hero">
-  <div class="hero_wrapper">
-    <div class="hero_bg">
-      <template v-if="!isBrowser || isIE || isEdge">
-        <g-image v-if="$props.heroData.image" class="hero_bg_image hero_bg_image-landscape" :src="$props.heroData.image"/>
-      </template>
-      <template v-else>
-        <video
-          ref="herovideo"
-          class="hero_bg_video"
-          src="../tmp/vjs19.mp4"
-          muted="muted"
-          loop="loop"
-        >
-          <!-- autoplay="autoplay" -->
-          <source src="../tmp/vjs19.mp4" type="video/mp4">
-          <source src="../tmp/vjs19.ogg" type="video/ogg">
-          <source src="../tmp/vjs19.webm" type="video/webm">
-        </video>
-      </template>
-      <g-image v-if="$props.heroData.imagePt" class="hero_bg_image hero_bg_image-portrait" :src="$props.heroData.imagePt"/>
+  <div class="hero">
+    <div class="hero_wrapper">
+      <div class="hero_bg">
+        <template v-if="!device.isShowVideo">
+          <g-image
+            v-if="$props.heroData.image"
+            class="hero_bg_image hero_bg_image-landscape"
+            :src="$props.heroData.image"
+          />
+        </template>
+        <template v-else>
+          <video
+            ref="herovideo"
+            class="hero_bg_video"
+            src="../tmp/vjs19.mp4"
+            muted="muted"
+            loop="loop"
+          >
+            <!-- autoplay="autoplay" -->
+            <source src="../tmp/vjs19.mp4" type="video/mp4" />
+            <source src="../tmp/vjs19.ogg" type="video/ogg" />
+            <source src="../tmp/vjs19.webm" type="video/webm" />
+          </video>
+        </template>
+        <g-image
+          v-if="$props.heroData.imagePt"
+          class="hero_bg_image hero_bg_image-portrait"
+          :src="$props.heroData.imagePt"
+        />
+      </div>
+      <div class="hero_content pt-4">
+        <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
+        <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
+        <h2 class="h3 text-uppercase">July 25, 2020</h2>
+        <g-image
+          class="hero_logo d-block mx-auto my-4"
+          src="../../assets/images/logo/vinnytsiajs-logo.svg"
+          immediate="true"
+        />
+        <h2 class="h1 text-uppercase">Javascript Open Air</h2>
+        <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
+      </div>
     </div>
-    <div class="hero_content pt-4">
-      <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
-      <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
-      <h2 class="h3 text-uppercase">July 25, 2020</h2>
-      <g-image class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" immediate="true"/>
-      <h2 class="h1 text-uppercase">Javascript Open Air</h2>
-      <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
-    </div>
+    <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
   </div>
-      <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
-</div>
 </template>
 
 <script>
-
-import { isMobile, isIE, isBrowser, isEdge } from 'mobile-device-detect'
+import { store } from "~/stores/store";
 
 export default {
-    props: {
-        heroData: {
-          type: Object,
-          required: true
-        }
-    },
-    data () {
-      return {
-        isBrowser: isBrowser,
-        isMobile: isMobile,
-        isEdge: isEdge,
-        isIE: isIE
-      }
-    },
-    mounted() {
-      const showVideo = (this.isBrowser && !this.isIE && !this.isEdge);
-      const herovideo = this.$refs.herovideo;
-
-      if (showVideo) {
-        herovideo.play();
-
-        let videoHide = false;
-        let windowHeight = window.innerHeight;
-
-        window.addEventListener('scroll', () => {
-            if ( window.scrollY < windowHeight ) {
-              
-              if (!videoHide) return false;
-              // console.log('HIDE')
-
-              // document.querySelector('body').classList.remove('hero-hide')
-              herovideo.play();
-              videoHide = false;
-            } else if (!videoHide) {
-              // console.log('SHOW')
-              // document.querySelector('body').classList.add('hero-hide')
-              herovideo.pause();
-              videoHide = true;
-            }
-        });
-      }
-
+  props: {
+    heroData: {
+      type: Object,
+      required: true
     }
-}
+  },
+  computed: {
+    device() {
+      return store.device;
+    }
+  },
+  mounted() {
+    this.herovideo = this.$refs.herovideo;
+    
+    if (this.device.isShowVideo) {
+      this.herovideo.play();
+
+      let videoHide = false;
+      let windowHeight = window.innerHeight;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < windowHeight) {
+          if (!videoHide) return false;
+          // console.log('HIDE')
+
+          // document.querySelector('body').classList.remove('hero-hide')
+          this.herovideo.play();
+          videoHide = false;
+        } else if (!videoHide) {
+          // console.log('SHOW')
+          // document.querySelector('body').classList.add('hero-hide')
+          this.herovideo.pause();
+          videoHide = true;
+        }
+      });
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
@@ -110,7 +115,7 @@ export default {
   }
   &_bg {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       bottom: 0;
@@ -122,14 +127,13 @@ export default {
       // background-size: 60vh, auto;
       // background-repeat: no-repeat, repeat;
 
-
-      // background-image: url('../../assets/images/misc/grid_stripes_horizontal.png');
+      background-image: url("../../assets/images/misc/grid_stripes_horizontal.png");
       background-repeat: repeat;
 
-      background-color: rgba($dark, .4);
+      background-color: rgba($dark, 0.4);
     }
     &_video {
-      filter: blur(5px);
+      // filter: blur(5px);
       display: none;
       html.browser:not(.ie):not(.edge) & {
         display: block;
@@ -174,5 +178,4 @@ export default {
   @include media-breakpoint-down(lg) {
   }
 }
-
 </style>
