@@ -64,7 +64,7 @@ mediaTiles:
       image: /uploads/wp1.jpg
       src: 'https://www.youtube.com/watch?v=2bAmvd337CM'
       title: VinntysiaJS 2018 - Highlights
-      type: youtube
+      type: youtubePopup
     - active: 'true'
       colDesk: 6
       image: /uploads/wp1.jpg
@@ -77,7 +77,7 @@ mediaTiles:
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
       src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
       title: VinntysiaJS 2017 - Highlights
-      type: youtube
+      type: youtubePopup
     - active: 'true'
       colDesk: 4
       image: /uploads/wp4.jpg
@@ -90,7 +90,7 @@ mediaTiles:
       image: /uploads/wp1.jpg
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: VinntysiaJS 2016- Highlights
-      type: youtube
+      type: youtubePopup
   subtitle: Best Meeting Experiences You've Ever Had
   title: Feel The Vibes
 playlists:
