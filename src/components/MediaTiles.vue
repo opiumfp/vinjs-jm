@@ -9,39 +9,45 @@
           :class="(`col-lg-${( item.colDesk ?  item.colDesk : '4' )}`)"
         >
           <div class="media-tiles_item" :class="(`media-tiles_item-${( item.type )}`)">
-            <template v-if="item.type === 'gallery'">
-              <a :href="item.src" class="media-tiles_item_href" target="_blank">
+            <template v-if="item.type === 'gallery' || item.type ===  'youtubePopup'">
+              <a
+                :href="item.src"
+                class="media-tiles_item_href"
+                target="_blank"
+                @click="linkClick($event, item.type, item.src)"
+              >
                 <g-image v-if="item.image" class="media-tiles_item_img" :src="item.image" />
                 <div
                   class="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center"
                 >
                   <div class="media-tiles_item_overlay_tile">
-                    <span class="h1 d-inline-block mb-1 icon-facebook-square"></span>
+                    <span
+                      v-if="item.type === 'gallery'"
+                      class="h1 d-inline-block mb-1 icon-facebook-square"
+                    ></span>
+                    <span
+                      v-if="item.type === 'youtubePopup'"
+                      class="h1 d-inline-block mb-1 icon-youtube-play"
+                    ></span>
                     <div class="h4" v-if="item.title">{{item.title}}</div>
                   </div>
                 </div>
               </a>
             </template>
 
-            <template v-if="item.type === 'youtube'">
+            <!-- <template v-if="item.type === 'youtube'">
               <youtube-video :src="item.src"></youtube-video>
-            </template>
+            </template> -->
           </div>
         </div>
       </div>
     </div>
-    <!-- <popup-youtube v-if="showPopup" ref="mtPlayer" :youtubeId="videoId"></popup-youtube>
-    <button
-      class="position-fixed"
-      style="top: 0;"
-      @click="changeVideoId('M3m25mdBBYM')"
-    >Change Video {{this.videoId}}</button> -->
   </div>
 </template>
 
 <script>
-import YoutubeVideo from "@/components/YoutubeVideo";
-import PopupYoutube from "@/components/PopupYoutube";
+import { store } from "~/stores/store";
+// import YoutubeVideo from "@/components/YoutubeVideo";
 
 export default {
   props: {
@@ -51,22 +57,27 @@ export default {
     }
   },
   components: {
-    YoutubeVideo,
-    PopupYoutube
+    // YoutubeVideo
   },
   data() {
     return {
-      activeItem: null,
-      videoId: '',
-      showPopup: false
+      activeItem: null
     };
   },
   computed: {
     data() {
       return this.$props.mediaTilesData;
+    },
+    device() {
+      return store.device;
     }
   },
   methods: {
+    getYoutubeID(url) {
+      let regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+      let match = url.match(regExp);
+      return match && match[7].length == 11 ? match[7] : false;
+    },
     classObject(col) {
       var result = false;
       if (col) {
@@ -77,23 +88,13 @@ export default {
     selectItem(i) {
       this.activeItem = i;
     },
-    showPopupYoutube(show) {
-      this.showPopup = show;
-    },
-    changeVideoId(id) {
-      this.videoId = id;
-      if (!this.showPopup) {
-        this.showPopupYoutube(true);
-      } else {
-        this.$refs.mtPlayer.loadVideo(id);
+    linkClick(e, type, src) {
+      if (type === "youtubePopup" && !this.device.isMobile) {
+        e.preventDefault();
+        console.log(this.getYoutubeID(src));
+        this.$parent.loadPopupVideo(this.getYoutubeID(src));
       }
     }
-  },
-  created() {
-    // this.videoId = '1';
-  },
-  mounted() {
-    // debugger
   }
 };
 </script>

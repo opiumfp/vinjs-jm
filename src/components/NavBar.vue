@@ -69,17 +69,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "assets/styles/base.scss";
-
-#main {
-  @include transition(all linear .2s);
-  .nav_dropmenu-show &{
-    filter: blur(5px);
-  }
-}
-</style>
-
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 

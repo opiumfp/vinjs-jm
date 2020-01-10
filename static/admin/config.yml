@@ -114,8 +114,9 @@ collections:
               default: "gallery"
               options:
                 - {label: "Image/Video Gallary", value: "gallery"}
+                - {label: "Youtube Popup", value: "youtubePopup"}
                 - {label: "Youtube Video", value: "youtube"}
-            - {label: "Link", name: "src", widget: "string", default: '', required: false}
+            - {label: "Link/ID", name: "src", widget: "string", default: '', required: false}
             - {label: "Image", name: "image", widget: "image", default: null, required: false}
 
     - label: "Playlists"

@@ -1,12 +1,20 @@
 <template>
-  <div class="layout">
+  <div class="layout" ref="layoutx">
     <header class="header">
       <nav-bar :navData="getNav($static.pageData.nav)"></nav-bar>
     </header>
     <div id="main">
       <slot/>
     </div>
+
+    <popup-youtube v-if="showPopup" ref="mtPlayer" :youtubeId="videoId"></popup-youtube>
+    <!-- <button
+      class="position-fixed"
+      style="top: 0;"
+      @click="loadPopupVideo('M3m25mdBBYM')"
+    >Change Video {{this.videoId}}</button> -->
   </div>
+
 </template>
 
 <static-query>
@@ -23,6 +31,7 @@ query {
 <script>
 import { store, mutations } from "~/stores/store";
 import NavBar from "@/components/NavBar"
+import PopupYoutube from "@/components/PopupYoutube";
 import { isMobile, isMobileOnly, isTablet, isIE, isEdge, isBrowser } from 'mobile-device-detect'
 
 
@@ -35,18 +44,32 @@ export default {
         isTablet: isTablet,
         isEdge: isEdge,
         isBrowser: isBrowser,
-        isIE: isIE
-      }
+        isIE: isIE,
+      },
+      videoId: '',
+      showPopup: false
     }
   },
   components: {
-    NavBar
+    NavBar,
+    PopupYoutube
   },
   methods: {
+    setDevice: mutations.setDevice,
     getNav: (str) => {
       return JSON.parse(str)
     },
-    setDevice: mutations.setDevice
+    showPopupYoutube(show) {
+      this.showPopup = show;
+    },
+    loadPopupVideo(id) {
+      this.videoId = id;
+      if (!this.showPopup) {
+        this.showPopupYoutube(true);
+      } else {
+        this.$refs.mtPlayer.loadVideo(id);
+      }
+    }
   },
   computed: {
     device() {
@@ -89,5 +112,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "assets/styles/base.scss";
+
+#main {
+  @include transition(all linear .2s);
+  .nav_dropmenu-show &,
+  .body-blurred &{
+    filter: blur(5px);
+  }
+}
 
 </style>

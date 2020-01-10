@@ -33,11 +33,7 @@
         <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
         <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
         <h2 class="h3 text-uppercase">July 25, 2020</h2>
-        <g-image
-          class="hero_logo d-block mx-auto my-4"
-          src="../../assets/images/logo/vinnytsiajs-logo.svg"
-          immediate="true"
-        />
+        <img class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" alt="">
         <h2 class="h1 text-uppercase">Javascript Open Air</h2>
         <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
       </div>
@@ -110,7 +106,8 @@ export default {
     }
   }
   &_logo {
-    width: calc(70vh - #{$nav-height});
+    width: calc(65vh - #{$nav-height});
+    min-height: calc(65vh - #{$nav-height});
     // opacity: 0;
   }
   &_bg {
