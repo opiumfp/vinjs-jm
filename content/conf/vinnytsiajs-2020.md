@@ -49,9 +49,9 @@ mediaTiles:
     - active: 'true'
       colDesk: 4
       image: /uploads/vinnytsiajs-2019-intro-0001.jpg
-      src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
+      src: M3m25mdBBYM
       title: VinntysiaJS 2019 - Highlights
-      type: youtube
+      type: youtubePopup
     - active: 'true'
       colDesk: 4
       image: /uploads/vinnytsiajs-2019-intro-0003.jpg
