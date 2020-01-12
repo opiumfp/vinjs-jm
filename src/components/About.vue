@@ -12,7 +12,7 @@
           <div class="about_descrition">
             <h1>{{ data.title }}</h1>
             <p class="my-4">{{ data.paragraph }}</p>
-            <a :href="data.link" class="btn btn-success my-2 my-sm-0">{{ data.linkTitle }}</a>
+            <a :href="data.link" class="btn btn-primary my-2 my-sm-0">{{ data.linkTitle }}</a>
           </div>
         </div>
       </div>

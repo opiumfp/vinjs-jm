@@ -19,7 +19,7 @@
       </li>
     </ul>
     <div class="vjs-navbar_button-wrap">
-      <button class="btn btn-success d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Search</button>
+      <button class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Get Ticket</button>
     </div>
   </div>
 </nav>
