@@ -83,9 +83,6 @@ export default {
     }
   },
   created() {
-    // Smooth Scroll behavior polyfill
-    smoothscroll.polyfill();
-
     this.deviceData.noPrlx = this.deviceData.isEdge || this.deviceData.IE;
     this.deviceData.isShowVideo =
       this.deviceData.isBrowser &&
@@ -95,6 +92,9 @@ export default {
     this.setDevice(this.deviceData);
   },
   mounted() {
+    // Smooth Scroll behavior polyfill
+    smoothscroll.polyfill();
+
     let htmlTag = document.querySelector("html");
 
     this.device.isMobile && htmlTag.classList.add("mobile");
