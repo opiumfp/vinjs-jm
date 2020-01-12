@@ -39,6 +39,7 @@ import {
   isEdge,
   isBrowser
 } from "mobile-device-detect";
+import smoothscroll from 'smoothscroll-polyfill';
 
 export default {
   data() {
@@ -82,6 +83,9 @@ export default {
     }
   },
   created() {
+    // Smooth Scroll behavior polyfill
+    smoothscroll.polyfill();
+
     this.deviceData.noPrlx = this.deviceData.isEdge || this.deviceData.IE;
     this.deviceData.isShowVideo =
       this.deviceData.isBrowser &&
@@ -108,42 +112,42 @@ export default {
 
         e.preventDefault();
         document.querySelector("body").classList.remove("nav_dropmenu-show");
-        scrollAnchors(e);
-        // target.scrollIntoView({
-        //   behavior: "smooth"
-        // });
+        // scrollAnchors(e);
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
       });
     });
 
-        (function() {
-    	scrollTo();
-    })();
+    //     (function() {
+    // 	scrollTo();
+    // })();
 
     // function scrollTo() {
     // 	const links = document.querySelectorAll('.scroll');
     // 	links.forEach(each => (each.onclick = scrollAnchors));
     // }
 
-    function scrollAnchors(e) {
-      const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-      e.preventDefault();
-      let targetID = e.target.getAttribute("href");
-      const targetAnchor = document.querySelector(targetID);
-      if (!targetAnchor) return;
-      const originalTop = distanceToTop(targetAnchor);
-      window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
-      const checkIfDone = setInterval(function() {
-        const atBottom =
-          window.innerHeight + window.pageYOffset >=
-          document.body.offsetHeight - 2;
-        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-          targetAnchor.tabIndex = "-1";
-          targetAnchor.focus();
-          window.history.pushState("", "", targetID);
-          clearInterval(checkIfDone);
-        }
-      }, 100);
-    }
+    // function scrollAnchors(e) {
+    //   const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+    //   e.preventDefault();
+    //   let targetID = e.target.getAttribute("href");
+    //   const targetAnchor = document.querySelector(targetID);
+    //   if (!targetAnchor) return;
+    //   const originalTop = distanceToTop(targetAnchor);
+    //   window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+    //   const checkIfDone = setInterval(function() {
+    //     const atBottom =
+    //       window.innerHeight + window.pageYOffset >=
+    //       document.body.offsetHeight - 2;
+    //     if (distanceToTop(targetAnchor) === 0 || atBottom) {
+    //       targetAnchor.tabIndex = "-1";
+    //       targetAnchor.focus();
+    //       window.history.pushState("", "", targetID);
+    //       clearInterval(checkIfDone);
+    //     }
+    //   }, 100);
+    // }
   }
 };
 </script>
