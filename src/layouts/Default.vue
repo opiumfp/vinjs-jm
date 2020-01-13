@@ -8,11 +8,6 @@
     </div>
 
     <popup-youtube v-if="showPopup" ref="mtPlayer" :youtubeId="videoId"></popup-youtube>
-    <!-- <button
-      class="position-fixed"
-      style="top: 0;"
-      @click="loadPopupVideo('M3m25mdBBYM')"
-    >Change Video {{this.videoId}}</button>-->
   </div>
 </template>
 
@@ -39,7 +34,7 @@ import {
   isEdge,
   isBrowser
 } from "mobile-device-detect";
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 
 export default {
   data() {
@@ -52,7 +47,7 @@ export default {
         isBrowser: isBrowser,
         isIE: isIE
       },
-      videoId: "",
+      videoId: '',
       showPopup: false
     };
   },
@@ -112,42 +107,11 @@ export default {
 
         e.preventDefault();
         document.querySelector("body").classList.remove("nav_dropmenu-show");
-        // scrollAnchors(e);
         target.scrollIntoView({
           behavior: "smooth"
         });
       });
     });
-
-    //     (function() {
-    // 	scrollTo();
-    // })();
-
-    // function scrollTo() {
-    // 	const links = document.querySelectorAll('.scroll');
-    // 	links.forEach(each => (each.onclick = scrollAnchors));
-    // }
-
-    // function scrollAnchors(e) {
-    //   const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-    //   e.preventDefault();
-    //   let targetID = e.target.getAttribute("href");
-    //   const targetAnchor = document.querySelector(targetID);
-    //   if (!targetAnchor) return;
-    //   const originalTop = distanceToTop(targetAnchor);
-    //   window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
-    //   const checkIfDone = setInterval(function() {
-    //     const atBottom =
-    //       window.innerHeight + window.pageYOffset >=
-    //       document.body.offsetHeight - 2;
-    //     if (distanceToTop(targetAnchor) === 0 || atBottom) {
-    //       targetAnchor.tabIndex = "-1";
-    //       targetAnchor.focus();
-    //       window.history.pushState("", "", targetID);
-    //       clearInterval(checkIfDone);
-    //     }
-    //   }, 100);
-    // }
   }
 };
 </script>

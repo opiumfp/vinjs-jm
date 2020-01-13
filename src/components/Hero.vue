@@ -30,12 +30,22 @@
         />
       </div>
       <div class="hero_content pt-4">
-        <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
-        <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
-        <h2 class="h3 text-uppercase">July 25, 2020</h2>
-        <img class="hero_logo d-block mx-auto my-4" src="../../assets/images/logo/vinnytsiajs-logo.svg" alt="">
-        <h2 class="h1 text-uppercase">Javascript Open Air</h2>
-        <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
+              <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
+              <h2 class="h3 hero_date text-uppercase">July 25, 2020</h2>
+              <img
+                class="hero_logo d-block mx-auto my-4"
+                src="../../assets/images/logo/vinnytsiajs-logo.svg"
+                alt
+              />
+              <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2>
+              <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
@@ -59,7 +69,7 @@ export default {
   },
   mounted() {
     this.herovideo = this.$refs.herovideo;
-    
+
     if (this.device.isShowVideo) {
       this.herovideo.play();
 
@@ -91,11 +101,6 @@ export default {
 .hero {
   height: 100vh;
   &_wrapper {
-    // .hero-hide & {
-    //   display: none;
-    //   // visibility: hidden;
-    //   // z-index: -100;
-    // }
     position: relative;
     width: 100%;
     height: 100vh;
@@ -105,10 +110,57 @@ export default {
       position: fixed;
     }
   }
+  &_content {
+    position: absolute;
+    color: $white;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    // top: calc(50% - $navbar-h);
+    top: calc(50% - #{$nav-height/2});
+    left: 50%;
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+      top: 50%;
+      // top: calc(50% - #{$nav-height/2});
+  
+    }
+  }
+  &_date {
+    @include media-breakpoint-down(lg) {
+      @media (orientation: landscape) {
+        font-size: 5vh;
+      }
+      @media (orientation: portrait) {
+        font-size: 4vh;
+      }
+    }
+  }
+  &_subtitle {
+    @include media-breakpoint-down(lg) {
+      @media (orientation: landscape) {
+        font-size: 6vh;
+      }
+      @media (orientation: portrait) {
+        font-size: 5.5vh;
+      }
+    }
+  }
   &_logo {
+    max-width: 100%;
     width: calc(65vh - #{$nav-height});
     min-height: calc(65vh - #{$nav-height});
-    // opacity: 0;
+    @include media-breakpoint-down(lg) {
+      min-height: 0;
+      @media (orientation: portrait) {
+        width: 40vh;
+        max-width: 100%;
+        max-height: 70vh;
+      }
+      @media (orientation: landscape) {
+        width: 45vh;
+        max-height: 45vh;
+      }
+    }
   }
   &_bg {
     &::after {
@@ -118,19 +170,11 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      // background-image: url('https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg'), url('../../assets/images/misc/grid_stripes_horizontal.png');
-      // background-position: 50% 60%, 0 0;
-      // background-attachment: fixed, scroll;
-      // background-size: 60vh, auto;
-      // background-repeat: no-repeat, repeat;
-
       background-image: url("../../assets/images/misc/grid_stripes_horizontal.png");
       background-repeat: repeat;
-
       background-color: rgba($dark, 0.4);
     }
     &_video {
-      // filter: blur(5px);
       display: none;
       html.browser:not(.ie):not(.edge) & {
         display: block;
@@ -163,15 +207,7 @@ export default {
       }
     }
   }
-  &_content {
-    position: absolute;
-    color: $white;
-    transform: translate(-50%, -50%);
-    // top: calc(50% - $navbar-h);
-    top: calc(50% - #{$nav-height/2});
-    left: 50%;
-    text-align: center;
-  }
+
   @include media-breakpoint-down(lg) {
   }
 }

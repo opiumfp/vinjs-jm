@@ -18,7 +18,6 @@
         <a v-if="item.active" class="nav-link scroll" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-        <a class="nav-link scroll" href="http://google.com">TEST <span class="sr-only">(current)</span></a>
     <div class="vjs-navbar_button-wrap">
       <button class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Get Ticket</button>
     </div>

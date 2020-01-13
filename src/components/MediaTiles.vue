@@ -23,13 +23,13 @@
                   <div class="media-tiles_item_overlay_tile">
                     <span
                       v-if="item.type === 'gallery'"
-                      class="h1 d-inline-block mb-1 icon-facebook-square"
+                      class="display-4 d-inline-block mb-1 icon-facebook-square"
                     ></span>
                     <span
                       v-if="item.type === 'youtubePopup'"
-                      class="h1 d-inline-block mb-1 icon-youtube-play"
+                      class="display-4 d-inline-block mb-1 icon-youtube-play"
                     ></span>
-                    <div class="h4" v-if="item.title">{{item.title}}</div>
+                    <div class="h5" v-if="item.title">{{item.title}}</div>
                   </div>
                 </div>
               </a>

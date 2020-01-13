@@ -37,3 +37,9 @@
     background-color: rgba($vjs-red, .95) ;
   }
 }
+
+.spacer-nav-bottom {
+  @include media-breakpoint-up(lg) {
+    padding-top: $nav-height;
+  }
+}

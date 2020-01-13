@@ -36,15 +36,16 @@
         <partners :partnersData="$page.pageData.partners" mode="large"></partners>
       </section>
       <hr />
-      <section>
-        <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
-        <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
-      </section>
       <section :id="$page.pageData.location.id">
-        <hr class="col-md-6">
         <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
         <location :locationData="$page.pageData.location"></location>
       </section>
+      <section>
+        <hr class="col-md-6">
+        <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
+        <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
+      </section>
+      <div class="spacer-nav-bottom"></div>
     </div>
   </Layout>
 </template>
