@@ -41,7 +41,7 @@
         <location :locationData="$page.pageData.location"></location>
       </section>
       <section>
-        <hr class="col-md-6">
+        <hr class="col-12 col-md-6 p-0" />
         <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
         <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
       </section>
