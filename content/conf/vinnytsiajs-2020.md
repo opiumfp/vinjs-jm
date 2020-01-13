@@ -12,7 +12,7 @@ hero:
   image: /uploads/vinnytsiajs-2019-intro-0003.jpg
   imagePt: /uploads/vjs-portrait.jpg
   subtitle: |-
-    Javascript \
+    Javascript\
     Open Air
   title: VinnytsiaJS 2020
 about:
