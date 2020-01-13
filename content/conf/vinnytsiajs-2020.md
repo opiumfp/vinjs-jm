@@ -11,7 +11,9 @@ hero:
     title: Buy Tickets
   image: /uploads/vinnytsiajs-2019-intro-0003.jpg
   imagePt: /uploads/vjs-portrait.jpg
-  subtitle: ''
+  subtitle: |-
+    Javascript \
+    Open Air
   title: VinnytsiaJS 2020
 about:
   id: about-us
