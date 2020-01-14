@@ -88,7 +88,7 @@ collections:
           required: false
           default: ''
           fields:
-          - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+          - {label: "Title", name: "title", widget: "markdown", required: false, default: ''}
           - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
 
     - label: "Media Tiles"
