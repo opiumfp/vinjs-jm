@@ -27,17 +27,23 @@ stat:
   imagePt: /uploads/vjs-portrait.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
-      title: ''
+      title: |-
+        300+ \
+        Attendees
     - paragraph: |-
         General + **Lightnings**. \
         The emphasis on the latest trends
-      title: ''
+      title: |-
+        2 \
+        Streams
     - paragraph: High-level talks by speakers from Ukraine and abroad.
-      title: ''
+      title: |-
+        15+ \
+        Speakers
     - paragraph: >-
         Learn, explore, connect and enjoy the summer vibes by swimming in the
         pool.
-      title: ''
+      title: Open Air
 mediaTiles:
   id: vibes
   items:
