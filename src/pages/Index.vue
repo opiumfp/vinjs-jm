@@ -3,7 +3,7 @@
     <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
     <div class="layer layer-content">
       <section
-        class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white vh-100 d-flex align-items-center justify-content-center"
+        class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white section-vh-100 d-flex align-items-center justify-content-center"
         :id="$page.pageData.about.id"
       >
         <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>

@@ -41,7 +41,10 @@
                 src="../../assets/images/logo/vinnytsiajs-logo.svg"
                 alt
               />
-              <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2>
+              <!-- <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2> -->
+              <h2 v-if="$props.heroData.subtitle" class="h1 hero_subtitle text-uppercase">
+                <vue-markdown>{{this.$props.heroData.subtitle}}</vue-markdown>
+              </h2>
               <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
             </div>
           </div>
@@ -53,6 +56,7 @@
 </template>
 
 <script>
+import VueMarkdown from 'vue-markdown'
 import { store } from "~/stores/store";
 
 export default {
@@ -61,6 +65,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  components : {
+    VueMarkdown
   },
   computed: {
     device() {
@@ -136,6 +143,16 @@ export default {
     }
   }
   &_subtitle {
+    @include media-breakpoint-up(lg) {
+      ::v-deep br {
+        display: none;
+      }
+    }
+    @media (orientation: landscape) {
+      ::v-deep br {
+        display: none;
+      }
+    }
     @include media-breakpoint-down(lg) {
       @media (orientation: landscape) {
         font-size: 6vh;
