@@ -9,7 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
-  image: uploads/20690281_468162933553629_5640443255457992666_o.jpg
+  image: /uploads/20690281_468162933553629_5640443255457992666_o.jpg
   imagePt: /uploads/vjs-portrait.jpg
   subtitle: |-
     Javascript \
@@ -23,7 +23,7 @@ about:
   paragraph: "The fifth annual Javascript conference, that will be held in the usual Open-Air format. The event is organized and driven by Vinnytsia JavaScript Community.\r\n\n\rThis summer meet the Conference dedicated to JavaScript development. We took care of everything to provide all conference guests with a comfortable location, appropriate meeting spaces, for you just to have summer rest and enjoy networking."
   title: VinnytsiaJS 2020
 stat:
-  image: uploads/20728914_468149920221597_3717016245162761801_o.jpg
+  image: /uploads/20728914_468149920221597_3717016245162761801_o.jpg
   imagePt: /uploads/vjs-portrait.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
@@ -49,53 +49,53 @@ mediaTiles:
   items:
     - active: 'true'
       colDesk: 4
-      image: uploads/68243012_887538998282685_393295670032728064_o.jpg
+      image: /uploads/68243012_887538998282685_393295670032728064_o.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=887519681617950
       title: JS People 2019
       type: gallery
     - active: 'true'
       colDesk: 4
-      image: uploads/2018.jpg
+      image: /uploads/2018.jpg
       src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
       title: Highlights 2019
       type: youtubePopup
     - active: 'true'
       colDesk: 4
-      image: uploads/2018-1.jpg
+      image: /uploads/2018-1.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=645568395813081
       title: JS People 2018
       type: gallery
     - active: 'true'
       colDesk: 6
-      image: uploads/2018.jpg
+      image: /uploads/2018.jpg
       src: 'https://www.youtube.com/watch?v=2bAmvd337CM'
       title: Highlights 2018
       type: youtubePopup
     - active: 'true'
       colDesk: 6
-      image: uploads/20728936_468145653555357_7579303002675550907_o.jpg
+      image: /uploads/20728936_468145653555357_7579303002675550907_o.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=468145436888712
       title: JS People 2017
       type: gallery
     - active: 'true'
       colDesk: 4
-      image: uploads/2017.jpg
+      image: /uploads/2017.jpg
       src: 'https://www.youtube.com/watch?v=Oy_J0ko__ns'
       title: Highlights 2017
       type: youtubePopup
     - active: 'true'
       colDesk: 4
-      image: uploads/2016.jpg
+      image: /uploads/2016.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=276730176030240
       title: JS People 2016
       type: gallery
     - active: 'true'
       colDesk: 4
-      image: uploads/2016-1.jpg
+      image: /uploads/2016-1.jpg
       src: 'https://www.youtube.com/watch?v=SyzaB-nJ8fk'
       title: Highlights 2016
       type: youtubePopup
@@ -184,7 +184,7 @@ partners:
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
-  image: uploads/37888040_645580812478506_5181603929221234688_o-B.jpg
+  image: /uploads/37888040_645580812478506_5181603929221234688_o-B.jpg
   imagePt: /uploads/wp2.jpg
   logo: /uploads/foot_logo.png
   mapLinkDirect: >-
