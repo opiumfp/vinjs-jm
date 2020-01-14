@@ -56,7 +56,7 @@ mediaTiles:
       type: gallery
     - active: 'true'
       colDesk: 4
-      image: /uploads/2018.jpg
+      image: uploads/68691439_887530854950166_8983022278241419264_o.jpg
       src: 'https://www.youtube.com/watch?v=M3m25mdBBYM'
       title: Highlights 2019
       type: youtubePopup
