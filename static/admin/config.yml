@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: dev # Branch to update (optional; defaults to master)
-media_folder: "uploads" # Media files will be stored in the repo under static/images/uploads
+media_folder: "/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "uploads" # The src attribute for uploaded media will begin with /images/uploa
 collections:
 - name: "blog" # Used in routes, e.g., /admin/collections/blog
