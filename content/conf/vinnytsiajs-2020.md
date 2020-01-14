@@ -10,7 +10,7 @@ hero:
     link: '#'
     title: Buy Tickets
   image: /uploads/20690281_468162933553629_5640443255457992666_o.jpg
-  imagePt: uploads/20746341_468162943553628_6033740205683564980_o.jpg
+  imagePt: /uploads/2016-1.jpg
   subtitle: |-
     Javascript \
     Open Air
