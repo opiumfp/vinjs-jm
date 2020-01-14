@@ -12,7 +12,7 @@
     <div class="row justify-content-center">
       <div v-for="(item, index) in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth}`">
         <div class="stat_item text-center">
-          <div class="h3 stat_title mb-2" v-if="item.title"><vue-markdown>{{ item.title }}</vue-markdown></div>
+          <div class="h3 stat_title mb-2 mb-lg-3" v-if="item.title"><vue-markdown>{{ item.title }}</vue-markdown></div>
           <p class="stat_paragraph" v-if="item.paragraph">
             <vue-markdown>{{item.paragraph}}</vue-markdown>
           </p>
@@ -67,6 +67,8 @@ export default {
 @import "assets/styles/base.scss";
 
 $circle: $spacer*11;
+$circle-sm: $spacer*10;
+
 
 .stat {
   color: $white;
@@ -91,6 +93,10 @@ $circle: $spacer*11;
         position: absolute;
         width: $circle;
         height: $circle;
+        @media (max-width: 1100px) {
+          height: $circle-sm;
+          width: $circle-sm; 
+        }
         transform: translate(-50%, -50%) rotate(15deg);
         border-radius: 50%;
         left: 50%;
