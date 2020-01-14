@@ -116,7 +116,7 @@ $circle: $spacer*11;
     overflow: hidden;
     &_prlx {
       transition: none!important;
-      @include media-breakpoint-down(ld) {
+      @include media-breakpoint-down(lg) {
         transform: none!important;
       }
     }
@@ -125,7 +125,7 @@ $circle: $spacer*11;
       &-portrait {
         display: none;
       }
-      @include media-breakpoint-down(ld) {
+      @include media-breakpoint-down(lg) {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -146,7 +146,7 @@ $circle: $spacer*11;
       transform: translateY(-50%);
       width: 100%;
       min-height: 100%;
-      @include media-breakpoint-down(ld) {
+      @include media-breakpoint-down(lg) {
         min-width: 100%;
         min-height: 100%;
       }
