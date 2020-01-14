@@ -12,11 +12,17 @@
         <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
       </section>
       <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
-        <page-title
-          class="position-relative py-8"
-          :title="$page.pageData.mediaTiles.title"
-          :subtitle="$page.pageData.mediaTiles.subtitle"
-        ></page-title>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <page-title
+                class="position-relative py-8"
+                :title="$page.pageData.mediaTiles.title"
+                :subtitle="$page.pageData.mediaTiles.subtitle"
+              ></page-title>
+            </div>
+          </div>
+        </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
       <section :id="$page.pageData.partners.id">
@@ -41,7 +47,7 @@
         <location :locationData="$page.pageData.location"></location>
       </section>
       <section>
-        <hr class="col-12 col-md-6 p-0" />
+        <!-- <hr class="col-12 col-md-6 p-0" /> -->
         <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
         <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
       </section>

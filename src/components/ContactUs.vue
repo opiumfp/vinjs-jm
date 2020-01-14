@@ -6,7 +6,7 @@
           <div class="text-center pb-4">
             <p
               class="h5 font-weight-normal"
-              >Follow us on social media for more information and news about the conference. See you soon!
+              >Follow us on social media for more information and news about the conference. <br/>See you soon!
             </p>
             <div class="contact-us_social-icons navbar-expand d-inline-block h4 my-3">
               <social-icons :socialIconsData="getSocialIcons(this.socialData.socialicons)"></social-icons>

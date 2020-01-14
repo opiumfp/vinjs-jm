@@ -15,7 +15,7 @@
     </div>
     <ul class="vjs-navbar_nav navbar-nav">
       <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-        <a v-if="item.active" class="nav-link scroll" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
+        <a v-if="item.active" class="vjs-navbar_link nav-link scroll" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <div class="vjs-navbar_button-wrap">
@@ -101,6 +101,9 @@ export default {
       }
     }
   }
+  &_link {
+    white-space: nowrap;
+  }
   &_nav {
     text-align: center;
     justify-content: center;
@@ -151,9 +154,9 @@ export default {
     }
   }
   .social-icons {
+    font-size: $font-size-base*1.1;
     @include media-breakpoint-down(lg) {
       flex-direction: row;
-      font-size: 1.25rem;
     }
     @include media-breakpoint-down(md) {
       margin-top: 1em;
@@ -161,6 +164,12 @@ export default {
     ::v-deep .social-icons_link {
       padding-right: 0.75rem;
       padding-left: 0.75rem;
+      @include media-breakpoint-up(md) {
+        @media (max-width: 1100px) {
+          padding-left: 0.5rem; // Exception Issue / TODO remove
+          padding-right: 0.5rem; // Exception Issue / TODO remove
+        }
+      }
     }
   }
 }
