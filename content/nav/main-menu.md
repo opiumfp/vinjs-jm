@@ -1,6 +1,10 @@
 ---
 title: Main Menu
 data:
+  button:
+    active: true
+    src: 'https://forms.gle/jY1gcjCJKCbp8NNS8'
+    title: Call For Papaers
   items:
     - active: true
       src: '#home'
