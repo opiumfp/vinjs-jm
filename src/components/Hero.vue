@@ -189,7 +189,7 @@ export default {
       right: 0;
       background-image: url("../../assets/images/misc/grid_stripes_horizontal.png");
       background-repeat: repeat;
-      background-color: rgba($dark, 0.4);
+      background-color: $overlay-bg;
     }
     &_video {
       display: none;
@@ -219,6 +219,10 @@ export default {
           }
           &-portrait {
             display: block;
+            min-width: 0;
+            min-height: 0;
+            height: 100%;
+            width: auto;
           }
         }
       }

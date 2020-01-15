@@ -156,8 +156,6 @@ $circle-sm: $spacer*10;
         min-width: 100%;
         min-height: 100%;
       }
-      @include media-breakpoint-down(lg) {
-      }
       &:after {
         content: '';
         position: absolute;
@@ -165,7 +163,7 @@ $circle-sm: $spacer*10;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($dark, .4);
+        background-color: $overlay-bg;
       }
     }
   }

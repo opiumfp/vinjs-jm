@@ -132,7 +132,7 @@ export default {
     // TMP
     // filter: grayscale(1) brightness(150%);
   }
-  &_bg {
+   &_bg {
     position: absolute;
     left: 0;
     top: 0;
@@ -140,14 +140,21 @@ export default {
     bottom: 0;
     overflow: hidden;
     &_prlx {
-      transition: none !important;
+      transition: none!important;
+      @include media-breakpoint-down(lg) {
+        transform: none!important;
+      }
     }
     &_img {
-      min-height: 100%;
+      width: 100%;
       &-portrait {
         display: none;
       }
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         @media (orientation: portrait) {
           &-landscape {
             display: none;
@@ -163,14 +170,19 @@ export default {
       top: 50%;
       transform: translateY(-50%);
       width: 100%;
+      min-height: 100%;
+      @include media-breakpoint-down(lg) {
+        min-width: 100%;
+        min-height: 100%;
+      }
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba($dark, 0.4);
+        background-color: $overlay-bg;
       }
     }
   }
