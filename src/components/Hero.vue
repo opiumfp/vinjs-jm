@@ -33,25 +33,19 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
-              <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
               <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase">{{this.$props.heroData.date}}</h2>
               <img
                 class="hero_logo d-block mx-auto my-4"
                 src="../../assets/images/logo/vinnytsiajs-logo.svg"
                 alt
               />
-              <!-- <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2> -->
-              <h2 v-if="$props.heroData.subtitleMD" class="h1 hero_subtitle text-uppercase">
-                <vue-markdown>{{this.$props.heroData.subtitleMD}}</vue-markdown>
-              </h2>
-              <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
+              <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2>
+              <div class="h1 hero_subtitle-pt text-uppercase">Javascript<br>Open Air</div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <g-image v-if="$props.heroData.image" class="hero_bg_image" :src="$props.heroData.image"/> -->
   </div>
 </template>
 
@@ -143,9 +137,15 @@ export default {
     }
   }
   &_subtitle {
-    @include media-breakpoint-up(lg) {
-      ::v-deep br {
+    &-pt {
+      display: none;
+    }
+    @include media-breakpoint-down(lg) {
+      @media (orientation: portrait) {
         display: none;
+        &-pt {
+          display: block;
+        }
       }
     }
     @media (orientation: landscape) {
