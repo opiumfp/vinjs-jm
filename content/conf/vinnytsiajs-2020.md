@@ -10,7 +10,7 @@ hero:
     link: '#'
     title: Buy Tickets
   image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
-  imagePt: /uploads/2016-1.jpg
+  imagePt: /uploads/hero-pt.jpg
   subtitle: |-
     Javascript \
     Open Air
@@ -24,7 +24,7 @@ about:
   title: VinnytsiaJS 2020
 stat:
   image: /uploads/20728914_468149920221597_3717016245162761801_o.jpg
-  imagePt: /uploads/vjs-portrait.jpg
+  imagePt: /uploads/stat-portreit.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
       title: |-
@@ -185,7 +185,7 @@ location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
   image: /uploads/13987660_276733582696566_6287938282852077022_o.jpg
-  imagePt: /uploads/wp2.jpg
+  imagePt: /uploads/location-pt.jpg
   logo: /uploads/foot_logo.png
   mapLinkDirect: >-
     https://www.openstreetmap.org/?mlat=49.32495&amp;mlon=28.12497#map=19/49.32495/28.12497&amp;layers=N
