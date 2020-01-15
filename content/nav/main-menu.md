@@ -4,7 +4,7 @@ data:
   button:
     active: true
     src: '#speakers'
-    title: Call For Papaers
+    title: Call For Papers
   items:
     - active: true
       src: '#home'
