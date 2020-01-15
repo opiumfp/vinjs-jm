@@ -3,7 +3,7 @@ title: Main Menu
 data:
   button:
     active: true
-    src: 'https://forms.gle/jY1gcjCJKCbp8NNS8'
+    src: '#speakers'
     title: Call For Papaers
   items:
     - active: true
