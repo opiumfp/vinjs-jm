@@ -146,6 +146,8 @@ partners:
       image: /uploads/matrica-b.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
+friends:
+  id: friends
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
