@@ -124,12 +124,12 @@ export default {
       bottom: 0;
       right: 0;
       // opacity: 1;
-      background-color: rgba($dark, 0.4);
+      background-color: rgba($dark, 0.3);
       @include transition(all linear 0.2s);
       color: $white;
       &:hover {
         opacity: 1;
-        background-color: rgba($dark, 0.3);
+        background-color: rgba($dark, 0);
       }
       @include media-breakpoint-down(lg) {
         opacity: 1;
