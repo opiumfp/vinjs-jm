@@ -170,7 +170,7 @@ location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
   image: /uploads/13987660_276733582696566_6287938282852077022_o.jpg
-  imagePt: /uploads/location-pt.jpg
+  imagePt: /uploads/13987660_276733582696566_6287938282852077022_o.jpg
   logo: /uploads/foot_logo.png
   mapLinkDirect: >-
     https://www.openstreetmap.org/?mlat=49.32495&amp;mlon=28.12497#map=19/49.32495/28.12497&amp;layers=N
