@@ -147,7 +147,7 @@ partners:
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
-  id: friends
+  id: ''
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
