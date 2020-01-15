@@ -11,8 +11,8 @@ data:
     - active: false
       src: '#schedule'
       title: Schedule
-    - active: false
-      src: '#schedule'
+    - active: true
+      src: '#speakers'
       title: Speakers
     - active: true
       src: '#partners'
