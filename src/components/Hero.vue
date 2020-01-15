@@ -42,7 +42,8 @@
                 alt
               />
               <!-- <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2> -->
-              <h2 v-if="$props.heroData.subtitle" class="h1 hero_subtitle text-uppercase">
+              <!-- <h2 v-if="$props.heroData.subtitle" class="h1 hero_subtitle text-uppercase"> -->
+              <h2 class="h1 hero_subtitle text-uppercase">
                 <vue-markdown>{{this.$props.heroData.subtitle}}</vue-markdown>
               </h2>
               <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
