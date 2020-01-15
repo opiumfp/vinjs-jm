@@ -25,21 +25,21 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
-      <section :id="$page.pageData.partners.id">
+      <!-- <section :id="$page.pageData.partners.id">
         <page-title
           class="pt-6 pb-4"
           :title="$page.pageData.partners.title"
           :subtitle="$page.pageData.partners.subtitle"
         ></page-title>
         <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
-      </section>
-      <section :id="$page.pageData.partners.id">
+      </section> -->
+      <section :id="$page.pageData.friends.id">
         <page-title
           class="pt-6 pb-4"
-          :title="$page.pageData.partners.title"
-          :subtitle="$page.pageData.partners.subtitle"
+          :title="$page.pageData.friends.title"
+          :subtitle="$page.pageData.friends.subtitle"
         ></page-title>
-        <partners :partnersData="$page.pageData.partners" mode="large"></partners>
+        <partners :partnersData="$page.pageData.friends" mode="large"></partners>
       </section>
       <hr />
       <section :id="$page.pageData.location.id">
@@ -98,7 +98,7 @@ query Conf {
         type
         src
         colDesk
-        image (quality:40, width:640, height:360)
+        image (quality:70, width:640, height:360)
       }
     }
     playlists {
@@ -114,6 +114,16 @@ query Conf {
       }
     }
     partners {
+      title
+      subtitle
+      id
+      items {
+        active
+        fields
+        image (quality:90, width:200)
+      }
+    }
+    friends {
       title
       subtitle
       id
