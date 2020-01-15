@@ -9,6 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
+  date: 'July 25, 2020'
   id: home
   image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
   imagePt: /uploads/hero-pt.jpg
