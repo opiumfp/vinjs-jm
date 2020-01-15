@@ -16,7 +16,7 @@ hero:
     Open Air
   title: VinnytsiaJS 2020
 about:
-  id: about-us
+  id: about
   link: 'http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf'
   linkTitle: Code of Conduct
   logo: /uploads/vinnytsiajs-logo-big.png
