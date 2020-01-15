@@ -3,7 +3,7 @@ title: Main Menu
 data:
   items:
     - active: true
-      src: 'http://vinnytsiajs.org'
+      src: '#home'
       title: Home
     - active: true
       src: '#about'
