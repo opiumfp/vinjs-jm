@@ -8,16 +8,16 @@ data:
     - active: true
       src: '#about'
       title: About Us
-    - active: true
+    - active: false
       src: '#schedule'
       title: Schedule
-    - active: true
+    - active: false
       src: '#schedule'
       title: Speakers
     - active: true
       src: '#partners'
       title: Partners
-    - active: true
+    - active: false
       src: '#pricing'
       title: Pricing
     - active: true
