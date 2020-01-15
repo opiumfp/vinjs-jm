@@ -9,7 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
-  image: /uploads/20746125_468162560220333_8774226596478771812_o.jpg
+  image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
   imagePt: /uploads/2016-1.jpg
   subtitle: |-
     Javascript \
