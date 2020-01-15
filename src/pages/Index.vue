@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <hero v-if="$page.pageData.hero.image" :heroData="$page.pageData.hero"></hero>
+    <hero v-if="$page.pageData.hero.image" :id="$page.pageData.hero.id" :heroData="$page.pageData.hero"></hero>
     <div class="layer layer-content">
       <section
         class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white section-vh-100 d-flex align-items-center justify-content-center"
@@ -63,6 +63,7 @@ query Conf {
     title
     startDate
     hero {
+      id
       title
       subtitle
       image (width: 1920, quality:40)

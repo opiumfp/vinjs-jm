@@ -74,7 +74,7 @@ export default {
 
 .vjs-navbar {
   height: $nav-height;
-  background-color: rgba($dark, .1) !important;
+  background-color: transparent !important;
   .page-scrolled & {
     background-color: rgba($dark, .7) !important;
   }

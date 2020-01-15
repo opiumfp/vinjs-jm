@@ -53,6 +53,7 @@ collections:
       name: "hero"
       widget: "object"
       fields:
+      - {label: "Id", name: "id", widget: "string", required: false, default: ''}
       - {label: "Title", name: "title", widget: "string", required: false, default: ''}
       - {label: "Sub title", name: "subtitle", widget: "markdown", required: false, default: ''}
       - {label: "Image", name: "image", widget: "image", required: false, default: ''}
