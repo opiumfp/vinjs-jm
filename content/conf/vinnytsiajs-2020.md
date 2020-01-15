@@ -75,7 +75,7 @@ mediaTiles:
       type: youtubePopup
     - active: 'true'
       colDesk: 6
-      image: /uploads/20728936_468145653555357_7579303002675550907_o.jpg
+      image: /uploads/20746125_468162560220333_8774226596478771812_o.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=468145436888712
       title: JS People 2017
@@ -88,7 +88,7 @@ mediaTiles:
       type: youtubePopup
     - active: 'true'
       colDesk: 4
-      image: /uploads/2016.jpg
+      image: /uploads/20728936_468145653555357_7579303002675550907_o.jpg
       src: >-
         https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=276730176030240
       title: JS People 2016
@@ -184,7 +184,7 @@ partners:
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
-  image: /uploads/37888040_645580812478506_5181603929221234688_o-B.jpg
+  image: /uploads/13987660_276733582696566_6287938282852077022_o.jpg
   imagePt: /uploads/wp2.jpg
   logo: /uploads/foot_logo.png
   mapLinkDirect: >-
