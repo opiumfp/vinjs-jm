@@ -35,15 +35,14 @@
             <div class="col-12">
               <!-- <h1 v-if="$props.heroData.title" class="hero_title">{{$props.heroData.title}}</h1> -->
               <!-- <h2 v-if="$props.heroData.subtitle" class="h3 hero_subtitle">{{$props.heroData.subtitle}}</h2> -->
-              <h2 class="h3 hero_date text-uppercase">July 25, 2020</h2>
+              <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase">{{this.$props.heroData.date}}</h2>
               <img
                 class="hero_logo d-block mx-auto my-4"
                 src="../../assets/images/logo/vinnytsiajs-logo.svg"
                 alt
               />
               <!-- <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2> -->
-              <!-- <h2 v-if="$props.heroData.subtitle" class="h1 hero_subtitle text-uppercase"> -->
-              <h2 class="h1 hero_subtitle text-uppercase">
+              <h2 v-if="$props.heroData.subtitle" class="h1 hero_subtitle text-uppercase">
                 <vue-markdown>{{this.$props.heroData.subtitle}}</vue-markdown>
               </h2>
               <!-- <a v-if="$props.heroData.button.link" :href="$props.heroData.button.link" class="btn btn-success my-2 my-sm-0">{{$props.heroData.button.title}}</a> -->
