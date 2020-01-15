@@ -13,7 +13,8 @@ hero:
   id: home
   image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
   imagePt: /uploads/hero-pt.jpg
-  subtitle: |-
+  subtitle: 'Javascript Open Air'
+  subtitleMD: |-
     Javascript \
     Open Air
   title: VinnytsiaJS 2020
