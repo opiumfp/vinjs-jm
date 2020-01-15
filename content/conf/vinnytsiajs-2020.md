@@ -9,6 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
+  id: home
   image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
   imagePt: /uploads/hero-pt.jpg
   subtitle: |-
