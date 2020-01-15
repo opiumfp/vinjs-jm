@@ -66,7 +66,6 @@ query Conf {
       id
       title
       subtitle
-      subtitleMD
       date
       image (width: 1920, quality:40)
       imagePt (width: 768, quality:40)
