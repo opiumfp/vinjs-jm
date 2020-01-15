@@ -12,7 +12,7 @@ hero:
   date: 'July 25, 2020'
   id: home
   image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
-  imagePt: /uploads/hero-pt-02.jpg
+  imagePt: /uploads/location-pt.jpg
   subtitle: Javascript Open Air
   title: VinnytsiaJS 2020
 about:
