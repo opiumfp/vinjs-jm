@@ -35,7 +35,6 @@
           :href="this.$props.navData.button.src"
           target="_blank"
           class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0"
-          type="submit"
         >{{this.$props.navData.button.title}}</a>
       </div>
     </div>
