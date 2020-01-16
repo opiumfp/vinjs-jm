@@ -13,14 +13,12 @@
           <video
             ref="herovideo"
             class="hero_bg_video"
-            src="../tmp/vjs19.mp4"
             muted="muted"
             loop="loop"
           >
-            <!-- autoplay="autoplay" -->
-            <source src="../tmp/vjs19.mp4" type="video/mp4" />
-            <source src="../tmp/vjs19.ogg" type="video/ogg" />
-            <source src="../tmp/vjs19.webm" type="video/webm" />
+            <source src="../../assets/videos/vjs19.mp4" type="video/mp4" />
+            <source src="../../assets/videos/vjs19.ogg" type="video/ogg" />
+            <source src="../../assets/videos/vjs19.webm" type="video/webm" />
           </video>
         </template>
         <g-image
@@ -80,14 +78,9 @@ export default {
       window.addEventListener("scroll", () => {
         if (window.scrollY < windowHeight) {
           if (!videoHide) return false;
-          // console.log('HIDE')
-
-          // document.querySelector('body').classList.remove('hero-hide')
           this.herovideo.play();
           videoHide = false;
         } else if (!videoHide) {
-          // console.log('SHOW')
-          // document.querySelector('body').classList.add('hero-hide')
           this.herovideo.pause();
           videoHide = true;
         }
@@ -116,13 +109,11 @@ export default {
     color: $white;
     transform: translate(-50%, -50%);
     width: 100%;
-    // top: calc(50% - $navbar-h);
     top: calc(50% - #{$nav-height/2});
     left: 50%;
     text-align: center;
     @include media-breakpoint-down(lg) {
       top: 50%;
-      // top: calc(50% - #{$nav-height/2});
   
     }
   }
@@ -201,7 +192,6 @@ export default {
       min-width: 100%;
       min-height: 100vh;
     }
-    // &_video,
     &_image {
       position: absolute;
       transform: translate(-50%, -50%);

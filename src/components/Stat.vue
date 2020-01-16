@@ -4,7 +4,7 @@
     <div class="stat_bg_wrap">
       <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt"/>
       <div class="stat_bg_prlx" v-prlx="{ fromBottom: true,  disabled: device.noPrlx }">
-        <g-image v-if="data.image" class="stat_bg_img stat_bg_img-landscape" :src="data.image" />
+        <g-image v-if="data.image" class="stat_bg_img stat_bg_img-landscape" :src="data.image" immediate="device.isBrowser"/>
       </div>
     </div>
   </div>

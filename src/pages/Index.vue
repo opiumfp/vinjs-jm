@@ -29,7 +29,7 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
-      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-5">
+      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-6">
         <div class="anchor-id" id="speakers"></div>
         <div class="container">
           <div class="row">
