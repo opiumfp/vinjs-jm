@@ -92,8 +92,8 @@ query Conf {
       title
       subtitle
       date
-      image (width: 1920, quality:40)
-      imagePt (width: 768, quality:40)
+      image (quality:40)
+      imagePt (quality:40)
       button {
         title
         link
