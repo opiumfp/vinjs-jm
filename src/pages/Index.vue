@@ -1,6 +1,10 @@
 <template>
   <Layout>
-    <hero v-if="$page.pageData.hero.image" :id="$page.pageData.hero.id" :heroData="$page.pageData.hero"></hero>
+    <hero
+      v-if="$page.pageData.hero.image"
+      :id="$page.pageData.hero.id"
+      :heroData="$page.pageData.hero"
+    ></hero>
     <div class="layer layer-content">
       <section
         class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white section-vh-100 d-flex align-items-center justify-content-center"
@@ -25,17 +29,38 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
+      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-5">
+        <div class="anchor-id" id="speakers"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <page-title
+                class="position-relative"
+                title="Speakers"
+                subtitle="First Speakers will be Announced Soon"
+              ></page-title>
+              <p class="my-4">Have to contribute anything of value? Submit your talk!</p>
+              <a
+                href="https://forms.gle/jY1gcjCJKCbp8NNS8"
+                class="btn btn-primary my-2 my-sm-0"
+                target="_blank"
+              >Call For Papers</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- <section :id="$page.pageData.partners.id">
         <page-title
-          class="pt-6 pb-4"
+          class="pt-5 pb-4"
           :title="$page.pageData.partners.title"
           :subtitle="$page.pageData.partners.subtitle"
         ></page-title>
         <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
-      </section> -->
-      <section :id="$page.pageData.friends.id">
+      </section>-->
+      <section class="position-relative">
+        <div class="anchor-id" :id="$page.pageData.friends.id"></div>
         <page-title
-          class="pt-6 pb-4"
+          class="pt-5 pb-4"
           :title="$page.pageData.friends.title"
           :subtitle="$page.pageData.friends.subtitle"
         ></page-title>
@@ -46,9 +71,9 @@
         <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
         <location :locationData="$page.pageData.location"></location>
       </section>
-      <section>
-        <!-- <hr class="col-12 col-md-6 p-0" /> -->
-        <page-title class="pt-5 pb-3" title="Contact Us" id="contact"></page-title>
+      <section class="position-relative">
+        <div class="anchor-id" id="contact"></div>
+        <page-title class="pt-5 pb-3" title="Contact Us" ></page-title>
         <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
       </section>
       <div class="spacer-nav-bottom"></div>
@@ -164,7 +189,32 @@ import ContactUs from "@/components/ContactUs";
 
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Javascript Open Air Conference 2020",
+    meta: [
+      { httpEquiv: "X-UA-Compatible", content: "IE=edge,chrome=1" },
+      {
+        name: "viewport",
+        content: "width=device-width,initial-scale=1,shrink-to-fit=no"
+      },
+      {
+        name: "keywords",
+        content:
+          "ReactJS, React, React Native, Vue, VueJS, Angular, GraphQL framework,, JavaScript, development, Facebook, vinnitsa, conference, вінниця, винница"
+      },
+      {
+        name: "description",
+        content:
+          "VinnytsiaJS conference is a full day open air conference of all things Javasript, gathering Front-end developers across the Ukraine and abroad in the heart of the country."
+      },
+      { property: "og:image", content: "" },
+      {
+        property: "og:title",
+        content: "VinnytsiaJS 2020, UA Frontend Conference"
+      },
+      { property: "og:type", content: "article" },
+      { property: "og:description", content: "" }
+    ],
+    link: [{ rel: "canonical", href: "http://vinnytsiajs.org/" }]
   },
   components: {
     Hero,

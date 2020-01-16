@@ -36,10 +36,24 @@
   &-red:before {
     background-color: rgba($vjs-red, .95) ;
   }
+  &-green:before {
+    background-color: rgba($vjs-green, .95) ;
+  }
 }
 
 .spacer-nav-bottom {
   @include media-breakpoint-up(lg) {
     padding-top: $nav-height;
+  }
+}
+
+.anchor-id {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 0;
+  top: 0;
+  @include media-breakpoint-down(lg) {
+    top: -$nav-height;
   }
 }

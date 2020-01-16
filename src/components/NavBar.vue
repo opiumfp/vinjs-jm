@@ -1,72 +1,91 @@
 <template>
-<nav class="vjs-navbar navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
-  <!-- <a class="navbar-brand" href="http://vinnytsiajs.org">
+  <nav class="vjs-navbar navbar navbar-expand-lg fixed-bottom navbar-dark bg-dark">
+    <!-- <a class="navbar-brand" href="http://vinnytsiajs.org">
       <g-image src="../../assets/images/logo/vinjs19-logo-inline.png" width="100" fit="contain" background="none" />
-  </a> -->
-  <div class="vjs-navbar_nav-mobile">
-    <button @click="toggleDropNav" class="navbar-toggler" type="button"  data-target="#navbar_dropmenu" aria-controls="navbar_dropmenu" aria-expanded="false" aria-label="Toggle navigation">
+    </a>-->
+    <div class="vjs-navbar_nav-mobile">
+      <button
+        @click="toggleDropNav"
+        class="navbar-toggler"
+        type="button"
+        data-target="#navbar_dropmenu"
+        aria-controls="navbar_dropmenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
+      </button>
+    </div>
 
-  <div class="vjs-navbar_collaplse navbar-collapse" id="navbar_dropmenu">
-    <div class="vjs-navbar_social-wrap">
-      <social-icons :socialIconsData="getSocialIcons(this.$props.navData.socialicons)"></social-icons>
+    <div class="vjs-navbar_collaplse navbar-collapse" id="navbar_dropmenu">
+      <div class="vjs-navbar_social-wrap">
+        <social-icons :socialIconsData="getObject(this.$props.navData.socialicons)"></social-icons>
+      </div>
+      <ul class="vjs-navbar_nav navbar-nav">
+        <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
+          <a v-if="item.active" class="vjs-navbar_link nav-link scroll" :href="item.src">
+            {{item.title}}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+      <div class="vjs-navbar_button-wrap">
+        <a
+          v-if="this.$props.navData.button"
+          :href="this.$props.navData.button.src"
+          target="_blank"
+          class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0"
+          type="submit"
+        >{{this.$props.navData.button.title}}</a>
+      </div>
     </div>
-    <ul class="vjs-navbar_nav navbar-nav">
-      <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-        <a v-if="item.active" class="vjs-navbar_link nav-link scroll" :href="item.src">{{item.title}} <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <div class="vjs-navbar_button-wrap">
-      <button class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0" type="submit">Get Ticket</button>
-    </div>
-  </div>
-</nav>
+  </nav>
 </template>
 
 <script>
-import SocialIcons from "@/components/SocialIcons"
-
+import SocialIcons from "@/components/SocialIcons";
 
 export default {
-    props: {
-      navData: {
-        type: Object,
-        required: true
-      }
-    },
-    components: {
-      SocialIcons
-    },
-    mounted() {
-      
-      window.addEventListener("orientationchange", function() {
-        document.querySelector('body').classList.remove('nav_dropmenu-show')
-      }, false);
-
-      window.addEventListener('scroll', () => {
-        let pageScrolled = false;
-        if ( window.scrollY === 0 ) {
-          document.querySelector('body').classList.remove('page-scrolled')
-          pageScrolled = false;
-        } else {
-          if (pageScrolled) return;
-
-          document.querySelector('body').classList.add('page-scrolled')
-          pageScrolled = true;
-        }
-      })
-    },
-    methods: {
-      getSocialIcons: (str) => {
-        return JSON.parse(str)
+  props: {
+    navData: {
+      type: Object,
+      required: true
+    }
+  },
+  components: {
+    SocialIcons
+  },
+  mounted() {
+    window.addEventListener(
+      "orientationchange",
+      function() {
+        document.querySelector("body").classList.remove("nav_dropmenu-show");
       },
-      toggleDropNav: () => {
-        document.querySelector('body').classList.toggle('nav_dropmenu-show')
+      false
+    );
+
+    window.addEventListener("scroll", () => {
+      let pageScrolled = false;
+      if (window.scrollY === 0) {
+        document.querySelector("body").classList.remove("page-scrolled");
+        pageScrolled = false;
+      } else {
+        if (pageScrolled) return;
+
+        document.querySelector("body").classList.add("page-scrolled");
+        pageScrolled = true;
       }
+    });
+  },
+  methods: {
+    getObject: str => {
+      return JSON.parse(str);
     },
-}
+    toggleDropNav: () => {
+      document.querySelector("body").classList.toggle("nav_dropmenu-show");
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
@@ -76,11 +95,11 @@ export default {
   height: $nav-height;
   background-color: transparent !important;
   .page-scrolled & {
-    background-color: rgba($dark, .7) !important;
+    background-color: rgba($dark, 0.7) !important;
   }
-  @include transition(background-color linear .15s);
+  @include transition(background-color linear 0.15s);
   .nav_dropmenu-show & {
-    background-color: rgba($dark, .6) !important;
+    background-color: rgba($dark, 0.6) !important;
     height: auto;
   }
   @include media-breakpoint-down(md) {
@@ -119,7 +138,7 @@ export default {
         @include media-breakpoint-between(sm, md) {
           @media (max-height: 768px) {
             padding-left: 1.5rem;
-            padding-right: 1.5rem
+            padding-right: 1.5rem;
           }
         }
       }
@@ -136,8 +155,8 @@ export default {
       }
     }
     @media screen and (max-width: 768px) and (orientation: landscape) {
-        flex-direction: row;
-        flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
   &_social-wrap,
@@ -154,7 +173,7 @@ export default {
     }
   }
   .social-icons {
-    font-size: $font-size-base*1.1;
+    font-size: $font-size-base * 1.1;
     @include media-breakpoint-down(lg) {
       flex-direction: row;
     }

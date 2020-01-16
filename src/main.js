@@ -3,14 +3,38 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import '../assets/styles/main.scss'
-// import BootstrapVue from 'bootstrap-vue'
-
-// import '../node_modules/bootstrap/js/src/collapse'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  // Vue.use(BootstrapVue)
-  // Vue.use(CollapsePlugin)
   Vue.component('Layout', DefaultLayout)
 
+  // Add inline CSS
+  // head.style.push({
+  //   type: 'text/css',
+  //   cssText: '.some-custom-css {color: red}'
+  // })
+
+  // Add an external CSS file
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://some-server.com/external-styleheet.css'
+  // })
+
+  // Add an external Javascript before the closing </body> tag
+  // head.script.push({
+  //   src: 'https://some-server.com/external-script.js',
+  //   body: true
+  // })
+
+  // Add a meta tag
+  // head.meta.push({
+  //   name: 'keywords',
+  //   content: 'HTML,CSS,XML,JavaScript',
+  //   charset: 'utf-8',
+  // })
+
+
+
 }
+
+
