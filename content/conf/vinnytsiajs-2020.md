@@ -12,7 +12,7 @@ hero:
     title: Buy Tickets
   date: 'July 25, 2020'
   id: home
-  image: /uploads/13923608_276730556030202_3607194505856963940_o.jpg
+  image: /uploads/hero.jpg
   imagePt: /uploads/hero-pt-06.jpg
   subtitle: Javascript Open Air
   title: VinnytsiaJS 2020
@@ -24,7 +24,7 @@ about:
   paragraph: "The fifth annual Javascript conference, that will be held in the usual Open-Air format. The event is organized and driven by Vinnytsia JavaScript Community.\r\n\n\rThis summer meet the Conference dedicated to JavaScript development. We took care of everything to provide all conference guests with a comfortable location, appropriate meeting spaces, for you just to have summer rest and enjoy networking."
   title: VinnytsiaJS 2020
 stat:
-  image: /uploads/20728914_468149920221597_3717016245162761801_o.jpg
+  image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
