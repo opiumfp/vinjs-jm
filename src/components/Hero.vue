@@ -191,6 +191,9 @@ export default {
     &_video {
       min-width: 100%;
       min-height: 100vh;
+      transform: translateX(-50%);
+      position: relative;
+      left: 50%;
     }
     &_image {
       position: absolute;
@@ -207,11 +210,8 @@ export default {
           &-landscape {
             display: none;
           }
-          &-portrait {
+          html.mobile &-portrait {
             display: block;
-            min-width: 0;
-            min-height: 0;
-            height: 100%;
             width: auto;
           }
         }

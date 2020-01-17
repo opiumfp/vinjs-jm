@@ -1,74 +1,84 @@
 <template>
-<div class="stat">
-  <div v-if="data.image" class="stat_bg">
-    <div class="stat_bg_wrap">
-      <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt"/>
-      <div class="stat_bg_prlx" v-prlx="{ fromBottom: true,  disabled: device.noPrlx }">
-        <g-image v-if="data.image" class="stat_bg_img stat_bg_img-landscape" :src="data.image" immediate="device.isBrowser"/>
+  <div class="stat">
+    {{this.device.isBrowser}}
+    <div v-if="data.image" class="stat_bg">
+      <div class="stat_bg_wrap">
+        <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt" />
+        <div class="stat_bg_prlx" v-prlx="{ fromBottom: true,  disabled: device.noPrlx }">
+          <g-image
+            v-if="data.image"
+            class="stat_bg_img stat_bg_img-landscape"
+            :src="data.image"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container pt-6 pb-6">
-    <div class="row justify-content-center">
-      <div v-for="(item, index) in data.items" :key="item.id" :class="`stat_col col-12 col-lg-${colWidth}`">
-        <div class="stat_item text-center">
-          <div class="h3 stat_title mb-2 mb-lg-3" v-if="item.title"><vue-markdown>{{ item.title }}</vue-markdown></div>
-          <p class="stat_paragraph" v-if="item.paragraph">
-            <vue-markdown>{{item.paragraph}}</vue-markdown>
-          </p>
-          <hr v-if="!(index == data.items.length - 1)" class="stat_hr bg-light w-25 my-4"/>
+    <div class="container pt-6 pb-6">
+      <div class="row justify-content-center">
+        <div
+          v-for="(item, index) in data.items"
+          :key="item.id"
+          :class="`stat_col col-12 col-lg-${colWidth}`"
+        >
+          <div class="stat_item text-center">
+            <div class="h3 stat_title mb-2 mb-lg-3" v-if="item.title">
+              <vue-markdown>{{ item.title }}</vue-markdown>
+            </div>
+            <p class="stat_paragraph" v-if="item.paragraph">
+              <vue-markdown>{{item.paragraph}}</vue-markdown>
+            </p>
+            <hr v-if="!(index == data.items.length - 1)" class="stat_hr bg-light w-25 my-4" />
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
 import { store } from "~/stores/store";
 
-import VueMarkdown from 'vue-markdown'
+import VueMarkdown from "vue-markdown";
 
-import Vue from 'vue'
-import VuePrlx from 'vue-prlx'
+import Vue from "vue";
+import VuePrlx from "vue-prlx";
 Vue.use(VuePrlx);
 
 export default {
-    props: {
-        statData: {
-          type: Object,
-          required: true
-        }
-    },
-    components: {
-      VueMarkdown
-    },
-    computed: {
-      data() {
-        return this.$props.statData
-      },
-      device() {
-        return store.device;
-      }
-    },
-    created() {
-      const cols = 12;
-      // this.data = this.$props.statData
-      this.colWidth = cols;
-
-      if (this.data.items.length) {
-        this.colWidth = Math.floor(cols/this.data.items.length);
-      }
+  props: {
+    statData: {
+      type: Object,
+      required: true
     }
-}
+  },
+  components: {
+    VueMarkdown
+  },
+  computed: {
+    data() {
+      return this.$props.statData;
+    },
+    device() {
+      return store.device;
+    }
+  },
+  created() {
+    const cols = 12;
+    // this.data = this.$props.statData
+    this.colWidth = cols;
+
+    if (this.data.items.length) {
+      this.colWidth = Math.floor(cols / this.data.items.length);
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
 
-$circle: $spacer*11;
-$circle-sm: $spacer*10;
-
+$circle: $spacer * 11;
+$circle-sm: $spacer * 10;
 
 .stat {
   color: $white;
@@ -87,15 +97,15 @@ $circle-sm: $spacer*10;
       justify-content: center;
       margin: 0 auto;
       &:after {
-        content: '';
+        content: "";
         border: 1px solid white;
-        background-color: rgba($white, .15);
+        background-color: rgba($white, 0.15);
         position: absolute;
         width: $circle;
         height: $circle;
         @media (max-width: 1100px) {
           height: $circle-sm;
-          width: $circle-sm; 
+          width: $circle-sm;
         }
         transform: translate(-50%, -50%) rotate(15deg);
         border-radius: 50%;
@@ -121,9 +131,9 @@ $circle-sm: $spacer*10;
     bottom: 0;
     overflow: hidden;
     &_prlx {
-      transition: none!important;
+      transition: none !important;
       @include media-breakpoint-down(lg) {
-        transform: none!important;
+        transform: none !important;
       }
     }
     &_img {
@@ -157,7 +167,7 @@ $circle-sm: $spacer*10;
         min-height: 100%;
       }
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -168,5 +178,4 @@ $circle-sm: $spacer*10;
     }
   }
 }
-
 </style>

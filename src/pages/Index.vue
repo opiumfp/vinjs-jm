@@ -108,7 +108,7 @@ query Conf {
       logo
     }
     stat {
-      image (quality:40)
+      image (quality:60)
       imagePt (quality:40)
       items {
         title
@@ -163,7 +163,7 @@ query Conf {
     location {
       id
       title
-      image (quality:40)
+      image (quality:60)
       imagePt (quality:40)
       logo (width: 380)
       name

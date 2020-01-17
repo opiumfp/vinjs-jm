@@ -16,7 +16,11 @@
                 target="_blank"
                 @click="linkClick($event, item.type, item.src)"
               >
-                <g-image v-if="item.image" class="media-tiles_item_img" :src="item.image" />
+                <g-image
+                  v-if="item.image"
+                  class="media-tiles_item_img"
+                  :src="item.image"
+                />
                 <div
                   class="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center"
                 >
@@ -37,7 +41,7 @@
 
             <!-- <template v-if="item.type === 'youtube'">
               <youtube-video :src="item.src"></youtube-video>
-            </template> -->
+            </template>-->
           </div>
         </div>
       </div>
