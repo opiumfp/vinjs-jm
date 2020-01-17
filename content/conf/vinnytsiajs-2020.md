@@ -132,9 +132,9 @@ partners:
   items:
     - active: 'true'
       fields: >-
-        {"description":"","image":"/uploads/matrica-b.svg","src":"http://matrica.vn.ua/","title":"Матриця
-        - Цифрові технології"}
-      image: /uploads/matrica-b.svg
+        {"description":"","image":"/uploads/Effective_Programming_for_America_logo.svg","src":"https://www.epam.com/","title":"EPAM
+        Systems"}
+      image: /uploads/Effective_Programming_for_America_logo.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
