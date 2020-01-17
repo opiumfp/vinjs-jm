@@ -1,6 +1,5 @@
 <template>
   <div class="stat">
-    {{this.device.isBrowser}}
     <div v-if="data.image" class="stat_bg">
       <div class="stat_bg_wrap">
         <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt" />
