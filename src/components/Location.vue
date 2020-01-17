@@ -26,11 +26,13 @@
               v-if="data.image"
               class="location_bg_img location_bg_img-landscape"
               :src="data.image"
+              :alt="VinnytsiaJS - Butterfly"
             />
             <g-image
               v-if="data.imagePt"
               class="location_bg_img location_bg_img-portrait"
               :src="data.imagePt"
+              :alt="VinnytsiaJS - Butterfly"
             />
           </div>
         </div>
@@ -58,35 +60,7 @@
                 style="border:0;"
                 allowfullscreen
               ></iframe>
-              <!-- <small>
-              <a class="location_map_link" :href="data.mapLinkDirect" target="blank">
-                <g-image src="~/../assets/images/misc/openstreetmap-logo.svg" width="24" class="align-bottom"></g-image>
-                <span class="h6 ml-1 text-dark font-weight-bold">OpenStreetMap</span>
-              </a>
-              </small>-->
             </div>
-            <!-- <div class="col-12 col-md-4 bg-light">
-            <div class="location_info my-3 mx-2">
-              <h2>Contact Us</h2>
-              <ul class="list-unstyled mt-4">
-                <li>
-                  <address>Recreation base "Butterfly", 20km Khmel'nyts'ke hwy, Sadove, Ukraine</address>
-                </li>
-
-                <li>
-                  <a href="tel:+380636310436">+380 63 63 104 36</a><span> (Partnership)</span>
-                </li>
-
-                <li>
-                  <a href="tel:+380632007748">+380 63 200 77 48</a><span> (Transfer)</span>
-                </li>
-
-                <li>
-                  <a href="mailto:info@vinnytsiajs.org">info@vinnytsiajs.org</a>
-                </li>
-              </ul>
-            </div>
-            </div>-->
           </div>
         </div>
       </div>
@@ -129,8 +103,6 @@ export default {
   }
   &_logo {
     max-width: 100%;
-    // TMP
-    // filter: grayscale(1) brightness(150%);
   }
    &_bg {
     position: absolute;

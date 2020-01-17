@@ -2,13 +2,19 @@
   <div class="stat">
     <div v-if="data.image" class="stat_bg">
       <div class="stat_bg_wrap">
-        <g-image v-if="data.imagePt" class="stat_bg_img stat_bg_img-portrait" :src="data.imagePt" />
+        <g-image
+          v-if="data.imagePt"
+          class="stat_bg_img stat_bg_img-portrait"
+          :src="data.imagePt"
+          alt="Vinnytsia JS -  UA Forntend Conference"
+        />
         <div class="stat_bg_prlx" v-prlx="{ fromBottom: true,  disabled: device.noPrlx }">
           <g-image
             v-if="data.image"
             class="stat_bg_img stat_bg_img-landscape"
             :srcset="data.image.srcset"
             :src="data.image.src"
+            alt="Vinnytsia JS -  UA Forntend Conference"
           />
         </div>
       </div>

@@ -10,8 +10,8 @@
         :class="getBlockSizes(mode)">
 
         <div v-if="item.active" class="partners_item text-center pb-4 px-1">
-          <a :href="partner.src">
-            <g-image v-if="partner.image" class="partners_img" :src="item.image"/>
+          <a :href="partner.src" target="_blank">
+            <g-image v-if="partner.image" class="partners_img" :src="item.image" :alt="partner.title" />
           </a>
         </div>
       </div>

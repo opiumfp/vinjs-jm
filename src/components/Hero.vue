@@ -7,6 +7,7 @@
             v-if="$props.heroData.image"
             class="hero_bg_image hero_bg_image-landscape"
             :src="$props.heroData.image"
+            alt="Vinnytsia JS - Javascript Open Air"
           />
         </template>
         <template v-else>
@@ -25,6 +26,7 @@
           v-if="$props.heroData.imagePt"
           class="hero_bg_image hero_bg_image-portrait"
           :src="$props.heroData.imagePt"
+          alt="Vinnytsia JS - Javascript Open Air"
         />
       </div>
       <div class="hero_content pt-4">
@@ -35,7 +37,7 @@
               <img
                 class="hero_logo d-block mx-auto my-4"
                 src="../../assets/images/logo/vinnytsiajs-logo.svg"
-                alt
+                alt="VinnytsiaJS - Javascript Open Air Conference"
               />
               <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2>
               <div class="h1 hero_subtitle-pt text-uppercase">Javascript<br>Open Air</div>

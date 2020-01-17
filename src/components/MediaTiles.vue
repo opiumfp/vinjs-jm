@@ -20,6 +20,7 @@
                   v-if="item.image"
                   class="media-tiles_item_img"
                   :src="item.image"
+                  :alt="`VinnytsiaJS - ${item.title}`"
                 />
                 <div
                   class="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center"
