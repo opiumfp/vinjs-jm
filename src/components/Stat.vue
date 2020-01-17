@@ -8,7 +8,8 @@
           <g-image
             v-if="data.image"
             class="stat_bg_img stat_bg_img-landscape"
-            :src="data.image"
+            :srcset="data.image.srcset"
+            :src="data.image.src"
           />
         </div>
       </div>
