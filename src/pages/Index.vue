@@ -49,14 +49,14 @@
           </div>
         </div>
       </section>
-      <!-- <section :id="$page.pageData.partners.id">
+      <section :id="$page.pageData.partners.id">
         <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.partners.title"
           :subtitle="$page.pageData.partners.subtitle"
         ></page-title>
         <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
-      </section>-->
+      </section>
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.friends.id"></div>
         <page-title
