@@ -49,7 +49,8 @@
           </div>
         </div>
       </section>
-      <section :id="$page.pageData.partners.id">
+      <section class="position-relative">
+        <div class="anchor-id" :id="$page.pageData.partners.id"></div>
         <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.partners.title"
@@ -57,8 +58,7 @@
         ></page-title>
         <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
       </section>
-      <section class="position-relative">
-        <div class="anchor-id" :id="$page.pageData.friends.id"></div>
+      <section>
         <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.friends.title"
