@@ -210,7 +210,7 @@ export default {
       {
         name: "description",
         content:
-          "VinnytsiaJS conference is a full day open air conference of all things Javasript, gathering Front-end developers across the Ukraine and abroad in the heart of the country."
+          "VinnytsiaJS conference is a full day open-air conference of all things Javascript, gathering Front-end developers across Ukraine and abroad in the heart of the country."
       },
       { property: "og:image", content: "" },
       {
