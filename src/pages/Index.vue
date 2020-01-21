@@ -65,6 +65,12 @@
           :subtitle="$page.pageData.friends.subtitle"
         ></page-title>
         <partners :partnersData="$page.pageData.friends" mode="large"></partners>
+        <div class="text-center pt-5 pb-4">
+          <a
+            href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
+            class="btn btn-primary my-2 my-sm-0"
+          >Became a Partner</a>
+        </div>
       </section>
       <hr />
       <section :id="$page.pageData.location.id">
@@ -73,7 +79,7 @@
       </section>
       <section class="position-relative">
         <div class="anchor-id" id="contact"></div>
-        <page-title class="pt-5 pb-3" title="Contact Us" ></page-title>
+        <page-title class="pt-5 pb-3" title="Contact Us"></page-title>
         <contact-us :contactUsData="{}" :socialIconsData="$page.pageData.nav"></contact-us>
       </section>
       <div class="spacer-nav-bottom"></div>
