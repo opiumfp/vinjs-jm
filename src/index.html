@@ -3,10 +3,25 @@
   <head>
     ${head}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120437504-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-120437504-1");
+    </script>
+    
   </head>
   <body ${bodyAttrs}>
-    ${app}
-    ${scripts}
+    ${app} ${scripts}
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

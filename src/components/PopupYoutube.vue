@@ -1,6 +1,6 @@
 <template>
   <div class="popup" :class="{'popup-closed': popupClosed}">
-    <div class="popup_overlay"></div>
+    <div class="popup_overlay" @click="closePopup()"></div>
     <div class="popup_body">
       <div class="popup_wrap">
         <div class="container">
