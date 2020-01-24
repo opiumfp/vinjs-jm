@@ -157,6 +157,36 @@ friends:
       image: /uploads/matrica-b.svg
   subtitle: ''
   title: Friends
+pricing:
+  col: 4
+  currency: ₴
+  id: pricing
+  items:
+    - btnLabel: Take Ticket
+      btnSrc: '#'
+      caption: Limited Quality
+      price: '1600'
+      status: active
+      title: Early Bird
+    - btnLabel: Take Ticket
+      btnSrc: '#'
+      caption: Limited Quality
+      price: '2000'
+      status: sold
+      title: Smart Bird
+    - btnLabel: Take Ticket
+      btnSrc: '#'
+      caption: Limited Quality
+      price: '2800'
+      status: default
+      title: Regular
+    - btnLabel: Take Ticket
+      btnSrc: '#'
+      caption: Limited Quality
+      price: '3500'
+      status: default
+      title: Last Chance
+  title: Tickets
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
   id: location
