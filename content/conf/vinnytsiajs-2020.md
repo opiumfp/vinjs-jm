@@ -186,6 +186,7 @@ pricing:
       price: '3500'
       status: default
       title: Last Chance
+  subtitle: ''
   title: Tickets
 location:
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
