@@ -9,6 +9,7 @@ data:
   city: Vinnytsia
   company: RIA.COM
   country: Ukraine
+  image: /uploads/Borys_Mohyla.jpg
   name: Borys Mohyla
   socialLinks:
     - icon: icon-facebook-square
