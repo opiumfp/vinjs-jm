@@ -127,6 +127,10 @@ playlists:
       type: gallery
   subtitle: ''
   title: Playlists
+speakers:
+  id: speakers
+  subtitle: More Speakers will be Announced Soon
+  title: Speakers
 partners:
   id: partners
   items:
