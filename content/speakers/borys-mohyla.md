@@ -1,14 +1,18 @@
 ---
 name: Borys Mohyla
 data:
-  bio: ''
-  city: ''
-  company: ''
-  country: ''
+  bio: >-
+    Lecturer at Vinnitsa IT Academy. I have experience in developing fast,
+    scalable, highly loaded solutions. I'm working on developing VR interfaces.
+    Interested in machine learning and AI. Likes to think a lot and write a
+    little.
+  city: Vinnytsia
+  company: RIA.COM
+  country: Ukraine
   name: Borys Mohyla
   socialLinks:
     - icon: icon-facebook-square
       src: ''
-  title: ''
+  title: Senior full-stack developer
 ---
 
