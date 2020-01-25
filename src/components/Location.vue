@@ -26,13 +26,13 @@
               v-if="data.image"
               class="location_bg_img location_bg_img-landscape"
               :src="data.image"
-              :alt="VinnytsiaJS - Butterfly"
+              alt="VinnytsiaJS - Butterfly"
             />
             <g-image
               v-if="data.imagePt"
               class="location_bg_img location_bg_img-portrait"
               :src="data.imagePt"
-              :alt="VinnytsiaJS - Butterfly"
+              alt="VinnytsiaJS - Butterfly"
             />
           </div>
         </div>

@@ -50,6 +50,15 @@
         </div>
       </section>
       <section class="position-relative">
+        <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
+        <page-title
+          class="pt-5 pb-4"
+          :title="$page.pageData.pricing.title"
+          :subtitle="$page.pageData.pricing.subtitle"
+        ></page-title>
+        <pricing :pricingData="$page.pageData.pricing" />
+      </section>
+      <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
         <page-title
           class="pt-5 pb-4"
@@ -156,6 +165,21 @@ query Conf {
         image (quality:90, width:200)
       }
     }
+    pricing {
+      title
+      subtitle
+      id
+      currency
+      col
+      items {
+        title
+        status
+        caption
+        btnLabel
+        btnSrc
+        price
+      }
+    }
     friends {
       title
       subtitle
@@ -189,6 +213,7 @@ import About from "@/components/About";
 import Stat from "@/components/Stat";
 import PageTitle from "@/components/PageTitle";
 import MediaTiles from "@/components/MediaTiles";
+import Pricing from "@/components/Pricing";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
@@ -228,6 +253,7 @@ export default {
     Stat,
     PageTitle,
     MediaTiles,
+    Pricing,
     Partners,
     Location,
     ContactUs

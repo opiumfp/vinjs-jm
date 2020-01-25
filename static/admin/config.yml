@@ -217,6 +217,37 @@ collections:
               valueField: "data.image"
               displayFields: ["title"]
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
+    
+    - label: "Pricing"
+      name: "pricing"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Currency Symbol", name: "currency", widget: "string"}
+        - {label: "Coumns count (desktop)", name: "col", widget: "number", default: 4, required: false}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Price", name: "price", widget: "string"}
+            - {label: "Caption", name: "caption", widget: "string"}
+            - {label: "Button Label", name: "btnLabel", widget: "string"}
+            - {label: "Button Link", name: "btnSrc", widget: "string"}
+            - label: "Status"
+              name: "status"
+              widget: "select"
+              required: true
+              default: "default"
+              options:
+                - {label: "Default", value: "default"}
+                - {label: "Active", value: "active"}
+                - {label: "Sold", value: "sold"}
+            
     - label: "Location"
       name: "location"
       widget: "object"

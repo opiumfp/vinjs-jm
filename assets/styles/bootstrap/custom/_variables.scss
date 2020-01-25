@@ -75,7 +75,8 @@ $colors: map-merge(
 // $primary:       $blue !default;
 $primary:       lighten($vjs-red, 10%) !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
+// $success:       $green !default;
+$success:       lighten($vjs-green, 0%) !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
