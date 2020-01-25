@@ -172,7 +172,7 @@ pricing:
       btnSrc: '#'
       caption: Limited Quality
       price: '2000'
-      status: sold
+      status: default
       title: Smart Bird
     - btnLabel: Take Ticket
       btnSrc: '#'
