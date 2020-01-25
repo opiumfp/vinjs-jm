@@ -23,7 +23,10 @@
               <span>{{ item.caption }}</span>
             </div>
             <div v-if="item.btnLabel" class="pricing_item_btn text-center py-4">
-              <a :href="item.btnSrc" class="btn btn-primary my-2 my-sm-0">{{ item.btnLabel }}</a>
+              <a :href="item.btnSrc" 
+                class="btn my-2 my-sm-0"
+                :class="(`btn-${( item.status=='active' ?  'success' : 'primary' )}`)"
+                >{{ item.btnLabel }}</a>
             </div>
           </div>
         </div>
