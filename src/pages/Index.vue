@@ -39,7 +39,7 @@
                 title="Speakers"
                 subtitle="First Speakers will be Announced Soon"
               ></page-title>
-              <speakers :speakersData="$page.pageData.speakers"></speakers>
+              <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
               <p class="my-4">Have to contribute anything of value? Submit your talk!</p>
               <a
                 href="https://forms.gle/jY1gcjCJKCbp8NNS8"

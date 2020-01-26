@@ -15,16 +15,16 @@
               :src="item.image"
               :alt="speaker.title"
             />
-            <h5 v-if="speaker.name">{{ speaker.name }}</h5>
+            <h3 class="h3 mt-2" v-if="speaker.name">{{ speaker.name }}</h3>
             <div>
-              <span>{{ speaker.title }}</span>
+              <span class="lead">{{ speaker.title }}</span>
             </div>
             <div>
-              <span>at {{ speaker.company }}</span>
-              <span>{{ speaker.city }},</span>
+              <span>at {{ speaker.company }} </span>
+              <span>{{ speaker.city }}, </span>
               <span>{{ speaker.country }}</span>
             </div>
-            <div class="mt-2">
+            <div class="mt-3 text-left">
               <span>
                 <vue-markdown>{{ speaker.bio }}</vue-markdown>
               </span>
@@ -104,6 +104,7 @@ export default {
 .speakers {
   &_img {
     max-width: 100%;
+    border-radius: 50%;
   }
   @include media-breakpoint-down(lg) {
   }
