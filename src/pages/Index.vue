@@ -39,6 +39,7 @@
                 title="Speakers"
                 subtitle="First Speakers will be Announced Soon"
               ></page-title>
+              <speakers :speakersData="$page.pageData.speakers"></speakers>
               <p class="my-4">Have to contribute anything of value? Submit your talk!</p>
               <a
                 href="https://forms.gle/jY1gcjCJKCbp8NNS8"
@@ -155,6 +156,15 @@ query Conf {
         image (quality:40)
       }
     }
+    speakers {
+      title
+      subtitle
+      id
+      items {
+        fields
+        image (quality:90, width:200)
+      }
+    }
     partners {
       title
       subtitle
@@ -214,6 +224,7 @@ import Stat from "@/components/Stat";
 import PageTitle from "@/components/PageTitle";
 import MediaTiles from "@/components/MediaTiles";
 import Pricing from "@/components/Pricing";
+import Speakers from "@/components/Speakers";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
@@ -254,6 +265,7 @@ export default {
     PageTitle,
     MediaTiles,
     Pricing,
+    Speakers,
     Partners,
     Location,
     ContactUs
