@@ -164,7 +164,7 @@ speakers:
         2020.","city":"","company":"Freelance developer","country":"The
         Netherlands","image":"/uploads/Prashant Palikhe -
         qa.jpg","name":"Prashant
-        Palikhe","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
+        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
         developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
   subtitle: More Speakers will be Announced Soon
