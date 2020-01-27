@@ -19,7 +19,7 @@ data:
       src: ''
     - icon: icon-twitter
       src: 'http://twitter.com/prashantPalikhe/'
-    - icon: icon-twitter
+    - icon: icon-linkedin-square
       src: 'https://www.linkedin.com/in/prashantpalikhe/'
     - icon: icon-github
       src: 'https://github.com/prashantpalikhe/'
