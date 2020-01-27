@@ -15,8 +15,6 @@ data:
   image: /uploads/Prashant Palikhe - qa.jpg
   name: Prashant Palikhe
   socialLinks:
-    - icon: icon-facebook-square
-      src: ''
     - icon: icon-twitter
       src: 'http://twitter.com/prashantPalikhe/'
     - icon: icon-linkedin-square
