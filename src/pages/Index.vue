@@ -30,14 +30,14 @@
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
       <section class="vjs-bg-logo vjs-bg-logo-green text-white py-6">
-        <div class="anchor-id" id="speakers"></div>
+        <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
               <page-title
                 class="position-relative"
-                title="Speakers"
-                subtitle="First Speakers will be Announced Soon"
+                :title="$page.pageData.speakers.title"
+                :subtitle="$page.pageData.speakers.subtitle"
               ></page-title>
               <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
               <p class="my-4">Have to contribute anything of value? Submit your talk!</p>
@@ -50,7 +50,7 @@
           </div>
         </div>
       </section>
-      <section class="position-relative">
+      <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <page-title
           class="pt-5 pb-4"
@@ -59,6 +59,7 @@
         ></page-title>
         <pricing :pricingData="$page.pageData.pricing" />
       </section>
+      <hr />
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
         <page-title
