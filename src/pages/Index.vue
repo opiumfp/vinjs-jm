@@ -29,7 +29,7 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
-      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-6">
+      <section class="position-relative pt-5 pb-2">
         <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
           <div class="row">
@@ -40,12 +40,25 @@
                 :subtitle="$page.pageData.speakers.subtitle"
               ></page-title>
               <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
-              <p class="my-4">Have to contribute anything of value? Submit your talk!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-6">
+        <div class="anchor-id" id="cfp"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <page-title
+                class="position-relative"
+                title="Call for Papers"
+              ></page-title>
+              <p class="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
               <a
                 href="https://forms.gle/jY1gcjCJKCbp8NNS8"
-                class="btn btn-primary my-2 my-sm-0"
+                class="btn btn-primary my-2 px-5 my-sm-0"
                 target="_blank"
-              >Call For Papers</a>
+              >Submit</a>
             </div>
           </div>
         </div>

@@ -6,9 +6,9 @@
           v-for="item in data.items"
           :key="item.id"
           :set="speaker = getJSONData(item.fields)"
-          class="stat_col col-lg-4"
+          class="stat_col col-md-6 col-lg-4"
         >
-          <div class="speakers_item text-center pb-4 px-1">
+          <div class="speakers_item text-center px-1 mb-5">
             <g-image
               v-if="speaker.image"
               class="speakers_img"
@@ -19,8 +19,8 @@
             <div>
               <span class="lead text-warning">{{ speaker.company }}</span>
             </div>
-            <div class="">
-              <span v-if="speaker.title" class="">{{ speaker.title }}</span>
+            <div class="speakers_item_caption">
+              <span v-if="speaker.title">{{ speaker.title }}</span>
               <span v-if="speaker.city">, {{ speaker.city }}</span>
               <span v-if="speaker.country">, {{ speaker.country }}</span>
             </div>
@@ -84,20 +84,6 @@ export default {
   methods: {
     getJSONData: str => {
       return JSON.parse(str);
-    },
-    getBlockSizes: mode => {
-      let result = "";
-
-      switch (mode) {
-        case "xlarge":
-          result = "col-6 col-sm-4 col-md-4 col-lg-3";
-          break;
-        case "large":
-          result = "col-4 col-sm-3 col-md-3 col-lg-2";
-          break;
-      }
-
-      return result;
     }
   }
 };
@@ -109,6 +95,11 @@ export default {
   &_img {
     max-width: 100%;
     border-radius: 50%;
+  }
+  &_item {
+    &_caption {
+      font-weight: 500;
+    }
   }
   @include media-breakpoint-down(lg) {
   }
