@@ -140,6 +140,33 @@ speakers:
         Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Senior
         full-stack developer"}
       image: /uploads/Borys_Mohyla.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Natalia Tepluhina is a Vue.js core team member and a Senior
+        Frontend Engineer at GitLab. \n\nShe is a conference speaker and author
+        of articles on different topics related to Vue.js . Thanks to these
+        activities Natalia has got a title of Google Developer Expert in Web
+        Technologies.","city":"Kyiv","company":"GitLab / Vue.js core
+        team","country":"Ukraine","image":"/uploads/Natalia
+        Tepluhina.jpg","name":"Natalia
+        Tepluhina","socialLinks":[{"icon":"icon-twitter","src":"https://twitter.com/N_Tepluhina"}],"title":"Senior
+        Frontend Engineer"}
+      image: /uploads/Natalia Tepluhina.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Prashant is an independent frontend developer in the
+        Netherlands. He likes to excel the tools that he uses for his work. And
+        share his findings and knowledge with others. As a frontend developer,
+        some of his most used tools have been the browser dev tools. Where he
+        has spent a lot of time, knowing the ins and outs of the tools. And he
+        has collected all his findings and tips and tricks into one concrete
+        talk regarding the state of the devtools in
+        2020.","city":"","company":"Freelance developer","country":"The
+        Netherlands","image":"/uploads/Prashant Palikhe -
+        qa.jpg","name":"Prashant
+        Palikhe","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
+        developer"}
+      image: /uploads/Prashant Palikhe - qa.jpg
   subtitle: More Speakers will be Announced Soon
   title: Speakers
 partners:
