@@ -431,6 +431,7 @@ collections:
               - { label: "icon-youtube-play", value: "icon-youtube-play"}
               - { label: "icon-instagram", value: "icon-instagram"}
               - { label: "icon-github", value: "icon-github"}
+              - { label: "icon-linkedin-square", value: "icon-linkedin-square"}
               - { label: "icon-telegram", value: "icon-telegram"}
               - { label: "icon-phone", value: "icon-phone"}
               - { label: "icon-envelope", value: "icon-envelope"}
