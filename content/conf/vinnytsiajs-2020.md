@@ -207,13 +207,13 @@ pricing:
     - btnLabel: Take Ticket
       btnSrc: '#'
       caption: Limited Quality
-      price: '1600'
+      price: '1700'
       status: active
       title: Early Bird
     - btnLabel: Take Ticket
       btnSrc: '#'
       caption: Limited Quality
-      price: '2000'
+      price: '2100'
       status: default
       title: Smart Bird
     - btnLabel: Take Ticket
