@@ -13,7 +13,11 @@ data:
   name: Borys Mohyla
   socialLinks:
     - icon: icon-facebook-square
-      src: ''
+      src: 'https://www.facebook.com/BorysMohyla'
+    - icon: icon-twitter
+      src: 'https://twitter.com/BoryaMogila'
+    - icon: icon-github
+      src: 'https://boryamogila.github.io/'
   title: Senior full-stack developer
 ---
 
