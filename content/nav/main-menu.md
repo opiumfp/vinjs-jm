@@ -4,7 +4,7 @@ data:
   button:
     active: true
     src: '#pricing'
-    title: Take Ticket
+    title: Tickets
   items:
     - active: true
       src: '#home'
