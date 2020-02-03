@@ -3,8 +3,8 @@ title: Main Menu
 data:
   button:
     active: true
-    src: '#speakers'
-    title: Call For Papers
+    src: '#pricing'
+    title: Take Ticket
   items:
     - active: true
       src: '#home'
@@ -18,6 +18,9 @@ data:
     - active: true
       src: '#speakers'
       title: Speakers
+    - active: true
+      src: '#cfp'
+      title: CFP
     - active: true
       src: '#partners'
       title: Partners
