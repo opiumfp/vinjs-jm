@@ -7,7 +7,7 @@ data:
     Currently lives in Minsk, but you can easily find him at any international
     conference.
   city: Minsk
-  company: EPAM
+  company: EPAM Systems
   country: Belarus
   image: /uploads/Paul Yukhnovich.jpg
   name: Paul Yukhnovich
