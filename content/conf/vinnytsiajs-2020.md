@@ -158,17 +158,6 @@ speakers:
       image: /uploads/Natalia Tepluhina.jpg
     - active: 'true'
       fields: >-
-        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
-        fast, scalable, highly loaded solutions. I'm working on developing VR
-        interfaces. Interested in machine learning and AI. Likes to think a lot
-        and write a
-        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
-        Mohyla -1x1.jpg","name":"Borys
-        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
-        full-stack developer"}
-      image: /uploads/Borys Mohyla -1x1.jpg
-    - active: 'true'
-      fields: >-
         {"bio":"Paul is a web developer, who happens to be several communities
         organizer, public speaker, mentor, traveler and just a guy with a good
         sense of humor. Currently lives in Minsk, but you can easily find him at
@@ -178,6 +167,17 @@ speakers:
         Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"title":"JS
         developer"}
       image: /uploads/Paul Yukhnovich.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
+        fast, scalable, highly loaded solutions. I'm working on developing VR
+        interfaces. Interested in machine learning and AI. Likes to think a lot
+        and write a
+        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
+        Mohyla -1x1.jpg","name":"Borys
+        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
+        full-stack developer"}
+      image: /uploads/Borys Mohyla -1x1.jpg
     - active: 'true'
       fields: >-
         {"bio":"Accomplished software engineer, involved team leader and
