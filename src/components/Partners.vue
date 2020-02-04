@@ -67,6 +67,12 @@ export default {
   &_img{
     max-width: 100%;
   }
+  &_item {
+    @include transition(all linear 0.15s);
+    &:hover {
+      opacity: .8;
+    }
+  }
   @include media-breakpoint-down(lg) {}
 }
 

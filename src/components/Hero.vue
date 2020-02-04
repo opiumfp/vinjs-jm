@@ -40,7 +40,7 @@
                 alt="VinnytsiaJS - Javascript Open Air Conference"
               />
               <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Open Air</h2>
-              <div class="h1 hero_subtitle-pt text-uppercase">Javascript<br>Open Air</div>
+              <div class="h1 hero_subtitle-pt text-uppercase font-weight-bold">Javascript<br>Open Air</div>
             </div>
           </div>
         </div>
