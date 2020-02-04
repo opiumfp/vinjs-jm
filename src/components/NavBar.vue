@@ -29,12 +29,12 @@
           </a>
         </li>
       </ul>
-      <div class="vjs-navbar_button-wrap">
+      <div class="vjs-navbar_button-wrap text-right">
         <a
           v-if="this.$props.navData.button"
           :href="this.$props.navData.button.src"
           target="_blank"
-          class="btn btn-primary d-block mx-auto ml-lg-auto mr-lg-0"
+          class="btn btn-primary d-inline-block mx-auto ml-lg-auto mr-lg-0 px-4 px-lg-5"
         >{{this.$props.navData.button.title}}</a>
       </div>
     </div>
