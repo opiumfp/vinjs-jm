@@ -131,14 +131,19 @@ speakers:
   items:
     - active: 'true'
       fields: >-
-        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
-        fast, scalable, highly loaded solutions. I'm working on developing VR
-        interfaces. Interested in machine learning and AI. Likes to think a lot
-        and write a
-        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys_Mohyla.jpg","name":"Borys
-        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Senior
-        full-stack developer"}
-      image: /uploads/Borys_Mohyla.jpg
+        {"bio":"Prashant is an independent frontend developer in the
+        Netherlands. He likes to excel the tools that he uses for his work. And
+        share his findings and knowledge with others. As a frontend developer,
+        some of his most used tools have been the browser dev tools. Where he
+        has spent a lot of time, knowing the ins and outs of the tools. And he
+        has collected all his findings and tips and tricks into one concrete
+        talk regarding the state of the devtools in
+        2020.","city":"","company":"Freelance developer","country":"The
+        Netherlands","image":"/uploads/Prashant Palikhe -
+        qa.jpg","name":"Prashant
+        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
+        developer"}
+      image: /uploads/Prashant Palikhe - qa.jpg
     - active: 'true'
       fields: >-
         {"bio":"Natalia Tepluhina is a Vue.js core team member and a Senior
@@ -153,19 +158,47 @@ speakers:
       image: /uploads/Natalia Tepluhina.jpg
     - active: 'true'
       fields: >-
-        {"bio":"Prashant is an independent frontend developer in the
-        Netherlands. He likes to excel the tools that he uses for his work. And
-        share his findings and knowledge with others. As a frontend developer,
-        some of his most used tools have been the browser dev tools. Where he
-        has spent a lot of time, knowing the ins and outs of the tools. And he
-        has collected all his findings and tips and tricks into one concrete
-        talk regarding the state of the devtools in
-        2020.","city":"","company":"Freelance developer","country":"The
-        Netherlands","image":"/uploads/Prashant Palikhe -
-        qa.jpg","name":"Prashant
-        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
+        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
+        fast, scalable, highly loaded solutions. I'm working on developing VR
+        interfaces. Interested in machine learning and AI. Likes to think a lot
+        and write a
+        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
+        Mohyla -1x1.jpg","name":"Borys
+        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
+        full-stack developer"}
+      image: /uploads/Borys Mohyla -1x1.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Paul is a web developer, who happens to be several communities
+        organizer, public speaker, mentor, traveler and just a guy with a good
+        sense of humor. Currently lives in Minsk, but you can easily find him at
+        any international
+        conference.","city":"Minsk","company":"EPAM","country":"Belarus","image":"/uploads/Paul
+        Yukhnovich.jpg","name":"Paul
+        Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"title":"JS
         developer"}
-      image: /uploads/Prashant Palikhe - qa.jpg
+      image: /uploads/Paul Yukhnovich.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Accomplished software engineer, involved team leader and
+        proficient IT trainer/mentor with multidimensional expertise in computer
+        science based on 15 years of continuous
+        experience.","city":"Minsk","company":"EPAM
+        Systems","country":"Belarus","image":"/uploads/Denis
+        Vlassenko-1x1.jpg","name":"Denis
+        Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Lead
+        Software Engineer"}
+      image: /uploads/Denis Vlassenko-1x1.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Tell about your self and experience, technoligies what your
+        prefer and something interesting what you wold like to share): I like
+        programming things","city":"Vinnytsia","company":"Vinnytsia National
+        Technical University","country":"Ukraine","image":"/uploads/Yevhen
+        Shemet.jpg","name":"Yevhen
+        Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"title":"Teaching
+        Assistant"}
+      image: /uploads/Yevhen Shemet.jpg
   subtitle: More Speakers will be Announced Soon
   title: Speakers
 partners:
