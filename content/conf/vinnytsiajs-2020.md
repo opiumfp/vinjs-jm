@@ -131,21 +131,6 @@ speakers:
   items:
     - active: 'true'
       fields: >-
-        {"bio":"Prashant is an independent frontend developer in the
-        Netherlands. He likes to excel the tools that he uses for his work. And
-        share his findings and knowledge with others. As a frontend developer,
-        some of his most used tools have been the browser dev tools. Where he
-        has spent a lot of time, knowing the ins and outs of the tools. And he
-        has collected all his findings and tips and tricks into one concrete
-        talk regarding the state of the devtools in
-        2020.","city":"","company":"Freelance developer","country":"The
-        Netherlands","image":"/uploads/Prashant Palikhe -
-        qa.jpg","name":"Prashant
-        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
-        developer"}
-      image: /uploads/Prashant Palikhe - qa.jpg
-    - active: 'true'
-      fields: >-
         {"bio":"Natalia Tepluhina is a Vue.js core team member and a Senior
         Frontend Engineer at GitLab. \n\nShe is a conference speaker and author
         of articles on different topics related to Vue.js . Thanks to these
@@ -169,15 +154,19 @@ speakers:
       image: /uploads/Paul Yukhnovich.jpg
     - active: 'true'
       fields: >-
-        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
-        fast, scalable, highly loaded solutions. I'm working on developing VR
-        interfaces. Interested in machine learning and AI. Likes to think a lot
-        and write a
-        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
-        Mohyla -1x1.jpg","name":"Borys
-        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
-        full-stack developer"}
-      image: /uploads/Borys Mohyla -1x1.jpg
+        {"bio":"Prashant is an independent frontend developer in the
+        Netherlands. He likes to excel the tools that he uses for his work. And
+        share his findings and knowledge with others. As a frontend developer,
+        some of his most used tools have been the browser dev tools. Where he
+        has spent a lot of time, knowing the ins and outs of the tools. And he
+        has collected all his findings and tips and tricks into one concrete
+        talk regarding the state of the devtools in
+        2020.","city":"","company":"Freelance developer","country":"The
+        Netherlands","image":"/uploads/Prashant Palikhe -
+        qa.jpg","name":"Prashant
+        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
+        developer"}
+      image: /uploads/Prashant Palikhe - qa.jpg
     - active: 'true'
       fields: >-
         {"bio":"Accomplished software engineer, involved team leader and
@@ -189,6 +178,17 @@ speakers:
         Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Lead
         Software Engineer"}
       image: /uploads/Denis Vlassenko-1x1.jpg
+    - active: 'true'
+      fields: >-
+        {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
+        fast, scalable, highly loaded solutions. I'm working on developing VR
+        interfaces. Interested in machine learning and AI. Likes to think a lot
+        and write a
+        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
+        Mohyla -1x1.jpg","name":"Borys
+        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
+        full-stack developer"}
+      image: /uploads/Borys Mohyla -1x1.jpg
     - active: 'true'
       fields: >-
         {"bio":"Tell about your self and experience, technoligies what your
