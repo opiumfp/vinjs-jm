@@ -155,7 +155,7 @@ query Conf {
         type
         src
         colDesk
-        image (quality:70, width:640, height:360)
+        image (quality:90, width:640, height:360)
       }
     }
     playlists {
