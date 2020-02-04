@@ -33,6 +33,9 @@
   &-purple:before {
     background-color: rgba($vjs-purple, .95) ;
   }
+  &-blue:before {
+    background-color: rgba(darken($vjs-blue, 5%), .95) ;
+  }
   &-red:before {
     background-color: rgba($vjs-red, .95) ;
   }

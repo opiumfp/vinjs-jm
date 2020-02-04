@@ -33,13 +33,13 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase">{{this.$props.heroData.date}}</h2>
+              <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase font-weight-bold">{{this.$props.heroData.date}}</h2>
               <img
                 class="hero_logo d-block mx-auto my-4"
                 src="../../assets/images/logo/vinnytsiajs-logo.svg"
                 alt="VinnytsiaJS - Javascript Open Air Conference"
               />
-              <h2 class="h1 hero_subtitle text-uppercase">Javascript Open Air</h2>
+              <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Open Air</h2>
               <div class="h1 hero_subtitle-pt text-uppercase">Javascript<br>Open Air</div>
             </div>
           </div>

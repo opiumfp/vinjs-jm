@@ -12,7 +12,7 @@
             class="pricing_item text-center mb-4 mb-lg-0"
             :class="(`pricing_item-${( item.status )}`)"
           >
-            <div v-if="item.title" class="pricing_item_title h5 text-white py-2">
+            <div v-if="item.title" class="pricing_item_title h5 text-white text-uppercase py-2">
               <span>{{ item.title }}</span>
             </div>
             <div v-if="item.price" class="pricing_item_price display-4 py-4">
@@ -26,6 +26,7 @@
               <a :href="item.btnSrc" 
                 class="btn my-2 my-sm-0"
                 :class="(`btn-${( item.status=='active' ?  'success' : 'primary' )}`)"
+                target="_blank"
                 >{{ item.btnLabel }}</a>
             </div>
           </div>

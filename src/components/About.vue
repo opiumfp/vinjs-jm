@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 align-self-center text-center">
           <div class="about_descrition">
-            <h1>{{ data.title }}</h1>
+            <h1 class="font-weight-bold">{{ data.title }}</h1>
             <p class="my-4">{{ data.paragraph }}</p>
             <a :href="data.link" class="btn btn-primary my-2 my-sm-0">{{ data.linkTitle }}</a>
           </div>

@@ -23,7 +23,7 @@
       </div>
       <ul class="vjs-navbar_nav navbar-nav">
         <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-          <a v-if="item.active" class="vjs-navbar_link nav-link scroll" :href="item.src">
+          <a v-if="item.active" class="vjs-navbar_link nav-link scroll text-uppercase" :href="item.src">
             {{item.title}}
             <span class="sr-only">(current)</span>
           </a>
@@ -121,6 +121,7 @@ export default {
   }
   &_link {
     white-space: nowrap;
+    font-size: .9rem;
   }
   &_nav {
     text-align: center;

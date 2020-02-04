@@ -44,7 +44,7 @@
           </div>
         </div>
       </section>
-      <section class="vjs-bg-logo vjs-bg-logo-green text-white py-6">
+      <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
           <div class="row">
