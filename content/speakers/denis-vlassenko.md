@@ -1,10 +1,7 @@
 ---
 name: Denis Vlassenko
 data:
-  bio: >-
-    Accomplished software engineer, involved team leader and proficient IT
-    trainer/mentor with multidimensional expertise in computer science based on
-    15 years of continuous experience.
+  bio: Wrote his first line of code in far 1994 and cannot give up coding since.
   city: Minsk
   company: EPAM Systems
   country: Belarus
