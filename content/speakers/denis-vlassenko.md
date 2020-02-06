@@ -1,7 +1,9 @@
 ---
 name: Denis Vlassenko
 data:
-  bio: Wrote his first line of code in far 1994 and cannot give up coding since.
+  bio: >-
+    Den is an "old school man". He wrote his first line of code in far 1994 and
+    cannot give up coding since. A devoted advocate of IE6.
   city: Minsk
   company: EPAM Systems
   country: Belarus
