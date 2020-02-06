@@ -169,10 +169,8 @@ speakers:
       image: /uploads/Prashant Palikhe - qa.jpg
     - active: 'true'
       fields: >-
-        {"bio":"Accomplished software engineer, involved team leader and
-        proficient IT trainer/mentor with multidimensional expertise in computer
-        science based on 15 years of continuous
-        experience.","city":"Minsk","company":"EPAM
+        {"bio":"Wrote his first line of code in far 1994 and cannot give up
+        coding since.","city":"Minsk","company":"EPAM
         Systems","country":"Belarus","image":"/uploads/Denis
         Vlassenko-1x1.jpg","name":"Denis
         Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Lead
