@@ -208,6 +208,10 @@ partners:
         {"description":"","image":"/uploads/Effective_Programming_for_America_logo.svg","src":"https://www.epam.com/","title":"EPAM
         Systems"}
       image: /uploads/Effective_Programming_for_America_logo.svg
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/infopulse-vector-logo.svg","src":"https://www.infopulse.com/","title":"Infopulse"}
+      image: /uploads/infopulse-vector-logo.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
