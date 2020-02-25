@@ -93,7 +93,7 @@
           <a
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
             class="btn btn-primary my-2 my-sm-0"
-          >Became a Partner</a>
+          >Become a Partner</a>
         </div>
       </section>
       <hr />
@@ -186,7 +186,7 @@ query Conf {
       items {
         active
         fields
-        image (quality:90, width:200)
+        image (quality:90, width:400)
       }
     }
     pricing {

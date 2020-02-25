@@ -49,7 +49,7 @@ export default {
         let result = ''
 
         switch (mode) {
-          case 'xlarge': result = 'col-6 col-sm-4 col-md-4 col-lg-3'
+          case 'xlarge': result = 'col-6 col-sm-4 col-md-4 col-lg-4 px-4'
           break;
           case 'large': result = 'col-4 col-sm-3 col-md-3 col-lg-2'
           break;
@@ -65,7 +65,7 @@ export default {
 @import "assets/styles/base.scss";
 .partners {
   &_img{
-    max-width: 100%;
+    width: 100%;
   }
   &_item {
     @include transition(all linear 0.15s);
