@@ -158,6 +158,50 @@ collections:
               default: ''
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
 
+    - label: "Talks"
+      name: "talks"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Talk"
+              name: "talk"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Speaker"
+              name: "speaker"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Photo"
+              name: "image"
+              widget: "relation"
+              collection: "speakers"
+              searchFields: ["name"]
+              valueField: "data.image"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+
     - label: "Partners"
       name: "partners"
       widget: "object"
@@ -407,6 +451,7 @@ collections:
       required: false 
       default: ''
       fields:
+      - {label: "ID", name: "id", widget: "string", required: false, default: ''}
       - {label: "Name", name: "name", widget: "string", required: false, default: ''}
       - {label: "Title", name: "title", widget: "string", required: false, default: ''}
       - {label: "Company", name: "company", widget: "string", required: false, default: ''}
@@ -436,3 +481,21 @@ collections:
               - { label: "icon-phone", value: "icon-phone"}
               - { label: "icon-envelope", value: "icon-envelope"}
       - {label: "Photo", name: "image", widget: "image", required: false, default: null}
+
+- name: "talks" # Used in routes, e.g., /admin/collections/blog
+  label: "Talks" # Used in the UI
+  folder: "content/talks" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - {label: "ID", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Bio", name: "bio", widget: "markdown", required: false, default: ''}
