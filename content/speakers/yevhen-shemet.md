@@ -6,9 +6,6 @@ data:
     something interesting what you wold like to share): I like programming
     things
   city: Vinnytsia
-  company: Vinnytsia National Technical University
-  country: Ukraine
-  image: /uploads/Yevhen Shemet.jpg
   name: Yevhen Shemet
   socialLinks:
     - icon: icon-facebook-square
@@ -17,6 +14,10 @@ data:
       src: 'http://facebook.com/yevhene'
     - icon: icon-twitter
       src: 'https://twitter.com/yevhene'
+  country: Ukraine
   title: Teaching Assistant
+  id: yevhen_shemet
+  image: /uploads/Yevhen Shemet.jpg
+  company: Vinnytsia National Technical University
 ---
 
