@@ -134,11 +134,10 @@ speakers:
         {"bio":"Paul is a web developer, who happens to be several communities
         organizer, public speaker, mentor, traveler and just a guy with a good
         sense of humor. Currently lives in Minsk, but you can easily find him at
-        any international conference.","city":"Minsk","company":"EPAM
-        Systems","country":"Belarus","image":"/uploads/Paul
-        Yukhnovich.jpg","name":"Paul
-        Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"title":"JS
-        developer"}
+        any international conference.","city":"Minsk","name":"Paul
+        Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"country":"Belarus","title":"JS
+        developer","id":"paul_yukhnovich","image":"/uploads/Paul
+        Yukhnovich.jpg","company":"EPAM Systems"}
       image: /uploads/Paul Yukhnovich.jpg
     - active: 'true'
       fields: >-
@@ -146,11 +145,10 @@ speakers:
         Frontend Engineer at GitLab. \n\nShe is a conference speaker and author
         of articles on different topics related to Vue.js . Thanks to these
         activities Natalia has got a title of Google Developer Expert in Web
-        Technologies.","city":"Kyiv","company":"GitLab / Vue.js core
-        team","country":"Ukraine","image":"/uploads/Natalia
-        Tepluhina.jpg","name":"Natalia
-        Tepluhina","socialLinks":[{"icon":"icon-twitter","src":"https://twitter.com/N_Tepluhina"}],"title":"Senior
-        Frontend Engineer"}
+        Technologies.","city":"Kyiv","name":"Natalia
+        Tepluhina","socialLinks":[{"icon":"icon-twitter","src":"https://twitter.com/N_Tepluhina"}],"country":"Ukraine","title":"Senior
+        Frontend Engineer","id":"natalia _tepluhina","image":"/uploads/Natalia
+        Tepluhina.jpg","company":"GitLab / Vue.js core team"}
       image: /uploads/Natalia Tepluhina.jpg
     - active: 'true'
       fields: >-
@@ -161,42 +159,39 @@ speakers:
         has spent a lot of time, knowing the ins and outs of the tools. And he
         has collected all his findings and tips and tricks into one concrete
         talk regarding the state of the devtools in
-        2020.","city":"","company":"Freelance developer","country":"The
-        Netherlands","image":"/uploads/Prashant Palikhe -
-        qa.jpg","name":"Prashant
-        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"title":"Frontend
-        developer"}
+        2020.","city":"","name":"Prashant
+        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"country":"The
+        Netherlands","title":"Frontend
+        developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
+        qa.jpg","company":"Freelance developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
     - active: 'true'
       fields: >-
         {"bio":"Den is an \"old school man\". He wrote his first line of code in
         far 1994 and cannot give up coding since. A devoted advocate of
-        IE6.","city":"Minsk","company":"EPAM
-        Systems","country":"Belarus","image":"/uploads/Denis
-        Vlassenko-1x1.jpg","name":"Denis
-        Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"title":"Lead
-        Software Engineer"}
+        IE6.","city":"Minsk","name":"Denis
+        Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"country":"Belarus","title":"Lead
+        Software Engineer","id":"denis_vlassenko","image":"/uploads/Denis
+        Vlassenko-1x1.jpg","company":"EPAM Systems"}
       image: /uploads/Denis Vlassenko-1x1.jpg
     - active: 'true'
       fields: >-
         {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
         fast, scalable, highly loaded solutions. I'm working on developing VR
         interfaces. Interested in machine learning and AI. Likes to think a lot
-        and write a
-        little.","city":"Vinnytsia","company":"RIA.COM","country":"Ukraine","image":"/uploads/Borys
-        Mohyla -1x1.jpg","name":"Borys
-        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"title":"Senior
-        full-stack developer"}
+        and write a little.","city":"Vinnytsia","name":"Borys
+        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"country":"Ukraine","title":"Senior
+        full-stack developer","id":"borys_mohyla","image":"/uploads/Borys Mohyla
+        -1x1.jpg","company":"RIA.COM"}
       image: /uploads/Borys Mohyla -1x1.jpg
     - active: 'true'
       fields: >-
         {"bio":"Tell about your self and experience, technoligies what your
         prefer and something interesting what you wold like to share): I like
-        programming things","city":"Vinnytsia","company":"Vinnytsia National
-        Technical University","country":"Ukraine","image":"/uploads/Yevhen
-        Shemet.jpg","name":"Yevhen
-        Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"title":"Teaching
-        Assistant"}
+        programming things","city":"Vinnytsia","name":"Yevhen
+        Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"country":"Ukraine","title":"Teaching
+        Assistant","id":"yevhen_shemet","image":"/uploads/Yevhen
+        Shemet.jpg","company":"Vinnytsia National Technical University"}
       image: /uploads/Yevhen Shemet.jpg
   subtitle: First Speakers
   title: Speakers
