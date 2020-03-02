@@ -1,5 +1,6 @@
 ---
 title: Your web page is slow
+name: Your web page is slow
 data:
   id: talk_002
   title: Your web page is slow
