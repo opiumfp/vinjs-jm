@@ -139,6 +139,7 @@ speakers:
         developer","id":"paul_yukhnovich","image":"/uploads/Paul
         Yukhnovich.jpg","company":"EPAM Systems"}
       image: /uploads/Paul Yukhnovich.jpg
+      talk: ''
     - active: 'true'
       fields: >-
         {"bio":"Natalia Tepluhina is a Vue.js core team member and a Senior
@@ -150,6 +151,7 @@ speakers:
         Frontend Engineer","id":"natalia _tepluhina","image":"/uploads/Natalia
         Tepluhina.jpg","company":"GitLab / Vue.js core team"}
       image: /uploads/Natalia Tepluhina.jpg
+      talk: ''
     - active: 'true'
       fields: >-
         {"bio":"Prashant is an independent frontend developer in the
@@ -201,6 +203,7 @@ speakers:
         full-stack developer","id":"borys_mohyla","image":"/uploads/Borys Mohyla
         -1x1.jpg","company":"RIA.COM"}
       image: /uploads/Borys Mohyla -1x1.jpg
+      talk: ''
     - active: 'true'
       fields: >-
         {"bio":"Tell about your self and experience, technoligies what your

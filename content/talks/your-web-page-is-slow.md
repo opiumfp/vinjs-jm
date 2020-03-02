@@ -4,7 +4,7 @@ name: Your web page is slow
 data:
   id: talk_002
   title: Your web page is slow
-  bio: >-
+  description: >-
     Nowadays mobile page speed is a ranking factor for Google search engine.
     This means that the modern SEO needs to be even more concerned about web
     page performance.
