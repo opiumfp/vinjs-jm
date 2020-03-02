@@ -222,8 +222,8 @@ talks:
   items:
     - talk: >-
         {"id":"talk_001","title":"State of browser devtools in
-        2020","bio":"Let's peek into the best features of all the browser
-        devtools in 2020"}
+        2020","description":"Let's peek into the best features of all the
+        browser devtools in 2020"}
       speaker: >-
         {"bio":"Prashant is an independent frontend developer in the
         Netherlands. He likes to excel the tools that he uses for his work. And
@@ -240,9 +240,9 @@ talks:
       image: /uploads/Prashant Palikhe - qa.jpg
       active: 'true'
     - talk: >-
-        {"id":"talk_002","title":"Your web page is slow","bio":"Nowadays mobile
-        page speed is a ranking factor for Google search engine. This means that
-        the modern SEO needs to be even more concerned about web page
+        {"id":"talk_002","title":"Your web page is slow","description":"Nowadays
+        mobile page speed is a ranking factor for Google search engine. This
+        means that the modern SEO needs to be even more concerned about web page
         performance.\nThis means that SEO and performance come together
         now.\nBut why page speed becomes so important and how to reliably
         measure/address it?\nWhich metrics are used by Google and how these
