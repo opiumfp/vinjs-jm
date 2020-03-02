@@ -198,8 +198,17 @@ speakers:
         Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"title":"Teaching
         Assistant"}
       image: /uploads/Yevhen Shemet.jpg
-  subtitle: More Speakers will be Announced Soon
+  subtitle: First Speakers
   title: Speakers
+talks:
+  id: talks
+  title: Talks
+  subtitle: More Talks will be Announced Soon
+  items:
+    - talk: ''
+      speaker: ''
+      image: ''
+      active: 'true'
 partners:
   id: partners
   items:
@@ -266,17 +275,17 @@ pricing:
   subtitle: ''
   title: Tickets
 location:
+  logo: /uploads/foot_logo.png
+  name: Butterfly
+  mapLinkGoogle: 'https://goo.gl/maps/4bEGz1ptRPf3FAnM9'
   address: 'Recreation base "Butterfly", 20km Khmel''nyts''ke hwy, Sadove, Ukraine'
+  title: Location
+  mapLinkIframe: >-
+    https://www.openstreetmap.org/export/embed.html?bbox=28.124053180217746%2C49.32419545092468%2C28.125877082347873%2C49.32569538826454&amp;layer=mapnik&amp;marker=49.32494542530611%2C28.124965131282806
   id: location
   image: /uploads/location.jpg
   imagePt: /uploads/location-pt-01.jpg
-  logo: /uploads/foot_logo.png
   mapLinkDirect: >-
     https://www.openstreetmap.org/?mlat=49.32495&amp;mlon=28.12497#map=19/49.32495/28.12497&amp;layers=N
-  mapLinkGoogle: 'https://goo.gl/maps/4bEGz1ptRPf3FAnM9'
-  mapLinkIframe: >-
-    https://www.openstreetmap.org/export/embed.html?bbox=28.124053180217746%2C49.32419545092468%2C28.125877082347873%2C49.32569538826454&amp;layer=mapnik&amp;marker=49.32494542530611%2C28.124965131282806
-  name: Butterfly
-  title: Location
 ---
 
