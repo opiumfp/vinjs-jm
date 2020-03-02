@@ -10,9 +10,6 @@ data:
     tips and tricks into one concrete talk regarding the state of the devtools
     in 2020.
   city: ''
-  company: Freelance developer
-  country: The Netherlands
-  image: /uploads/Prashant Palikhe - qa.jpg
   name: Prashant Palikhe
   socialLinks:
     - icon: icon-twitter
@@ -21,6 +18,10 @@ data:
       src: 'https://www.linkedin.com/in/prashantpalikhe/'
     - icon: icon-github
       src: 'https://github.com/prashantpalikhe/'
+  country: The Netherlands
   title: Frontend developer
+  id: prashant_palikhe
+  image: /uploads/Prashant Palikhe - qa.jpg
+  company: Freelance developer
 ---
 
