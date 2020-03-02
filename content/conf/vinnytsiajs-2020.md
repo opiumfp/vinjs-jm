@@ -165,6 +165,10 @@ speakers:
         developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
         qa.jpg","company":"Freelance developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
+      talk: >-
+        {"id":"talk_001","title":"State of browser devtools in
+        2020","bio":"Let's peek into the best features of all the browser
+        devtools in 2020"}
     - active: 'true'
       fields: >-
         {"bio":"Den is an \"old school man\". He wrote his first line of code in
@@ -174,6 +178,19 @@ speakers:
         Software Engineer","id":"denis_vlassenko","image":"/uploads/Denis
         Vlassenko-1x1.jpg","company":"EPAM Systems"}
       image: /uploads/Denis Vlassenko-1x1.jpg
+      talk: >-
+        {"id":"talk_002","title":"Your web page is slow","bio":"Nowadays mobile
+        page speed is a ranking factor for Google search engine. This means that
+        the modern SEO needs to be even more concerned about web page
+        performance.\nThis means that SEO and performance come together
+        now.\nBut why page speed becomes so important and how to reliably
+        measure/address it?\nWhich metrics are used by Google and how these
+        metrics are compared from page to page to classify them as fast or
+        slow?\nAnd how numerous performance-related abbreviations like TTFB,
+        FCP, FMP, TTI, and SI are originally defined?\nAll the questions
+        mentioned above will be discussed and hopefully answered during this
+        webinar which will include a lot of catchy theory together with funny
+        stories from real practice."}
     - active: 'true'
       fields: >-
         {"bio":"Lecturer at Vinnitsa IT Academy. I have experience in developing
