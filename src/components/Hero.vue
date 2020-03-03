@@ -158,7 +158,7 @@ export default {
   &_logo {
     max-width: 100%;
     width: calc(65vh - #{$nav-height});
-    min-height: calc(65vh - #{$nav-height});
+    // min-height: calc(65vh - #{$nav-height});
     @include media-breakpoint-down(lg) {
       min-height: 0;
       @media (orientation: portrait) {
