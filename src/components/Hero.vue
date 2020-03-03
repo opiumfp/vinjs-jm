@@ -36,7 +36,7 @@
               <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase font-weight-bold">{{this.$props.heroData.date}}</h2>
               <img
                 class="hero_logo d-block mx-auto my-4"
-                src="../../assets/images/logo/vinnytsiajs-logo.svg"
+                src="../../assets/images/logo/VinnytsiaJS_20-logo-sm.png"
                 alt="VinnytsiaJS - Javascript Open Air Conference"
               />
               <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Open Air</h2>
