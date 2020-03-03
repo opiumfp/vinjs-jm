@@ -300,17 +300,17 @@ pricing:
   currency: ₴
   id: pricing
   items:
-    - btnLabel: Take Ticket
+    - btnLabel: Sold Out
       btnSrc: 'https://2event.com/en/events/1856578'
       caption: Limited Quantity
       price: '1700'
-      status: active
+      status: sold
       title: Early Bird
     - btnLabel: Take Ticket
       btnSrc: 'https://2event.com/en/events/1856578'
       caption: Limited Quantity
       price: '2100'
-      status: default
+      status: active
       title: Smart Bird
     - btnLabel: Take Ticket
       btnSrc: 'https://2event.com/en/events/1856578'
