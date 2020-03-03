@@ -44,6 +44,22 @@
           </div>
         </div>
       </section>
+      <!-- <hr>
+      <section class="position-relative pt-5 pb-5">
+        <div class="anchor-id" :id="$page.pageData.talks.id"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <page-title
+                class="position-relative"
+                :title="$page.pageData.talks.title"
+                :subtitle="$page.pageData.talks.subtitle"
+              ></page-title>
+              <talks class="mt-5" :talksData="$page.pageData.talks"></talks>
+            </div>
+          </div>
+        </div>
+      </section> -->
       <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
@@ -177,6 +193,17 @@ query Conf {
       items {
         fields
         image (quality:90, width:200)
+        talk
+      }
+    }
+    talks {
+      title
+      subtitle
+      id
+      items {
+        talk
+        speaker
+        image (quality:90, width:200)
       }
     }
     partners {
@@ -239,6 +266,7 @@ import PageTitle from "@/components/PageTitle";
 import MediaTiles from "@/components/MediaTiles";
 import Pricing from "@/components/Pricing";
 import Speakers from "@/components/Speakers";
+import Talks from "@/components/Talks";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
@@ -280,6 +308,7 @@ export default {
     MediaTiles,
     Pricing,
     Speakers,
+    Talks,
     Partners,
     Location,
     ContactUs
