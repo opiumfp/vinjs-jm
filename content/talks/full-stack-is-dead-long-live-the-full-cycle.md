@@ -1,7 +1,7 @@
 ---
 name: 'Full Stack is dead, long live the Full Cycle!'
 data:
-  id: talk_03
+  id: talk_003
   title: 'Full Stack is dead, long live the Full Cycle!'
   description: >-
     When “time to market” is critical. When bug fixing on production can’t take
