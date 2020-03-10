@@ -167,10 +167,7 @@ speakers:
         developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
         qa.jpg","company":"Freelance developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
-      talk: >-
-        {"id":"talk_001","title":"State of browser devtools in
-        2020","description":"Let's peek into the best features of all the
-        browser devtools in 2020"}
+      talk: ''
     - active: 'true'
       fields: >-
         {"bio":"Den is an \"old school man\". He wrote his first line of code in
