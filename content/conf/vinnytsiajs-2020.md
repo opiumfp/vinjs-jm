@@ -310,6 +310,19 @@ friends:
       image: /uploads/matrica-b.svg
   subtitle: ''
   title: Friends
+mediapartners:
+  id: media-partenrs
+  title: Media Partners
+  items:
+    - active: 'true'
+      fields: >-
+        {"description":"","image":"/uploads/it-association.png","src":"https://www.it-association.vn.ua/","title":"IT
+        Association Vinnytsia"}
+      image: /uploads/it-association.png
+    - active: 'true'
+      fields: >-
+        {"title":"JSFest","src":"https://jsfest.com.ua/","description":"","image":"/uploads/jsfest.png"}
+      image: /uploads/jsfest.png
 pricing:
   col: 4
   currency: ₴
