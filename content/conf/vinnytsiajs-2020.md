@@ -324,6 +324,20 @@ mediapartners:
       fields: >-
         {"title":"JSFest","src":"https://jsfest.com.ua/","description":"","image":"/uploads/jsfest.png"}
       image: /uploads/jsfest.png
+    - active: 'true'
+      fields: >-
+        {"title":"BeerJS
+        Minsk","src":"https://www.facebook.com/beerjsminsk/","description":"","image":"/uploads/4584318.png"}
+      image: /uploads/4584318.png
+    - active: 'true'
+      fields: >-
+        {"title":"FrontSpot","src":"https://www.facebook.com/groups/FrontSpot/","description":"","image":"/uploads/1_ubg12udfi8_qgit2n4odyq-2x.png"}
+      image: /uploads/1_ubg12udfi8_qgit2n4odyq-2x.png
+    - active: 'true'
+      fields: >-
+        {"title":"WebNotBombs","src":"
+        https://www.facebook.com/groups/webnotbombs/","description":"","image":"/uploads/webnotbombs-logo-short.png"}
+      image: /uploads/webnotbombs-logo-short.png
 pricing:
   col: 4
   currency: ₴
