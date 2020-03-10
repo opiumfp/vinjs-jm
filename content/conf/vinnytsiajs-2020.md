@@ -313,6 +313,7 @@ friends:
 mediapartners:
   id: media-partenrs
   title: Media Partners
+  subtitle: ''
   items:
     - active: 'true'
       fields: >-
