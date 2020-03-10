@@ -169,8 +169,8 @@ speakers:
       image: /uploads/Prashant Palikhe - qa.jpg
       talk: >-
         {"id":"talk_001","title":"State of browser devtools in
-        2020","bio":"Let's peek into the best features of all the browser
-        devtools in 2020"}
+        2020","description":"Let's peek into the best features of all the
+        browser devtools in 2020"}
     - active: 'true'
       fields: >-
         {"bio":"Den is an \"old school man\". He wrote his first line of code in
@@ -181,9 +181,9 @@ speakers:
         Vlassenko-1x1.jpg","company":"EPAM Systems"}
       image: /uploads/Denis Vlassenko-1x1.jpg
       talk: >-
-        {"id":"talk_002","title":"Your web page is slow","bio":"Nowadays mobile
-        page speed is a ranking factor for Google search engine. This means that
-        the modern SEO needs to be even more concerned about web page
+        {"id":"talk_002","title":"Your web page is slow","description":"Nowadays
+        mobile page speed is a ranking factor for Google search engine. This
+        means that the modern SEO needs to be even more concerned about web page
         performance.\nThis means that SEO and performance come together
         now.\nBut why page speed becomes so important and how to reliably
         measure/address it?\nWhich metrics are used by Google and how these
@@ -204,7 +204,12 @@ speakers:
         full-stack developer","id":"borys_mohyla","image":"/uploads/Borys Mohyla
         -1x1.jpg","company":"RIA.COM"}
       image: /uploads/Borys Mohyla -1x1.jpg
-      talk: ''
+      talk: >-
+        {"id":"talk_004","title":"100,000 objects need to be
+        displayed","description":"Working with a map is not the easiest task,
+        especially when there is a lot of data. Here we will try to figure out
+        how to work as efficiently as possible with the data on the map in a
+        specific example."}
     - active: 'true'
       fields: >-
         {"bio":"Tell about your self and experience, technoligies what your
@@ -227,7 +232,17 @@ speakers:
         Team
         Lead","id":"daniel_ostrovsky","image":"/uploads/daniel-ostrovsky.jpg","company":"Kaltura"}
       image: /uploads/daniel-ostrovsky.jpg
-      talk: ''
+      talk: >-
+        {"id":"talk_003","title":"Full Stack is dead, long live the Full
+        Cycle!","description":"When “time to market” is critical. When bug
+        fixing on production can’t take longer than a couple of hours. And it
+        doesn’t matter if we are talking about a large company or a small
+        startup, a new reality more often requires developers/teams to be a
+        “Full Cycle”, - design, development, test, deploy, operate, and support.
+        \n\nLet’s talk about the past, present and why ‘Full Cycle’ is a future
+        of Web Development. \n\nI think it’s highly important to stay tuned not
+        only with the latest development technologies and trends but also with
+        latest development models."}
       active: 'true'
   subtitle: First Speakers
   title: Speakers
@@ -276,6 +291,48 @@ talks:
         Software Engineer","id":"denis_vlassenko","image":"/uploads/Denis
         Vlassenko-1x1.jpg","company":"EPAM Systems"}
       image: /uploads/Denis Vlassenko-1x1.jpg
+      active: 'true'
+    - talk: >-
+        {"id":"talk_004","title":"100,000 objects need to be
+        displayed","description":"Working with a map is not the easiest task,
+        especially when there is a lot of data. Here we will try to figure out
+        how to work as efficiently as possible with the data on the map in a
+        specific example."}
+      speaker: >-
+        {"bio":"Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa IT
+        Academy. I have experience in developing fast, scalable, highly loaded
+        solutions. I'm working on developing VR interfaces and interested in
+        machine learning and AI. I like to think a lot and write a
+        little.","city":"Vinnytsia","name":"Borys
+        Mohyla","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/BorysMohyla"},{"icon":"icon-twitter","src":"https://twitter.com/BoryaMogila"},{"icon":"icon-github","src":"https://boryamogila.github.io/"}],"country":"Ukraine","title":"Senior
+        full-stack developer","id":"borys_mohyla","image":"/uploads/Borys Mohyla
+        -1x1.jpg","company":"RIA.COM"}
+      image: /uploads/Borys Mohyla -1x1.jpg
+      active: 'true'
+    - talk: >-
+        {"id":"talk_003","title":"Full Stack is dead, long live the Full
+        Cycle!","description":"When “time to market” is critical. When bug
+        fixing on production can’t take longer than a couple of hours. And it
+        doesn’t matter if we are talking about a large company or a small
+        startup, a new reality more often requires developers/teams to be a
+        “Full Cycle”, - design, development, test, deploy, operate, and support.
+        \n\nLet’s talk about the past, present and why ‘Full Cycle’ is a future
+        of Web Development. \n\nI think it’s highly important to stay tuned not
+        only with the latest development technologies and trends but also with
+        latest development models."}
+      speaker: >-
+        {"bio":"<!--StartFragment-->\n\nWeb development (Full Cycle) expert and
+        teams manager with over twenty years of experience in the industry.
+        Public speaker. Meetup organizer (NG-Heroes). Design, development,
+        testing, and maintenance of complex web-based software systems; hands-on
+        in various WEB technologies. I'm passionate about family, about my
+        gorgeous wife and my adorable kids. In my free time, I'm \"The Best
+        Developer in The World\" *based on my wife's
+        ranking\n\n<!--EndFragment-->","city":"","name":"Daniel
+        Ostrovsky","socialLinks":[{"src":"https://github.com/danduh","icon":"icon-github"},{"src":"https://twitter.com/danduh81","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/danduh/","icon":"icon-linkedin-square"}],"country":"Israel","title":"Wed
+        Team
+        Lead","id":"daniel_ostrovsky","image":"/uploads/daniel-ostrovsky.jpg","company":"Kaltura"}
+      image: /uploads/daniel-ostrovsky.jpg
       active: 'true'
 partners:
   id: partners
