@@ -53,6 +53,8 @@ export default {
           break;
           case 'large': result = 'col-4 col-sm-3 col-md-3 col-lg-2'
           break;
+          case 'small': result = 'col-4 col-sm-3 col-md-3 col-lg-2 px-3'
+          break;
         }
 
         return result

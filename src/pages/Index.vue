@@ -44,7 +44,7 @@
           </div>
         </div>
       </section>
-      <!-- <hr>
+      <hr>
       <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.talks.id"></div>
         <div class="container">
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
@@ -105,6 +105,14 @@
           :subtitle="$page.pageData.friends.subtitle"
         ></page-title>
         <partners :partnersData="$page.pageData.friends" mode="large"></partners>
+      </section>
+      <section>
+        <page-title
+          class="pt-5 pb-4"
+          :title="$page.pageData.mediapartners.title"
+          :subtitle="$page.pageData.mediapartners.subtitle"
+        ></page-title>
+        <partners :partnersData="$page.pageData.mediapartners" mode="small"></partners>
         <div class="text-center pt-5 pb-4">
           <a
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
@@ -232,6 +240,16 @@ query Conf {
       }
     }
     friends {
+      title
+      subtitle
+      id
+      items {
+        active
+        fields
+        image (quality:90, width:200)
+      }
+    }
+    mediapartners {
       title
       subtitle
       id

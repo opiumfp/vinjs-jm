@@ -48,9 +48,18 @@
               <span>
                 <vue-markdown>{{ speaker.self.bio }}</vue-markdown>
               </span>
-              <!-- <span v-if="speaker.talk.id">
-                <a :href="`#${speaker.talk.id}`">{{speaker.talk.id}}</a>
-              </span> -->
+              <div class="text-center py-3">
+                <a 
+                  v-if="speaker.talk.id" 
+                  class="btn btn-outline-primary btn-sm" 
+                  :href="`#${speaker.talk.id}`">Talk Info
+                </a>
+                <span 
+                  v-else
+                  class="btn btn-outline-secondary btn-sm"
+                  > Talk Will Be Announced
+                </span>
+              </div>
             </div>
           </div>
         </div>
