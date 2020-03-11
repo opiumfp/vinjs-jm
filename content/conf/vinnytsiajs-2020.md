@@ -167,7 +167,10 @@ speakers:
         developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
         qa.jpg","company":"Freelance developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
-      talk: ''
+      talk: >-
+        {"id":"talk_001","title":"State of browser devtools in
+        2020","description":"Let's peek into the best features of all the
+        browser devtools in 2020"}
     - active: 'true'
       fields: >-
         {"bio":"Den is an \"old school man\". He wrote his first line of code in
@@ -216,6 +219,11 @@ speakers:
         Assistant","id":"yevhen_shemet","image":"/uploads/Yevhen
         Shemet.jpg","company":"Vinnytsia National Technical University"}
       image: /uploads/Yevhen Shemet.jpg
+      talk: >-
+        {"id":"talk_005","title":"ML in JS","description":"Machine Learning
+        tools for JS are grown up and offer different options to train, run,
+        visualize and optimize Neural Networks. We will discuss how and why to
+        use them"}
     - fields: >-
         {"bio":"<!--StartFragment-->\n\nWeb development (Full Cycle) expert and
         teams manager with over twenty years of experience in the industry.
