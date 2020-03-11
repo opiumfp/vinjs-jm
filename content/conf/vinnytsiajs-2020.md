@@ -266,7 +266,7 @@ talks:
         developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
         qa.jpg","company":"Freelance developer"}
       image: /uploads/Prashant Palikhe - qa.jpg
-      active: 'true'
+      active: false
     - talk: >-
         {"id":"talk_002","title":"Your web page is slow","description":"Nowadays
         mobile page speed is a ranking factor for Google search engine. This
@@ -330,6 +330,20 @@ talks:
         Team
         Lead","id":"daniel_ostrovsky","image":"/uploads/daniel-ostrovsky.jpg","company":"Kaltura"}
       image: /uploads/daniel-ostrovsky.jpg
+      active: 'true'
+    - talk: >-
+        {"id":"talk_005","title":"ML in JS","description":"Machine Learning
+        tools for JS are grown up and offer different options to train, run,
+        visualize and optimize Neural Networks. We will discuss how and why to
+        use them"}
+      speaker: >-
+        {"bio":"Tell about your self and experience, technoligies what your
+        prefer and something interesting what you wold like to share): I like
+        programming things","city":"Vinnytsia","name":"Yevhen
+        Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"country":"Ukraine","title":"Teaching
+        Assistant","id":"yevhen_shemet","image":"/uploads/Yevhen
+        Shemet.jpg","company":"Vinnytsia National Technical University"}
+      image: /uploads/Yevhen Shemet.jpg
       active: 'true'
 partners:
   id: partners
