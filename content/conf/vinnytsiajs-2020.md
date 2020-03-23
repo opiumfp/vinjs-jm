@@ -22,6 +22,10 @@ about:
   logo: /uploads/vinnytsiajs-logo-big.png
   paragraph: "The fifth annual Javascript conference, that will be held in the usual Open-Air format. The event is organized and driven by Vinnytsia JavaScript Community.\r\n\n\rThis summer meet the Conference dedicated to JavaScript development. We took care of everything to provide all conference guests with a comfortable location, appropriate meeting spaces, for you just to have summer rest and enjoy networking."
   title: VinnytsiaJS 2020
+  title-i18:
+    en: VinnytsiaJS 2020
+    ua: Вінниця JS
+    ru: Винница JS
 stat:
   image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
