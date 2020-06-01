@@ -6,7 +6,8 @@ data:
     (NG-Heroes). Design, development, testing, and maintenance of complex
     web-based software systems; hands-on in various WEB technologies. I'm
     passionate about family, about my gorgeous wife and my adorable kids. In my
-    free time, I'm "The Best Developer in The World" *based on my wife's ranking
+    free time, I'm "The Best Developer in The World" *based on my wife's
+    ranking*
   city: ""
   name: Daniel Ostrovsky
   socialLinks:
@@ -14,7 +15,7 @@ data:
       icon: icon-github
     - src: https://twitter.com/danduh81
       icon: icon-twitter
-    - src: https://www.linkedin.com/in/danduh/
+    - src: https://www.linkedin.com/in/danduh
       icon: icon-linkedin-square
   country: Israel
   title: Wed Team Lead
