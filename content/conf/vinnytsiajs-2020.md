@@ -13,7 +13,7 @@ hero:
   image: /uploads/hero.jpg
   imagePt: /uploads/hero-pt-06.jpg
   subtitle: Javascript Open Air
-  title: VinnytsiaJS 2020 Test
+  title: VinnytsiaJS 2020
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
@@ -165,7 +165,7 @@ speakers:
         has collected all his findings and tips and tricks into one concrete
         talk regarding the state of the devtools in
         2020.","city":"","name":"Prashant
-        Palikhe","socialLinks":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe/"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe/"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe/"}],"country":"The
+        Palikhe","Nen":[{"icon":"icon-twitter","src":"http://twitter.com/prashantPalikhe"},{"icon":"icon-linkedin-square","src":"https://www.linkedin.com/in/prashantpalikhe"},{"icon":"icon-github","src":"https://github.com/prashantpalikhe"}],"country":"The
         Netherlands","title":"Frontend
         developer","id":"prashant_palikhe","image":"/uploads/Prashant Palikhe -
         qa.jpg","company":"Freelance developer"}'
@@ -223,33 +223,6 @@ speakers:
       talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
         and optimize Neural Networks. We will discuss how and why to use them"}'
-    - fields: "{\"bio\":\"<!--StartFragment-->\\n\\nWeb development (Full Cycle)
-        expert and teams manager with over twenty years of experience in the
-        industry. Public speaker. Meetup organizer (NG-Heroes). Design,
-        development, testing, and maintenance of complex web-based software
-        systems; hands-on in various WEB technologies. I'm passionate about
-        family, about my gorgeous wife and my adorable kids. In my free time,
-        I'm \\\"The Best Developer in The World\\\" *based on my wife's
-        ranking\\n\\n<!--EndFragment-->\",\"city\":\"\",\"name\":\"Daniel
-        Ostrovsky\",\"socialLinks\":[{\"src\":\"https://github.com/danduh\",\"i\
-        con\":\"icon-github\"},{\"src\":\"https://twitter.com/danduh81\",\"icon\
-        \":\"icon-twitter\"},{\"src\":\"https://www.linkedin.com/in/danduh/\",\\
-        "icon\":\"icon-linkedin-square\"}],\"country\":\"Israel\",\"title\":\"W\
-        ed Team
-        Lead\",\"id\":\"daniel_ostrovsky\",\"image\":\"/uploads/daniel-ostrovsk\
-        y.jpg\",\"company\":\"Kaltura\"}"
-      image: /uploads/daniel-ostrovsky.jpg
-      talk: '{"id":"talk_003","title":"Full Stack is dead, long live the Full
-        Cycle!","description":"When “time to market” is critical. When bug
-        fixing on production can’t take longer than a couple of hours. And it
-        doesn’t matter if we are talking about a large company or a small
-        startup, a new reality more often requires developers/teams to be a
-        “Full Cycle”, - design, development, test, deploy, operate, and support.
-        \n\nLet’s talk about the past, present and why ‘Full Cycle’ is a future
-        of Web Development. \n\nI think it’s highly important to stay tuned not
-        only with the latest development technologies and trends but also with
-        latest development models."}'
-      active: "true"
   subtitle: First Speakers
   title: Speakers
 talks:
@@ -312,33 +285,6 @@ talks:
         developer\",\"id\":\"borys_mohyla\",\"image\":\"/uploads/Borys Mohyla
         -1x1.jpg\",\"company\":\"RIA.COM\"}"
       image: /uploads/Borys Mohyla -1x1.jpg
-      active: "true"
-    - talk: '{"id":"talk_003","title":"Full Stack is dead, long live the Full
-        Cycle!","description":"When “time to market” is critical. When bug
-        fixing on production can’t take longer than a couple of hours. And it
-        doesn’t matter if we are talking about a large company or a small
-        startup, a new reality more often requires developers/teams to be a
-        “Full Cycle”, - design, development, test, deploy, operate, and support.
-        \n\nLet’s talk about the past, present and why ‘Full Cycle’ is a future
-        of Web Development. \n\nI think it’s highly important to stay tuned not
-        only with the latest development technologies and trends but also with
-        latest development models."}'
-      speaker: "{\"bio\":\"<!--StartFragment-->\\n\\nWeb development (Full Cycle)
-        expert and teams manager with over twenty years of experience in the
-        industry. Public speaker. Meetup organizer (NG-Heroes). Design,
-        development, testing, and maintenance of complex web-based software
-        systems; hands-on in various WEB technologies. I'm passionate about
-        family, about my gorgeous wife and my adorable kids. In my free time,
-        I'm \\\"The Best Developer in The World\\\" *based on my wife's
-        ranking\\n\\n<!--EndFragment-->\",\"city\":\"\",\"name\":\"Daniel
-        Ostrovsky\",\"socialLinks\":[{\"src\":\"https://github.com/danduh\",\"i\
-        con\":\"icon-github\"},{\"src\":\"https://twitter.com/danduh81\",\"icon\
-        \":\"icon-twitter\"},{\"src\":\"https://www.linkedin.com/in/danduh/\",\\
-        "icon\":\"icon-linkedin-square\"}],\"country\":\"Israel\",\"title\":\"W\
-        ed Team
-        Lead\",\"id\":\"daniel_ostrovsky\",\"image\":\"/uploads/daniel-ostrovsk\
-        y.jpg\",\"company\":\"Kaltura\"}"
-      image: /uploads/daniel-ostrovsky.jpg
       active: "true"
     - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
