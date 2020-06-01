@@ -1,6 +1,6 @@
 ---
 title: VinnytsiaJS 2020 - Conference
-startDate: 'Saturday, July 25, 2020 9:00 PM'
+startDate: 'Saturday, August 15, 2020 9:00 PM'
 nav: >-
   {"button":{"active":true,"src":"#pricing","title":"Tickets"},"items":[{"active":true,"src":"#home","title":"Home"},{"active":true,"src":"#about","title":"About
   Us"},{"active":false,"src":"#schedule","title":"Schedule"},{"active":true,"src":"#speakers","title":"Speakers"},{"active":true,"src":"#cfp","title":"CFP"},{"active":true,"src":"#partners","title":"Partners"},{"active":false,"src":"#pricing","title":"Pricing"},{"active":true,"src":"#contact","title":"Contact
@@ -9,7 +9,7 @@ hero:
   button:
     link: '#'
     title: Buy Tickets
-  date: 'July 25, 2020'
+  date: 'August 15, 2020'
   id: home
   image: /uploads/hero.jpg
   imagePt: /uploads/hero-pt-06.jpg
