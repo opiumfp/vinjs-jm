@@ -12,7 +12,7 @@ data:
       icon: icon-twitter
     - src: https://github.com/vitaliy-bobrov
       icon: icon-github
-  country: Polamd
+  country: Poland
   title: Lead Software Engineer
   id: vitalii_bobrov
   image: /uploads/vitalii-bobrov-squre.jpg
