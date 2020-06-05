@@ -252,8 +252,8 @@ speakers:
         Ostrovsky\",\"socialLinks\":[{\"src\":\"https://github.com/danduh\",\"i\
         con\":\"icon-github\"},{\"src\":\"https://twitter.com/danduh81\",\"icon\
         \":\"icon-twitter\"},{\"src\":\"https://www.linkedin.com/in/danduh\",\"\
-        icon\":\"icon-linkedin-square\"}],\"country\":\"Israel\",\"title\":\"Wed
-        Team
+        icon\":\"icon-linkedin-square\"}],\"country\":\"Israel\",\"title\":\"Fu\
+        ll Cycle Web Dev, Team
         Lead\",\"id\":\"daniel_ostrovsky\",\"image\":\"/uploads/daniel-ostrovsk\
         y.jpg\",\"company\":\"Kaltura\"}"
       image: /uploads/daniel-ostrovsky.jpg
