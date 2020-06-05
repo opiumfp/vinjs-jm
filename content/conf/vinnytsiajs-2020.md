@@ -269,9 +269,9 @@ speakers:
         enthusiast.","city":"Wroclaw","name":"Vitalii
         Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Polamd","title":"Lead
         Software
-        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov.jpg","company":"EPAM
+        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
         Systems"}'
-      image: /uploads/vitalii-bobrov.jpg
+      image: /uploads/vitalii-bobrov-squre.jpg
       talk: ""
       active: "true"
   subtitle: First Speakers
