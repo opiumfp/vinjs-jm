@@ -47,6 +47,14 @@ collections:
       fields:
         - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
         - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - label: "Title i18n"
+          name: "title18"
+          widget: "object"
+          fields:
+          - {label: "Title EN", name: "en", widget: "string", required: false, default: ''}
+          - {label: "Title UA", name: "ua", widget: "string", required: false, default: ''}
+          - {label: "Title RU", name: "ru", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
         - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
         - {label: "logo", name: "logo", widget: "image", required: false, default: ''}
         - {label: "Button Title", name: "linkTitle", widget: "string", required: false, default: ''}

@@ -4,7 +4,7 @@
       <nav-bar :navData="getNav($static.pageData.nav)"></nav-bar>
     </header>
     <div id="main">
-      <slot />
+      <slot :test="'test'" />
     </div>
 
     <popup-youtube v-if="showPopup" ref="mtPlayer" :youtubeId="videoId"></popup-youtube>
