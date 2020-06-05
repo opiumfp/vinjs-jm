@@ -18,7 +18,7 @@ data:
     - src: https://www.linkedin.com/in/danduh
       icon: icon-linkedin-square
   country: Israel
-  title: Wed Team Lead
+  title: Full Cycle Web Dev, Team Lead
   id: daniel_ostrovsky
   image: /uploads/daniel-ostrovsky.jpg
   company: Kaltura
