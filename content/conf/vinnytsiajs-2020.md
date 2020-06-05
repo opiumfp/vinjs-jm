@@ -193,6 +193,25 @@ speakers:
         mentioned above will be discussed and hopefully answered during this
         webinar which will include a lot of catchy theory together with funny
         stories from real practice."}'
+    - fields: '{"bio":"Vitalii is a Lead JavaScript Engineer at EPAM Poland,
+        co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date
+        with the latest Web Platform features and doing great experiments with
+        it. This guy is not just a nerd, but a tech speaker, and Web Audio
+        enthusiast.","city":"Wroclaw","name":"Vitalii
+        Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Poland","title":"Lead
+        Software
+        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/vitalii-bobrov-squre.jpg
+      talk: '{"id":"talk_007","title":"The Future of Audio Processing in the
+        Web","description":"WebAssembly opens a door for professional-grade
+        audio software for the Web, allowing to compile plugins written in C,
+        C++, or Faust. Faust is not only the tragic play by Goethe but a
+        programming language for digital signal processing (DSP). During the
+        talk, I compile Faust plugins right in online IDE into WebAssembly and
+        load them as Web Audio Modules into a web-based guitar processing
+        app."}'
+      active: "true"
     - active: "true"
       fields: "{\"bio\":\"Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa
         IT Academy. I have experience in developing fast, scalable, highly
@@ -262,25 +281,6 @@ speakers:
         new way at some obscene things in the usual web, features, tricks and
         problems from the development experience."}'
       active: "true"
-    - fields: '{"bio":"Vitalii is a Lead JavaScript Engineer at EPAM Poland,
-        co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date
-        with the latest Web Platform features and doing great experiments with
-        it. This guy is not just a nerd, but a tech speaker, and Web Audio
-        enthusiast.","city":"Wroclaw","name":"Vitalii
-        Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Poland","title":"Lead
-        Software
-        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
-        Systems"}'
-      image: /uploads/vitalii-bobrov-squre.jpg
-      talk: '{"id":"talk_007","title":"The Future of Audio Processing in the
-        Web","description":"WebAssembly opens a door for professional-grade
-        audio software for the Web, allowing to compile plugins written in C,
-        C++, or Faust. Faust is not only the tragic play by Goethe but a
-        programming language for digital signal processing (DSP). During the
-        talk, I compile Faust plugins right in online IDE into WebAssembly and
-        load them as Web Audio Modules into a web-based guitar processing
-        app."}'
-      active: "true"
   subtitle: First Speakers
   title: Speakers
 talks:
@@ -344,6 +344,25 @@ talks:
         -1x1.jpg\",\"company\":\"RIA.COM\"}"
       image: /uploads/Borys Mohyla -1x1.jpg
       active: "true"
+    - talk: '{"id":"talk_007","title":"The Future of Audio Processing in the
+        Web","description":"WebAssembly opens a door for professional-grade
+        audio software for the Web, allowing to compile plugins written in C,
+        C++, or Faust. Faust is not only the tragic play by Goethe but a
+        programming language for digital signal processing (DSP). During the
+        talk, I compile Faust plugins right in online IDE into WebAssembly and
+        load them as Web Audio Modules into a web-based guitar processing
+        app."}'
+      speaker: '{"bio":"Vitalii is a Lead JavaScript Engineer at EPAM Poland,
+        co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date
+        with the latest Web Platform features and doing great experiments with
+        it. This guy is not just a nerd, but a tech speaker, and Web Audio
+        enthusiast.","city":"Wroclaw","name":"Vitalii
+        Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Poland","title":"Lead
+        Software
+        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/vitalii-bobrov-squre.jpg
+      active: "true"
     - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
         and optimize Neural Networks. We will discuss how and why to use them"}'
@@ -393,25 +412,6 @@ talks:
         Developer","id":"bohdan_dvorianov","image":"/uploads/bohdan-dvorianov.jpeg","company":"AgiliWay
         "}'
       image: /uploads/bohdan-dvorianov.jpeg
-      active: "true"
-    - talk: '{"id":"talk_007","title":"The Future of Audio Processing in the
-        Web","description":"WebAssembly opens a door for professional-grade
-        audio software for the Web, allowing to compile plugins written in C,
-        C++, or Faust. Faust is not only the tragic play by Goethe but a
-        programming language for digital signal processing (DSP). During the
-        talk, I compile Faust plugins right in online IDE into WebAssembly and
-        load them as Web Audio Modules into a web-based guitar processing
-        app."}'
-      speaker: '{"bio":"Vitalii is a Lead JavaScript Engineer at EPAM Poland,
-        co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date
-        with the latest Web Platform features and doing great experiments with
-        it. This guy is not just a nerd, but a tech speaker, and Web Audio
-        enthusiast.","city":"Wroclaw","name":"Vitalii
-        Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Poland","title":"Lead
-        Software
-        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
-        Systems"}'
-      image: /uploads/vitalii-bobrov-squre.jpg
       active: "true"
 partners:
   id: partners
