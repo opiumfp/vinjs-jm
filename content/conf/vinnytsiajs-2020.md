@@ -249,6 +249,19 @@ speakers:
         only with the latest development technologies and trends but also with
         latest development models."}'
       active: "true"
+    - fields: '{"bio":"FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In
+        the holy wars of frameworks on the side of common sense. These days he
+        was spotted creating Chrome extension, and that’s what he will talk
+        about.","city":"Chernivtsi","name":"Bohdan
+        Dvorianov","socialLinks":[{"src":"https://www.facebook.com/b.dvorianov","icon":"icon-facebook-square"},{"src":"https://www.linkedin.com/in/bdvorianov","icon":"icon-linkedin-square"}],"country":"Ukraine","title":"Frontend
+        Developer","id":"bohdan_dvorianov","image":"/uploads/bohdan-dvorianov.jpeg","company":"AgiliWay
+        "}'
+      image: /uploads/bohdan-dvorianov.jpeg
+      talk: '{"id":"talk_006","title":"Extending your [browser]
+        sense","description":"We will talk about browser extensions, look in a
+        new way at some obscene things in the usual web, features, tricks and
+        problems from the development experience."}'
+      active: "true"
   subtitle: First Speakers
   title: Speakers
 talks:
@@ -348,6 +361,19 @@ talks:
         Lead\",\"id\":\"daniel_ostrovsky\",\"image\":\"/uploads/daniel-ostrovsk\
         y.jpg\",\"company\":\"Kaltura\"}"
       image: /uploads/daniel-ostrovsky.jpg
+      active: "true"
+    - talk: '{"id":"talk_006","title":"Extending your [browser]
+        sense","description":"We will talk about browser extensions, look in a
+        new way at some obscene things in the usual web, features, tricks and
+        problems from the development experience."}'
+      speaker: '{"bio":"FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In
+        the holy wars of frameworks on the side of common sense. These days he
+        was spotted creating Chrome extension, and that’s what he will talk
+        about.","city":"Chernivtsi","name":"Bohdan
+        Dvorianov","socialLinks":[{"src":"https://www.facebook.com/b.dvorianov","icon":"icon-facebook-square"},{"src":"https://www.linkedin.com/in/bdvorianov","icon":"icon-linkedin-square"}],"country":"Ukraine","title":"Frontend
+        Developer","id":"bohdan_dvorianov","image":"/uploads/bohdan-dvorianov.jpeg","company":"AgiliWay
+        "}'
+      image: /uploads/bohdan-dvorianov.jpeg
       active: "true"
 partners:
   id: partners
