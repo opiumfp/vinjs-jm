@@ -15,6 +15,6 @@ data:
   country: Polamd
   title: Lead Software Engineer
   id: vitalii_bobrov
-  image: /uploads/vitalii-bobrov.jpg
+  image: /uploads/vitalii-bobrov-squre.jpg
   company: EPAM Systems
 ---
