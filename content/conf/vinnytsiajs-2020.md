@@ -264,6 +264,34 @@ speakers:
       talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
         and optimize Neural Networks. We will discuss how and why to use them"}'
+    - fields: '{"bio":"🧑‍🚀 10+ years in dev \\\n🚀 JavaScript enthusiast \\\n🦸‍♂️
+        Software Engineer \\\n🎈 Blacksmith of
+        happiness","city":"Vinnytsia","name":"Kostiantyn
+        Hryshyn","socialLinks":[{"src":"https://www.facebook.com/stingrigs","icon":"icon-facebook-square"},{"src":"https://twitter.com/stingrigs","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/khryshyn/","icon":"icon-linkedin-square"},{"src":"https://github.com/stingrigs","icon":"icon-github"}],"country":"Ukraine","title":"Technical
+        lead","id":"kostiantyn_hryshyn","image":"/uploads/kostiantyn-hryshyn-600.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/kostiantyn-hryshyn-600.jpg
+      talk: "{\"id\":\"talk_010\",\"title\":\"React Hooks Golden
+        Ratio\",\"description\":\"February 2019, gave us the new player in React
+        world called the React Hooks 🔥but does it so stunning in real projects?
+        I'm not going to convince you to use Hooks or not, the talk is more
+        about the pitfalls you can run into and solutions that can help to
+        improve the overall code health\"}"
+      active: "true"
+    - fields: '{"bio":"JS developer and co-organizer at dev.meetups(). Apart from
+        coding, try to create agnostic ecosystems with the newest
+        technologies.","city":"Vinnytsia","name":"Andrii
+        Shtadler","socialLinks":[{"src":"","icon":"icon-facebook-square"},{"src":"https://www.facebook.com/profile.php?id=100004283014454","icon":"icon-facebook-square"},{"src":"https://github.com/shtadler","icon":"icon-github"}],"country":"Ukraine","title":"Senior
+        Software
+        Engineer","id":"andrii_shtadler","image":"/uploads/andrii_shtadler_sq.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/andrii_shtadler_sq.jpg
+      talk: "{\"id\":\"talk_011\",\"title\":\"Deno - killer feature or just
+        proposal\",\"description\":\"Something on the horizon looks like a
+        dinosaur. Let's try to figure out what the main headache on the start,
+        main concepts and issues. Should forget about node js and migrate all
+        project to Deno or just pick up concepts and ideas.\"}"
+      active: "true"
     - fields: "{\"bio\":\"Web development (Full Cycle) expert and teams manager with
         over twenty years of experience in the industry. Public speaker. Meetup
         organizer (NG-Heroes). Design, development, testing, and maintenance of
@@ -417,6 +445,20 @@ talks:
         Yukhnovich.jpg","company":"EPAM Systems"}'
       image: /uploads/Paul Yukhnovich.jpg
       active: "true"
+    - talk: "{\"id\":\"talk_010\",\"title\":\"React Hooks Golden
+        Ratio\",\"description\":\"February 2019, gave us the new player in React
+        world called the React Hooks 🔥but does it so stunning in real projects?
+        I'm not going to convince you to use Hooks or not, the talk is more
+        about the pitfalls you can run into and solutions that can help to
+        improve the overall code health\"}"
+      speaker: '{"bio":"🧑‍🚀 10+ years in dev \\\n🚀 JavaScript enthusiast \\\n🦸‍♂️
+        Software Engineer \\\n🎈 Blacksmith of
+        happiness","city":"Vinnytsia","name":"Kostiantyn
+        Hryshyn","socialLinks":[{"src":"https://www.facebook.com/stingrigs","icon":"icon-facebook-square"},{"src":"https://twitter.com/stingrigs","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/khryshyn/","icon":"icon-linkedin-square"},{"src":"https://github.com/stingrigs","icon":"icon-github"}],"country":"Ukraine","title":"Technical
+        lead","id":"kostiantyn_hryshyn","image":"/uploads/kostiantyn-hryshyn-600.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/kostiantyn-hryshyn-600.jpg
+      active: "true"
     - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
         and optimize Neural Networks. We will discuss how and why to use them"}'
@@ -427,6 +469,20 @@ talks:
         Assistant","id":"yevhen_shemet","image":"/uploads/Yevhen
         Shemet.jpg","company":"Vinnytsia National Technical University"}'
       image: /uploads/Yevhen Shemet.jpg
+      active: "true"
+    - talk: "{\"id\":\"talk_011\",\"title\":\"Deno - killer feature or just
+        proposal\",\"description\":\"Something on the horizon looks like a
+        dinosaur. Let's try to figure out what the main headache on the start,
+        main concepts and issues. Should forget about node js and migrate all
+        project to Deno or just pick up concepts and ideas.\"}"
+      speaker: '{"bio":"JS developer and co-organizer at dev.meetups(). Apart from
+        coding, try to create agnostic ecosystems with the newest
+        technologies.","city":"Vinnytsia","name":"Andrii
+        Shtadler","socialLinks":[{"src":"","icon":"icon-facebook-square"},{"src":"https://www.facebook.com/profile.php?id=100004283014454","icon":"icon-facebook-square"},{"src":"https://github.com/shtadler","icon":"icon-github"}],"country":"Ukraine","title":"Senior
+        Software
+        Engineer","id":"andrii_shtadler","image":"/uploads/andrii_shtadler_sq.jpg","company":"EPAM
+        Systems"}'
+      image: /uploads/andrii_shtadler_sq.jpg
       active: "true"
     - talk: '{"id":"talk_003","title":"Full Stack is dead, long live the Full
         Cycle!","description":"When “time to market” is critical. When bug
