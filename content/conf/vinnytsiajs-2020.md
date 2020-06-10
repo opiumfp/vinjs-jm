@@ -212,6 +212,21 @@ speakers:
         load them as Web Audio Modules into a web-based guitar processing
         app."}'
       active: "true"
+    - fields: '{"bio":"Co-founder BeerJS Zhytomyr \\\nCo-organizer frontend://zt
+        \\\n10+ years in dev \\\n5+ year in leading \\\nFootball referee
+        :)","city":"Zhytomyr","name":"Roman
+        Savitskyi","socialLinks":[{"src":"","icon":"icon-facebook-square"}],"country":"Ukraine","title":"Frontend
+        Competence Center
+        Lead","id":"roman_savitskyi","image":"/uploads/roman-savitskyi.jpg","company":"Infopulse"}'
+      image: /uploads/roman-savitskyi.jpg
+      talk: '{"id":"talk_008","title":"Webcomponents & lit-element in
+        production","description":"Back in 2016, the world heard about web
+        components, but the stupid layout-based team decided to try everything
+        in a product that would help reduce the layout. Everyone knows about the
+        troubles of the web components, but not many know how to survive and
+        move to production. Using lit-element & lit-html and solving urgent
+        problems is the real purpose of my speech. Happy end I promise."}'
+      active: "true"
     - active: "true"
       fields: "{\"bio\":\"Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa
         IT Academy. I have experience in developing fast, scalable, highly
@@ -325,6 +340,21 @@ talks:
         Vlassenko-1x1.jpg","company":"EPAM Systems"}'
       image: /uploads/Denis Vlassenko-1x1.jpg
       active: "true"
+    - talk: '{"id":"talk_008","title":"Webcomponents & lit-element in
+        production","description":"Back in 2016, the world heard about web
+        components, but the stupid layout-based team decided to try everything
+        in a product that would help reduce the layout. Everyone knows about the
+        troubles of the web components, but not many know how to survive and
+        move to production. Using lit-element & lit-html and solving urgent
+        problems is the real purpose of my speech. Happy end I promise."}'
+      speaker: '{"bio":"Co-founder BeerJS Zhytomyr \\\nCo-organizer frontend://zt
+        \\\n10+ years in dev \\\n5+ year in leading \\\nFootball referee
+        :)","city":"Zhytomyr","name":"Roman
+        Savitskyi","socialLinks":[{"src":"","icon":"icon-facebook-square"}],"country":"Ukraine","title":"Frontend
+        Competence Center
+        Lead","id":"roman_savitskyi","image":"/uploads/roman-savitskyi.jpg","company":"Infopulse"}'
+      image: /uploads/roman-savitskyi.jpg
+      active: "true"
     - talk: '{"id":"talk_004","title":"100,000 objects need to be
         displayed","description":"Working with a map is not the easiest task,
         especially when there is a lot of data. Here we will try to figure out
@@ -362,6 +392,23 @@ talks:
         Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
         Systems"}'
       image: /uploads/vitalii-bobrov-squre.jpg
+      active: "true"
+    - talk: "{\"id\":\"talk_009\",\"title\":\"Even faster React
+        applications\",\"description\":\"Once your team has decided to use
+        React. Ok cool, since React means blazing fast, right? Then your
+        application has evolved into a really huge app. And now you're not that
+        happy, nor users of your application.  Let's have a look at tips and
+        tricks which might help your team has this super-fast app.\\\\\\n*You
+        might think that your app is fast. According to the statistics, 67% of
+        developers think that their app is fast.\"}"
+      speaker: '{"bio":"Paul is a web developer, who happens to be several communities
+        organizer, public speaker, mentor, traveler and just a guy with a good
+        sense of humor. Currently lives in Minsk, but you can easily find him at
+        any international conference.","city":"Minsk","name":"Paul
+        Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"country":"Belarus","title":"JS
+        developer","id":"paul_yukhnovich","image":"/uploads/Paul
+        Yukhnovich.jpg","company":"EPAM Systems"}'
+      image: /uploads/Paul Yukhnovich.jpg
       active: "true"
     - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
