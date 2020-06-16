@@ -39,8 +39,8 @@
                 src="../../assets/images/logo/VinnytsiaJS_20-logo-sm.png"
                 alt="VinnytsiaJS - Javascript Open Air Conference"
               />
-              <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Open Air</h2>
-              <div class="h1 hero_subtitle-pt text-uppercase font-weight-bold">Javascript<br>Open Air</div>
+              <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Community</h2>
+              <div class="h1 hero_subtitle-pt text-uppercase font-weight-bold">Javascript<br>Community</div>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      background-image: url("../../assets/images/misc/grid_stripes_horizontal.png");
+      background-image: url("../../assets/images/misc/hero-overlay.svg");
       background-repeat: repeat;
       background-color: $overlay-bg;
     }

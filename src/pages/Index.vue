@@ -12,9 +12,11 @@
       >
         <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
       </section>
+      <!--
       <section :id="$page.pageData.stat.id">
         <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
       </section>
+      -->
       <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
         <div class="container">
           <div class="row">
@@ -81,12 +83,17 @@
       </section>
       <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
-        <page-title
+        <!-- <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="$page.pageData.pricing.subtitle"
+        ></page-title> -->
+        <!-- <pricing :pricingData="$page.pageData.pricing" /> -->
+        <page-title
+          class="pt-6 pb-4"
+          :title="$page.pageData.pricing.title"
+          :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title>
-        <pricing :pricingData="$page.pageData.pricing" />
       </section>
       <hr />
       <section class="position-relative">
@@ -121,10 +128,12 @@
         </div>
       </section>
       <hr />
+      <!--
       <section :id="$page.pageData.location.id">
         <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
         <location :locationData="$page.pageData.location"></location>
       </section>
+      -->
       <section class="position-relative">
         <div class="anchor-id" id="contact"></div>
         <page-title class="pt-5 pb-3" title="Contact Us"></page-title>
