@@ -8,26 +8,21 @@ hero:
   button:
     link: "#"
     title: Buy Tickets
-  date: August 15, 2020
+  date: ""
   id: home
   image: /uploads/hero.jpg
   imagePt: /uploads/hero-pt-06.jpg
-  subtitle: Javascript Open Air
+  subtitle: Javascript Community Meetups
   title: VinnytsiaJS 2020
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
   linkTitle: Code of Conduct
   logo: /uploads/vinnytsiajs-logo-big.png
-  paragraph: "The fifth annual Javascript conference, that will be held in the
-    usual Open-Air format. The event is organized and driven by Vinnytsia
-    JavaScript Community.\r
-
-
-    \rThis summer meet the Conference dedicated to JavaScript development.
-    We took care of everything to provide all conference guests with a
-    comfortable location, appropriate meeting spaces, for you just to have
-    summer rest and enjoy networking."
+  paragraph: The events are organized and driven by Vinnytsia JS Community. This
+    year meet the community dedicated to JavaScript development. That will be a
+    set of online-meetups with high-level talks by speakers from Ukraine and
+    abroad.
   title: VinnytsiaJS 2020
   titleI18N:
     en: VinnytsiaJS 2020
