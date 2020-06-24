@@ -56,7 +56,7 @@ export default {
     VueMarkdown
   },
   mounted() {
-    debugger
+    // debugger
   },
   computed: {
     data() {
