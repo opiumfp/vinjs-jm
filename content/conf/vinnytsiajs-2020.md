@@ -750,7 +750,11 @@ partners:
         title: EPAM Systems
       image: /uploads/Effective_Programming_for_America_logo.svg
     - active: "true"
-      fields: '{"description":"","image":"/uploads/infopulse-logo-web-rgb.svg","src":"https://www.infopulse.com/","title":"Infopulse"}'
+      fields:
+        description: ""
+        image: /uploads/infopulse-logo-web-rgb.svg
+        src: https://www.infopulse.com/
+        title: Infopulse
       image: /uploads/infopulse-logo-web-rgb.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
@@ -758,16 +762,25 @@ friends:
   id: ""
   items:
     - active: "true"
-      fields: '{"description":"","image":"/uploads/hostpro.png","src":"https://hostpro.ua/","title":"Best
-        hosting from HOSTPRO"}'
+      fields:
+        description: ""
+        image: /uploads/hostpro.png
+        src: https://hostpro.ua/
+        title: Best hosting from HOSTPRO
       image: /uploads/hostpro.png
     - active: "true"
-      fields: '{"description":"","image":"/uploads/dm.jpg","src":"https://dev-meetups.org/","title":"Dev
-        Meetups"}'
+      fields:
+        description: ""
+        image: /uploads/dm.jpg
+        src: https://dev-meetups.org/
+        title: Dev Meetups
       image: /uploads/dm.jpg
     - active: "true"
-      fields: '{"description":"","image":"/uploads/matrica-b.svg","src":"http://matrica.vn.ua/","title":"Матриця
-        - Цифрові технології"}'
+      fields:
+        description: ""
+        image: /uploads/matrica-b.svg
+        src: http://matrica.vn.ua/
+        title: Матриця - Цифрові технології
       image: /uploads/matrica-b.svg
   subtitle: ""
   title: Friends
@@ -777,22 +790,39 @@ mediapartners:
   subtitle: ""
   items:
     - active: "true"
-      fields: '{"description":"","image":"/uploads/it-association.png","src":"https://www.it-association.vn.ua/","title":"IT
-        Association Vinnytsia"}'
+      fields:
+        description: ""
+        image: /uploads/it-association.png
+        src: https://www.it-association.vn.ua/
+        title: IT Association Vinnytsia
       image: /uploads/it-association.png
     - active: "true"
-      fields: '{"title":"JSFest","src":"https://jsfest.com.ua/","description":"","image":"/uploads/jsfest.png"}'
+      fields:
+        title: JSFest
+        src: https://jsfest.com.ua/
+        description: ""
+        image: /uploads/jsfest.png
       image: /uploads/jsfest.png
     - active: "true"
-      fields: '{"title":"BeerJS
-        Minsk","src":"https://www.facebook.com/beerjsminsk/","description":"","image":"/uploads/4584318.png"}'
+      fields:
+        title: BeerJS Minsk
+        src: https://www.facebook.com/beerjsminsk/
+        description: ""
+        image: /uploads/4584318.png
       image: /uploads/4584318.png
     - active: "true"
-      fields: '{"title":"FrontSpot","src":"https://www.facebook.com/groups/FrontSpot/","description":"","image":"/uploads/1_ubg12udfi8_qgit2n4odyq-2x.png"}'
+      fields:
+        title: FrontSpot
+        src: https://www.facebook.com/groups/FrontSpot/
+        description: ""
+        image: /uploads/1_ubg12udfi8_qgit2n4odyq-2x.png
       image: /uploads/1_ubg12udfi8_qgit2n4odyq-2x.png
     - active: "true"
-      fields: '{"title":"WebNotBombs","src":"
-        https://www.facebook.com/groups/webnotbombs/","description":"","image":"/uploads/webnotbombs-logo-short.png"}'
+      fields:
+        title: WebNotBombs
+        src: " https://www.facebook.com/groups/webnotbombs/"
+        description: ""
+        image: /uploads/webnotbombs-logo-short.png
       image: /uploads/webnotbombs-logo-short.png
 pricing:
   col: 4
