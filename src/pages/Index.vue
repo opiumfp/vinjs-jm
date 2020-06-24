@@ -208,9 +208,26 @@ query Conf {
       subtitle
       id
       items {
-        fields
+        fields {
+          bio
+          city
+          name
+          socialLinks {
+            src
+            icon
+          }
+          id
+          country
+          title
+          image
+          company
+        }
         image (quality:90, width:200)
-        talk
+        talk {
+          id
+          title
+          description
+        }
       }
     }
     talks {

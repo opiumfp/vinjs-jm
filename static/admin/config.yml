@@ -457,7 +457,6 @@ collections:
     - label: "Data"
       name: "data"
       widget: "object"
-      collapsed: true
       required: false 
       default: ''
       fields:
@@ -503,7 +502,6 @@ collections:
     - label: "Data"
       name: "data"
       widget: "object"
-      collapsed: true
       required: false 
       default: ''
       fields:

@@ -5,31 +5,30 @@
         <div
           v-for="item in data.items"
           :key="item.id"
-          :set="speaker = {self: getJSONData(item.fields), talk: getJSONData(item.talk)}"
           class="stat_col col-md-6 col-lg-4"
         >
-          <div :id="speaker.self.id" class="speakers_item text-center px-1 mb-5">
+          <div :id="item.fields.id" class="speakers_item text-center px-1 mb-5">
             <g-image
-              v-if="speaker.self.image"
+              v-if="item.fields.image"
               class="speakers_img"
               :src="item.image"
-              :alt="speaker.self.title"
+              :alt="item.fields.title"
             />
-            <h3 class="h3 my-3" v-if="speaker.self.name">{{ speaker.self.name }}</h3>
+            <h3 class="h3 my-3" v-if="item.fields.name">{{ item.fields.name }}</h3>
             <div>
-              <span class="lead text-warning">{{ speaker.self.company }}</span>
+              <span class="lead text-warning">{{ item.fields.company }}</span>
             </div>
             <div class="speakers_item_caption">
-              <span v-if="speaker.self.title">{{ speaker.self.title }}</span>
-              <span v-if="speaker.self.city">, {{ speaker.self.city }}</span>
-              <span v-if="speaker.self.country">, {{ speaker.self.country }}</span>
+              <span v-if="item.fields.title">{{ item.fields.title }}</span>
+              <span v-if="item.fields.city">, {{ item.fields.city }}</span>
+              <span v-if="item.fields.country">, {{ item.fields.country }}</span>
             </div>
             <div
-              v-if="speaker.self.socialLinks[0].src"
+              v-if="item.fields.socialLinks[0].src"
               class="contact-us_social-icons navbar-expand d-inline-block h4 mt-3 my-0">
               <ul class="social-icons list-unstyled navbar-nav">
                 <li
-                  v-for="socialLink in speaker.self.socialLinks"
+                  v-for="socialLink in item.fields.socialLinks"
                   :key="socialLink.id"
                   class="social-icons_item nav-item"
                 >
@@ -44,15 +43,15 @@
                 </li>
               </ul>
             </div>
-            <div v-if="speaker.self.bio" class="mt-3 text-left">
+            <div v-if="item.fields.bio" class="mt-3 text-left">
               <span>
-                <vue-markdown>{{ speaker.self.bio }}</vue-markdown>
+                <vue-markdown>{{ item.fields.bio }}</vue-markdown>
               </span>
               <div class="text-center py-3">
                 <a 
-                  v-if="speaker.talk.id" 
+                  v-if="item.talk.id" 
                   class="btn btn-outline-primary btn-sm" 
-                  :href="`#${speaker.talk.id}`">Talk Info
+                  :href="`#${item.talk.id}`">Talk Info
                 </a>
                 <span 
                   v-else
@@ -91,12 +90,6 @@ export default {
   computed: {
     data() {
       return this.$props.speakersData;
-    }
-  },
-  methods: {
-    getJSONData: str => {
-      let result = str ?  JSON.parse(str) : {};
-      return result;
     }
   }
 };
