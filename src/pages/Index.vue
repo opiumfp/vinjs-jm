@@ -219,10 +219,9 @@ query Conf {
           id
           country
           title
-          image
+          image (quality:90, width:200)
           company
         }
-        image (quality:90, width:200)
         talk {
           id
           title

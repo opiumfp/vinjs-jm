@@ -147,15 +147,6 @@ collections:
               displayFields: ["name"]
               required: false
               default: ''
-            - label: "Photo"
-              name: "image"
-              widget: "relation"
-              collection: "speakers"
-              searchFields: ["name"]
-              valueField: "data.image"
-              displayFields: ["name"]
-              required: false
-              default: ''
             - label: "Talk"
               name: "talk"
               widget: "relation"

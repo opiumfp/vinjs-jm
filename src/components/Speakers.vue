@@ -11,7 +11,7 @@
             <g-image
               v-if="item.fields.image"
               class="speakers_img"
-              :src="item.image"
+              :src="item.fields.image"
               :alt="item.fields.title"
             />
             <h3 class="h3 my-3" v-if="item.fields.name">{{ item.fields.name }}</h3>
