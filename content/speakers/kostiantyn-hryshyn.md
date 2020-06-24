@@ -2,7 +2,6 @@
 name: Kostiantyn Hryshyn
 data:
   bio: |-
-    🧑‍🚀 10+ years in dev \
     🚀 JavaScript enthusiast \
     🦸‍♂️ Software Engineer \
     🎈 Blacksmith of happiness
