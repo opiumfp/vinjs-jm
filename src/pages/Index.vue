@@ -234,9 +234,16 @@ query Conf {
       subtitle
       id
       items {
-        talk
-        speaker
-        image (quality:90, width:200)
+        talk {
+          id
+          title
+          description
+        }
+        speaker {
+          id
+          name
+          image (quality:90, width:200)
+        }
       }
     }
     partners {

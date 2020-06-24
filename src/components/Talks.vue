@@ -5,28 +5,27 @@
         <div
           v-for="item in data.items"
           :key="item.id"
-          :set="talk = {self: getJSONData(item.talk), speaker: getJSONData(item.speaker)}"
           class="row align-items-top"
         >
           <div class="col-12 talks_item px-1 mb-3">
-            <div :id="talk.self.id" class="talks-item p-3 p-lg-4 text-white">
+            <div :id="item.talk.id" class="talks-item p-3 p-lg-4 text-white">
               <div class="row align-items-center">
                 <div class="col-12 col-md-3 pr-lg-5 text-center align-self-baseline">
-                  <a class="talks_item_a" :href="`#${talk.speaker.id}`">
+                  <a class="talks_item_a" :href="`#${item.speaker.id}`">
                       <g-image
-                      v-if="item.image"
+                      v-if="item.speaker.image"
                       class="talks_img"
-                      :src="item.image"
-                      :alt="item.title"
+                      :src="item.speaker.image"
+                      :alt="item.speaker.title"
                     />
-                    <h3 class="talks_item-speaker-name h5 mt-3 mb-0" v-if="talk.speaker.name">{{ talk.speaker.name }}</h3>
+                    <h3 class="talks_item-speaker-name h5 mt-3 mb-0" v-if="item.speaker.name">{{ item.speaker.name }}</h3>
                   </a>
                 </div>
                 <div class="col-12 col-md-9">
-                  <h3 v-if="talk.self.title" class="talks_item_title mt-3 mt-md-0">{{ talk.self.title }}</h3>
-                  <div v-if="talk.self.description" class="mt-3 text-left">
+                  <h3 v-if="item.talk.title" class="talks_item_title mt-3 mt-md-0">{{ item.talk.title }}</h3>
+                  <div v-if="item.talk.description" class="mt-3 text-left">
                     <span>
-                      <vue-markdown>{{ talk.self.description }}</vue-markdown>
+                      <vue-markdown>{{ item.talk.description }}</vue-markdown>
                     </span>
                   </div>
                 </div>
@@ -57,16 +56,11 @@ export default {
     VueMarkdown
   },
   mounted() {
-    // debugger
+    debugger
   },
   computed: {
     data() {
       return this.$props.talksData;
-    }
-  },
-  methods: {
-    getJSONData: str => {
-      return JSON.parse(str);
     }
   }
 };
