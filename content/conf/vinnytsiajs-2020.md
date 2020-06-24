@@ -743,8 +743,11 @@ partners:
   id: partners
   items:
     - active: "true"
-      fields: '{"description":"","image":"/uploads/Effective_Programming_for_America_logo.svg","src":"https://www.epam.com/","title":"EPAM
-        Systems"}'
+      fields:
+        description: ""
+        image: /uploads/Effective_Programming_for_America_logo.svg
+        src: https://www.epam.com/
+        title: EPAM Systems
       image: /uploads/Effective_Programming_for_America_logo.svg
     - active: "true"
       fields: '{"description":"","image":"/uploads/infopulse-logo-web-rgb.svg","src":"https://www.infopulse.com/","title":"Infopulse"}'
