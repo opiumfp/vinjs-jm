@@ -5,13 +5,12 @@
       <div 
         v-for="item in data.items" 
         :key="item.id" 
-        :set="partner = getJSONData(item.fields)"
         class="stat_col"
         :class="getBlockSizes(mode)">
 
         <div v-if="item.active" class="partners_item text-center pb-4 px-1">
-          <a :href="partner.src" target="_blank">
-            <g-image v-if="partner.image" class="partners_img" :src="item.image" :alt="partner.title" />
+          <a :href="item.fields.src" target="_blank">
+            <g-image v-if="item.fields.image" class="partners_img" :src="item.fields.image" :alt="item.fields.title" />
           </a>
         </div>
       </div>
@@ -42,9 +41,6 @@ export default {
       }
     },
     methods: {
-      getJSONData: (str) => {
-        return JSON.parse(str);
-      },
       getBlockSizes: (mode) => {
         let result = ''
 

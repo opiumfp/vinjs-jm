@@ -252,8 +252,12 @@ query Conf {
       id
       items {
         active
-        fields
-        image (quality:90, width:400)
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
       }
     }
     pricing {
