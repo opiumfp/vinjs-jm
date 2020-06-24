@@ -449,199 +449,294 @@ talks:
   subtitle: More Talks will be Announced Soon
   items:
     - talk:
-        id: talk_001
-        title: State of browser devtools in 2020
-        description: Let's peek into the best features of all the browser devtools in 2020
+        id: talk_002
+        title: Your web page is slow
+        description: >-
+          Nowadays mobile page speed is a ranking factor for Google search
+          engine. This means that the modern SEO needs to be even more concerned
+          about web page performance.
+
+          This means that SEO and performance come together now.
+
+          But why page speed becomes so important and how to reliably measure/address it?
+
+          Which metrics are used by Google and how these metrics are compared from page to page to classify them as fast or slow?
+
+          And how numerous performance-related abbreviations like TTFB, FCP, FMP, TTI, and SI are originally defined?
+
+          All the questions mentioned above will be discussed and hopefully answered during this webinar which will include a lot of catchy theory together with funny stories from real practice.
       speaker:
-        bio: Prashant is an independent frontend developer in the Netherlands. He likes
-          to excel the tools that he uses for his work. And share his findings
-          and knowledge with others. As a frontend developer, some of his most
-          used tools have been the browser dev tools. Where he has spent a lot
-          of time, knowing the ins and outs of the tools. And he has collected
-          all his findings and tips and tricks into one concrete talk regarding
-          the state of the devtools in 2020.
-        city: ""
-        name: Prashant Palikhe
+        bio: Den is an "old school man". He wrote his first line of code in far 1994 and
+          cannot give up coding since. A devoted advocate of IE6.
+        city: Minsk
+        name: Denis Vlassenko
         socialLinks:
-          - icon: icon-twitter
-            src: http://twitter.com/prashantPalikhe/
-          - icon: icon-linkedin-square
-            src: https://www.linkedin.com/in/prashantpalikhe/
-          - icon: icon-github
-            src: https://github.com/prashantpalikhe/
-        country: The Netherlands
-        title: Frontend developer
-        id: prashant_palikhe
-        image: /uploads/Prashant Palikhe - qa.jpg
-        company: Freelance developer
-      image: /uploads/Prashant Palikhe - qa.jpg
-      active: false
-    - talk: '{"id":"talk_002","title":"Your web page is slow","description":"Nowadays
-        mobile page speed is a ranking factor for Google search engine. This
-        means that the modern SEO needs to be even more concerned about web page
-        performance.\nThis means that SEO and performance come together
-        now.\nBut why page speed becomes so important and how to reliably
-        measure/address it?\nWhich metrics are used by Google and how these
-        metrics are compared from page to page to classify them as fast or
-        slow?\nAnd how numerous performance-related abbreviations like TTFB,
-        FCP, FMP, TTI, and SI are originally defined?\nAll the questions
-        mentioned above will be discussed and hopefully answered during this
-        webinar which will include a lot of catchy theory together with funny
-        stories from real practice."}'
-      speaker: '{"bio":"Den is an \"old school man\". He wrote his first line of code
-        in far 1994 and cannot give up coding since. A devoted advocate of
-        IE6.","city":"Minsk","name":"Denis
-        Vlassenko","socialLinks":[{"icon":"icon-facebook-square","src":""}],"country":"Belarus","title":"Lead
-        Software Engineer","id":"denis_vlassenko","image":"/uploads/Denis
-        Vlassenko-1x1.jpg","company":"EPAM Systems"}'
+          - icon: icon-facebook-square
+            src: ""
+        country: Belarus
+        title: Lead Software Engineer
+        id: denis_vlassenko
+        image: /uploads/Denis Vlassenko-1x1.jpg
+        company: EPAM Systems
       image: /uploads/Denis Vlassenko-1x1.jpg
       active: "true"
-    - talk: '{"id":"talk_008","title":"Webcomponents & lit-element in
-        production","description":"Back in 2016, the world heard about web
-        components, but the stupid layout-based team decided to try everything
-        in a product that would help reduce the layout. Everyone knows about the
-        troubles of the web components, but not many know how to survive and
-        move to production. Using lit-element & lit-html and solving urgent
-        problems is the real purpose of my speech. Happy end I promise."}'
-      speaker: '{"bio":"Co-founder BeerJS Zhytomyr \\\nCo-organizer frontend://zt
-        \\\n10+ years in dev \\\n5+ year in leading \\\nFootball referee
-        :)","city":"Zhytomyr","name":"Roman
-        Savitskyi","socialLinks":[{"src":"","icon":"icon-facebook-square"}],"country":"Ukraine","title":"Frontend
-        Competence Center
-        Lead","id":"roman_savitskyi","image":"/uploads/roman-savitskyi.jpg","company":"Infopulse"}'
+    - talk:
+        id: talk_008
+        title: Webcomponents & lit-element in production
+        description: Back in 2016, the world heard about web components, but the stupid
+          layout-based team decided to try everything in a product that would
+          help reduce the layout. Everyone knows about the troubles of the web
+          components, but not many know how to survive and move to production.
+          Using lit-element & lit-html and solving urgent problems is the real
+          purpose of my speech. Happy end I promise.
+      speaker:
+        bio: |-
+          Co-founder BeerJS Zhytomyr \
+          Co-organizer frontend://zt \
+          10+ years in dev \
+          5+ year in leading \
+          Football referee :)
+        city: Zhytomyr
+        name: Roman Savitskyi
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Competence Center Lead
+        id: roman_savitskyi
+        image: /uploads/roman-savitskyi.jpg
+        company: Infopulse
       image: /uploads/roman-savitskyi.jpg
       active: "true"
-    - talk: '{"id":"talk_004","title":"100,000 objects need to be
-        displayed","description":"Working with a map is not the easiest task,
-        especially when there is a lot of data. Here we will try to figure out
-        how to work as efficiently as possible with the data on the map in a
-        specific example."}'
-      speaker: "{\"bio\":\"Co-organizer of VinnytsiaJS conference. Lecturer at
-        Vinnitsa IT Academy. I have experience in developing fast, scalable,
-        highly loaded solutions. I'm working on developing VR interfaces and
-        interested in machine learning and AI. I like to think a lot and write a
-        little.\",\"city\":\"Vinnytsia\",\"name\":\"Borys
-        Mohyla\",\"socialLinks\":[{\"icon\":\"icon-facebook-square\",\"src\":\"\
-        https://www.facebook.com/BorysMohyla\"},{\"icon\":\"icon-twitter\",\"src\
-        \":\"https://twitter.com/BoryaMogila\"},{\"icon\":\"icon-github\",\"src\
-        \":\"https://boryamogila.github.io/\"}],\"country\":\"Ukraine\",\"title\
-        \":\"Senior full-stack
-        developer\",\"id\":\"borys_mohyla\",\"image\":\"/uploads/Borys Mohyla
-        -1x1.jpg\",\"company\":\"RIA.COM\"}"
+    - talk:
+        id: talk_004
+        title: 100,000 objects need to be displayed
+        description: Working with a map is not the easiest task, especially when there
+          is a lot of data. Here we will try to figure out how to work as
+          efficiently as possible with the data on the map in a specific
+          example.
+      speaker:
+        bio: Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa IT Academy. I
+          have experience in developing fast, scalable, highly loaded solutions.
+          I'm working on developing VR interfaces and interested in machine
+          learning and AI. I like to think a lot and write a little.
+        city: Vinnytsia
+        name: Borys Mohyla
+        socialLinks:
+          - icon: icon-facebook-square
+            src: https://www.facebook.com/BorysMohyla
+          - icon: icon-twitter
+            src: https://twitter.com/BoryaMogila
+          - icon: icon-github
+            src: https://boryamogila.github.io/
+        country: Ukraine
+        title: Senior full-stack developer
+        id: borys_mohyla
+        image: /uploads/Borys Mohyla -1x1.jpg
+        company: RIA.COM
       image: /uploads/Borys Mohyla -1x1.jpg
       active: "true"
-    - talk: '{"id":"talk_007","title":"The Future of Audio Processing in the
-        Web","description":"WebAssembly opens a door for professional-grade
-        audio software for the Web, allowing to compile plugins written in C,
-        C++, or Faust. Faust is not only the tragic play by Goethe but a
-        programming language for digital signal processing (DSP). During the
-        talk, I compile Faust plugins right in online IDE into WebAssembly and
-        load them as Web Audio Modules into a web-based guitar processing
-        app."}'
-      speaker: '{"bio":"Vitalii is a Lead JavaScript Engineer at EPAM Poland,
-        co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date
-        with the latest Web Platform features and doing great experiments with
-        it. This guy is not just a nerd, but a tech speaker, and Web Audio
-        enthusiast.","city":"Wroclaw","name":"Vitalii
-        Bobrov","socialLinks":[{"src":"https://twitter.com/bobrov1989","icon":"icon-twitter"},{"src":"https://github.com/vitaliy-bobrov","icon":"icon-github"}],"country":"Poland","title":"Lead
-        Software
-        Engineer","id":"vitalii_bobrov","image":"/uploads/vitalii-bobrov-squre.jpg","company":"EPAM
-        Systems"}'
+    - talk:
+        id: talk_007
+        title: The Future of Audio Processing in the Web
+        description: WebAssembly opens a door for professional-grade audio software for
+          the Web, allowing to compile plugins written in C, C++, or Faust.
+          Faust is not only the tragic play by Goethe but a programming language
+          for digital signal processing (DSP). During the talk, I compile Faust
+          plugins right in online IDE into WebAssembly and load them as Web
+          Audio Modules into a web-based guitar processing app.
+      speaker:
+        bio: Vitalii is a Lead JavaScript Engineer at EPAM Poland, co-organizer of
+          Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest
+          Web Platform features and doing great experiments with it. This guy is
+          not just a nerd, but a tech speaker, and Web Audio enthusiast.
+        city: Wroclaw
+        name: Vitalii Bobrov
+        socialLinks:
+          - src: https://twitter.com/bobrov1989
+            icon: icon-twitter
+          - src: https://github.com/vitaliy-bobrov
+            icon: icon-github
+        country: Poland
+        title: Lead Software Engineer
+        id: vitalii_bobrov
+        image: /uploads/vitalii-bobrov-squre.jpg
+        company: EPAM Systems
       image: /uploads/vitalii-bobrov-squre.jpg
       active: "true"
-    - talk: "{\"id\":\"talk_009\",\"title\":\"Even faster React
-        applications\",\"description\":\"Once your team has decided to use
-        React. Ok cool, since React means blazing fast, right? Then your
-        application has evolved into a really huge app. And now you're not that
-        happy, nor users of your application.  Let's have a look at tips and
-        tricks which might help your team has this super-fast app.\\\\\\n*You
-        might think that your app is fast. According to the statistics, 67% of
-        developers think that their app is fast.\"}"
-      speaker: '{"bio":"Paul is a web developer, who happens to be several communities
-        organizer, public speaker, mentor, traveler and just a guy with a good
-        sense of humor. Currently lives in Minsk, but you can easily find him at
-        any international conference.","city":"Minsk","name":"Paul
-        Yukhnovich","socialLinks":[{"icon":"icon-facebook-square","src":"https://www.facebook.com/paul.yuhnovich"},{"icon":"icon-twitter","src":"https://twitter.com/Paul_Yuhnovich"}],"country":"Belarus","title":"JS
-        developer","id":"paul_yukhnovich","image":"/uploads/Paul
-        Yukhnovich.jpg","company":"EPAM Systems"}'
+    - talk:
+        id: talk_009
+        title: Even faster React applications
+        description: >-
+          Once your team has decided to use React. Ok cool, since React means
+          blazing fast, right? Then your application has evolved into a really
+          huge app. And now you're not that happy, nor users of your
+          application.  Let's have a look at tips and tricks which might help
+          your team has this super-fast app.\
+
+          *You might think that your app is fast. According to the statistics, 67% of developers think that their app is fast.
+      speaker:
+        bio: Paul is a web developer, who happens to be several communities organizer,
+          public speaker, mentor, traveler and just a guy with a good sense of
+          humor. Currently lives in Minsk, but you can easily find him at any
+          international conference.
+        city: Minsk
+        name: Paul Yukhnovich
+        socialLinks:
+          - icon: icon-facebook-square
+            src: https://www.facebook.com/paul.yuhnovich
+          - icon: icon-twitter
+            src: https://twitter.com/Paul_Yuhnovich
+        country: Belarus
+        title: JS developer
+        id: paul_yukhnovich
+        image: /uploads/Paul Yukhnovich.jpg
+        company: EPAM Systems
       image: /uploads/Paul Yukhnovich.jpg
       active: "true"
-    - talk: "{\"id\":\"talk_010\",\"title\":\"React Hooks by the Golden Ratio
-        🧘\",\"description\":\"February 2019, gave us the new player in React
-        world called the React Hooks 🔥 but does it so stunning in real
-        projects? I'm not going to convince you to use Hooks or not, the talk is
-        more about the pitfalls you can run into and solutions that can help to
-        improve the overall code health\"}"
-      speaker: '{"bio":"🧑‍🚀 10+ years in dev \\\n🚀 JavaScript enthusiast \\\n🦸‍♂️
-        Software Engineer \\\n🎈 Blacksmith of
-        happiness","city":"Vinnytsia","name":"Kostiantyn
-        Hryshyn","socialLinks":[{"src":"https://www.facebook.com/stingrigs","icon":"icon-facebook-square"},{"src":"https://twitter.com/stingrigs","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/khryshyn/","icon":"icon-linkedin-square"},{"src":"https://github.com/stingrigs","icon":"icon-github"}],"country":"Ukraine","title":"Technical
-        lead","id":"kostiantyn_hryshyn","image":"/uploads/kostiantyn-hryshyn-600.jpg","company":"EPAM
-        Systems"}'
+    - talk:
+        id: talk_010
+        title: React Hooks by the Golden Ratio 🧘
+        description: 🔥 February 2019, gave us the new player in React world called the
+          React Hooks but does it so stunning in real projects? Let's peek
+          inside and talk about the common gotchas and possible solutions that
+          will help to predict every clunky render
+      speaker:
+        bio: |-
+          🚀 JavaScript enthusiast \
+          🦸‍♂️ Software Engineer \
+          🎈 Blacksmith of happiness
+        city: Vinnytsia
+        name: Kostiantyn Hryshyn
+        socialLinks:
+          - src: https://www.facebook.com/stingrigs
+            icon: icon-facebook-square
+          - src: https://twitter.com/stingrigs
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/khryshyn/
+            icon: icon-linkedin-square
+          - src: https://github.com/stingrigs
+            icon: icon-github
+        country: Ukraine
+        title: Technical lead
+        id: kostiantyn_hryshyn
+        image: /uploads/kostiantyn-hryshyn-600.jpg
+        company: EPAM Systems
       image: /uploads/kostiantyn-hryshyn-600.jpg
       active: "true"
-    - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
-        for JS are grown up and offer different options to train, run, visualize
-        and optimize Neural Networks. We will discuss how and why to use them"}'
-      speaker: '{"bio":"Tell about your self and experience, technoligies what your
-        prefer and something interesting what you wold like to share): I like
-        programming things","city":"Vinnytsia","name":"Yevhen
-        Shemet","socialLinks":[{"icon":"icon-facebook-square","src":""},{"icon":"icon-facebook-square","src":"http://facebook.com/yevhene"},{"icon":"icon-twitter","src":"https://twitter.com/yevhene"}],"country":"Ukraine","title":"Teaching
-        Assistant","id":"yevhen_shemet","image":"/uploads/Yevhen
-        Shemet.jpg","company":"Vinnytsia National Technical University"}'
+    - talk:
+        id: talk_005
+        title: ML in JS
+        description: Machine Learning tools for JS are grown up and offer different
+          options to train, run, visualize and optimize Neural Networks. We will
+          discuss how and why to use them
+      speaker:
+        bio: "Tell about your self and experience, technoligies what your prefer and
+          something interesting what you wold like to share): I like programming
+          things"
+        city: Vinnytsia
+        name: Yevhen Shemet
+        socialLinks:
+          - icon: icon-facebook-square
+            src: ""
+          - icon: icon-facebook-square
+            src: http://facebook.com/yevhene
+          - icon: icon-twitter
+            src: https://twitter.com/yevhene
+        country: Ukraine
+        title: Teaching Assistant
+        id: yevhen_shemet
+        image: /uploads/Yevhen Shemet.jpg
+        company: Vinnytsia National Technical University
       image: /uploads/Yevhen Shemet.jpg
       active: "true"
-    - talk: "{\"id\":\"talk_011\",\"title\":\"Deno - killer feature or just
-        proposal\",\"description\":\"Something on the horizon looks like a
-        dinosaur. Let's try to figure out what the main headache on the start,
-        main concepts and issues. Should forget about node js and migrate all
-        project to Deno or just pick up concepts and ideas.\"}"
-      speaker: '{"bio":"JS developer and co-organizer at dev.meetups(). Apart from
-        coding, try to create agnostic ecosystems with the newest
-        technologies.","city":"Vinnytsia","name":"Andrii
-        Shtadler","socialLinks":[{"src":"","icon":"icon-facebook-square"},{"src":"https://www.facebook.com/profile.php?id=100004283014454","icon":"icon-facebook-square"},{"src":"https://github.com/shtadler","icon":"icon-github"}],"country":"Ukraine","title":"Senior
-        Software
-        Engineer","id":"andrii_shtadler","image":"/uploads/andrii_shtadler_sq.jpg","company":"EPAM
-        Systems"}'
+    - talk:
+        id: talk_011
+        title: Deno - killer feature or just proposal
+        description: Something on the horizon looks like a dinosaur. Let's try to figure
+          out what the main headache on the start, main concepts and issues.
+          Should forget about node js and migrate all project to Deno or just
+          pick up concepts and ideas.
+      speaker:
+        bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
+          create agnostic ecosystems with the newest technologies.
+        city: Vinnytsia
+        name: Andrii Shtadler
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+          - src: https://www.facebook.com/profile.php?id=100004283014454
+            icon: icon-facebook-square
+          - src: https://github.com/shtadler
+            icon: icon-github
+        country: Ukraine
+        title: Senior Software Engineer
+        id: andrii_shtadler
+        image: /uploads/andrii_shtadler_sq.jpg
+        company: EPAM Systems
       image: /uploads/andrii_shtadler_sq.jpg
       active: "true"
-    - talk: '{"id":"talk_003","title":"Full Stack is dead, long live the Full
-        Cycle!","description":"When “time to market” is critical. When bug
-        fixing on production can’t take longer than a couple of hours. And it
-        doesn’t matter if we are talking about a large company or a small
-        startup, a new reality more often requires developers/teams to be a
-        “Full Cycle”, - design, development, test, deploy, operate, and support.
-        \n\nLet’s talk about the past, present and why ‘Full Cycle’ is a future
-        of Web Development. \n\nI think it’s highly important to stay tuned not
-        only with the latest development technologies and trends but also with
-        latest development models."}'
-      speaker: "{\"bio\":\"Web development (Full Cycle) expert and teams manager with
-        over twenty years of experience in the industry. Public speaker. Meetup
-        organizer (NG-Heroes). Design, development, testing, and maintenance of
-        complex web-based software systems; hands-on in various WEB
-        technologies. I'm passionate about family, about my gorgeous wife and my
-        adorable kids. In my free time, I'm \\\"The Best Developer in The
-        World\\\" *based on my wife's ranking*\",\"city\":\"\",\"name\":\"Daniel
-        Ostrovsky\",\"socialLinks\":[{\"src\":\"https://github.com/danduh\",\"i\
-        con\":\"icon-github\"},{\"src\":\"https://twitter.com/danduh81\",\"icon\
-        \":\"icon-twitter\"},{\"src\":\"https://www.linkedin.com/in/danduh\",\"\
-        icon\":\"icon-linkedin-square\"}],\"country\":\"Israel\",\"title\":\"Fu\
-        ll Cycle Web Dev, Team
-        Lead\",\"id\":\"daniel_ostrovsky\",\"image\":\"/uploads/daniel-ostrovsk\
-        y.jpg\",\"company\":\"Kaltura\"}"
+    - talk:
+        id: talk_003
+        title: Full Stack is dead, long live the Full Cycle!
+        description: >-
+          When “time to market” is critical. When bug fixing on production can’t
+          take longer than a couple of hours. And it doesn’t matter if we are
+          talking about a large company or a small startup, a new reality more
+          often requires developers/teams to be a “Full Cycle”, - design,
+          development, test, deploy, operate, and support. 
+
+
+          Let’s talk about the past, present and why ‘Full Cycle’ is a future of Web Development. 
+
+
+          I think it’s highly important to stay tuned not only with the latest development technologies and trends but also with latest development models.
+      speaker:
+        bio: Web development (Full Cycle) expert and teams manager with over twenty
+          years of experience in the industry. Public speaker. Meetup organizer
+          (NG-Heroes). Design, development, testing, and maintenance of complex
+          web-based software systems; hands-on in various WEB technologies. I'm
+          passionate about family, about my gorgeous wife and my adorable kids.
+          In my free time, I'm "The Best Developer in The World" *based on my
+          wife's ranking*
+        city: ""
+        name: Daniel Ostrovsky
+        socialLinks:
+          - src: https://github.com/danduh
+            icon: icon-github
+          - src: https://twitter.com/danduh81
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/danduh
+            icon: icon-linkedin-square
+        country: Israel
+        title: Full Cycle Web Dev, Team Lead
+        id: daniel_ostrovsky
+        image: /uploads/daniel-ostrovsky.jpg
+        company: Kaltura
       image: /uploads/daniel-ostrovsky.jpg
       active: "true"
-    - talk: '{"id":"talk_006","title":"Extending your [browser]
-        sense","description":"We will talk about browser extensions, look in a
-        new way at some obscene things in the usual web, features, tricks and
-        problems from the development experience."}'
-      speaker: '{"bio":"FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In
-        the holy wars of frameworks on the side of common sense. These days he
-        was spotted creating Chrome extension, and that’s what he will talk
-        about.","city":"Chernivtsi","name":"Bohdan
-        Dvorianov","socialLinks":[{"src":"https://www.facebook.com/b.dvorianov","icon":"icon-facebook-square"},{"src":"https://www.linkedin.com/in/bdvorianov","icon":"icon-linkedin-square"}],"country":"Ukraine","title":"Frontend
-        Developer","id":"bohdan_dvorianov","image":"/uploads/bohdan-dvorianov.jpeg","company":"AgiliWay
-        "}'
+    - talk:
+        id: talk_006
+        title: Extending your [browser] sense
+        description: We will talk about browser extensions, look in a new way at some
+          obscene things in the usual web, features, tricks and problems from
+          the development experience.
+      speaker:
+        bio: FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In the holy
+          wars of frameworks on the side of common sense. These days he was
+          spotted creating Chrome extension, and that’s what he will talk about.
+        city: Chernivtsi
+        name: Bohdan Dvorianov
+        socialLinks:
+          - src: https://www.facebook.com/b.dvorianov
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/bdvorianov
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Frontend Developer
+        id: bohdan_dvorianov
+        image: /uploads/bohdan-dvorianov.jpeg
+        company: "AgiliWay "
       image: /uploads/bohdan-dvorianov.jpeg
       active: "true"
 partners:
