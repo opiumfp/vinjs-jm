@@ -259,19 +259,35 @@ speakers:
       talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
         for JS are grown up and offer different options to train, run, visualize
         and optimize Neural Networks. We will discuss how and why to use them"}'
-    - fields: '{"bio":"🧑‍🚀 10+ years in dev \\\n🚀 JavaScript enthusiast \\\n🦸‍♂️
-        Software Engineer \\\n🎈 Blacksmith of
-        happiness","city":"Vinnytsia","name":"Kostiantyn
-        Hryshyn","socialLinks":[{"src":"https://www.facebook.com/stingrigs","icon":"icon-facebook-square"},{"src":"https://twitter.com/stingrigs","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/khryshyn/","icon":"icon-linkedin-square"},{"src":"https://github.com/stingrigs","icon":"icon-github"}],"country":"Ukraine","title":"Technical
-        lead","id":"kostiantyn_hryshyn","image":"/uploads/kostiantyn-hryshyn-600.jpg","company":"EPAM
-        Systems"}'
+    - fields:
+        bio: |-
+          🚀 JavaScript enthusiast \
+          🦸‍♂️ Software Engineer \
+          🎈 Blacksmith of happiness
+        city: Vinnytsia
+        name: Kostiantyn Hryshyn
+        socialLinks:
+          - src: https://www.facebook.com/stingrigs
+            icon: icon-facebook-square
+          - src: https://twitter.com/stingrigs
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/khryshyn/
+            icon: icon-linkedin-square
+          - src: https://github.com/stingrigs
+            icon: icon-github
+        country: Ukraine
+        title: Technical lead
+        id: kostiantyn_hryshyn
+        image: /uploads/kostiantyn-hryshyn-600.jpg
+        company: EPAM Systems
       image: /uploads/kostiantyn-hryshyn-600.jpg
-      talk: "{\"id\":\"talk_010\",\"title\":\"React Hooks by the Golden Ratio
-        🧘\",\"description\":\"February 2019, gave us the new player in React
-        world called the React Hooks 🔥 but does it so stunning in real
-        projects? I'm not going to convince you to use Hooks or not, the talk is
-        more about the pitfalls you can run into and solutions that can help to
-        improve the overall code health\"}"
+      talk:
+        id: talk_010
+        title: React Hooks by the Golden Ratio 🧘
+        description: 🔥 February 2019, gave us the new player in React world called the
+          React Hooks but does it so stunning in real projects? Let's peek
+          inside and talk about the common gotchas and possible solutions that
+          will help to predict every clunky render
       active: "true"
     - fields: '{"bio":"JS developer and co-organizer at dev.meetups(). Apart from
         coding, try to create agnostic ecosystems with the newest
@@ -440,18 +456,34 @@ talks:
         Yukhnovich.jpg","company":"EPAM Systems"}'
       image: /uploads/Paul Yukhnovich.jpg
       active: "true"
-    - talk: "{\"id\":\"talk_010\",\"title\":\"React Hooks by the Golden Ratio
-        🧘\",\"description\":\"February 2019, gave us the new player in React
-        world called the React Hooks 🔥 but does it so stunning in real
-        projects? I'm not going to convince you to use Hooks or not, the talk is
-        more about the pitfalls you can run into and solutions that can help to
-        improve the overall code health\"}"
-      speaker: '{"bio":"🧑‍🚀 10+ years in dev \\\n🚀 JavaScript enthusiast \\\n🦸‍♂️
-        Software Engineer \\\n🎈 Blacksmith of
-        happiness","city":"Vinnytsia","name":"Kostiantyn
-        Hryshyn","socialLinks":[{"src":"https://www.facebook.com/stingrigs","icon":"icon-facebook-square"},{"src":"https://twitter.com/stingrigs","icon":"icon-twitter"},{"src":"https://www.linkedin.com/in/khryshyn/","icon":"icon-linkedin-square"},{"src":"https://github.com/stingrigs","icon":"icon-github"}],"country":"Ukraine","title":"Technical
-        lead","id":"kostiantyn_hryshyn","image":"/uploads/kostiantyn-hryshyn-600.jpg","company":"EPAM
-        Systems"}'
+    - talk:
+        id: talk_010
+        title: React Hooks by the Golden Ratio 🧘
+        description: 🔥 February 2019, gave us the new player in React world called the
+          React Hooks but does it so stunning in real projects? Let's peek
+          inside and talk about the common gotchas and possible solutions that
+          will help to predict every clunky render
+      speaker:
+        bio: |-
+          🚀 JavaScript enthusiast \
+          🦸‍♂️ Software Engineer \
+          🎈 Blacksmith of happiness
+        city: Vinnytsia
+        name: Kostiantyn Hryshyn
+        socialLinks:
+          - src: https://www.facebook.com/stingrigs
+            icon: icon-facebook-square
+          - src: https://twitter.com/stingrigs
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/khryshyn/
+            icon: icon-linkedin-square
+          - src: https://github.com/stingrigs
+            icon: icon-github
+        country: Ukraine
+        title: Technical lead
+        id: kostiantyn_hryshyn
+        image: /uploads/kostiantyn-hryshyn-600.jpg
+        company: EPAM Systems
       image: /uploads/kostiantyn-hryshyn-600.jpg
       active: "true"
     - talk: '{"id":"talk_005","title":"ML in JS","description":"Machine Learning tools
