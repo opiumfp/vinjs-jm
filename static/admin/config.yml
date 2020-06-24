@@ -126,7 +126,6 @@ collections:
     - label: "Speakers"
       name: "speakers"
       widget: "object"
-      collapsed: true
       default: ''
       required: false
       fields:
@@ -171,7 +170,6 @@ collections:
     - label: "Talks"
       name: "talks"
       widget: "object"
-      collapsed: true
       default: ''
       required: false
       fields:
@@ -459,6 +457,7 @@ collections:
     - label: "Data"
       name: "data"
       widget: "object"
+      collapsed: true
       required: false 
       default: ''
       fields:
@@ -504,6 +503,7 @@ collections:
     - label: "Data"
       name: "data"
       widget: "object"
+      collapsed: true
       required: false 
       default: ''
       fields:
