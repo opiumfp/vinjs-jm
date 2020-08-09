@@ -281,8 +281,12 @@ query Conf {
       id
       items {
         active
-        fields
-        image (quality:90, width:200)
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
       }
     }
     mediapartners {
@@ -291,8 +295,12 @@ query Conf {
       id
       items {
         active
-        fields
-        image (quality:90, width:200)
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
       }
     }
     location {
