@@ -62,6 +62,15 @@
           </div>
         </div>
       </section>
+      <section class="position-relative pt-5 pb-5">
+        <page-title
+                class="position-relative"
+                :title="'Schedule'"
+        ></page-title>
+       <page-title
+                :subtitle="'Day 1 - August 27th'"
+        ></page-title>
+      </section>
       <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
@@ -245,6 +254,11 @@ query Conf {
           image (quality:90, width:200)
         }
       }
+    }
+    schedule {
+      title
+      subtitle
+      id
     }
     partners {
       title
