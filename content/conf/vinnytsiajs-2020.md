@@ -837,6 +837,12 @@ schedule:
             titlee: Partner Lottery
             talk: ""
             speaker: ""
+            titleedescription: |-
+              EPAM Lottery [](https://www.epam.com/)
+
+              ![](/uploads/Effective_Programming_for_America_logo.svg)
+
+              <https://www.epam.com/>
         endtime: September 3, 2020 9:30 PM
         fulltitle: VinnytsiaJS 2020 - Day 1
         starttime: September 3, 2020 7:30 PM
