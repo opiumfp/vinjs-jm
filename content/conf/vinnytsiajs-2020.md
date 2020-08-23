@@ -833,22 +833,12 @@ schedule:
               id: roman_savitskyi
               image: /uploads/roman-savitskyi.jpg
               company: Infopulse
-          - time: September 3, 2020 9:00 PM
-            titlee: Partner Lottery
-            talk: ""
-            speaker: ""
-            titleedescription: |-
-              EPAM Lottery [](https://www.epam.com/)
-
-              ![](/uploads/Effective_Programming_for_America_logo.svg)
-
-              <https://www.epam.com/>
         endtime: September 3, 2020 9:30 PM
         fulltitle: VinnytsiaJS 2020 - Day 1
         starttime: September 3, 2020 7:30 PM
         location: Youtube
         title: Online Day 1
-        link: https://www.youtube.com/VinnytsiaJS
+        link: ""
         id: day_1
         description: VinnytsiaJS 2020 - Online - Day 1
       active: "true"
@@ -920,6 +910,375 @@ schedule:
         link: ""
         id: day_2
         description: VinnytsiaJS 2020 - Online - Day 2
+      active: "true"
+    - schedule:
+        items:
+          - time: September 17, 2020 7:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_017
+              title: "Job Behind the Scene: Web Worker"
+              description: The Web initially designed to show documents, and JavaScript
+                brought interactivity into it. Modern applications are doing a
+                lot of extra work and computations in addition to UI updates.
+                With those requirements and single-thread for UI, making web app
+                performant and responsive to the user input becomes challenging.
+                **Web Worker** is the API that provides a beautiful abstraction
+                on top of threading in browsers, and I want to show a real why,
+                when, and how to use it in **Angular**.
+            speaker:
+              bio: Vitalii is a Lead JavaScript Engineer at EPAM Poland, co-organizer of
+                Angular Wroclaw meetup. Vitalii is keeping up-to-date with the
+                latest Web Platform features and doing great experiments with
+                it. This guy is not just a nerd, but a tech speaker, and Web
+                Audio enthusiast.
+              city: Wroclaw
+              name: Vitalii Bobrov
+              socialLinks:
+                - src: https://twitter.com/bobrov1989
+                  icon: icon-twitter
+                - src: https://github.com/vitaliy-bobrov
+                  icon: icon-github
+              country: Poland
+              title: Lead Software Engineer
+              id: vitalii_bobrov
+              image: /uploads/vitalii-bobrov-squre.jpg
+              company: EPAM Systems
+          - time: September 17, 2020 8:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_010
+              title: React Hooks by the Golden Ratio 🧘
+              description: 🔥 February 2019, gave us the new player in React world called the
+                React Hooks but does it so stunning in real projects? Let's peek
+                inside and talk about the common gotchas and possible solutions
+                that will help to predict every clunky render
+            speaker:
+              bio: |-
+                🚀 JavaScript enthusiast \
+                🦸‍♂️ Software Engineer \
+                🎈 Blacksmith of happiness
+              city: Vinnytsia
+              name: Kostiantyn Hryshyn
+              socialLinks:
+                - src: https://www.facebook.com/stingrigs
+                  icon: icon-facebook-square
+                - src: https://twitter.com/stingrigs
+                  icon: icon-twitter
+                - src: https://www.linkedin.com/in/khryshyn/
+                  icon: icon-linkedin-square
+                - src: https://github.com/stingrigs
+                  icon: icon-github
+              country: Ukraine
+              title: Technical lead
+              id: kostiantyn_hryshyn
+              image: /uploads/kostiantyn-hryshyn-600.jpg
+              company: EPAM Systems
+        endtime: September 17, 2020 9:00 PM
+        fulltitle: VinnytsiaJS 2020 - Online - Day 3
+        starttime: September 17, 2020 7:00 PM
+        location: Youtube
+        title: Online Day 3
+        link: ""
+        id: day_3
+        description: VinnytsiaJS 2020 - Online - Day 3
+      active: "true"
+    - schedule:
+        items:
+          - time: September 24, 2020 7:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_005
+              title: ML in JS
+              description: Machine Learning tools for JS are grown up and offer different
+                options to train, run, visualize and optimize Neural Networks.
+                We will discuss how and why to use them
+            speaker:
+              bio: "Tell about your self and experience, technoligies what your prefer and
+                something interesting what you wold like to share): I like
+                programming things"
+              city: Vinnytsia
+              name: Yevhen Shemet
+              socialLinks:
+                - icon: icon-facebook-square
+                  src: ""
+                - icon: icon-facebook-square
+                  src: http://facebook.com/yevhene
+                - icon: icon-twitter
+                  src: https://twitter.com/yevhene
+              country: Ukraine
+              title: Teaching Assistant
+              id: yevhen_shemet
+              image: /uploads/Yevhen Shemet.jpg
+              company: Vinnytsia National Technical University
+          - time: September 24, 2020 8:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_018
+              title: How to build efficient backend based on micro-service architecture with
+                GraphQL
+              description: This speech about micro-services, approaches, and practices in
+                their construction. How to effectively build communication
+                between micro-services and what approaches are commonly used for
+                this. Сonsider the capabilities of such a beast as GraphQL and
+                Federated schema. We will talk a little about distributed
+                transactions and talk about infrastructure, monitoring, and
+                scaling components.
+            speaker:
+              bio: Technical lead, with strong expertise in developing application
+                architectures. ex-CEO Arateas.tech – founded a startup which
+                created gambling products.
+              city: Kyiv
+              name: Anton Cherednikov
+              socialLinks:
+                - src: https://www.facebook.com/profile.php?id=100009501190852
+                  icon: icon-facebook-square
+                - src: https://www.linkedin.com/in/anton-cherednikov/
+                  icon: icon-linkedin-square
+              country: Ukraine
+              title: Lead backend architect
+              id: anton_cherednikov
+              image: /uploads/anton-cherednikov.png
+              company: code.store
+          - time: September 24, 2020 8:30 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_011
+              title: Deno - killer feature or just proposal
+              description: Something on the horizon looks like a dinosaur. Let's try to figure
+                out what the main headache on the start, main concepts and
+                issues. Should forget about node js and migrate all project to
+                Deno or just pick up concepts and ideas.
+            speaker:
+              bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
+                create agnostic ecosystems with the newest technologies.
+              city: Vinnytsia
+              name: Andrii Shtadler
+              socialLinks:
+                - src: ""
+                  icon: icon-facebook-square
+                - src: https://www.facebook.com/profile.php?id=100004283014454
+                  icon: icon-facebook-square
+                - src: https://github.com/shtadler
+                  icon: icon-github
+              country: Ukraine
+              title: Senior Software Engineer
+              id: andrii_shtadler
+              image: /uploads/andrii_shtadler_sq.jpg
+              company: EPAM Systems
+        endtime: September 24, 2020 9:00 PM
+        fulltitle: VinnytsiaJS 2020 - Online - Day 4
+        starttime: September 24, 2020 7:00 PM
+        location: Youtube
+        title: Online Day 4
+        link: ""
+        id: day_4
+        description: VinnytsiaJS 2020 - Online - Day 4
+      active: "true"
+    - schedule:
+        items:
+          - time: October 1, 2020 7:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_003
+              title: Full Stack is dead, long live the Full Cycle!
+              description: >-
+                When “time to market” is critical. When bug fixing on production
+                can’t take longer than a couple of hours. And it doesn’t matter
+                if we are talking about a large company or a small startup, a
+                new reality more often requires developers/teams to be a “Full
+                Cycle”, - design, development, test, deploy, operate, and
+                support. 
+
+
+                Let’s talk about the past, present and why ‘Full Cycle’ is a future of Web Development. 
+
+
+                I think it’s highly important to stay tuned not only with the latest development technologies and trends but also with latest development models.
+            speaker:
+              bio: Web development (Full Cycle) expert and teams manager with over twenty
+                years of experience in the industry. Public speaker. Meetup
+                organizer (NG-Heroes). Design, development, testing, and
+                maintenance of complex web-based software systems; hands-on in
+                various WEB technologies. I'm passionate about family, about my
+                gorgeous wife and my adorable kids. In my free time, I'm "The
+                Best Developer in The World" *based on my wife's ranking*
+              city: ""
+              name: Daniel Ostrovsky
+              socialLinks:
+                - src: https://github.com/danduh
+                  icon: icon-github
+                - src: https://twitter.com/danduh81
+                  icon: icon-twitter
+                - src: https://www.linkedin.com/in/danduh
+                  icon: icon-linkedin-square
+              country: Israel
+              title: Full Cycle Web Dev, Team Lead
+              id: daniel_ostrovsky
+              image: /uploads/daniel-ostrovsky.jpg
+              company: Kaltura
+          - time: October 1, 2020 8:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_021
+              title: How to talk to vending machines
+              description: The story about our start up. We developed service to provide
+                ability make cashless payments into vending machines. In this
+                start up we worked on hardware part and made electric board
+                which interact to user through bluetooth connection. Also we
+                developed a mobile application and server side. On the mobile
+                app we used Cordova and Vue.js.
+            speaker:
+              bio: I'm a web developer. Have experience in this area near 10 years. At the
+                start I worked as a backend developer. I used PHP, Laravel and
+                Drupal. Near 4 years ago I started learning frontend. Nowadays
+                my main specialization is Vue.js. On my recent projects I worked
+                as a Team Lead. Our team were 3 developers. We developed
+                frontend on Vue.js, Cordova and backend on Laravel. The project
+                is implementation of cashless payments into vending machines.
+              city: Korostyshiv
+              name: Volodymyr Chudovskyi
+              socialLinks:
+                - src: https://www.facebook.com/chudovskiy.vladimir
+                  icon: icon-facebook-square
+                - src: https://www.linkedin.com/in/volodymir-chudovskiy-788033107/
+                  icon: icon-linkedin-square
+                - src: https://github.com/VladimirChudovskiy
+                  icon: icon-github
+              country: Ukraine
+              title: Full Stack developer
+              id: volodymyr_chudovskyi
+              image: /uploads/volodymyr-chudovskyi.jpg
+              company: ELUpay
+          - time: October 1, 2020 8:30 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_20
+              title: JAM stack - why do we need it?
+              description: Let's talk about JAMstack and figure out in what cases we can use
+                it. We will discuss popular tools like Gatsby and Netlify and
+                why web sites that use it have a good perform
+            speaker:
+              bio: Frontend Engineer who loves to learn new things and share knowledge with
+                others. Co-organizer of 'Dev.meetups()' meetups. Mentor at GoIT
+                Academy.
+              city: Vinnytsia
+              name: Andrew Slobodianiuk
+              socialLinks:
+                - src: ""
+                  icon: icon-facebook-square
+              country: Ukraine
+              title: Frontend Engineer
+              id: andrew_slobodianiuk
+              image: /uploads/andrew-slobodianiuk.jpg
+              company: Onseo
+        endtime: October 1, 2020 9:00 PM
+        fulltitle: VinnytsiaJS 2020 - Online - Day 5
+        starttime: October 1, 2020 7:00 PM
+        location: Youtube
+        title: Online Day 5
+        link: ""
+        id: day_5
+        description: VinnytsiaJS 2020 - Online - Day 5
+      active: "true"
+    - schedule:
+        items:
+          - time: October 8, 2020 7:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_009
+              title: Why React app is so *** slow and how to fix it
+              description: >-
+                Once your team has decided to use React. Ok cool, since React
+                means blazing fast, right? Then your application has evolved
+                into a really huge app. And now you're not that happy, nor users
+                of your application.  Let's have a look at tips and tricks which
+                might help your team has this super-fast app.\
+
+                *You might think that your app is fast. According to the statistics, 67% of developers think that their app is fast.
+            speaker:
+              bio: Paul is a web developer, who happens to be several communities organizer,
+                public speaker, mentor, traveler and just a guy with a good
+                sense of humor. Currently lives in Minsk, but you can easily
+                find him at any international conference.
+              city: Minsk
+              name: Paul Yukhnovich
+              socialLinks:
+                - icon: icon-facebook-square
+                  src: https://www.facebook.com/paul.yuhnovich
+                - icon: icon-twitter
+                  src: https://twitter.com/Paul_Yuhnovich
+              country: Belarus
+              title: JS developer
+              id: paul_yukhnovich
+              image: /uploads/Paul Yukhnovich.jpg
+              company: EPAM Systems
+          - time: October 8, 2020 8:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_019
+              title: Web through eyes of screen reader user
+              description: Screen readers are very important for a lot of our users, but in
+                same time devs rarely feel comfortable working with them. In
+                this talk you will get more familiar with how to use it, ways to
+                improve your code for screen reader users and even gonna learn
+                about internals of how it works behind the curtain.
+            speaker:
+              bio: Accessibility champion during the day, banana-man during the night.
+              city: Vinnytsia
+              name: Oleksandr Kovtun
+              socialLinks:
+                - src: https://www.linkedin.com/in/staluxa/
+                  icon: icon-linkedin-square
+              country: Ukraine
+              title: Senior Front-end Developer
+              id: oleksandr_kovtun
+              image: /uploads/oleksandr-kovtun-r.jpg
+              company: Astound Commerce
+          - time: October 1, 2020 8:30 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_006
+              title: Extending your [browser] sense
+              description: We will talk about browser extensions, look in a new way at some
+                obscene things in the usual web, features, tricks and problems
+                from the development experience.
+            speaker:
+              bio: FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In the holy
+                wars of frameworks on the side of common sense. These days he
+                was spotted creating Chrome extension, and that’s what he will
+                talk about.
+              city: Chernivtsi
+              name: Bohdan Dvorianov
+              socialLinks:
+                - src: https://www.facebook.com/b.dvorianov
+                  icon: icon-facebook-square
+                - src: https://www.linkedin.com/in/bdvorianov
+                  icon: icon-linkedin-square
+              country: Ukraine
+              title: Frontend Developer
+              id: bohdan_dvorianov
+              image: /uploads/bohdan-dvorianov.jpeg
+              company: "AgiliWay "
+        endtime: October 8, 2020 9:00 PM
+        fulltitle: VinnytsiaJS 2020 - Online - Day 6
+        starttime: October 8, 2020 7:00 PM
+        location: Youtube
+        title: Online Day 6
+        link: ""
+        id: day_6
+        description: VinnytsiaJS 2020 - Online - Day 5
       active: "true"
 partners:
   id: partners
