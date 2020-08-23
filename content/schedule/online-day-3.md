@@ -6,7 +6,7 @@ data:
       titlee: ""
       titleedescription: ""
       talk:
-        id: "#talk_017"
+        id: talk_017
         title: "Job Behind the Scene: Web Worker"
         description: The Web initially designed to show documents, and JavaScript
           brought interactivity into it. Modern applications are doing a lot of
