@@ -474,6 +474,107 @@ speakers:
           elegantly solves many of those issues. I'll be joking around JS issues
           the same as on the Flutter problems so it won't become a 'hate speech'
       active: "true"
+    - fields:
+        bio: I'm a web developer. Have experience in this area near 10 years. At the
+          start I worked as a backend developer. I used PHP, Laravel and Drupal.
+          Near 4 years ago I started learning frontend. Nowadays my main
+          specialization is Vue.js. On my recent projects I worked as a Team
+          Lead. Our team were 3 developers. We developed frontend on Vue.js,
+          Cordova and backend on Laravel. The project is implementation of
+          cashless payments into vending machines.
+        city: Korostyshiv
+        name: Volodymyr Chudovskyi
+        socialLinks:
+          - src: https://www.facebook.com/chudovskiy.vladimir
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/volodymir-chudovskiy-788033107/
+            icon: icon-linkedin-square
+          - src: https://github.com/VladimirChudovskiy
+            icon: icon-github
+        country: Ukraine
+        title: Full Stack developer
+        id: volodymyr_chudovskyi
+        image: /uploads/volodymyr-chudovskyi.jpg
+        company: ELUpay
+      talk:
+        id: talk_021
+        title: How to talk to vending machines
+        description: The story about our start up. We developed service to provide
+          ability make cashless payments into vending machines. In this start up
+          we worked on hardware part and made electric board which interact to
+          user through bluetooth connection. Also we developed a mobile
+          application and server side. On the mobile app we used Cordova and
+          Vue.js.
+      active: "true"
+    - fields:
+        bio: Frontend Engineer who loves to learn new things and share knowledge with
+          others. Co-organizer of 'Dev.meetups()' meetups. Mentor at GoIT
+          Academy.
+        city: Vinnytsia
+        name: Andrew Slobodianiuk
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Engineer
+        id: andrew_slobodianiuk
+        image: /uploads/andrew-slobodianiuk.jpg
+        company: Onseo
+      talk:
+        id: talk_20
+        title: JAM stack - why do we need it?
+        description: Let's talk about JAMstack and figure out in what cases we can use
+          it. We will discuss popular tools like Gatsby and Netlify and why web
+          sites that use it have a good perform
+      active: "true"
+    - fields:
+        bio: Accessibility champion during the day, banana-man during the night.
+        city: Vinnytsia
+        name: Oleksandr Kovtun
+        socialLinks:
+          - src: https://www.linkedin.com/in/staluxa/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Senior Front-end Developer
+        id: oleksandr_kovtun
+        image: /uploads/oleksandr-kovtun-r.jpg
+        company: Astound Commerce
+      talk:
+        id: talk_019
+        title: Web through eyes of screen reader user
+        description: Screen readers are very important for a lot of our users, but in
+          same time devs rarely feel comfortable working with them. In this talk
+          you will get more familiar with how to use it, ways to improve your
+          code for screen reader users and even gonna learn about internals of
+          how it works behind the curtain.
+      active: "true"
+    - fields:
+        bio: Technical lead, with strong expertise in developing application
+          architectures. ex-CEO Arateas.tech – founded a startup which created
+          gambling products.
+        city: Kyiv
+        name: Anton Cherednikov
+        socialLinks:
+          - src: https://www.facebook.com/profile.php?id=100009501190852
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/anton-cherednikov/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Lead backend architect
+        id: anton_cherednikov
+        image: /uploads/anton-cherednikov.png
+        company: code.store
+      talk:
+        id: talk_018
+        title: How to build efficient backend based on micro-service architecture with
+          GraphQL
+        description: This speech about micro-services, approaches, and practices in
+          their construction. How to effectively build communication between
+          micro-services and what approaches are commonly used for this.
+          Сonsider the capabilities of such a beast as GraphQL and Federated
+          schema. We will talk a little about distributed transactions and talk
+          about infrastructure, monitoring, and scaling components.
+      active: "true"
   subtitle: First Speakers
   title: Speakers
 talks:
