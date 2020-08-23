@@ -1,5 +1,5 @@
 ---
-name: Even faster React applications
+name: Why React app is so *** slow and how to fix it
 data:
   id: talk_009
   title: Why React app is so *** slow and how to fix it
