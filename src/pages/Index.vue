@@ -65,11 +65,9 @@
       <section class="position-relative pt-5 pb-5">
         <page-title
                 class="position-relative"
-                :title="'Schedule'"
+                :title="$page.pageData.schedule.title"
         ></page-title>
-       <page-title
-                :subtitle="'Day 1 - August 27th'"
-        ></page-title>
+        <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section>
       <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
@@ -257,8 +255,40 @@ query Conf {
     }
     schedule {
       title
-      subtitle
       id
+      schedules {
+        schedule {
+          location
+          description
+          fulltitle
+          title
+          starttime
+          endtime
+          items {
+            time
+            titlee
+            talk {
+              id
+              title
+              description
+            }
+            speaker {
+              bio
+              name
+              city
+              socialLinks {
+                src
+                icon
+              }
+              company
+              image
+              id
+              country
+            }
+          }
+        }
+        active
+      }
     }
     partners {
       title
@@ -343,6 +373,7 @@ import MediaTiles from "@/components/MediaTiles";
 import Pricing from "@/components/Pricing";
 import Speakers from "@/components/Speakers";
 import Talks from "@/components/Talks";
+import Schedule from "@/components/Schedule";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
@@ -385,6 +416,7 @@ export default {
     Pricing,
     Speakers,
     Talks,
+    Schedule,
     Partners,
     Location,
     ContactUs

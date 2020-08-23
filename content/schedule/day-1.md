@@ -33,7 +33,7 @@ data:
             src: https://twitter.com/N_Tepluhina
         country: Ukraine
         title: Senior Frontend Engineer
-        id: natalia _tepluhina
+        id: natalia_tepluhina
         image: /uploads/Natalia Tepluhina.jpg
         company: GitLab / Vue.js core team
     - time: September 3, 2020 8:00 PM

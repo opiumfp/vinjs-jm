@@ -14,6 +14,7 @@
     "bootstrap-vue": "^2.0.4",
     "gridsome": "^0.7.0",
     "mobile-device-detect": "^0.3.3",
+    "moment": "^2.27.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "smoothscroll-polyfill": "^0.4.4",

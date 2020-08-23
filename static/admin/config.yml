@@ -202,14 +202,14 @@ collections:
         - {label: "Id", name: "id", widget: "string", required: false, default: ''}
         - {label: "Title", name: "title", widget: "string", required: false, default: ''}
         - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
-        - label: "Items"
-          name: "items"
+        - label: "Schedules"
+          name: "schedules"
           widget: "list"
           default: ''
           required: false
           fields:
-            - label: "Items"
-              name: "items"
+            - label: "Schedule"
+              name: "schedule"
               widget: "relation"
               collection: "schedule"
               searchFields: ["name"]
@@ -558,7 +558,15 @@ collections:
         required: false
         default: ''
         fields:
-        - {label: "Time", name: "time", widget: "string", required: false, default: ''}
+        - label: "Time"
+          name: "time"
+          widget: "datetime"
+          default: ""
+          dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+          timeFormat: "HH:mm" # e.g. 21:07
+          format: "LLL"
+          required: false
+          pickerUtc: false
         - {label: "Title", name: "titlee", widget: "string", required: false, default: ''}
         - label: "Talk"
           name: "talk"
