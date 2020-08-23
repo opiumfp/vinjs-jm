@@ -11,6 +11,6 @@ data:
   country: Ukraine
   title: Frontend Engineer
   id: andrew_slobodianiuk
-  image: /uploads/andrew-slobodianiuk.jpg
+  image: /uploads/andrew-slobodianiuk-200.jpg
   company: Onseo
 ---
