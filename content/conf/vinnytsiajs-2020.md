@@ -475,6 +475,27 @@ speakers:
           the same as on the Flutter problems so it won't become a 'hate speech'
       active: "true"
     - fields:
+        bio: Frontend Engineer who loves to learn new things and share knowledge with
+          others. Co-organizer of 'Dev.meetups()' meetups. Mentor at GoIT
+          Academy.
+        city: Vinnytsia
+        name: Andrew Slobodianiuk
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Engineer
+        id: andrew_slobodianiuk
+        image: /uploads/andrew-slobodianiuk-200.jpg
+        company: Onseo
+      talk:
+        id: talk_20
+        title: JAM stack - why do we need it?
+        description: Let's talk about JAMstack and figure out in what cases we can use
+          it. We will discuss popular tools like Gatsby and Netlify and why web
+          sites that use it have a good perform
+      active: "true"
+    - fields:
         bio: I'm a web developer. Have experience in this area near 10 years. At the
           start I worked as a backend developer. I used PHP, Laravel and Drupal.
           Near 4 years ago I started learning frontend. Nowadays my main
@@ -505,27 +526,6 @@ speakers:
           user through bluetooth connection. Also we developed a mobile
           application and server side. On the mobile app we used Cordova and
           Vue.js.
-      active: "true"
-    - fields:
-        bio: Frontend Engineer who loves to learn new things and share knowledge with
-          others. Co-organizer of 'Dev.meetups()' meetups. Mentor at GoIT
-          Academy.
-        city: Vinnytsia
-        name: Andrew Slobodianiuk
-        socialLinks:
-          - src: ""
-            icon: icon-facebook-square
-        country: Ukraine
-        title: Frontend Engineer
-        id: andrew_slobodianiuk
-        image: /uploads/andrew-slobodianiuk-200.jpg
-        company: Onseo
-      talk:
-        id: talk_20
-        title: JAM stack - why do we need it?
-        description: Let's talk about JAMstack and figure out in what cases we can use
-          it. We will discuss popular tools like Gatsby and Netlify and why web
-          sites that use it have a good perform
       active: "true"
     - fields:
         bio: Accessibility champion during the day, banana-man during the night.
