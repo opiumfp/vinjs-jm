@@ -65,7 +65,7 @@ data:
   fulltitle: VinnytsiaJS 2020 - Day 1
   starttime: September 3, 2020 7:30 PM
   location: Youtube
-  title: Day 1
+  title: Online Day 1
   link: https://www.youtube.com/VinnytsiaJS
   id: day_1
   description: VinnytsiaJS 2020 - Online - Day 1
