@@ -29,6 +29,35 @@ data:
         id: yevhen_shemet
         image: /uploads/Yevhen Shemet.jpg
         company: Vinnytsia National Technical University
+    - time: September 24, 2020 8:00 PM
+      titlee: ""
+      titleedescription: ""
+      talk:
+        id: talk_018
+        title: How to build efficient backend based on micro-service architecture with
+          GraphQL
+        description: This speech about micro-services, approaches, and practices in
+          their construction. How to effectively build communication between
+          micro-services and what approaches are commonly used for this.
+          Сonsider the capabilities of such a beast as GraphQL and Federated
+          schema. We will talk a little about distributed transactions and talk
+          about infrastructure, monitoring, and scaling components.
+      speaker:
+        bio: Technical lead, with strong expertise in developing application
+          architectures. ex-CEO Arateas.tech – founded a startup which created
+          gambling products.
+        city: Kyiv
+        name: Anton Cherednikov
+        socialLinks:
+          - src: https://www.facebook.com/profile.php?id=100009501190852
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/anton-cherednikov/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Lead backend architect
+        id: anton_cherednikov
+        image: /uploads/anton-cherednikov.png
+        company: code.store
     - time: September 24, 2020 8:30 PM
       titlee: ""
       titleedescription: ""
