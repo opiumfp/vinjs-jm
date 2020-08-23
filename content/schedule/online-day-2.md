@@ -2,10 +2,6 @@
 name: Online Day 2
 data:
   items:
-    - time: ""
-      titlee: ""
-      talk: ""
-      speaker: ""
     - time: September 10, 2020 7:00 PM
       titlee: ""
       talk:
