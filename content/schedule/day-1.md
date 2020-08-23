@@ -57,22 +57,12 @@ data:
         id: roman_savitskyi
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
-    - time: September 3, 2020 9:00 PM
-      titlee: Partner Lottery
-      talk: ""
-      speaker: ""
-      titleedescription: |-
-        EPAM Lottery [](https://www.epam.com/)
-
-        ![](/uploads/Effective_Programming_for_America_logo.svg)
-
-        <https://www.epam.com/>
   endtime: September 3, 2020 9:30 PM
   fulltitle: VinnytsiaJS 2020 - Day 1
   starttime: September 3, 2020 7:30 PM
   location: Youtube
   title: Online Day 1
-  link: https://www.youtube.com/VinnytsiaJS
+  link: ""
   id: day_1
   description: VinnytsiaJS 2020 - Online - Day 1
 ---
