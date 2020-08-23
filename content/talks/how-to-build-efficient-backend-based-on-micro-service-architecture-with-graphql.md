@@ -1,7 +1,7 @@
 ---
 name: How to build efficient backend based on micro-service architecture with GraphQL
 data:
-  id: "#talk_018"
+  id: talk_018
   title: How to build efficient backend based on micro-service architecture with
     GraphQL
   description: This speech about micro-services, approaches, and practices in
