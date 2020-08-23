@@ -2,7 +2,7 @@
 name: Even faster React applications
 data:
   id: talk_009
-  title: Even faster React applications
+  title: Why React app is so *** slow and how to fix it
   description: >-
     Once your team has decided to use React. Ok cool, since React means blazing
     fast, right? Then your application has evolved into a really huge app. And
