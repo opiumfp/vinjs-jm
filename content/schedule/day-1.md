@@ -2,74 +2,69 @@
 name: Day 1
 data:
   id: day_1
-  title: Day 1 - August 27
-  starttime: August 27, 2020 7:00 PM
-  endtime: August 27, 2020 9:30 PM
+  title: Day 1
+  starttime: September 3, 2020 7:30 PM
+  endtime: September 3, 2020 9:30 PM
   fulltitle: VinnytsiaJS 2020 - Day 1
   description: VinnytsiaJS 2020 - Online - Day 1
   location: Youtube
   items:
-    - time: 19:00
+    - time: September 3, 2020 7:00 PM
       titlee: ""
       talk:
-        id: talk_009
-        title: Even faster React applications
-        description: >-
-          Once your team has decided to use React. Ok cool, since React means
-          blazing fast, right? Then your application has evolved into a really
-          huge app. And now you're not that happy, nor users of your
-          application.  Let's have a look at tips and tricks which might help
-          your team has this super-fast app.\
-
-          *You might think that your app is fast. According to the statistics, 67% of developers think that their app is fast.
+        id: talk_015
+        title: "Composition API: a quick overVue"
+        description: "Vue 3 brings us a new feature: composition functions. It's a new
+          way of declaring component logic using function calls In this talk I
+          will explain why we decided to have composables-based API in Vue 3,
+          how to use composition functions and in which cases they are better
+          than 'usual' object syntax."
       speaker:
-        bio: Paul is a web developer, who happens to be several communities organizer,
-          public speaker, mentor, traveler and just a guy with a good sense of
-          humor. Currently lives in Minsk, but you can easily find him at any
-          international conference.
-        city: Minsk
-        name: Paul Yukhnovich
+        bio: >-
+          Natalia Tepluhina is a Vue.js core team member and a Senior Frontend
+          Engineer at GitLab. 
+
+
+          She is a conference speaker and author of articles on different topics related to Vue.js . Thanks to these activities Natalia has got a title of Google Developer Expert in Web Technologies.
+        city: Kyiv
+        name: Natalia Tepluhina
         socialLinks:
-          - icon: icon-facebook-square
-            src: https://www.facebook.com/paul.yuhnovich
           - icon: icon-twitter
-            src: https://twitter.com/Paul_Yuhnovich
-        country: Belarus
-        title: JS developer
-        id: paul_yukhnovich
-        image: /uploads/Paul Yukhnovich.jpg
-        company: EPAM Systems
-    - time: 20:00
+            src: https://twitter.com/N_Tepluhina
+        country: Ukraine
+        title: Senior Frontend Engineer
+        id: natalia _tepluhina
+        image: /uploads/Natalia Tepluhina.jpg
+        company: GitLab / Vue.js core team
+    - time: September 3, 2020 8:00 PM
       titlee: ""
       talk:
-        id: talk_010
-        title: React Hooks by the Golden Ratio 🧘
-        description: 🔥 February 2019, gave us the new player in React world called the
-          React Hooks but does it so stunning in real projects? Let's peek
-          inside and talk about the common gotchas and possible solutions that
-          will help to predict every clunky render
+        id: talk_008
+        title: Webcomponents & lit-element in production
+        description: Back in 2016, the world heard about web components, but the stupid
+          layout-based team decided to try everything in a product that would
+          help reduce the layout. Everyone knows about the troubles of the web
+          components, but not many know how to survive and move to production.
+          Using lit-element & lit-html and solving urgent problems is the real
+          purpose of my speech. Happy end I promise.
       speaker:
         bio: |-
-          🚀 JavaScript enthusiast \
-          🦸‍♂️ Software Engineer \
-          🎈 Blacksmith of happiness
-        city: Vinnytsia
-        name: Kostiantyn Hryshyn
+          Co-founder BeerJS Zhytomyr \
+          Co-organizer frontend://zt \
+          10+ years in dev \
+          5+ year in leading \
+          Football referee :)
+        city: Zhytomyr
+        name: Roman Savitskyi
         socialLinks:
-          - src: https://www.facebook.com/stingrigs
+          - src: ""
             icon: icon-facebook-square
-          - src: https://twitter.com/stingrigs
-            icon: icon-twitter
-          - src: https://www.linkedin.com/in/khryshyn/
-            icon: icon-linkedin-square
-          - src: https://github.com/stingrigs
-            icon: icon-github
         country: Ukraine
-        title: Technical lead
-        id: kostiantyn_hryshyn
-        image: /uploads/kostiantyn-hryshyn-600.jpg
-        company: EPAM Systems
-    - time: 21:00
+        title: Frontend Competence Center Lead
+        id: roman_savitskyi
+        image: /uploads/roman-savitskyi.jpg
+        company: Infopulse
+    - time: September 3, 2020 9:00 PM
       titlee: Partner Lottery
       talk: ""
       speaker: ""
