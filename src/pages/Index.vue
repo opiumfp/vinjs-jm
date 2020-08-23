@@ -47,7 +47,7 @@
         </div>
       </section>
       <hr>
-      <section class="position-relative pt-5 pb-5">
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.talks.id"></div>
         <div class="container">
           <div class="row">
@@ -61,15 +61,16 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="position-relative pt-5 pb-5">
+        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
                 class="position-relative"
                 :title="$page.pageData.schedule.title"
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section>
-      <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
+      <!-- <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
           <div class="row">
@@ -87,8 +88,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="position-relative pb-5">
+      </section> -->
+      <!-- <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <!-- <page-title
           class="pt-5 pb-4"
@@ -96,12 +97,12 @@
           :subtitle="$page.pageData.pricing.subtitle"
         ></page-title> -->
         <!-- <pricing :pricingData="$page.pageData.pricing" /> -->
-        <page-title
+        <!-- <page-title
           class="pt-6 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title>
-      </section>
+      </section> -->
       <hr />
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
@@ -154,7 +155,19 @@
 <page-query>
 query Conf {
   pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
-    nav
+    nav {
+      button {
+        active
+        src
+        title
+      }
+      items {
+        active
+        src
+        title
+      }
+      socialicons
+    }
     title
     startDate
     hero {
@@ -264,9 +277,11 @@ query Conf {
           title
           starttime
           endtime
+          link
           items {
             time
             titlee
+            titleedescription
             talk {
               id
               title

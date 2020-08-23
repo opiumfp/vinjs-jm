@@ -552,6 +552,7 @@ collections:
       - {label: "Full Title", name: "fulltitle", widget: "string", required: false, default: ''}  
       - {label: "Description", name: "description", widget: "string", required: false, default: ''}  
       - {label: "Location", name: "location", widget: "string", required: false, default: ''}  
+      - {label: "Online Link", name: "link", widget: "string", required: false, default: ''}  
       - label: "Items"
         name: "items"
         widget: "list"
@@ -567,7 +568,8 @@ collections:
           format: "LLL"
           required: false
           pickerUtc: false
-        - {label: "Title", name: "titlee", widget: "string", required: false, default: ''}
+        - {label: "Activity (non talk)", name: "titlee", widget: "string", required: false, default: ''}
+        - {label: "Activity Description", name: "titleedescription", widget: "markdown", required: false, default: ''}
         - label: "Talk"
           name: "talk"
           widget: "relation"

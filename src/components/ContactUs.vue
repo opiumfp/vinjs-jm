@@ -45,7 +45,7 @@ export default {
       required: true
     },
     socialIconsData: {
-      type: String,
+      type: Object,
       required: false
     }
   },
@@ -62,7 +62,7 @@ export default {
       return this.$props.contactUsData;
     },
     socialData() {
-      return JSON.parse(this.$props.socialIconsData);
+      return this.$props.socialIconsData;
     }
   }
 };

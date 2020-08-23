@@ -1,7 +1,7 @@
 <template>
   <div class="layout" ref="layoutx">
     <header class="header">
-      <nav-bar :navData="getNav($static.pageData.nav)"></nav-bar>
+      <nav-bar :navData="$static.pageData.nav"></nav-bar>
     </header>
     <div id="main">
       <slot />
@@ -17,7 +17,19 @@ query {
     siteName
   }
   pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
-    nav
+    nav {
+      button {
+        active
+        src
+        title
+      }
+      items {
+        active
+        src
+        title
+      }
+      socialicons
+    }
   }
 }
 </static-query>
@@ -57,9 +69,6 @@ export default {
   },
   methods: {
     setDevice: mutations.setDevice,
-    getNav: str => {
-      return JSON.parse(str);
-    },
     showPopupYoutube(show) {
       this.showPopup = show;
     },

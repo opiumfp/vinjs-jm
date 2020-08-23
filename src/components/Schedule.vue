@@ -10,30 +10,52 @@
               class="schedules"
             >
              <h5
-                class="text-center"
+                class="text-center pt-3 pt-lg-4"
                 v-if="item.schedule.fulltitle"
-              >{{item.schedule.starttime | formatDate}} - {{item.schedule.fulltitle}}</h5>
-              <div
-                v-for="slot in item.schedule.items"
-                >
-                <div class="schedule">
-                  <div class="row">
-                    <div class="col-1">
-                        {{slot.time | formatTime}}
+              >{{item.schedule.starttime | formatDate}} - {{item.schedule.title}}</h5>
+              <div class="schedule pt-0 pb-3 pt-lg-3 pb-lg-4">
+                <div
+                  v-for="slot in item.schedule.items"
+                  >
+                  <div class="schedule_slot rounded" :id="slot.talk.id">
+                    <div class="schedule_slot_row row align-items-center py-2">
+                      <div class="col-12 col-lg-1 text-center pt-2 pt-lg-0">
+                          <span class="schedule_slot_time">{{slot.time | formatTime}}</span>
+                      </div>
+                      <div class="col-12 col-lg-7">
+                          <h6 class="schedule_slot_talk_title h6 m-0 py-2 py-lg-0 text-center text-lg-left" @click="openSlot($event)">{{slot.talk.title || slot.titlee}}</h6>
+                      </div>
+                      <div class="col-12 col-lg-3 text-center text-lg-right">
+                          <a :href="`#${slot.speaker.id}`" v-if="slot.speaker.image" >
+                            <g-image
+                              class="schedule_slot_speaker_img mr-2"
+                              v-if="slot.speaker.image"
+                              :src="slot.speaker.image"
+                              :alt="slot.speaker.title"
+                            />
+                            <span v-if="slot.speaker.name" class="schedule_slot_speaker_name">{{slot.speaker.name}}</span>
+                          </a>
+                      </div>
+                      <div class="col-12 col-lg-1 text-center text-lg-right">
+                          <button class="schedule_slot_opener py-2 py-lg-0" v-if="slot.talk.description || slot.titleedescription" @click="openSlot($event)"></button>
+                      </div>
+                      
                     </div>
-                    <div class="col-6">
-                        {{slot.talk.title}}
-                    </div>
-                    <div class="col-3">
-                        <a :href="`#${slot.speaker.id}`">
-                          {{slot.speaker.name}}
-                        </a>
+                    <div class="row schedule_slot_info " v-if="slot.talk.description || slot.titleedescription">
+                      <div class="offset-lg-1 col-12 col-lg-10">
+                          <div class="schedule_slot_talk_description">
+                              <div class="schedule_slot_talk_description_block rounded pt-3 pb-1 px-3 mx-3 mx-lg-0 mt-1 mb-3">
+                                <vue-markdown>{{ slot.talk.description || slot.titleedescription }}</vue-markdown>
+                              </div>
+                          </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="schedule_talk_speaker_name">Speaker: {{slot.speaker.name}}</div>
               </div>
-              
+              <div class="text-center">
+                <a v-if="item.schedule.link" :href="item.schedule.link" target="_blank" class="btn btn-primary mt-2 mb-5">Join Online</a>
+              </div>
             </div>
           </div>
         </div>
@@ -64,11 +86,21 @@ export default {
   },
   mounted() {
     // debugger
-    console.log(this.data)
   },
   computed: {
     data() {
       return this.$props.scheduleData;
+    }
+  },
+  methods: {
+    openSlot: function(event) {
+      const parent = event.toElement.parentElement.parentElement.parentElement
+      const opener = parent.querySelector('.schedule_slot_opener');
+      const description = parent.querySelector('.schedule_slot_talk_description');
+      if (description && opener) {
+        opener.classList.toggle('active');
+        description.classList.toggle('show');
+      }
     }
   },
   filters: {
@@ -80,13 +112,13 @@ export default {
     formatDate: function(value) {
       if (value) {
         // return moment(String(value)).format('MMMM Do')
-        return moment(String(value)).locale('en').calendar(null,{
+        return moment(String(value)).calendar(null,{
             lastDay : '[Yesterday]',
             sameDay : '[Today]',
             nextDay : '[Tomorrow]',
             lastWeek : '[last] dddd',
-            nextWeek : 'dddd',
-            sameElse : 'L'
+            nextWeek : ' MMMM Do',
+            sameElse : ' MMMM Do'
         })
       }
     }
@@ -96,37 +128,77 @@ export default {
 
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
-.talks {
-  &_img {
-    max-width: 80%;
-    border-radius: 50%;
-  }
-  &_item {
-    background-color: rgba($dark, 0.8);
-    border-radius: $border-radius;
+.schedule {
+  &_slot {
+    border-bottom: 1px solid rgba($dark, 0.2);
+    background-color: rgba($dark, 0.04);
     @include transition(all ease-in-out 0.2s);
     &:hover {
-      background-color: rgba($dark, 0.7);
-    }
-    &_title {
-      color: $vjs-yellow;
-      @include media-breakpoint-down(sm) {
-        font-size: 1.5em;
-        text-align: center;
+      @include media-breakpoint-up(md) {
+          background-color: rgba($dark, 0.08);
       }
     }
-     &-speaker-name {
-       text-decoration: none;
-      &:hover {
-        text-decoration: none;  
+    &_row {
+      position: relative;
+      min-height: 4em;
+    }
+    &_opener {
+      /* position: absolute; */
+      padding: 0;
+      right: 15px;
+      top: 0;
+      height: 100%;
+      width: 3em;
+      font-family: 'icomoon' !important;
+      background: none;
+      border: none;
+      outline: none;
+      @include transition(all linear 0.2s);
+      &:before {
+        content: "\e90a";
+      }
+      &.active {
+        & {
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+        }
       }
     }
-    &_a {
-      color: $white;
-      @include transition(all ease 0.15s);
-      &:hover {
-        color: $vjs-yellow;
-        text-decoration: none;  
+    &_time {
+      color: darken($vjs-yellow, 7%);
+    }
+    &_talk {
+      &_title {
+        vertical-align: middle;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &_description {
+        max-height: 0;
+        overflow: hidden;
+        @include transition(all ease-in-out 0.3s);
+        &.show {
+          max-height: 200px;
+          @include media-breakpoint-down(md) {
+            max-height: 600px;
+          }
+        }
+        &_block {
+          background-color: rgba($dark, 0.1);
+        }
+      }
+    }
+    &_speaker {
+      &_name {
+        vertical-align: middle;
+      }
+      &_img {
+        max-width: 30px;
+        border-radius: 50%;
       }
     }
   }
