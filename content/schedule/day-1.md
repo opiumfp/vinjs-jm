@@ -1,5 +1,5 @@
 ---
-name: Day 1
+name: Online Day 1
 data:
   id: day_1
   title: Day 1
