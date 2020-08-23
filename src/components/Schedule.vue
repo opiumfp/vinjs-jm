@@ -12,7 +12,7 @@
              <h5
                 class="text-center pt-3 pt-lg-4"
                 v-if="item.schedule.fulltitle"
-              >{{item.schedule.starttime | formatDate}} - {{item.schedule.title}}</h5>
+              >{{item.schedule.starttime | formatDate}}<span class="font-weight-normal"> - {{item.schedule.title}}</span></h5>
               <div class="schedule pt-0 pb-3 pt-lg-3 pb-lg-4">
                 <div
                   v-for="slot in item.schedule.items"
@@ -117,8 +117,8 @@ export default {
             sameDay : '[Today]',
             nextDay : '[Tomorrow]',
             lastWeek : '[last] dddd',
-            nextWeek : ' MMMM Do',
-            sameElse : ' MMMM Do'
+            nextWeek : 'DD.MM',
+            sameElse : 'DD.MM'
         })
       }
     }
