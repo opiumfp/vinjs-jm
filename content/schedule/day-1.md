@@ -1,13 +1,6 @@
 ---
 name: Online Day 1
 data:
-  id: day_1
-  title: Day 1
-  starttime: September 3, 2020 7:30 PM
-  endtime: September 3, 2020 9:30 PM
-  fulltitle: VinnytsiaJS 2020 - Day 1
-  description: VinnytsiaJS 2020 - Online - Day 1
-  location: Youtube
   items:
     - time: September 3, 2020 7:00 PM
       titlee: ""
@@ -68,4 +61,12 @@ data:
       titlee: Partner Lottery
       talk: ""
       speaker: ""
+  endtime: September 3, 2020 9:30 PM
+  fulltitle: VinnytsiaJS 2020 - Day 1
+  starttime: September 3, 2020 7:30 PM
+  location: Youtube
+  title: Day 1
+  link: https://www.youtube.com/VinnytsiaJS
+  id: day_1
+  description: VinnytsiaJS 2020 - Online - Day 1
 ---
