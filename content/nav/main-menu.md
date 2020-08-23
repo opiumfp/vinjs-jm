@@ -3,8 +3,8 @@ title: Main Menu
 data:
   button:
     active: true
-    src: "#pricing"
-    title: Tickets
+    src: "#schedule"
+    title: Join Online
   items:
     - active: true
       src: "#home"
