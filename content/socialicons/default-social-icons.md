@@ -3,7 +3,7 @@ title: Default Social Icons
 data:
   items:
     - active: true
-      icon: icon-twitter
+      icon: icon-facebook-square
       src: https://www.facebook.com/VinnytsiaJS/
       title: Facebook
     - active: true
