@@ -162,24 +162,30 @@ speakers:
           *You might think that your app is fast. According to the statistics, 67% of developers think that their app is fast.
     - active: "true"
       fields:
-        bio: >-
-          Natalia Tepluhina is a Vue.js core team member and a Senior Frontend
-          Engineer at GitLab. 
-
-
-          She is a conference speaker and author of articles on different topics related to Vue.js . Thanks to these activities Natalia has got a title of Google Developer Expert in Web Technologies.
+        bio: Natalia Tepluhina is a Vue.js core team member and a Staff Frontend
+          Engineer at GitLab. She is a conference speaker and author of articles
+          on different topics related to Vue.js . Thanks to these activities
+          Natalia has got a title of Google Developer Expert in Web
+          Technologies.
         city: Kyiv
         name: Natalia Tepluhina
         socialLinks:
           - icon: icon-twitter
             src: https://twitter.com/N_Tepluhina
         country: Ukraine
-        title: Senior Frontend Engineer
-        id: natalia _tepluhina
+        title: Staff Frontend Engineer
+        id: natalia_tepluhina
         image: /uploads/Natalia Tepluhina.jpg
         company: GitLab / Vue.js core team
       image: /uploads/Natalia Tepluhina.jpg
-      talk: ""
+      talk:
+        id: talk_015
+        title: "Composition API: a quick overVue"
+        description: "Vue 3 brings us a new feature: composition functions. It's a new
+          way of declaring component logic using function calls In this talk I
+          will explain why we decided to have composables-based API in Vue 3,
+          how to use composition functions and in which cases they are better
+          than 'usual' object syntax."
     - active: "true"
       fields:
         bio: Den is an "old school man". He wrote his first line of code in far 1994 and
