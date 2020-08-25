@@ -217,27 +217,6 @@ speakers:
           will explain why we decided to have composables-based API in Vue 3,
           how to use composition functions and in which cases they are better
           than 'usual' object syntax."
-    - active: "true"
-      fields:
-        bio: Den is an "old school man". He wrote his first line of code in far 1994 and
-          cannot give up coding since. A devoted advocate of IE6.
-        city: Minsk
-        name: Denis Vlassenko
-        socialLinks:
-          - icon: icon-facebook-square
-            src: ""
-        country: Belarus
-        title: Lead Software Engineer
-        id: denis_vlassenko
-        image: /uploads/Denis Vlassenko-1x1.jpg
-        company: EPAM Systems
-      image: /uploads/Denis Vlassenko-1x1.jpg
-      talk:
-        id: talk_20
-        title: JAM stack - why do we need it?
-        description: Let's talk about JAMstack and figure out in what cases we can use
-          it. We will discuss popular tools like Gatsby and Netlify and why web
-          sites that use it have a good perform
     - fields:
         bio: Vitalii is a Lead JavaScript Engineer at EPAM Poland, co-organizer of
           Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest
