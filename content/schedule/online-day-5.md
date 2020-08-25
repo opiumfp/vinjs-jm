@@ -1,5 +1,5 @@
 ---
-name: Online Day 5
+name: "Online Thursday #5"
 data:
   items:
     - time: October 1, 2020 7:00 PM
@@ -100,11 +100,11 @@ data:
         image: /uploads/andrew-slobodianiuk.jpg
         company: Onseo
   endtime: October 1, 2020 9:00 PM
-  fulltitle: VinnytsiaJS 2020 - Online - Day 5
+  fulltitle: "VinnytsiaJS 2020 - Online Thursday #5"
   starttime: October 1, 2020 7:00 PM
   location: Youtube
-  title: Online Day 5
+  title: "Online Thursday #5"
   link: ""
   id: day_5
-  description: VinnytsiaJS 2020 - Online - Day 5
+  description: "VinnytsiaJS 2020 - Online Thursday #5"
 ---
