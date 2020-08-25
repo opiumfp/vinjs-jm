@@ -1,5 +1,5 @@
 ---
-name: Online Day 2
+name: "Online Thursday #2"
 data:
   items:
     - time: September 10, 2020 7:00 PM
@@ -59,11 +59,11 @@ data:
         image: /uploads/Borys Mohyla -1x1.jpg
         company: RIA.COM
   endtime: September 10, 2020 9:00 PM
-  fulltitle: VinnytsiaJS 2020 - Online - Day 2
+  fulltitle: "VinnytsiaJS 2020 - Online Thursday #2"
   starttime: September 10, 2020 7:00 PM
   location: Youtube
-  title: Online Day 2
+  title: "Online Thursday #2"
   link: ""
   id: day_2
-  description: VinnytsiaJS 2020 - Online - Day 2
+  description: "VinnytsiaJS 2020 - Online Thursday #2"
 ---
