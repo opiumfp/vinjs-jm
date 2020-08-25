@@ -1,5 +1,5 @@
 ---
-name: Online Day 3
+name: "Online Thursday #3"
 data:
   items:
     - time: September 17, 2020 7:00 PM
@@ -65,11 +65,11 @@ data:
         image: /uploads/kostiantyn-hryshyn-600.jpg
         company: EPAM Systems
   endtime: September 17, 2020 9:00 PM
-  fulltitle: VinnytsiaJS 2020 - Online - Day 3
+  fulltitle: "VinnytsiaJS 2020 - Online Thursday #3"
   starttime: September 17, 2020 7:00 PM
   location: Youtube
-  title: Online Day 3
+  title: "Online Thursday #3"
   link: ""
   id: day_3
-  description: VinnytsiaJS 2020 - Online - Day 3
+  description: "VinnytsiaJS 2020 - Online Thursday #3"
 ---
