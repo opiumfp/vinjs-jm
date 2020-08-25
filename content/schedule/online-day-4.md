@@ -1,5 +1,5 @@
 ---
-name: Online Day 4
+name: "Online Thursday #4"
 data:
   items:
     - time: September 24, 2020 7:00 PM
@@ -86,11 +86,11 @@ data:
         image: /uploads/andrii_shtadler_sq.jpg
         company: EPAM Systems
   endtime: September 24, 2020 9:00 PM
-  fulltitle: VinnytsiaJS 2020 - Online - Day 4
+  fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
   starttime: September 24, 2020 7:00 PM
   location: Youtube
-  title: Online Day 4
+  title: "Online Thursday #4"
   link: ""
   id: day_4
-  description: VinnytsiaJS 2020 - Online - Day 4
+  description: "VinnytsiaJS 2020 - Online Thursday #4"
 ---
