@@ -41,8 +41,8 @@ hero:
     title: Buy Tickets
   date: ""
   id: home
-  image: /uploads/hero.jpg
-  imagePt: /uploads/hero-pt-06.jpg
+  image: /uploads/bg.jpg
+  imagePt: /uploads/bg-v.jpg
   subtitle: Javascript Community Meetups
   title: VinnytsiaJS 2020
 about:
