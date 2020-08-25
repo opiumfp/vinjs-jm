@@ -966,13 +966,13 @@ schedule:
               image: /uploads/roman-savitskyi.jpg
               company: Infopulse
         endtime: September 3, 2020 9:30 PM
-        fulltitle: VinnytsiaJS 2020 - Day 1
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #1"
         starttime: September 3, 2020 7:30 PM
         location: Youtube
-        title: Online Day 1
+        title: "Online Thursday #1"
         link: ""
         id: day_1
-        description: VinnytsiaJS 2020 - Online - Day 1
+        description: "VinnytsiaJS 2020 - Online Thursday #1"
       active: "true"
     - schedule:
         items:
@@ -1035,13 +1035,13 @@ schedule:
               image: /uploads/Borys Mohyla -1x1.jpg
               company: RIA.COM
         endtime: September 10, 2020 9:00 PM
-        fulltitle: VinnytsiaJS 2020 - Online - Day 2
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #2"
         starttime: September 10, 2020 7:00 PM
         location: Youtube
-        title: Online Day 2
+        title: "Online Thursday #2"
         link: ""
         id: day_2
-        description: VinnytsiaJS 2020 - Online - Day 2
+        description: "VinnytsiaJS 2020 - Online Thursday #2"
       active: "true"
     - schedule:
         items:
@@ -1109,13 +1109,13 @@ schedule:
               image: /uploads/kostiantyn-hryshyn-600.jpg
               company: EPAM Systems
         endtime: September 17, 2020 9:00 PM
-        fulltitle: VinnytsiaJS 2020 - Online - Day 3
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #3"
         starttime: September 17, 2020 7:00 PM
         location: Youtube
-        title: Online Day 3
+        title: "Online Thursday #3"
         link: ""
         id: day_3
-        description: VinnytsiaJS 2020 - Online - Day 3
+        description: "VinnytsiaJS 2020 - Online Thursday #3"
       active: "true"
     - schedule:
         items:
@@ -1204,13 +1204,13 @@ schedule:
               image: /uploads/andrii_shtadler_sq.jpg
               company: EPAM Systems
         endtime: September 24, 2020 9:00 PM
-        fulltitle: VinnytsiaJS 2020 - Online - Day 4
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
         starttime: September 24, 2020 7:00 PM
         location: Youtube
-        title: Online Day 4
+        title: "Online Thursday #4"
         link: ""
         id: day_4
-        description: VinnytsiaJS 2020 - Online - Day 4
+        description: "VinnytsiaJS 2020 - Online Thursday #4"
       active: "true"
     - schedule:
         items:
@@ -1313,13 +1313,13 @@ schedule:
               image: /uploads/andrew-slobodianiuk.jpg
               company: Onseo
         endtime: October 1, 2020 9:00 PM
-        fulltitle: VinnytsiaJS 2020 - Online - Day 5
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #5"
         starttime: October 1, 2020 7:00 PM
         location: Youtube
-        title: Online Day 5
+        title: "Online Thursday #5"
         link: ""
         id: day_5
-        description: VinnytsiaJS 2020 - Online - Day 5
+        description: "VinnytsiaJS 2020 - Online Thursday #5"
       active: "true"
     - schedule:
         items:
@@ -1404,13 +1404,13 @@ schedule:
               image: /uploads/bohdan-dvorianov.jpeg
               company: "AgiliWay "
         endtime: October 8, 2020 9:00 PM
-        fulltitle: VinnytsiaJS 2020 - Online - Day 6
+        fulltitle: "VinnytsiaJS 2020 - Online Thursday #6"
         starttime: October 8, 2020 7:00 PM
         location: Youtube
-        title: Online Day 6
+        title: "Online Thursday #6"
         link: ""
         id: day_6
-        description: VinnytsiaJS 2020 - Online - Day 5
+        description: "VinnytsiaJS 2020 - Online Thursday #6"
       active: "true"
 partners:
   id: partners
