@@ -5,9 +5,10 @@
       :id="$page.pageData.hero.id"
       :heroData="$page.pageData.hero"
     ></hero>
+    <!-- vjs-bg-logo-purple -->
     <div class="layer layer-content">
       <section
-        class="py-7 vjs-bg-logo vjs-bg-logo-purple text-white section-vh-100 d-flex align-items-center justify-content-center"
+        class="py-7 vjs-bg-logo vjs-bg-logo-blue text-white section-vh-100 d-flex align-items-center justify-content-center"
         :id="$page.pageData.about.id"
       >
         <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
@@ -175,8 +176,8 @@ query Conf {
       title
       subtitle
       date
-      image (quality:40)
-      imagePt (quality:40)
+      image (quality:95)
+      imagePt (quality:65)
       button {
         title
         link
