@@ -1,5 +1,5 @@
 ---
-name: Online Day 1
+name: "Online Thursday #1"
 data:
   items:
     - time: September 3, 2020 7:00 PM
@@ -58,11 +58,11 @@ data:
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
   endtime: September 3, 2020 9:30 PM
-  fulltitle: VinnytsiaJS 2020 - Day 1
+  fulltitle: "VinnytsiaJS 2020 - Online Thursday #1"
   starttime: September 3, 2020 7:30 PM
   location: Youtube
-  title: Online Day 1
+  title: "Online Thursday #1"
   link: ""
   id: day_1
-  description: VinnytsiaJS 2020 - Online - Day 1
+  description: "VinnytsiaJS 2020 - Online Thursday #1"
 ---
