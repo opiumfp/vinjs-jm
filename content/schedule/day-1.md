@@ -62,7 +62,7 @@ data:
   starttime: September 3, 2020 7:30 PM
   location: Youtube
   title: "Online Thursday #1"
-  link: ""
+  link: https://youtu.be/Vj6Yh27fGvo
   id: day_1
   description: "VinnytsiaJS 2020 - Online Thursday #1"
 ---
