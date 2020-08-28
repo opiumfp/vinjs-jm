@@ -70,25 +70,25 @@ export default {
     }
   },
   mounted() {
-    this.herovideo = this.$refs.herovideo;
+    // this.herovideo = this.$refs.herovideo;
 
-    if (this.device.isShowVideo) {
-      this.herovideo.play();
+    // if (this.device.isShowVideo) {
+    //   this.herovideo.play();
 
-      let videoHide = false;
-      let windowHeight = window.innerHeight;
+    //   let videoHide = false;
+    //   let windowHeight = window.innerHeight;
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY < windowHeight) {
-          if (!videoHide) return false;
-          this.herovideo.play();
-          videoHide = false;
-        } else if (!videoHide) {
-          this.herovideo.pause();
-          videoHide = true;
-        }
-      });
-    }
+    //   window.addEventListener("scroll", () => {
+    //     if (window.scrollY < windowHeight) {
+    //       if (!videoHide) return false;
+    //       this.herovideo.play();
+    //       videoHide = false;
+    //     } else if (!videoHide) {
+    //       this.herovideo.pause();
+    //       videoHide = true;
+    //     }
+    //   });
+    // }
   }
 };
 </script>
