@@ -59,12 +59,12 @@ data:
         company: Infopulse
   endtime: September 3, 2020 9:30 PM
   fulltitle: "VinnytsiaJS 2020 - Online Thursday #1"
+  linkyoutube: https://youtu.be/Vj6Yh27fGvo
   starttime: September 3, 2020 7:30 PM
+  linkdiscord: https://discord.gg/euzddDk
   location: Youtube
   title: "Online Thursday #1"
-  link: https://youtu.be/Vj6Yh27fGvo
-  linkyoutube: https://youtu.be/Vj6Yh27fGvo
-  linkdiscord: ""
+  link: ""
   id: day_1
   description: "VinnytsiaJS 2020 - Online Thursday #1"
 ---
