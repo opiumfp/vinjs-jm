@@ -968,12 +968,12 @@ schedule:
               company: Infopulse
         endtime: September 3, 2020 9:30 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #1"
+        linkyoutube: https://youtu.be/Vj6Yh27fGvo
         starttime: September 3, 2020 7:30 PM
+        linkdiscord: https://discord.gg/euzddDk
         location: Youtube
         title: "Online Thursday #1"
-        link: https://youtu.be/Vj6Yh27fGvo
-        linkyoutube: ""
-        linkdiscord: ""
+        link: ""
         id: day_1
         description: "VinnytsiaJS 2020 - Online Thursday #1"
       active: "true"
@@ -1039,12 +1039,12 @@ schedule:
               company: RIA.COM
         endtime: September 10, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #2"
+        linkyoutube: ""
         starttime: September 10, 2020 7:00 PM
+        linkdiscord: ""
         location: Youtube
         title: "Online Thursday #2"
         link: ""
-        linkyoutube: ""
-        linkdiscord: ""
         id: day_2
         description: "VinnytsiaJS 2020 - Online Thursday #2"
       active: "true"
@@ -1115,12 +1115,12 @@ schedule:
               company: EPAM Systems
         endtime: September 17, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #3"
+        linkyoutube: ""
         starttime: September 17, 2020 7:00 PM
+        linkdiscord: ""
         location: Youtube
         title: "Online Thursday #3"
         link: ""
-        linkyoutube: ""
-        linkdiscord: ""
         id: day_3
         description: "VinnytsiaJS 2020 - Online Thursday #3"
       active: "true"
@@ -1212,12 +1212,12 @@ schedule:
               company: EPAM Systems
         endtime: September 24, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
+        linkyoutube: ""
         starttime: September 24, 2020 7:00 PM
+        linkdiscord: ""
         location: Youtube
         title: "Online Thursday #4"
         link: ""
-        linkyoutube: ""
-        linkdiscord: ""
         id: day_4
         description: "VinnytsiaJS 2020 - Online Thursday #4"
       active: "true"
@@ -1323,12 +1323,12 @@ schedule:
               company: Onseo
         endtime: October 1, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #5"
+        linkyoutube: ""
         starttime: October 1, 2020 7:00 PM
+        linkdiscord: ""
         location: Youtube
         title: "Online Thursday #5"
         link: ""
-        linkyoutube: ""
-        linkdiscord: ""
         id: day_5
         description: "VinnytsiaJS 2020 - Online Thursday #5"
       active: "true"
@@ -1416,12 +1416,12 @@ schedule:
               company: "AgiliWay "
         endtime: October 8, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #6"
+        linkyoutube: ""
         starttime: October 8, 2020 7:00 PM
+        linkdiscord: ""
         location: Youtube
         title: "Online Thursday #6"
         link: ""
-        linkyoutube: ""
-        linkdiscord: ""
         id: day_6
         description: "VinnytsiaJS 2020 - Online Thursday #6"
       active: "true"
