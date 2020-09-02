@@ -279,6 +279,8 @@ query Conf {
           starttime
           endtime
           link
+          linkyoutube
+          linkdiscord
           items {
             time
             titlee

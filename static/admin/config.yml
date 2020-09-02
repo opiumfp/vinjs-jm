@@ -553,6 +553,8 @@ collections:
       - {label: "Description", name: "description", widget: "string", required: false, default: ''}  
       - {label: "Location", name: "location", widget: "string", required: false, default: ''}  
       - {label: "Online Link", name: "link", widget: "string", required: false, default: ''}  
+      - {label: "Youtube Link", name: "linkyoutube", widget: "string", required: false, default: ''}  
+      - {label: "Discord Link", name: "linkdiscord", widget: "string", required: false, default: ''}  
       - label: "Items"
         name: "items"
         widget: "list"

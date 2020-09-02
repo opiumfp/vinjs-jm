@@ -64,6 +64,8 @@ data:
   location: Youtube
   title: "Online Thursday #2"
   link: ""
+  linkyoutube: ""
+  linkdiscord: ""
   id: day_2
   description: "VinnytsiaJS 2020 - Online Thursday #2"
 ---

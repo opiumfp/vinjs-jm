@@ -63,6 +63,8 @@ data:
   location: Youtube
   title: "Online Thursday #1"
   link: https://youtu.be/Vj6Yh27fGvo
+  linkyoutube: https://youtu.be/Vj6Yh27fGvo
+  linkdiscord: ""
   id: day_1
   description: "VinnytsiaJS 2020 - Online Thursday #1"
 ---

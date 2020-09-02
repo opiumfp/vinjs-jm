@@ -94,7 +94,7 @@ export default {
   },
   methods: {
     openSlot: function(event) {
-      const parent = event.toElement.parentElement.parentElement.parentElement
+      const parent = event.target.closest('.schedule_slot');
       const opener = parent.querySelector('.schedule_slot_opener');
       const description = parent.querySelector('.schedule_slot_talk_description');
       if (description && opener) {

@@ -972,6 +972,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #1"
         link: https://youtu.be/Vj6Yh27fGvo
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_1
         description: "VinnytsiaJS 2020 - Online Thursday #1"
       active: "true"
@@ -1041,6 +1043,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #2"
         link: ""
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_2
         description: "VinnytsiaJS 2020 - Online Thursday #2"
       active: "true"
@@ -1115,6 +1119,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #3"
         link: ""
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_3
         description: "VinnytsiaJS 2020 - Online Thursday #3"
       active: "true"
@@ -1210,6 +1216,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #4"
         link: ""
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_4
         description: "VinnytsiaJS 2020 - Online Thursday #4"
       active: "true"
@@ -1319,6 +1327,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #5"
         link: ""
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_5
         description: "VinnytsiaJS 2020 - Online Thursday #5"
       active: "true"
@@ -1410,6 +1420,8 @@ schedule:
         location: Youtube
         title: "Online Thursday #6"
         link: ""
+        linkyoutube: ""
+        linkdiscord: ""
         id: day_6
         description: "VinnytsiaJS 2020 - Online Thursday #6"
       active: "true"
