@@ -1039,9 +1039,9 @@ schedule:
               company: RIA.COM
         endtime: September 10, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #2"
-        linkyoutube: ""
+        linkyoutube: https://youtu.be/9yPbE-59vC4
         starttime: September 10, 2020 7:00 PM
-        linkdiscord: ""
+        linkdiscord: https://discord.gg/euzddDk
         location: Youtube
         title: "Online Thursday #2"
         link: ""
