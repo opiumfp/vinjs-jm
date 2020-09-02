@@ -53,6 +53,8 @@ $vjs-red: #8c1c2b;
 $vjs-green: #008862;
 $vjs-yellow: #ff9900;
 
+$discord: #7289da; 
+
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
@@ -69,7 +71,8 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "discord":    $discord
   ),
   $colors
 );
@@ -96,6 +99,7 @@ $theme-colors: map-merge(
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
+    "discord":    $discord,
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,

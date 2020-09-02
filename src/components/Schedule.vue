@@ -53,9 +53,13 @@
                   </div>
                 </div>
               </div>
-              <div class="text-center">
-                <a v-if="item.schedule.link" :href="item.schedule.link" target="_blank" class="btn btn-primary mt-2 mb-5">Join Online</a>
+              <div v-if="item.schedule.link || item.schedule.linkdiscord || item.schedule.linkyoutube" class="schedule_slot_talk_buttons text-center mb-5">
+                <h5>Join Online:</h5>
+                <a v-if="item.schedule.link" :href="item.schedule.link" target="_blank" class="btn btn-primary mt-2 mx-2">Join Online</a>
+                <a v-if="item.schedule.linkdiscord" :href="item.schedule.linkdiscord" target="_blank" class="btn btn-discord mt-2 mx-2"><i class="icon icon-discord mr-2"></i>Discord</a>
+                <a v-if="item.schedule.linkyoutube" :href="item.schedule.linkyoutube" target="_blank" class="btn btn-danger mt-2 mx-2"><i class="icon icon-youtube-play mr-2"></i>Youtube</a>
               </div>
+              <hr/>
             </div>
           </div>
         </div>
@@ -175,6 +179,12 @@ export default {
         vertical-align: middle;
         &:hover {
           cursor: pointer;
+        }
+      }
+      &_buttons {
+        .icon {
+          vertical-align: middle;
+          font-size: $font-size-base * 1.35;
         }
       }
       &_description {
