@@ -16,5 +16,5 @@ data:
   title: Developer
   id: vasyl_dytsiak
   image: /uploads/vasyl-dytsiak.jpg
-  company: 90Por
+  company: 90POE
 ---
