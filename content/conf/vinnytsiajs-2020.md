@@ -477,7 +477,7 @@ speakers:
         title: Developer
         id: vasyl_dytsiak
         image: /uploads/vasyl-dytsiak.jpg
-        company: 90Por
+        company: 90POE
       talk:
         id: talk_016
         title: Cross-platform or nothing sexual
