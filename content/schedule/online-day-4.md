@@ -58,41 +58,14 @@ data:
         id: anton_cherednikov
         image: /uploads/anton-cherednikov.png
         company: code.store
-    - time: September 24, 2020 8:30 PM
-      titlee: ""
-      titleedescription: ""
-      talk:
-        id: talk_011
-        title: Deno - killer feature or just proposal
-        description: Something on the horizon looks like a dinosaur. Let's try to figure
-          out what the main headache on the start, main concepts and issues.
-          Should forget about node js and migrate all project to Deno or just
-          pick up concepts and ideas.
-      speaker:
-        bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
-          create agnostic ecosystems with the newest technologies.
-        city: Vinnytsia
-        name: Andrii Shtadler
-        socialLinks:
-          - src: ""
-            icon: icon-facebook-square
-          - src: https://www.facebook.com/profile.php?id=100004283014454
-            icon: icon-facebook-square
-          - src: https://github.com/shtadler
-            icon: icon-github
-        country: Ukraine
-        title: Senior Software Engineer
-        id: andrii_shtadler
-        image: /uploads/andrii_shtadler_sq.jpg
-        company: EPAM Systems
   endtime: September 24, 2020 9:00 PM
   fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
+  linkyoutube: ""
   starttime: September 24, 2020 7:00 PM
+  linkdiscord: ""
   location: Youtube
   title: "Online Thursday #4"
   link: ""
-  linkyoutube: ""
-  linkdiscord: ""
   id: day_4
   description: "VinnytsiaJS 2020 - Online Thursday #4"
 ---
