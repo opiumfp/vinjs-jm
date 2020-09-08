@@ -2,9 +2,9 @@
 name: Kostiantyn Hryshyn
 data:
   bio: |-
-    🚀 JavaScript enthusiast \
-    🦸‍♂️ Software Engineer \
-    🎈 Blacksmith of happiness
+    Lead Software Engineer,
+    Co-organizer of VinnytsiaJS,
+    Development is not just my job, it is my biggest passion
   city: Vinnytsia
   name: Kostiantyn Hryshyn
   socialLinks:
@@ -17,8 +17,8 @@ data:
     - src: https://github.com/stingrigs
       icon: icon-github
   country: Ukraine
-  title: Technical lead
+  title: Lead Software Engineer
   id: kostiantyn_hryshyn
-  image: /uploads/kostiantyn-hryshyn-600.jpg
+  image: /uploads/kostiantyn-hryshyn-2.jpg
   company: EPAM Systems
 ---
