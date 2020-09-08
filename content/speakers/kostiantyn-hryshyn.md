@@ -2,12 +2,14 @@
 name: Kostiantyn Hryshyn
 data:
   bio: |-
-    Lead Software Engineer,
+    JavaScript enthusiast,
     Co-organizer of VinnytsiaJS,
     Development is not just my job, it is my biggest passion
   city: Vinnytsia
   name: Kostiantyn Hryshyn
-  socialLinks: []
+  socialLinks:
+    - src: https://www.linkedin.com/in/khryshyn/
+      icon: icon-linkedin-square
   country: Ukraine
   title: Lead Software Engineer
   id: kostiantyn_hryshyn
