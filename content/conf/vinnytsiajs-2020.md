@@ -344,9 +344,9 @@ speakers:
           discuss how and why to use them
     - fields:
         bio: |-
-          🚀 JavaScript enthusiast \
-          🦸‍♂️ Software Engineer \
-          🎈 Blacksmith of happiness
+          Lead Software Engineer,
+          Co-organizer of VinnytsiaJS,
+          Development is not just my job, it is my biggest passion
         city: Vinnytsia
         name: Kostiantyn Hryshyn
         socialLinks:
@@ -359,18 +359,19 @@ speakers:
           - src: https://github.com/stingrigs
             icon: icon-github
         country: Ukraine
-        title: Technical lead
+        title: Lead Software Engineer
         id: kostiantyn_hryshyn
-        image: /uploads/kostiantyn-hryshyn-600.jpg
+        image: /uploads/kostiantyn-hryshyn-2.jpg
         company: EPAM Systems
       image: /uploads/kostiantyn-hryshyn-600.jpg
       talk:
         id: talk_010
         title: React Hooks by the Golden Ratio 🧘
-        description: 🔥 February 2019, gave us the new player in React world called the
-          React Hooks but does it so stunning in real projects? Let's peek
-          inside and talk about the common gotchas and possible solutions that
-          will help to predict every clunky render
+        description: 🔥 Hooks are a new addition in React 16.8. They let you use state
+          and other React features without writing a class. Sounds good, but do
+          they so stunning on real projects? Let’s peek inside and talk about
+          the common gotchas and possible solutions that will help to predict
+          every component render.
       active: "true"
     - fields:
         bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
