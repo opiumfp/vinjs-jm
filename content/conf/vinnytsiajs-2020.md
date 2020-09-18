@@ -601,7 +601,7 @@ speakers:
         image: /uploads/oleksii-novokhatskyi.png
         company: Zazmic Inc
       talk:
-        id: "#talk_031"
+        id: talk_031
         title: "Node.js and MongoDB: transactions performance"
         description: >-
           In **MongoDB 4+** we got multi-document transactions support. But what
