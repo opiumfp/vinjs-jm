@@ -601,17 +601,25 @@ speakers:
         image: /uploads/oleksii-novokhatskyi.png
         company: Zazmic Inc
       talk:
-        id: talk_030
-        title: "Node.js: Worker Threads vs C++ Addons"
-        description: I'll make a review of official documentation, books, articles about
-          solving CPU-bound tasks with different Nodejs tools (Worker Threads,
-          Clild Processes, Clusters, C++ Addons) I'm going to briefly describe
-          multiple realizations by other authors and I'll try to compare these
-          implementations I'll present my own solutions to several problems and
-          will measure how fast each solution is and how hard it was to
-          implement
+        id: "#talk_031"
+        title: "Node.js and MongoDB: transactions performance"
+        description: >-
+          In **MongoDB 4+** we got multi-document transactions support. But what
+          about performance? Will we go slower? Let’s find out!
+
+
+          **Questions need answers:** 
+
+
+          * Do transactions affect the speed of basic MongoDB operations?
+
+          * Do transactions affect the speed of the sequence of operations?
+
+          * Is there a difference in the speed of the main MongoDB operations (and their combination) with and without transactions?
+
+          * What is the difference in the speed of the main MongoDB operations (and their combination) with and without transactions?
       active: "true"
-  subtitle: First Speakers
+  subtitle: ""
   title: Speakers
 talks:
   id: talks
@@ -1190,9 +1198,9 @@ schedule:
               company: code.store
         endtime: September 24, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
-        linkyoutube: ""
+        linkyoutube: https://youtu.be/nc6Q7wOxKpU
         starttime: September 24, 2020 7:00 PM
-        linkdiscord: ""
+        linkdiscord: https://discord.gg/euzddDk
         location: Youtube
         title: "Online Thursday #4"
         link: ""
@@ -1436,15 +1444,23 @@ schedule:
             titlee: ""
             titleedescription: ""
             talk:
-              id: talk_030
-              title: "Node.js: Worker Threads vs C++ Addons"
-              description: I'll make a review of official documentation, books, articles about
-                solving CPU-bound tasks with different Nodejs tools (Worker
-                Threads, Clild Processes, Clusters, C++ Addons) I'm going to
-                briefly describe multiple realizations by other authors and I'll
-                try to compare these implementations I'll present my own
-                solutions to several problems and will measure how fast each
-                solution is and how hard it was to implement
+              id: "#talk_031"
+              title: "Node.js and MongoDB: transactions performance"
+              description: >-
+                In **MongoDB 4+** we got multi-document transactions support.
+                But what about performance? Will we go slower? Let’s find out!
+
+
+                **Questions need answers:** 
+
+
+                * Do transactions affect the speed of basic MongoDB operations?
+
+                * Do transactions affect the speed of the sequence of operations?
+
+                * Is there a difference in the speed of the main MongoDB operations (and their combination) with and without transactions?
+
+                * What is the difference in the speed of the main MongoDB operations (and their combination) with and without transactions?
             speaker:
               bio: My name is Novokhatskyi Oleksii, I'm Lead Software Engineer at Zazmic Inc.
                 I like coding, mentoring, interviewing. Main goal -
