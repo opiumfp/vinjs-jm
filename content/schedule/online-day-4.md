@@ -60,9 +60,9 @@ data:
         company: code.store
   endtime: September 24, 2020 9:00 PM
   fulltitle: "VinnytsiaJS 2020 - Online Thursday #4"
-  linkyoutube: ""
+  linkyoutube: https://youtu.be/nc6Q7wOxKpU
   starttime: September 24, 2020 7:00 PM
-  linkdiscord: ""
+  linkdiscord: https://discord.gg/euzddDk
   location: Youtube
   title: "Online Thursday #4"
   link: ""
