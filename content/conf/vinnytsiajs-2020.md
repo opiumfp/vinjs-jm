@@ -1250,40 +1250,6 @@ schedule:
               id: daniel_ostrovsky
               image: /uploads/daniel-ostrovsky.jpg
               company: Kaltura
-          - time: October 1, 2020 8:00 PM
-            titlee: ""
-            titleedescription: ""
-            talk:
-              id: talk_021
-              title: How to talk to vending machines
-              description: The story about our start up. We developed service to provide
-                ability make cashless payments into vending machines. In this
-                start up we worked on hardware part and made electric board
-                which interact to user through bluetooth connection. Also we
-                developed a mobile application and server side. On the mobile
-                app we used Cordova and Vue.js.
-            speaker:
-              bio: I'm a web developer. Have experience in this area near 10 years. At the
-                start I worked as a backend developer. I used PHP, Laravel and
-                Drupal. Near 4 years ago I started learning frontend. Nowadays
-                my main specialization is Vue.js. On my recent projects I worked
-                as a Team Lead. Our team were 3 developers. We developed
-                frontend on Vue.js, Cordova and backend on Laravel. The project
-                is implementation of cashless payments into vending machines.
-              city: Korostyshiv
-              name: Volodymyr Chudovskyi
-              socialLinks:
-                - src: https://www.facebook.com/chudovskiy.vladimir
-                  icon: icon-facebook-square
-                - src: https://www.linkedin.com/in/volodymir-chudovskiy-788033107/
-                  icon: icon-linkedin-square
-                - src: https://github.com/VladimirChudovskiy
-                  icon: icon-github
-              country: Ukraine
-              title: Full Stack developer
-              id: volodymyr_chudovskyi
-              image: /uploads/volodymyr-chudovskyi.jpg
-              company: ELUpay
           - time: October 1, 2020 8:30 PM
             titlee: ""
             titleedescription: ""
@@ -1309,9 +1275,9 @@ schedule:
               company: Onseo
         endtime: October 1, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #5"
-        linkyoutube: ""
+        linkyoutube: https://youtu.be/XEaU5ihLZdk
         starttime: October 1, 2020 7:00 PM
-        linkdiscord: ""
+        linkdiscord: https://discord.gg/euzddDk
         location: Youtube
         title: "Online Thursday #5"
         link: ""
