@@ -42,7 +42,7 @@ data:
         id: daniel_ostrovsky
         image: /uploads/daniel-ostrovsky.jpg
         company: Kaltura
-    - time: October 1, 2020 8:30 PM
+    - time: October 1, 2020 8:00 PM
       titlee: ""
       titleedescription: ""
       talk:
