@@ -1466,18 +1466,18 @@ partners:
       image: /uploads/Effective_Programming_for_America_logo.svg
     - active: "true"
       fields:
-        title: N-iX
-        src: https://careers.n-ix.com/jobs/
-        description: ""
-        image: /uploads/vector_full-color-logo_digital_final.svg
-      image: /uploads/vector_full-color-logo_digital_final.svg
-    - active: "true"
-      fields:
         description: ""
         image: /uploads/infopulse-logo-web-rgb.svg
         src: https://www.infopulse.com/
         title: Infopulse
       image: /uploads/infopulse-logo-web-rgb.svg
+    - active: "true"
+      fields:
+        title: N-iX
+        src: https://careers.n-ix.com/jobs/
+        description: ""
+        image: /uploads/vector_full-color-logo_digital_final.svg
+      image: /uploads/vector_full-color-logo_digital_final.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
