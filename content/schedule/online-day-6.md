@@ -83,12 +83,12 @@ data:
         company: "AgiliWay "
   endtime: October 8, 2020 9:00 PM
   fulltitle: "VinnytsiaJS 2020 - Online Thursday #6"
+  linkyoutube: https://youtu.be/M9ttcNbvMh0
   starttime: October 8, 2020 7:00 PM
+  linkdiscord: https://discord.gg/euzddDk
   location: Youtube
   title: "Online Thursday #6"
   link: ""
-  linkyoutube: ""
-  linkdiscord: ""
   id: day_6
   description: "VinnytsiaJS 2020 - Online Thursday #6"
 ---
