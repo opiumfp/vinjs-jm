@@ -25,7 +25,7 @@ data:
         id: oleksandr_kovtun
         image: /uploads/oleksandr-kovtun-r.jpg
         company: Astound Commerce
-    - time: October 1, 2020 8:00 PM
+    - time: October 8, 2020 8:00 PM
       titlee: ""
       titleedescription: ""
       talk:
