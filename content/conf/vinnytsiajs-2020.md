@@ -163,26 +163,6 @@ speakers:
   items:
     - active: "true"
       fields:
-        bio: Paul is a web developer, who happens to be several communities organizer,
-          public speaker, mentor, traveler and just a guy with a good sense of
-          humor. Currently lives in Minsk, but you can easily find him at any
-          international conference.
-        city: Minsk
-        name: Paul Yukhnovich
-        socialLinks:
-          - icon: icon-facebook-square
-            src: https://www.facebook.com/paul.yuhnovich
-          - icon: icon-twitter
-            src: https://twitter.com/Paul_Yuhnovich
-        country: Belarus
-        title: JS developer
-        id: paul_yukhnovich
-        image: /uploads/Paul Yukhnovich.jpg
-        company: EPAM Systems
-      image: /uploads/Paul Yukhnovich.jpg
-      talk: ""
-    - active: "true"
-      fields:
         bio: Natalia Tepluhina is a Vue.js core team member and a Staff Frontend
           Engineer at GitLab. She is a conference speaker and author of articles
           on different topics related to Vue.js . Thanks to these activities
@@ -207,21 +187,6 @@ speakers:
           will explain why we decided to have composables-based API in Vue 3,
           how to use composition functions and in which cases they are better
           than 'usual' object syntax."
-    - fields:
-        bio: Den is an "old school man". He wrote his first line of code in far 1994 and
-          cannot give up coding since. A devoted advocate of IE6.
-        city: Minsk
-        name: Denis Vlassenko
-        socialLinks:
-          - icon: icon-facebook-square
-            src: ""
-        country: Belarus
-        title: Lead Software Engineer
-        id: denis_vlassenko
-        image: /uploads/Denis Vlassenko-1x1.jpg
-        company: EPAM Systems
-      talk: ""
-      active: "true"
     - fields:
         bio: Vitalii is a Lead JavaScript Engineer at EPAM Poland, co-organizer of
           Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest
@@ -306,6 +271,41 @@ speakers:
           is a lot of data. Here we will try to figure out how to work as
           efficiently as possible with the data on the map in a specific
           example.
+    - active: "true"
+      fields:
+        bio: Paul is a web developer, who happens to be several communities organizer,
+          public speaker, mentor, traveler and just a guy with a good sense of
+          humor. Currently lives in Minsk, but you can easily find him at any
+          international conference.
+        city: Minsk
+        name: Paul Yukhnovich
+        socialLinks:
+          - icon: icon-facebook-square
+            src: https://www.facebook.com/paul.yuhnovich
+          - icon: icon-twitter
+            src: https://twitter.com/Paul_Yuhnovich
+        country: Belarus
+        title: JS developer
+        id: paul_yukhnovich
+        image: /uploads/Paul Yukhnovich.jpg
+        company: EPAM Systems
+      image: /uploads/Paul Yukhnovich.jpg
+      talk: ""
+    - fields:
+        bio: Den is an "old school man". He wrote his first line of code in far 1994 and
+          cannot give up coding since. A devoted advocate of IE6.
+        city: Minsk
+        name: Denis Vlassenko
+        socialLinks:
+          - icon: icon-facebook-square
+            src: ""
+        country: Belarus
+        title: Lead Software Engineer
+        id: denis_vlassenko
+        image: /uploads/Denis Vlassenko-1x1.jpg
+        company: EPAM Systems
+      talk: ""
+      active: "true"
     - active: "true"
       fields:
         bio: "Tell about your self and experience, technoligies what your prefer and
