@@ -88,11 +88,13 @@ mediaTiles:
       type: youtube
       src: https://www.youtube.com/watch?v=9CnW5XLOFmg&list=PL7GMpyIlGWSVZ-96txrpA2RkwWZ_JN1H2
       title: Online Thursdays 2020
+      image: /uploads/vjs20-bg-logo.jpg
     - active: "true"
       colDesk: 6
       type: gallery
       src: https://www.facebook.com/media/set/?vanity=VinnytsiaJS&set=a.1053063675063549
       title: Pub Talks
+      image: /uploads/vjs-pt1.jpg
     - active: "true"
       colDesk: 4
       image: /uploads/68243012_887538998282685_393295670032728064_o.jpg
