@@ -92,6 +92,7 @@ collections:
               options:
                 - {label: "Image/Video Gallary", value: "gallery"}
                 - {label: "Youtube Popup", value: "youtubePopup"}
+                - {label: "Youtube Link", value: "youtubelink"}
                 - {label: "Youtube Video", value: "youtube"}
             - {label: "Link/ID", name: "src", widget: "string", default: '', required: false}
             - {label: "Image", name: "image", widget: "image", default: null, required: false}

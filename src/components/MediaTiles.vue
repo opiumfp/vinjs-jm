@@ -9,7 +9,7 @@
           :class="(`col-lg-${( item.colDesk ?  item.colDesk : '4' )}`)"
         >
           <div class="media-tiles_item" :class="(`media-tiles_item-${( item.type )}`)">
-            <template v-if="item.type === 'gallery' || item.type ===  'youtubePopup'">
+            <template v-if="item.type === 'gallery' || item.type ===  'youtubePopup' || item.type ===  'youtubelink'">
               <a
                 :href="item.src"
                 class="media-tiles_item_href"
@@ -29,6 +29,10 @@
                     <span
                       v-if="item.type === 'gallery'"
                       class="display-4 d-inline-block mb-1 icon-facebook-square"
+                    ></span>
+                    <span
+                      v-if="item.type === 'youtubelink'"
+                      class="display-4 d-inline-block mb-1 icon-youtube-play"
                     ></span>
                     <span
                       v-if="item.type === 'youtubePopup'"
