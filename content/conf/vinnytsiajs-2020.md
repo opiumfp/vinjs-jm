@@ -1350,7 +1350,7 @@ schedule:
       active: "true"
     - schedule:
         items:
-          - time: October 15, 2020 7:00 PM
+          - time: October 22, 2020 7:00 PM
             titlee: ""
             titleedescription: ""
             talk:
@@ -1377,7 +1377,7 @@ schedule:
               id: andrii_shtadler
               image: /uploads/andrii_shtadler_sq.jpg
               company: EPAM Systems
-          - time: October 15, 2020 8:00 PM
+          - time: October 22, 2020 8:00 PM
             titlee: ""
             titleedescription: ""
             talk:
@@ -1414,10 +1414,10 @@ schedule:
               id: oleksii_novokhatskyi
               image: /uploads/oleksii-novokhatskyi.png
               company: Zazmic Inc
-        endtime: October 15, 2020 9:00 PM
+        endtime: October 22, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #7"
         linkyoutube: ""
-        starttime: October 15, 2020 7:00 PM
+        starttime: October 22, 2020 7:00 PM
         linkdiscord: ""
         location: Youtube
         title: "Online Thursday #7"
