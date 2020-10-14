@@ -587,9 +587,8 @@ speakers:
           about infrastructure, monitoring, and scaling components.
       active: "true"
     - fields:
-        bio: My name is Novokhatskyi Oleksii, I'm Lead Software Engineer at Zazmic Inc.
-          I like coding, mentoring, interviewing. Main goal - investigation and
-          I'm heavily inspired by my team
+        bio: My name is Novokhatskyi Oleksii. I like coding, mentoring, interviewing.
+          Main goal - investigation and I'm heavily inspired by my team
         city: Kyiv
         name: Oleksii Novokhatskyi
         socialLinks:
@@ -598,10 +597,10 @@ speakers:
           - src: https://github.com/novokhatskyioleksii
             icon: icon-github
         country: Ukraine
-        title: Lead Software Engineer
+        title: Software Engineer
         id: oleksii_novokhatskyi
         image: /uploads/oleksii-novokhatskyi.png
-        company: Zazmic Inc
+        company: ""
       talk:
         id: talk_031
         title: "Node.js and MongoDB: transactions performance"
