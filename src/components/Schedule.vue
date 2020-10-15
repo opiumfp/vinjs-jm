@@ -192,7 +192,7 @@ export default {
         overflow: hidden;
         @include transition(all ease-in-out 0.3s);
         &.show {
-          max-height: 250px;
+          max-height: 350px;
           @include media-breakpoint-down(md) {
             max-height: 600px;
           }
