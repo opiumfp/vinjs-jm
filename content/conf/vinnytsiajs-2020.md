@@ -1415,9 +1415,9 @@ schedule:
               company: EPAM Systems
         endtime: October 22, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #7"
-        linkyoutube: ""
+        linkyoutube: https://youtu.be/F1HGJcUTXUU
         starttime: October 22, 2020 7:00 PM
-        linkdiscord: ""
+        linkdiscord: https://discord.gg/euzddDk
         location: Youtube
         title: "Online Thursday #7"
         link: ""
