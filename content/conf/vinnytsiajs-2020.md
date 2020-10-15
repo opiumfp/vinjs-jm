@@ -1353,33 +1353,6 @@ schedule:
             titlee: ""
             titleedescription: ""
             talk:
-              id: talk_011
-              title: Deno - killer feature or just proposal
-              description: Something on the horizon looks like a dinosaur. Let's try to figure
-                out what the main headache on the start, main concepts and
-                issues. Should forget about node js and migrate all project to
-                Deno or just pick up concepts and ideas.
-            speaker:
-              bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
-                create agnostic ecosystems with the newest technologies.
-              city: Vinnytsia
-              name: Andrii Shtadler
-              socialLinks:
-                - src: ""
-                  icon: icon-facebook-square
-                - src: https://www.facebook.com/profile.php?id=100004283014454
-                  icon: icon-facebook-square
-                - src: https://github.com/shtadler
-                  icon: icon-github
-              country: Ukraine
-              title: Senior Software Engineer
-              id: andrii_shtadler
-              image: /uploads/andrii_shtadler_sq.jpg
-              company: EPAM Systems
-          - time: October 22, 2020 8:00 PM
-            titlee: ""
-            titleedescription: ""
-            talk:
               id: talk_031
               title: "Node.js and MongoDB: transactions performance"
               description: >-
@@ -1413,6 +1386,33 @@ schedule:
               id: oleksii_novokhatskyi
               image: /uploads/oleksii-novokhatskyi.png
               company: Zazmic Inc
+          - time: October 22, 2020 8:00 PM
+            titlee: ""
+            titleedescription: ""
+            talk:
+              id: talk_011
+              title: Deno - killer feature or just proposal
+              description: Something on the horizon looks like a dinosaur. Let's try to figure
+                out what the main headache on the start, main concepts and
+                issues. Should forget about node js and migrate all project to
+                Deno or just pick up concepts and ideas.
+            speaker:
+              bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
+                create agnostic ecosystems with the newest technologies.
+              city: Vinnytsia
+              name: Andrii Shtadler
+              socialLinks:
+                - src: ""
+                  icon: icon-facebook-square
+                - src: https://www.facebook.com/profile.php?id=100004283014454
+                  icon: icon-facebook-square
+                - src: https://github.com/shtadler
+                  icon: icon-github
+              country: Ukraine
+              title: Senior Software Engineer
+              id: andrii_shtadler
+              image: /uploads/andrii_shtadler_sq.jpg
+              company: EPAM Systems
         endtime: October 22, 2020 9:00 PM
         fulltitle: "VinnytsiaJS 2020 - Online Thursday #7"
         linkyoutube: ""
