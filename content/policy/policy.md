@@ -3,9 +3,9 @@ title: Policy
 titleUA: Політика VinnytsiaJS
 description: >-
   Your privacy is important to us. It is VinnytsiaJS policy to respect your
-  privacy regarding any information we may collect from you across our
-  website, <https://vinnytsiajs.org/><https://vinnytsiajs.org/>[,](https://www.3bittalk.com/,) and
-  other sites we own and operate.
+  privacy regarding any information we may collect from you across our website
+  <https://vinnytsiajs.org/>[](https://www.3bittalk.com/,) and other sites we
+  own and operate.
 
 
   We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
@@ -100,7 +100,7 @@ description: >-
 descriptionUA: >-
   Ваша конфіденційність важлива для нас. Політика VinnytsiaJS поважає вашу
   конфіденційність щодо будь-якої інформації, яку ми можемо збирати від вас на
-  нашому веб-сайті, https://vinnytsiajs.org/[](https://www.3bittalk.com/) та
+  нашому веб-сайті <https://vinnytsiajs.org/>[](https://www.3bittalk.com/), та
   інших веб-сайтах наших проектів, якими ми володіємо та з якими працюємо.
 
 
@@ -123,9 +123,6 @@ descriptionUA: >-
 
 
   Ваше подальше використання нашого веб-сайту буде розцінено як прийняття наших положень щодо політики конфіденційності та особистої інформації. Якщо у вас виникли запитання щодо того, як ми обробляємо дані користувачів та особисту інформацію, не соромтеся зв’язуватися з нами.
-
-
-   
 
 
   **Правила та умови**
@@ -192,9 +189,6 @@ descriptionUA: >-
 
 
   Ця угода підпорядковується законодавству України.
-
-
-   
 
 
   Ця положення вступають у дію з 01 лютого 2021 року.
