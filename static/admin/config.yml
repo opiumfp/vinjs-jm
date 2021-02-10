@@ -591,4 +591,14 @@ collections:
           displayFields: ["name"]
           required: false
           default: ''
-      
+- name: "policy" # Used in routes, e.g., /admin/collections/blog
+  label: "Policy" # Used in the UI
+  folder: "content/policy" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string", required: true}
+    - {label: "Title Ukraine", name: "titleUA", widget: "string", required: true}
+    - {label: "Description", name: "description", widget: "markdown", required: false, default: ''}    
+    - {label: "Description Ukraine", name: "descriptionUA", widget: "markdown", required: false, default: ''}    
