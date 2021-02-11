@@ -1,6 +1,6 @@
 ---
 title: Policy
-titleUA: Політика VinnytsiaJS
+titleUA: Політика
 description: >-
   Your privacy is important to us. It is VinnytsiaJS policy to respect your
   privacy regarding any information we may collect from you across our website
