@@ -21,6 +21,15 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/policy/**/*.md',
+        typeName: 'Policy',
+        resolveAbsolutePaths: true,
+        remark: {}
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/nav/**/*.md',
         typeName: 'Nav',
         resolveAbsolutePaths: true,

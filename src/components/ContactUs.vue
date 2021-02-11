@@ -11,6 +11,10 @@
             <div class="contact-us_social-icons navbar-expand d-inline-block h4 my-3">
               <social-icons :socialIconsData="getSocialIcons(this.socialData.socialicons)"></social-icons>
             </div>
+            <div class="btn-group mb-3">
+              <a class="btn btn-secondary py-0" :href="/policy/">Policy</a></a>
+              <a class="btn btn-secondary py-0" href="http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf">Code of Conduct</a></a>
+            </div>
             <ul class="list-unstyled">
               <li>
                 <span>Partnership:</span>
