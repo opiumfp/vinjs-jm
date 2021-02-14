@@ -37,14 +37,23 @@ nav:
   socialicons: '{"items":[{"active":true,"icon":"icon-facebook-square","src":"https://www.facebook.com/VinnytsiaJS/","title":"Facebook"},{"active":true,"icon":"icon-instagram","src":"https://www.instagram.com/vinnytsiajs/","title":"Instagram"},{"active":true,"icon":"icon-twitter","src":"https://twitter.com/VinnytsiaJS","title":"Twitter"},{"active":true,"icon":"icon-youtube-play","src":"http://youtube.com/vinnytsiajs","title":"Youtube"},{"active":true,"icon":"icon-telegram","src":"https://t.me/vinjs","title":"Telegram"}]}'
 hero:
   button:
-    link: "#"
-    title: Buy Tickets
+    link: "#pubtalks"
+    title: Join Pub Talks
   date: ""
   id: home
   image: /uploads/bg.jpg
   imagePt: /uploads/bg-v.jpg
   subtitle: Javascript Community Meetups
   title: VinnytsiaJS 2020
+heropt:
+  id: pubtalks
+  title: "VinnytsiaJS: Pub Talks #1"
+  date: March 18
+  image: /uploads/main_bg.jpg
+  imagePt: /uploads/main_bg_v.jpg
+  button:
+    title: Schedule
+    link: "#schedule"
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
