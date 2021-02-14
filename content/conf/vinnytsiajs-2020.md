@@ -1,6 +1,6 @@
 ---
-title: VinnytsiaJS 2020 - Conference
-startDate: Saturday, August 15, 2020 9:00 PM
+title: VinnytsiaJS 2021 - Conference
+startDate: Saturday, July 31, 2021 9:00 PM
 nav:
   button:
     active: true
@@ -44,10 +44,10 @@ hero:
   image: /uploads/bg.jpg
   imagePt: /uploads/bg-v.jpg
   subtitle: Javascript Community Meetups
-  title: VinnytsiaJS 2020
+  title: VinnytsiaJS 2021
 heropt:
   id: pubtalks
-  title: "VinnytsiaJS: Pub Talks #1"
+  title: "VinnytsiaJS: Pub Talks #2"
   date: March 18
   image: /uploads/main_bg.jpg
   imagePt: /uploads/main_bg_v.jpg
@@ -61,9 +61,9 @@ about:
   logo: /uploads/vinnytsiajs-logo-big.png
   paragraph: The events are organized and driven by Vinnytsia JS Community. This
     year meet the community dedicated to JavaScript development. That will be a
-    set of online-meetups with high-level talks by speakers from Ukraine and
-    abroad.
-  title: VinnytsiaJS 2020
+    set of meetups, our excited Open-Air Conference and a series of online
+    events with high-level talks by speakers from Ukraine and abroad.
+  title: VinnytsiaJS 2021
   titleI18N:
     en: VinnytsiaJS 2020
     ua: Вінниця JS
@@ -629,7 +629,7 @@ speakers:
 
           * What is the difference in the speed of the main MongoDB operations (and their combination) with and without transactions?
       active: "true"
-  subtitle: ""
+  subtitle: First Speakers WIll Be Annonced Soon
   title: Speakers
 talks:
   id: talks
