@@ -1471,13 +1471,6 @@ partners:
         src: https://www.infopulse.com/
         title: Infopulse
       image: /uploads/infopulse-logo-web-rgb.svg
-    - active: "true"
-      fields:
-        title: N-iX
-        src: https://careers.n-ix.com/jobs/
-        description: ""
-        image: /uploads/vector_full-color-logo_digital_final.svg
-      image: /uploads/vector_full-color-logo_digital_final.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
@@ -1518,13 +1511,6 @@ mediapartners:
         src: https://www.it-association.vn.ua/
         title: IT Association Vinnytsia
       image: /uploads/it-association.png
-    - active: "true"
-      fields:
-        title: JSFest
-        src: https://jsfest.com.ua/
-        description: ""
-        image: /uploads/jsfest.png
-      image: /uploads/jsfest.png
     - active: "true"
       fields:
         title: BeerJS Minsk
