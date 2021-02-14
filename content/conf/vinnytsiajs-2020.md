@@ -52,8 +52,8 @@ heropt:
   image: /uploads/main_bg.jpg
   imagePt: /uploads/main_bg_v.jpg
   button:
-    title: Schedule
-    link: "#schedule"
+    title: Call For Papers
+    link: "#cfp"
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
