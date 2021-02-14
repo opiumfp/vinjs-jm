@@ -384,6 +384,7 @@ query Conf {
 
 <script>
 import Hero from "@/components/Hero";
+import HeroPt from "@/components/HeroPT";
 import About from "@/components/About";
 import Stat from "@/components/Stat";
 import PageTitle from "@/components/PageTitle";
@@ -427,6 +428,7 @@ export default {
   },
   components: {
     Hero,
+    HeroPt,
     About,
     Stat,
     PageTitle,
