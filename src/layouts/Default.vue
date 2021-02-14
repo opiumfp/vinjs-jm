@@ -28,7 +28,14 @@ query {
         src
         title
       }
-      socialicons
+      socialicons {
+        items {
+          active
+          icon
+          src
+          title
+        }
+      }
     }
   }
 }

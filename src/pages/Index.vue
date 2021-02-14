@@ -39,7 +39,7 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
-      <section class="position-relative pt-5 pb-2">
+      <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
           <div class="row">
@@ -49,7 +49,7 @@
                 :title="$page.pageData.speakers.title"
                 :subtitle="$page.pageData.speakers.subtitle"
               ></page-title>
-              <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
+              <!-- <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers> -->
             </div>
           </div>
         </div>
@@ -88,14 +88,14 @@
           </div>
         </div>
       </section> -->
-      <section class="position-relative pt-5 pb-5">
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
                 class="position-relative"
                 :title="$page.pageData.schedule.title"
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
-      </section>
+      </section> -->
       <!-- <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <!-- <page-title
@@ -173,7 +173,14 @@ query Conf {
         src
         title
       }
-      socialicons
+      socialicons {
+        items {
+          active
+          icon
+          src
+          title
+        }
+      }
     }
     title
     startDate

@@ -9,7 +9,7 @@
               >Follow us on social media for more information and news about the conference. <br/>See you soon!
             </p>
             <div class="contact-us_social-icons navbar-expand d-inline-block h4 my-3">
-              <social-icons :socialIconsData="getSocialIcons(this.socialData.socialicons)"></social-icons>
+              <social-icons :socialIconsData="this.socialData.socialicons"></social-icons>
             </div>
             <div class="btn-group mb-3">
               <a class="btn btn-secondary py-0" :href="/policy/">Policy</a></a>
@@ -51,11 +51,6 @@ export default {
     socialIconsData: {
       type: Object,
       required: false
-    }
-  },
-  methods: {
-    getSocialIcons: str => {
-      return JSON.parse(str);
     }
   },
   mounted() {

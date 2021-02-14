@@ -19,7 +19,7 @@
 
     <div class="vjs-navbar_collaplse navbar-collapse" id="navbar_dropmenu">
       <div class="vjs-navbar_social-wrap">
-        <social-icons :socialIconsData="getObject(this.$props.navData.socialicons)"></social-icons>
+        <social-icons :socialIconsData="this.$props.navData.socialicons"></social-icons>
       </div>
       <ul class="vjs-navbar_nav navbar-nav">
         <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
@@ -77,9 +77,6 @@ export default {
     });
   },
   methods: {
-    getObject: str => {
-      return JSON.parse(str);
-    },
     toggleDropNav: () => {
       document.querySelector("body").classList.toggle("nav_dropmenu-show");
     }
