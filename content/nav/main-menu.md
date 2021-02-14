@@ -3,8 +3,8 @@ title: Main Menu
 data:
   button:
     active: true
-    src: "#schedule"
-    title: Join Online
+    src: "#pubtalks"
+    title: Join Pub Talks
   items:
     - active: true
       src: "#home"
