@@ -7,6 +7,13 @@
     ></hero>
     <!-- vjs-bg-logo-purple -->
     <div class="layer layer-content">
+      <section>
+        <hero-pt
+          v-if="$page.pageData.heropt.image"
+          :id="$page.pageData.heropt.id"
+          :heroPTData="$page.pageData.heropt"
+        ></hero-pt>
+      </section>
       <section
         class="py-7 vjs-bg-logo vjs-bg-logo-blue text-white section-vh-100 d-flex align-items-center justify-content-center"
         :id="$page.pageData.about.id"
@@ -47,7 +54,25 @@
           </div>
         </div>
       </section>
-      <hr>
+      <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
+        <div class="anchor-id" id="cfp"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <page-title
+                class="position-relative"
+                title="Call for Papers"
+              ></page-title>
+              <p class="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
+              <a
+                href="https://forms.gle/e3QZZp2rKzD6W4qd8"
+                class="btn btn-primary my-2 px-5 my-sm-0"
+                target="_blank"
+              >Submit</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.talks.id"></div>
         <div class="container">
@@ -71,25 +96,6 @@
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section>
-      <!-- <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
-        <div class="anchor-id" id="cfp"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 text-center">
-              <page-title
-                class="position-relative"
-                title="Call for Papers"
-              ></page-title>
-              <p class="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
-              <a
-                href="https://forms.gle/jY1gcjCJKCbp8NNS8"
-                class="btn btn-primary my-2 px-5 my-sm-0"
-                target="_blank"
-              >Submit</a>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <!-- <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <!-- <page-title
@@ -104,7 +110,7 @@
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title>
       </section> -->
-      <hr />
+      <!-- <hr /> -->
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
         <page-title
@@ -175,6 +181,17 @@ query Conf {
       id
       title
       subtitle
+      date
+      image (quality:95)
+      imagePt (quality:65)
+      button {
+        title
+        link
+      }
+    }
+    heropt {
+      id
+      title
       date
       image (quality:95)
       imagePt (quality:65)

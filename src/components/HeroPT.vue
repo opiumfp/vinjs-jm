@@ -1,20 +1,20 @@
 <template>
-  <div class="hero">
-    <div class="hero_wrapper">
-      <div class="hero_bg">
+  <div class="heropt">
+    <div class="heropt_wrapper">
+      <div class="heropt_bg">
         <!-- <template v-if="!device.isShowVideo"> -->
         <template>
           <g-image
-            v-if="$props.heroData.image"
-            class="hero_bg_image hero_bg_image-landscape"
-            :src="$props.heroData.image"
+            v-if="$props.heroPTData.image"
+            class="heropt_bg_image heropt_bg_image-landscape"
+            :src="$props.heroPTData.image"
             alt="Vinnytsia JS - Javascript Open Air"
           />
         </template>
         <!-- <template v-else>
           <video
             ref="herovideo"
-            class="hero_bg_video"
+            class="heropt_bg_video"
             muted="muted"
             loop="loop"
           >
@@ -24,24 +24,29 @@
           </video>
         </template> -->
         <g-image
-          v-if="$props.heroData.imagePt"
-          class="hero_bg_image hero_bg_image-portrait"
-          :src="$props.heroData.imagePt"
+          v-if="$props.heroPTData.imagePt"
+          class="heropt_bg_image heropt_bg_image-portrait"
+          :src="$props.heroPTData.imagePt"
           alt="Vinnytsia JS - Javascript Open Air"
         />
       </div>
-      <div class="hero_content pt-4">
+      <div class="heropt_content pt-6">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <h2 v-if="$props.heroData.date" class="h3 hero_date text-uppercase font-weight-bold">{{this.$props.heroData.date}}</h2>
+            <div class="col-12 col-lg-8 text-center text-lg-left">
+              <h2 v-if="$props.heroPTData.date" class="h3 heropt_date text-uppercase font-weight-bold text-warning">{{this.$props.heroPTData.date}}</h2>
+              <h2 class="h1 heropt_subtitle font-weight-bold">{{$props.heroPTData.title}}</h2>
+              <div class="h1 heropt_subtitle-pt text-uppercase font-weight-bold">{{$props.heroPTData.title}}</div>
+              <div class="mt-4">
+                <a class="btn btn-primary" :href="$props.heroPTData.button.link">{{$props.heroPTData.button.title}}</a>
+              </div>
+            </div>
+            <div class="col-4 d-none d-lg-block">
               <img
-                class="hero_logo d-block mx-auto my-4"
-                src="../../assets/images/logo/VinnytsiaJS_20-logo-sm.png"
+                class="heropt_logo d-block mx-auto my-4"
+                src="../../assets/images/logo/VinJS_PUB_TALKS-LOGO.png"
                 alt="VinnytsiaJS - Javascript Open Air Conference"
               />
-              <h2 class="h1 hero_subtitle text-uppercase font-weight-bold">Javascript Community</h2>
-              <div class="h1 hero_subtitle-pt text-uppercase font-weight-bold">Javascript<br>Community</div>
             </div>
           </div>
         </div>
@@ -56,7 +61,7 @@ import { store } from "~/stores/store";
 
 export default {
   props: {
-    heroData: {
+    heroPTData: {
       type: Object,
       required: true
     }
@@ -95,7 +100,7 @@ export default {
 
 <style scoped lang="scss">
 @import "assets/styles/base.scss";
-.hero {
+.heropt {
   height: 100vh;
   &_wrapper {
     position: relative;
@@ -103,9 +108,9 @@ export default {
     height: 100vh;
     overflow: hidden;
     background-color: $black;
-    html.browser:not(.edge):not(.ie) & {
-      position: fixed;
-    }
+    // html.browser:not(.edge):not(.ie) & {
+    //   position: fixed;
+    // }
   }
   &_content {
     position: absolute;
@@ -114,7 +119,6 @@ export default {
     width: 100%;
     top: calc(50% - #{$nav-height/2});
     left: 50%;
-    text-align: center;
     @include media-breakpoint-down(lg) {
       top: 50%;
   
@@ -168,8 +172,8 @@ export default {
         max-height: 70vh;
       }
       @media (orientation: landscape) {
-        width: 45vh;
-        max-height: 45vh;
+        max-width: 100%;
+        height: auto;
       }
     }
   }
@@ -183,7 +187,8 @@ export default {
       right: 0;
       // background-image: url("../../assets/images/misc/hero-overlay.svg");
       background-repeat: repeat;
-      background-color: $overlay-bg;
+      // background-color: $overlay-bg;
+      background-color: rgba(0,0,0,.5);
     }
     &_video {
       display: none;
