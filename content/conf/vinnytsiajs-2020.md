@@ -204,6 +204,25 @@ speakers:
   id: speakers
   items:
     - fields:
+        bio: 3+ years experience in IT
+        city: Vinnytsia
+        name: Inna Bezsmertna
+        socialLinks:
+          - src: https://www.facebook.com/inna.bezsmertna.7
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/inna-bezsmertna-467233161/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Software Engineer
+        id: inna_bezsmertna
+        image: /uploads/іnna-bezsmertna_sq.jpg
+        company: EPAM Systems
+      talk:
+        id: talk_002
+        title: React Native and React Native with Apollo
+        description: What? Why? How? React Native? and how to integrate it with Apollo
+      active: "true"
+    - fields:
         bio: Passionate T-shaped engineer that worked as Senior Software Engineer, Team
           Lead, Scrum Master, Product Owner, Head of the technical stream,
           Solution and System Architect and DevOps. Had from 3 to ~40 people
@@ -231,25 +250,6 @@ speakers:
         description: I this talk we'll discuss how Micro Frontends approach may help you
           to iteratively upgrade your legacy frontend to the modern technologies
           without the need to re-write everything at once.
-      active: "true"
-    - fields:
-        bio: 3+ years experience in IT
-        city: Vinnytsia
-        name: Inna Bezsmertna
-        socialLinks:
-          - src: https://www.facebook.com/inna.bezsmertna.7
-            icon: icon-facebook-square
-          - src: https://www.linkedin.com/in/inna-bezsmertna-467233161/
-            icon: icon-linkedin-square
-        country: Ukraine
-        title: Software Engineer
-        id: inna_bezsmertna
-        image: /uploads/іnna-bezsmertna_sq.jpg
-        company: EPAM Systems
-      talk:
-        id: talk_002
-        title: React Native and React Native with Apollo
-        description: What? Why? How? React Native? and how to integrate it with Apollo
       active: "true"
     - fields:
         bio: Programmer. Speaker. Gamer.
