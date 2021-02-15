@@ -88,9 +88,11 @@ data:
   endtime: March 18, 2021 9:30 PM
   fulltitle: "VinnytsiaJS: Pub Talks #2"
   linkyoutube: ""
+  linkbuy: https://secure.wayforpay.com/payment/vinjs_pubtalks_2
+  locationlink: https://goo.gl/maps/aKydSgsAEvRhMrSA7
   starttime: March 18, 2021 6:30 PM
   linkdiscord: ""
-  location: Pyrogova 47a, Vinnytsia, Ukraine
+  location: ART-PUB "Beef Eater"
   title: "Pub Talks #2"
   link: ""
   id: pt_2
