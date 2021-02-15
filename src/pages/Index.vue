@@ -88,14 +88,14 @@
           </div>
         </div>
       </section> -->
-      <!-- <section class="position-relative pt-5 pb-5">
+      <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
                 class="position-relative"
                 :title="$page.pageData.schedule.title"
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
-      </section> -->
+      </section>
       <!-- <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <!-- <page-title
