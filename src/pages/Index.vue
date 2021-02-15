@@ -297,6 +297,7 @@ query Conf {
       schedules {
         schedule {
           location
+          locationlink
           description
           fulltitle
           title
@@ -305,6 +306,7 @@ query Conf {
           link
           linkyoutube
           linkdiscord
+          linkbuy
           items {
             time
             titlee

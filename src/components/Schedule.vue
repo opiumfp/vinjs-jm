@@ -13,6 +13,10 @@
                 class="text-center pt-3 pt-lg-4"
                 v-if="item.schedule.fulltitle"
               >{{item.schedule.starttime | formatDate}}<span class="font-weight-normal"> - {{item.schedule.title}}</span></h5>
+              <div class="h6 text-center">
+                <span>Location: </span>
+                <a :href="item.schedule.locationlink" target="_blank">{{item.schedule.location}}</a>
+              </div>
               <div class="schedule pt-0 pb-3 pt-lg-3 pb-lg-4">
                 <div
                   v-for="slot in item.schedule.items"
@@ -53,8 +57,9 @@
                   </div>
                 </div>
               </div>
-              <div v-if="item.schedule.link || item.schedule.linkdiscord || item.schedule.linkyoutube" class="schedule_slot_talk_buttons text-center mb-5">
-                <h5>Join Online:</h5>
+              <div v-if="item.schedule.linkbuy || item.schedule.link || item.schedule.linkdiscord || item.schedule.linkyoutube" class="schedule_slot_talk_buttons text-center mb-5">
+                <div class="h5">Join Us:</div>
+                <a v-if="item.schedule.linkbuy" :href="item.schedule.linkbuy" target="_blank" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
                 <a v-if="item.schedule.link" :href="item.schedule.link" target="_blank" class="btn btn-primary mt-2 mx-2">Join Online</a>
                 <a v-if="item.schedule.linkdiscord" :href="item.schedule.linkdiscord" target="_blank" class="btn btn-discord mt-2 mx-2"><i class="icon icon-discord mr-2"></i>Discord</a>
                 <a v-if="item.schedule.linkyoutube" :href="item.schedule.linkyoutube" target="_blank" class="btn btn-danger mt-2 mx-2"><i class="icon icon-youtube-play mr-2"></i>Youtube</a>
