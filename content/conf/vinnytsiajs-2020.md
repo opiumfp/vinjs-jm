@@ -73,8 +73,8 @@ heropt:
   image: /uploads/main_bg.jpg
   imagePt: /uploads/main_bg_v.jpg
   button:
-    title: Call For Papers
-    link: "#cfp"
+    title: Learn More
+    link: "#schedule"
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
@@ -662,6 +662,11 @@ schedule:
               id: yevhen_shemet
               image: /uploads/Yevhen Shemet.jpg
               company: Home
+          - time: March 18, 2021 9:00 PM
+            titlee: Closing
+            titleedescription: ""
+            talk: ""
+            speaker: ""
         endtime: March 18, 2021 9:30 PM
         fulltitle: "VinnytsiaJS: Pub Talks #2"
         linkyoutube: ""
