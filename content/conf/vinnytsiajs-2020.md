@@ -215,7 +215,7 @@ speakers:
         country: Ukraine
         title: Software Engineer
         id: inna_bezsmertna
-        image: /uploads/іnna_bezsmertna_sq.jpg
+        image: /uploads/inna_bezsmertna_sqx.jpg
         company: EPAM Systems
       talk:
         id: talk_002
