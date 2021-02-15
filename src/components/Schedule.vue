@@ -13,7 +13,7 @@
                 class="text-center pt-3 pt-lg-4"
                 v-if="item.schedule.fulltitle"
               >{{item.schedule.starttime | formatDate}}<span class="font-weight-normal"> - {{item.schedule.title}}</span></h5>
-              <div class="h6 text-center">
+              <div class="h6 text-center" v-if="item.schedule.locationlink">
                 <span>Location: </span>
                 <a :href="item.schedule.locationlink" target="_blank">{{item.schedule.location}}</a>
               </div>
