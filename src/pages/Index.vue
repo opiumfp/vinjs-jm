@@ -49,7 +49,7 @@
                 :title="$page.pageData.speakers.title"
                 :subtitle="$page.pageData.speakers.subtitle"
               ></page-title>
-              <!-- <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers> -->
+              <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
             </div>
           </div>
         </div>
