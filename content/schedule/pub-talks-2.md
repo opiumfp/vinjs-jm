@@ -57,7 +57,7 @@ data:
         country: Ukraine
         title: Software Engineer
         id: inna_bezsmertna
-        image: /uploads/іnna_bezsmertna_sq.jpg
+        image: /uploads/inna_bezsmertna_sqx.jpg
         company: EPAM Systems
     - time: March 18, 2021 8:20 PM
       titlee: ""
