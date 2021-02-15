@@ -275,7 +275,7 @@ speakers:
         description: Fun and entertaining Quiz about JS and friends. Goes well with
           light beer
       active: "true"
-  subtitle: First Speakers WIll Be Annonced Soon
+  subtitle: More Speakers Will Be Announced Soon
   title: Speakers
 talks:
   id: talks
