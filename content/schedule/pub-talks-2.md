@@ -85,6 +85,11 @@ data:
         id: yevhen_shemet
         image: /uploads/Yevhen Shemet.jpg
         company: Home
+    - time: March 18, 2021 9:00 PM
+      titlee: Closing
+      titleedescription: ""
+      talk: ""
+      speaker: ""
   endtime: March 18, 2021 9:30 PM
   fulltitle: "VinnytsiaJS: Pub Talks #2"
   linkyoutube: ""
