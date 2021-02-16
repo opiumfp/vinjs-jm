@@ -275,6 +275,25 @@ speakers:
         description: Fun and entertaining Quiz about JS and friends. Goes well with
           light beer
       active: "true"
+    - fields:
+        bio: Lead JavaScript Engineer and Resource Manager at EPAM Vinnytsia, Head of
+          VinnytsiaJS Community. I strive to produce, promote social networks,
+          public spaces, the Art of Web Development, and methods of
+          communication that support such interaction.
+        city: Vinnytsia
+        name: Oleksandr Pavlovskyi
+        socialLinks: []
+        country: Ukraine
+        title: Resource Manager
+        id: oleksandr_pavlovskyi
+        image: /uploads/vjs2019-crop.jpg
+        company: EPAM
+      talk:
+        id: talk_001
+        title: JS Quiz
+        description: Fun and entertaining Quiz about JS and friends. Goes well with
+          light beer
+      active: "true"
   subtitle: More Speakers Will Be Announced Soon
   title: Speakers
 talks:
