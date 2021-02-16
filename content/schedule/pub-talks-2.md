@@ -85,6 +85,19 @@ data:
         id: yevhen_shemet
         image: /uploads/Yevhen Shemet.jpg
         company: Home
+      speaker2:
+        bio: Lead JavaScript Engineer and Resource Manager at EPAM Vinnytsia, Head of
+          VinnytsiaJS Community. I strive to produce, promote social networks,
+          public spaces, the Art of Web Development, and methods of
+          communication that support such interaction.
+        city: Vinnytsia
+        name: Oleksandr Pavlovskyi
+        socialLinks: []
+        country: Ukraine
+        title: Resource Manager
+        id: oleksandr_pavlovskyi
+        image: /uploads/vjs2019-crop.jpg
+        company: EPAM Systems
     - time: March 18, 2021 9:00 PM
       titlee: Closing
       titleedescription: ""
