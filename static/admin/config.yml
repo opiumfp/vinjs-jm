@@ -611,6 +611,15 @@ collections:
           displayFields: ["name"]
           required: false
           default: ''
+        - label: "Second Speaker"
+          name: "speaker2"
+          widget: "relation"
+          collection: "speakers"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
 - name: "policy" # Used in routes, e.g., /admin/collections/blog
   label: "Policy" # Used in the UI
   folder: "content/policy" # The path to the folder where the documents are stored
