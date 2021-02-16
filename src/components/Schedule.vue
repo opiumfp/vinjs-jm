@@ -30,6 +30,7 @@
                           <h6 class="schedule_slot_talk_title h6 m-0 py-2 py-lg-0 text-center text-lg-left" @click="openSlot($event)">{{slot.talk.title || slot.titlee}}</h6>
                       </div>
                       <div class="col-12 col-lg-3 text-center text-lg-right">
+                        <div class="schedule_slot_speaker_one">
                           <a :href="`#${slot.speaker.id}`" v-if="slot.speaker.image" >
                             <g-image
                               class="schedule_slot_speaker_img mr-2"
@@ -39,6 +40,18 @@
                             />
                             <span v-if="slot.speaker.name" class="schedule_slot_speaker_name">{{slot.speaker.name}}</span>
                           </a>
+                        </div>
+                        <div v-if="slot.speaker2"  class="schedule_slot_speaker_two pt-2">
+                            <a :href="`#${slot.speaker2.id}`" v-if="slot.speaker2.image" >
+                              <g-image
+                                class="schedule_slot_speaker_img mr-2"
+                                v-if="slot.speaker2.image"
+                                :src="slot.speaker2.image"
+                                :alt="slot.speaker2.title"
+                              />
+                              <span v-if="slot.speaker2.name" class="schedule_slot_speaker_name">{{slot.speaker2.name}}</span>
+                            </a>
+                          </div>
                       </div>
                       <div class="col-12 col-lg-1 text-center text-lg-right">
                           <button class="schedule_slot_opener py-2 py-lg-0" v-if="slot.talk.description || slot.titleedescription" @click="openSlot($event)"></button>

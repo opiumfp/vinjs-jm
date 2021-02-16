@@ -634,6 +634,7 @@ schedule:
               id: vlad_fedosov
               image: /uploads/vlad-fedosov_sq.jpg
               company: Namecheap, Inc
+            speaker2: []
           - time: March 18, 2021 7:40 PM
             titlee: ""
             titleedescription: ""
@@ -655,6 +656,7 @@ schedule:
               id: inna_bezsmertna
               image: /uploads/inna_bezsmertna_sqx.jpg
               company: EPAM Systems
+            speaker2: []
           - time: March 18, 2021 8:20 PM
             titlee: ""
             titleedescription: ""

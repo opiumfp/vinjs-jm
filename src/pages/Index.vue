@@ -317,17 +317,14 @@ query Conf {
               description
             }
             speaker {
-              bio
               name
-              city
-              socialLinks {
-                src
-                icon
-              }
-              company
               image
               id
-              country
+            }
+            speaker2 {
+              name
+              image
+              id
             }
           }
         }
