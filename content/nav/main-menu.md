@@ -4,7 +4,7 @@ data:
   button:
     active: true
     src: "#pubtalks"
-    title: Join Pub Talks
+    title: Join Us
   items:
     - active: true
       src: "#home"
