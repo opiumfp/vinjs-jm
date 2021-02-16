@@ -5,7 +5,7 @@ nav:
   button:
     active: true
     src: "#pubtalks"
-    title: Join Pub Talks
+    title: Join Us
   items:
     - active: true
       src: "#home"
@@ -634,7 +634,6 @@ schedule:
               id: vlad_fedosov
               image: /uploads/vlad-fedosov_sq.jpg
               company: Namecheap, Inc
-            speaker2: []
           - time: March 18, 2021 7:40 PM
             titlee: ""
             titleedescription: ""
@@ -656,7 +655,6 @@ schedule:
               id: inna_bezsmertna
               image: /uploads/inna_bezsmertna_sqx.jpg
               company: EPAM Systems
-            speaker2: []
           - time: March 18, 2021 8:20 PM
             titlee: ""
             titleedescription: ""
@@ -694,7 +692,7 @@ schedule:
               country: Ukraine
               title: Resource Manager
               id: oleksandr_pavlovskyi
-              image: /uploads/vjs2019-crop.jpg
+              image: /uploads/oleksandr_pavlovskyi_sq.jpg
               company: EPAM Systems
           - time: March 18, 2021 9:00 PM
             titlee: Closing
