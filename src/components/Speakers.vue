@@ -24,7 +24,7 @@
               <span v-if="item.fields.country">, {{ item.fields.country }}</span>
             </div>
             <div
-              v-if="item.fields.socialLinks[0].src"
+              v-if="item.fields.socialLinks.length && item.fields.socialLinks[0].src"
               class="contact-us_social-icons navbar-expand d-inline-block h4 mt-3 my-0">
               <ul class="social-icons list-unstyled navbar-nav">
                 <li
