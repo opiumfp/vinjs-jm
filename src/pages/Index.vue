@@ -156,6 +156,9 @@
       </section>
       <div class="spacer-nav-bottom"></div>
     </div>
+
+    <telegram-widget channel="vinjs" postid="72"></telegram-widget>
+    
   </Layout>
 </template>
 
@@ -419,6 +422,7 @@ import Schedule from "@/components/Schedule";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
+import TelegramWidget from "@/components/TelegramWidget";
 
 export default {
   metaInfo: {
@@ -462,7 +466,8 @@ export default {
     Schedule,
     Partners,
     Location,
-    ContactUs
+    ContactUs,
+    TelegramWidget
   },
   mounted() {
     // console.log('this.$page.pageData ::: ', this.$page.pageData)

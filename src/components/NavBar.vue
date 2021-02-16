@@ -23,7 +23,12 @@
       </div>
       <ul class="vjs-navbar_nav navbar-nav">
         <li v-for="item in $props.navData.items" :key="item.id" class="nav-item">
-          <a v-if="item.active" class="vjs-navbar_link nav-link scroll text-uppercase" :href="`/`+item.src">
+          <a 
+            v-if="item.active" 
+            class="vjs-navbar_link nav-link scroll text-uppercase" 
+            :href="`/`+item.src"
+            @click="closeDropNav"
+            >
             {{item.title}}
             <span class="sr-only">(current)</span>
           </a>
@@ -79,6 +84,9 @@ export default {
   methods: {
     toggleDropNav: () => {
       document.querySelector("body").classList.toggle("nav_dropmenu-show");
+    },
+    closeDropNav: () => {
+      document.querySelector("body").classList.remove("nav_dropmenu-show");
     }
   }
 };
@@ -88,6 +96,7 @@ export default {
 @import "assets/styles/base.scss";
 
 .vjs-navbar {
+  max-width: 100vw;
   height: $nav-height;
   background-color: transparent !important;
   .page-scrolled & {
