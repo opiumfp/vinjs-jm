@@ -287,7 +287,7 @@ speakers:
         title: Resource Manager
         id: oleksandr_pavlovskyi
         image: /uploads/vjs2019-crop.jpg
-        company: EPAM
+        company: EPAM Systems
       talk:
         id: talk_001
         title: JS Quiz
