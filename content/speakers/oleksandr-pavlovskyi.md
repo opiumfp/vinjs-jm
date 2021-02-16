@@ -12,5 +12,5 @@ data:
   title: Resource Manager
   id: oleksandr_pavlovskyi
   image: /uploads/vjs2019-crop.jpg
-  company: EPAM
+  company: EPAM Systems
 ---
