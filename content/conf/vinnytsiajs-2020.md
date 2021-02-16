@@ -286,7 +286,7 @@ speakers:
         country: Ukraine
         title: Resource Manager
         id: oleksandr_pavlovskyi
-        image: /uploads/vjs2019-crop.jpg
+        image: /uploads/oleksandr_pavlovskyi_sq.jpg
         company: EPAM Systems
       talk:
         id: talk_001
