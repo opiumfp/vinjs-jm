@@ -158,7 +158,7 @@
     </div>
 
     <telegram-widget channel="vinjs" postid="72"></telegram-widget>
-    
+
   </Layout>
 </template>
 
@@ -299,6 +299,7 @@ query Conf {
       id
       schedules {
         schedule {
+          collapsed
           location
           locationlink
           description

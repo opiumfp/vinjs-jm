@@ -54,13 +54,13 @@
                           </div>
                       </div>
                       <div class="col-12 col-lg-1 text-center text-lg-right">
-                          <button class="schedule_slot_opener py-2 py-lg-0" v-if="slot.talk.description || slot.titleedescription" @click="openSlot($event)"></button>
+                          <button class="schedule_slot_opener py-2 py-lg-0" :class="{ 'active': !item.schedule.collapsed }" v-if="slot.talk.description || slot.titleedescription" @click="openSlot($event)"></button>
                       </div>
                       
                     </div>
                     <div class="row schedule_slot_info " v-if="slot.talk.description || slot.titleedescription">
                       <div class="offset-lg-1 col-12 col-lg-10">
-                          <div class="schedule_slot_talk_description">
+                          <div class="schedule_slot_talk_description" :class="{ 'show': !item.schedule.collapsed }">
                               <div class="schedule_slot_talk_description_block rounded pt-3 pb-1 px-3 mx-3 mx-lg-0 mt-1 mb-3">
                                 <vue-markdown>{{ slot.talk.description || slot.titleedescription }}</vue-markdown>
                               </div>
