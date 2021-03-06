@@ -37,7 +37,7 @@ data:
   linkdiscord: ""
   location: Youtube
   collapsed: true
-  title: Interview with Vlad Fedosov
+  title: Interview Session
   link: ""
   id: interview-vlad-fedosov
   description: ""
