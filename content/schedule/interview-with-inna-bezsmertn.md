@@ -1,9 +1,9 @@
 ---
-name: Interview with Inna Bezsmertn
+name: Interview with Inna Bezsmertna
 data:
   items:
     - time: March 11, 2021 7:00 PM
-      titlee: Interview with Inna Bezsmertn
+      titlee: Interview with Inna Bezsmertna
       titleedescription: ""
       talk: ""
       speaker:
@@ -22,7 +22,7 @@ data:
         company: EPAM Systems
       speaker2: ""
   endtime: March 11, 2021 8:00 PM
-  fulltitle: Interview with Inna Bezsmertn
+  fulltitle: Interview with Inna Bezsmertna
   linkyoutube: https://youtu.be/R414zeNmO5A
   linkbuy: ""
   locationlink: ""
@@ -32,6 +32,6 @@ data:
   collapsed: true
   title: Interview Session
   link: ""
-  id: interview-inna-bezsmertn
+  id: interview-inna-bezsmertna
   description: ""
 ---
