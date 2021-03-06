@@ -36,7 +36,7 @@ data:
   starttime: March 9, 2021 7:00 PM
   linkdiscord: ""
   location: Youtube
-  collapsed: "true"
+  collapsed: true
   title: Interview with Vlad Fedosov
   link: ""
   id: interview-vlad-fedosov
