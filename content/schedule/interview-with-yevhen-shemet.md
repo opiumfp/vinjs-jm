@@ -26,16 +26,16 @@ data:
         company: Home
       speaker2: ""
   endtime: March 18, 2021 7:30 PM
-  fulltitle: ""
+  fulltitle: Interview with Yevhen Shemet
   linkyoutube: https://youtu.be/wql2970xivA
   linkbuy: ""
-  locationlink: ""
+  locationlink: Youtube
   starttime: March 18, 2021 7:00 PM
   linkdiscord: ""
   location: ""
   collapsed: true
-  title: Interview with Yevhen Shemet
+  title: Interview Session
   link: ""
-  id: ""
+  id: interview-yevhen-shemet
   description: ""
 ---
