@@ -427,7 +427,7 @@ import TelegramWidget from "@/components/TelegramWidget";
 
 export default {
   metaInfo: {
-    title: "Javascript Open Air Conference 2020",
+    title: "Javascript Open Air Conference and Meetups",
     meta: [
       { httpEquiv: "X-UA-Compatible", content: "IE=edge,chrome=1" },
       {
@@ -442,12 +442,12 @@ export default {
       {
         name: "description",
         content:
-          "VinnytsiaJS conference is a full day open-air conference of all things Javascript, gathering Front-end developers across Ukraine and abroad in the heart of the country."
+          "VinnytsiaJS conference is a full day open-air conference and meetups of all things Javascript, gathering Front-end developers across Ukraine and abroad in the heart of the country."
       },
       { property: "og:image", content: "" },
       {
         property: "og:title",
-        content: "VinnytsiaJS 2020, UA Frontend Conference"
+        content: "VinnytsiaJS, UA Javascript Community"
       },
       { property: "og:type", content: "article" },
       { property: "og:description", content: "" }
