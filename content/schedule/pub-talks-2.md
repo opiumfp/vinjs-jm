@@ -2,12 +2,12 @@
 name: "Pub Talks #2"
 data:
   items:
-    - time: March 18, 2021 6:30 PM
+    - time: May 27, 2021 6:30 PM
       titlee: Registration & Opening
       titleedescription: ""
       talk: ""
       speaker: ""
-    - time: March 18, 2021 7:00 PM
+    - time: May 27, 2021 7:00 PM
       titlee: ""
       titleedescription: ""
       talk:
@@ -38,7 +38,7 @@ data:
         id: vlad_fedosov
         image: /uploads/vlad-fedosov_sq.jpg
         company: Namecheap, Inc
-    - time: March 18, 2021 7:40 PM
+    - time: May 27, 2021 7:40 PM
       titlee: ""
       titleedescription: ""
       talk:
@@ -59,7 +59,7 @@ data:
         id: inna_bezsmertna
         image: /uploads/inna_bezsmertna_sqx.jpg
         company: EPAM Systems
-    - time: March 18, 2021 8:20 PM
+    - time: May 27, 2021 8:20 PM
       titlee: ""
       titleedescription: ""
       talk:
@@ -98,17 +98,17 @@ data:
         id: oleksandr_pavlovskyi
         image: /uploads/oleksandr_pavlovskyi_sq.jpg
         company: EPAM Systems
-    - time: March 18, 2021 9:00 PM
+    - time: May 27, 2021 9:00 PM
       titlee: Closing
       titleedescription: ""
       talk: ""
       speaker: ""
-  endtime: March 18, 2021 9:30 PM
+  endtime: May 27, 2021 9:30 PM
   fulltitle: "VinnytsiaJS: Pub Talks #2"
   linkyoutube: ""
   linkbuy: https://secure.wayforpay.com/payment/vinjs_pubtalks_2
   locationlink: https://goo.gl/maps/aKydSgsAEvRhMrSA7
-  starttime: March 18, 2021 6:30 PM
+  starttime: May 27, 2021 6:30 PM
   linkdiscord: ""
   location: ART-PUB "Beef Eater"
   collapsed: false
