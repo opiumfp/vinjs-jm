@@ -820,7 +820,7 @@ schedule:
         linkyoutube: ""
         linkbuy: https://secure.wayforpay.com/payment/vinjs_pubtalks_2
         locationlink: https://goo.gl/maps/aKydSgsAEvRhMrSA7
-        starttime: ""
+        starttime: March 18, 2021 6:30 PM
         linkdiscord: ""
         location: ART-PUB "Beef Eater"
         collapsed: false
