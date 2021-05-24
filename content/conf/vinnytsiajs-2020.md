@@ -69,7 +69,7 @@ hero:
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #2"
-  date: March 18
+  date: May 27
   image: /uploads/main_bg.jpg
   imagePt: /uploads/main_bg_v.jpg
   button:
