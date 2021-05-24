@@ -879,6 +879,13 @@ partners:
         src: https://www.infopulse.com/
         title: Infopulse
       image: /uploads/infopulse-logo-web-rgb.svg
+    - active: "true"
+      fields:
+        title: Exadel
+        src: https://exadel.com/
+        description: ""
+        image: /uploads/blue-vertical-rgb.svg
+      image: /uploads/blue-vertical-rgb.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
