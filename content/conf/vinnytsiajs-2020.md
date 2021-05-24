@@ -607,33 +607,35 @@ schedule:
             titlee: ""
             titleedescription: ""
             talk:
-              id: talk_003
-              title: Modernizing Old Frontend with Micro Frontends with little upfront
-                investment
-              description: I this talk we'll discuss how Micro Frontends approach may help you
-                to iteratively upgrade your legacy frontend to the modern
-                technologies without the need to re-write everything at once.
+              id: talk_004
+              title: Impostor syndrome and how to turn It into motivation
+              description: >-
+                Have you ever had the feeling that you are on the wrong
+                level/place/position? Perhaps you feel that you deceived someone
+                and received a reward only thanks to a fluke, and not your own
+                efforts? Sometimes you finish the impossible work or get some
+                kind of prize from life only thanks to luck or intuition.\
+
+                However, perhaps this is not an accident at all?\
+
+                Try to look at the situation from a different angle: feeling "not deserved" can be the best motivation for development
             speaker:
-              bio: Passionate T-shaped engineer that worked as Senior Software Engineer, Team
-                Lead, Scrum Master, Product Owner, Head of the technical stream,
-                Solution and System Architect and DevOps. Had from 3 to ~40
-                people under management with 1 to 6 direct reporters. I know how
-                to build software that solves people’s need and know how to
-                manage this process.
-              city: Kharkiv
-              name: Vlad Fedosov
+              bio: JS developer and co-organizer at dev.meetups(). Apart from coding, try to
+                create agnostic ecosystems with the newest technologies.
+              city: Vinnytsia
+              name: Andrii Shtadler
               socialLinks:
-                - src: " https://www.facebook.com/vlad.fedosov/"
+                - src: ""
                   icon: icon-facebook-square
-                - src: https://www.linkedin.com/in/vladfedosov/
-                  icon: icon-linkedin-square
-                - src: http://github.com/StyleT/
+                - src: https://www.facebook.com/profile.php?id=100004283014454
+                  icon: icon-facebook-square
+                - src: https://github.com/shtadler
                   icon: icon-github
               country: Ukraine
-              title: Director of R&D
-              id: vlad_fedosov
-              image: /uploads/vlad-fedosov_sq.jpg
-              company: Namecheap, Inc
+              title: Senior Software Engineer
+              id: andrii_shtadler
+              image: /uploads/andrii_shtadler_sq.jpg
+              company: EPAM Systems
           - time: May 27, 2021 7:40 PM
             titlee: ""
             titleedescription: ""
