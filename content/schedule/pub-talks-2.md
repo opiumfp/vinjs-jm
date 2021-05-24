@@ -101,7 +101,7 @@ data:
         image: /uploads/oleksandr_pavlovskyi_sq.jpg
         company: EPAM Systems
     - time: May 27, 2021 9:00 PM
-      titlee: Closing
+      titlee: Partners Lottery
       titleedescription: ""
       talk: ""
       speaker: ""
