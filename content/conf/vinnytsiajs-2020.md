@@ -877,8 +877,8 @@ partners:
         title: Exadel
         src: https://exadel.com/
         description: ""
-        image: /uploads/blue-vertical-rgb.svg
-      image: /uploads/blue-vertical-rgb.svg
+        image: /uploads/blue-vertical-rgb-pd2.svg
+      image: /uploads/blue-vertical-rgb-pd2.svg
     - active: "true"
       fields:
         description: ""
