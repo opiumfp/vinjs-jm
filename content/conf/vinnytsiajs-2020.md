@@ -73,6 +73,9 @@ herocf:
   date: August 21
   image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
+  button:
+    title: Learn More
+    link: "#schedule"
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
@@ -82,6 +85,7 @@ heropt:
   button:
     title: Learn More
     link: "#schedule"
+  subtitle: ""
 about:
   id: about
   link: http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf
