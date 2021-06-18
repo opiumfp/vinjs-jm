@@ -74,8 +74,8 @@ herocf:
   image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
   button:
-    title: Coming Soon
-    link: "#hero"
+    title: Waiting List
+    link: https://forms.gle/SkKQx3tanUUsyPRB8
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
