@@ -68,8 +68,8 @@ hero:
   title: VinnytsiaJS 2021
 heropt:
   id: pubtalks
-  title: "VinnytsiaJS: Pub Talks #2"
-  date: May 27
+  title: "VinnytsiaJS: Pub Talks #3"
+  date: June 30
   image: /uploads/main_bg.jpg
   imagePt: /uploads/main_bg_v.jpg
   button:
