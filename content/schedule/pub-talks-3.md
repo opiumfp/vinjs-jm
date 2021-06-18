@@ -20,7 +20,7 @@ data:
       speaker: ""
       speaker2: ""
     - time: June 30, 2021 8:20 PM
-      titlee: ""
+      titlee: Let's talks about Communities
       titleedescription: ""
       talk: ""
       speaker: ""
