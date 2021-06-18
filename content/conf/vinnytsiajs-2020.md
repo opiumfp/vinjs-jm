@@ -658,7 +658,7 @@ schedule:
             speaker: ""
             speaker2: ""
           - time: June 30, 2021 8:20 PM
-            titlee: ""
+            titlee: Let's talks about Communities
             titleedescription: ""
             talk: ""
             speaker: ""
@@ -790,7 +790,7 @@ schedule:
         starttime: May 27, 2021 6:30 PM
         linkdiscord: ""
         location: ART-PUB "Beef Eater"
-        collapsed: false
+        collapsed: true
         title: "Pub Talks #2"
         link: ""
         id: pt_2
