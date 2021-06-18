@@ -33,15 +33,16 @@
       <div class="heropt_content pt-6">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-7 text-center text-lg-left">
+            <div class="col-12 col-lg-7 text-center text-lg-left" :class="{'text-lg-center col-lg-12': $props.center}" >
               <h2 v-if="$props.heroPTData.date" class="h3 heropt_date text-uppercase font-weight-bold text-warning">{{this.$props.heroPTData.date}}</h2>
               <h2 class="h1 heropt_subtitle font-weight-bold">{{$props.heroPTData.title}}</h2>
+              <h2 class="h4 heropt_subtitle">{{$props.heroPTData.subtitle}}</h2>
               <div class="h1 heropt_subtitle-pt text-uppercase font-weight-bold">{{$props.heroPTData.title}}</div>
               <div class="mt-4">
                 <a class="btn btn-primary" :href="$props.heroPTData.button.link">{{$props.heroPTData.button.title}}</a>
               </div>
             </div>
-            <div class="col-5 d-none d-lg-block">
+            <div v-if="!$props.center" class="col-5 d-none d-lg-block">
               <img
                 class="heropt_logo d-block mx-auto my-4"
                 src="../../assets/images/logo/VinJS_PUB_TALKS-LOGO.png"
@@ -64,6 +65,10 @@ export default {
     heroPTData: {
       type: Object,
       required: true
+    },
+    center: {
+      type: Boolean,
+      required: false
     }
   },
   components : {

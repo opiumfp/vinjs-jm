@@ -14,6 +14,14 @@
           :heroPTData="$page.pageData.heropt"
         ></hero-pt>
       </section>
+      <section>
+        <hero-pt
+          v-if="$page.pageData.herocf.image"
+          :id="$page.pageData.herocf.id"
+          :heroPTData="$page.pageData.herocf"
+          :center="true"
+        ></hero-pt>
+      </section>
       <section
         class="py-7 vjs-bg-logo vjs-bg-logo-blue text-white section-vh-100 d-flex align-items-center justify-content-center"
         :id="$page.pageData.about.id"
@@ -188,6 +196,18 @@ query Conf {
     title
     startDate
     hero {
+      id
+      title
+      subtitle
+      date
+      image (quality:95)
+      imagePt (quality:65)
+      button {
+        title
+        link
+      }
+    }
+    herocf {
       id
       title
       subtitle

@@ -2,8 +2,8 @@
   <div class="hero">
     <div class="hero_wrapper">
       <div class="hero_bg">
-        <!-- <template v-if="!device.isShowVideo"> -->
-        <template>
+        <template v-if="!device.isShowVideo">
+        <!-- <template> -->
           <g-image
             v-if="$props.heroData.image"
             class="hero_bg_image hero_bg_image-landscape"
@@ -11,7 +11,7 @@
             alt="Vinnytsia JS - Javascript Open Air"
           />
         </template>
-        <!-- <template v-else>
+        <template v-else>
           <video
             ref="herovideo"
             class="hero_bg_video"
@@ -22,7 +22,7 @@
             <source src="../../assets/videos/vjs19.ogg" type="video/ogg" />
             <source src="../../assets/videos/vjs19.webm" type="video/webm" />
           </video>
-        </template> -->
+        </template>
         <g-image
           v-if="$props.heroData.imagePt"
           class="hero_bg_image hero_bg_image-portrait"
@@ -70,25 +70,25 @@ export default {
     }
   },
   mounted() {
-    // this.herovideo = this.$refs.herovideo;
+    this.herovideo = this.$refs.herovideo;
 
-    // if (this.device.isShowVideo) {
-    //   this.herovideo.play();
+    if (this.device.isShowVideo) {
+      this.herovideo.play();
 
-    //   let videoHide = false;
-    //   let windowHeight = window.innerHeight;
+      let videoHide = false;
+      let windowHeight = window.innerHeight;
 
-    //   window.addEventListener("scroll", () => {
-    //     if (window.scrollY < windowHeight) {
-    //       if (!videoHide) return false;
-    //       this.herovideo.play();
-    //       videoHide = false;
-    //     } else if (!videoHide) {
-    //       this.herovideo.pause();
-    //       videoHide = true;
-    //     }
-    //   });
-    // }
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < windowHeight) {
+          if (!videoHide) return false;
+          this.herovideo.play();
+          videoHide = false;
+        } else if (!videoHide) {
+          this.herovideo.pause();
+          videoHide = true;
+        }
+      });
+    }
   }
 };
 </script>
@@ -181,9 +181,9 @@ export default {
       bottom: 0;
       left: 0;
       right: 0;
-      // background-image: url("../../assets/images/misc/hero-overlay.svg");
+      background-image: url("../../assets/images/misc/hero-overlay.svg");
       background-repeat: repeat;
-      background-color: $overlay-bg;
+      background-color: darken($overlay-bg, 0%)
     }
     &_video {
       display: none;
