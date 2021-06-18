@@ -66,6 +66,13 @@ hero:
   imagePt: /uploads/bg-v.jpg
   subtitle: Javascript Community Meetups
   title: VinnytsiaJS 2021
+herocf:
+  id: heroconf
+  title: VinnytsiaJS 2021
+  subtitle: Open Air Conference
+  date: August 21
+  image: /uploads/stat.jpg
+  imagePt: /uploads/stat-portreit.jpg
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
