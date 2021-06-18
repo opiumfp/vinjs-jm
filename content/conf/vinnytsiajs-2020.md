@@ -74,7 +74,7 @@ herocf:
   image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
   button:
-    title: Waiting List
+    title: Registration
     link: https://forms.gle/SkKQx3tanUUsyPRB8
 heropt:
   id: pubtalks
