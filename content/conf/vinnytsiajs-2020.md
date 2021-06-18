@@ -74,8 +74,8 @@ herocf:
   image: /uploads/stat.jpg
   imagePt: /uploads/stat-portreit.jpg
   button:
-    title: Learn More
-    link: "#schedule"
+    title: Coming Soon
+    link: "#hero"
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
