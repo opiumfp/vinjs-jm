@@ -113,7 +113,7 @@ data:
   starttime: May 27, 2021 6:30 PM
   linkdiscord: ""
   location: ART-PUB "Beef Eater"
-  collapsed: false
+  collapsed: true
   title: "Pub Talks #2"
   link: ""
   id: pt_2
