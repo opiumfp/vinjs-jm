@@ -80,8 +80,8 @@ heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
   date: June 30
-  image: /uploads/main_bg.jpg
-  imagePt: /uploads/main_bg_v.jpg
+  image: /uploads/pt-savitsky.jpg
+  imagePt: /uploads/pt-2-pt.jpg
   button:
     title: Learn More
     link: "#schedule"
