@@ -652,7 +652,7 @@ schedule:
             speaker: ""
             speaker2: ""
           - time: June 30, 2021 7:40 PM
-            titlee: 'Discussion Panel: "Future of the Web-development in 5 years"'
+            titlee: 'Discussion Panel: "Future of the IT in 5 years"'
             titleedescription: ""
             talk: ""
             speaker: ""
@@ -666,7 +666,7 @@ schedule:
         endtime: June 30, 2021 9:30 PM
         fulltitle: "VinnytsiaJS: Pub Talks #2"
         linkyoutube: ""
-        linkbuy: ""
+        linkbuy: https://secure.wayforpay.com/payment/vinjs_pubtalks_3
         locationlink: https://goo.gl/maps/aKydSgsAEvRhMrSA7
         starttime: June 30, 2021 6:30 PM
         linkdiscord: ""
