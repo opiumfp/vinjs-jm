@@ -1003,25 +1003,25 @@ pricing:
   id: pricing
   items:
     - btnLabel: Take Ticket
-      btnSrc: https://2event.com/en/events/1856578
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
       caption: Limited Quantity
       price: "1700"
       status: active
       title: Early Bird
     - btnLabel: Take Ticket
-      btnSrc: https://2event.com/en/events/1856578
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
       caption: Limited Quantity
       price: "2100"
       status: default
       title: Smart Bird
     - btnLabel: Take Ticket
-      btnSrc: https://2event.com/en/events/1856578
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
       caption: Limited Quantity
       price: "2800"
       status: default
       title: Regular
     - btnLabel: Take Ticket
-      btnSrc: https://2event.com/en/events/1856578
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
       caption: Limited Quantity
       price: "3500"
       status: default
