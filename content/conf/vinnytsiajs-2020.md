@@ -1002,7 +1002,7 @@ pricing:
   currency: ₴
   id: pricing
   items:
-    - btnLabel: Sold Out
+    - btnLabel: Take Ticket
       btnSrc: https://2event.com/en/events/1856578
       caption: Limited Quantity
       price: "1700"
