@@ -27,9 +27,9 @@ data:
     - active: true
       src: "#partners"
       title: Partners
-    - active: false
+    - active: true
       src: "#pricing"
-      title: Pricing
+      title: Tickets
     - active: true
       src: "#contact"
       title: Contact Us
