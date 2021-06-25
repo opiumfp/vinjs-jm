@@ -75,7 +75,7 @@ herocf:
   imagePt: /uploads/stat-portreit.jpg
   button:
     title: Registration
-    link: https://forms.gle/SkKQx3tanUUsyPRB8
+    link: "#pricing"
 heropt:
   id: pubtalks
   title: "VinnytsiaJS: Pub Talks #3"
