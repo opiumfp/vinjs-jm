@@ -48,6 +48,14 @@
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
       <section class="position-relative pt-5 pb-5">
+        <page-title
+          class="pt-6 pb-4"
+          :title="'Conference Speakers'"
+          :subtitle="'First Speakers Will Be Announced Soon!'"
+        ></page-title>  
+      </section>
+      
+      <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
           <div class="row">
@@ -73,7 +81,7 @@
               ></page-title>
               <p class="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
               <a
-                href="https://forms.gle/e3QZZp2rKzD6W4qd8"
+                href="https://forms.gle/p7sLi6SnGKMWRSM86"
                 class="btn btn-primary my-2 px-5 my-sm-0"
                 target="_blank"
               >Submit</a>
@@ -100,25 +108,36 @@
         <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
                 class="position-relative"
+                :title="'Conference Schedule'"
+        ></page-title>
+        <h5 class="text-center pt-3 pt-lg-4">21.07<span class="font-weight-normal"> - VinnytsiaJS 2021 - Open Air Conference</span></h5>
+        <div class="h6 text-center"><span data-v-6d158f47="">Location: </span><a href="#location">Recreation Base "Butterfly"</a></div>
+        <h4 class="h5 text-center py-4">The Conference Program Will Be Announced Soon</h4>
+      </section>
+      <hr/>
+      <section class="position-relative pt-5 pb-5">
+        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
+        <page-title
+                class="position-relative"
                 :title="$page.pageData.schedule.title"
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section>
-      <!-- <section class="position-relative pb-5">
+      <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
-        <!-- <page-title
+        <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="$page.pageData.pricing.subtitle"
-        ></page-title> -->
-        <!-- <pricing :pricingData="$page.pageData.pricing" /> -->
+        ></page-title>
+        <pricing :pricingData="$page.pageData.pricing" />
         <!-- <page-title
           class="pt-6 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
-        ></page-title>
-      </section> -->
-      <!-- <hr /> -->
+        ></page-title> -->
+      </section>
+      <hr />
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
         <page-title
@@ -151,12 +170,12 @@
         </div>
       </section>
       <hr />
-      <!--
+      
       <section :id="$page.pageData.location.id">
         <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
         <location :locationData="$page.pageData.location"></location>
       </section>
-      -->
+     
       <section class="position-relative">
         <div class="anchor-id" id="contact"></div>
         <page-title class="pt-5 pb-3" title="Contact Us"></page-title>
@@ -165,7 +184,7 @@
       <div class="spacer-nav-bottom"></div>
     </div>
 
-    <telegram-widget channel="vinjs" postid="81"></telegram-widget>
+    <telegram-widget channel="vinjs" postid="88"></telegram-widget>
 
   </Layout>
 </template>

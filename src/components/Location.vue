@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 text-center">
             <address>
-              <span>Location:</span>
+              <span>Location: </span>
               <a
                 class="lead"
                 href="http://butterfly.vn.ua/"
