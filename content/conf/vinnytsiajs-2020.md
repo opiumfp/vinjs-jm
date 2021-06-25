@@ -336,8 +336,8 @@ speakers:
 
           Try to look at the situation from a different angle: feeling "not deserved" can be the best motivation for development
       active: "true"
-  subtitle: More Speakers Will Be Announced Soon
-  title: Speakers
+  subtitle: ""
+  title: PubTalks Speakers
 talks:
   id: talks
   title: Talks
@@ -1006,13 +1006,13 @@ pricing:
       btnSrc: https://2event.com/en/events/1856578
       caption: Limited Quantity
       price: "1700"
-      status: sold
+      status: active
       title: Early Bird
     - btnLabel: Take Ticket
       btnSrc: https://2event.com/en/events/1856578
       caption: Limited Quantity
       price: "2100"
-      status: active
+      status: default
       title: Smart Bird
     - btnLabel: Take Ticket
       btnSrc: https://2event.com/en/events/1856578
