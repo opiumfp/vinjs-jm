@@ -239,7 +239,10 @@ confspeakers:
         id: nikita_galkin
         image: /uploads/nikita_galkin.jpg
         company: Independent Contractor
-      talk: ""
+      talk: 
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: |-
@@ -258,7 +261,10 @@ confspeakers:
         id: roman_savitskyi
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
-      talk: ""
+      talk: 
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: >-
@@ -276,7 +282,10 @@ confspeakers:
         id: vitalii_ratushnyi
         image: /uploads/vitalii_ratushnyi-cropped.jpg
         company: Shareitt
-      talk: ""
+      talk: 
+        id: ""
+        title: ""
+        description: ""
       active: "true"
 speakers:
   id: speakers
@@ -300,7 +309,10 @@ speakers:
         id: alina_gapieieva
         image: /uploads/alina-gapieieva-cropped.jpg
         company: Infopulse
-      talk: ""
+      talk: 
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: |-
@@ -317,7 +329,10 @@ speakers:
         id: kostiantyn_hryshyn
         image: /uploads/kostiantyn-hryshyn-2.jpg
         company: EPAM Systems
-      talk: ""
+      talk: 
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: 3+ years experience in IT

@@ -47,14 +47,23 @@
         </div>
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
+
       <section class="position-relative pt-5 pb-5">
-        <page-title
-          class="pt-6 pb-4"
-          :title="'Conference Speakers'"
-          :subtitle="'First Speakers Will Be Announced Soon!'"
-        ></page-title>  
+        <div class="anchor-id" :id="$page.pageData.confspeakers.id"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <page-title
+                class="position-relative"
+                :title="$page.pageData.confspeakers.title"
+                :subtitle="$page.pageData.confspeakers.subtitle"
+              ></page-title>
+              <speakers class="mt-5" :speakersData="$page.pageData.confspeakers"></speakers>
+            </div>
+          </div>
+        </div>
       </section>
-      
+
       <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
@@ -293,6 +302,32 @@ query Conf {
         image (quality:40)
       }
     }
+    confspeakers {
+      title
+      subtitle
+      id
+      items {
+        fields {
+          bio
+          city
+          name
+          socialLinks {
+            src
+            icon
+          }
+          id
+          country
+          title
+          image (quality:90, width:200)
+          company
+        }
+        talk {
+          id
+          title
+          description
+        }
+      }
+    }    
     speakers {
       title
       subtitle
