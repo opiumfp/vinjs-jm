@@ -971,6 +971,13 @@ mediapartners:
   items:
     - active: "true"
       fields:
+        title: Node.js Recipes
+        src: http://node.recipes/
+        description: ""
+        image: /uploads/njs_symbol-text2.svg
+      image: /uploads/njs_symbol-text2.svg
+    - active: "true"
+      fields:
         description: ""
         image: /uploads/it-association.png
         src: https://www.it-association.vn.ua/
