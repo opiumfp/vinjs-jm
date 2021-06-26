@@ -160,6 +160,42 @@ collections:
                 - {label: "Static text", value: "text"}
             - {label: "Link", name: "src", widget: "string", default: '', required: false}
             - {label: "Image", name: "image", widget: "image", default: null, required: false}
+
+    - label: "Conf Speakers"
+      name: "confspeakers"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "speakers"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Talk"
+              name: "talk"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            
     - label: "Speakers"
       name: "speakers"
       widget: "object"
@@ -194,7 +230,6 @@ collections:
               required: false
               default: ''
             - {label: "Active", name: "active", widget: "boolean", default: "true"}
-
     - label: "Talks"
       name: "talks"
       widget: "object"

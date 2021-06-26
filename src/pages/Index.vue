@@ -110,7 +110,7 @@
                 class="position-relative"
                 :title="'Conference Schedule'"
         ></page-title>
-        <h5 class="text-center pt-3 pt-lg-4">21.07<span class="font-weight-normal"> - VinnytsiaJS 2021 - Open Air Conference</span></h5>
+        <h5 class="text-center pt-3 pt-lg-4">21.08<span class="font-weight-normal"> - VinnytsiaJS 2021 - Open Air Conference</span></h5>
         <div class="h6 text-center"><span>Location: </span><a href="#location">Recreation Base "Butterfly"</a></div>
         <h4 class="h5 text-center py-4">The Conference Program Will Be Announced Soon</h4>
         <div class="schedule_slot_talk_buttons text-center mb-5">
