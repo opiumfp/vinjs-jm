@@ -211,9 +211,114 @@ playlists:
       type: gallery
   subtitle: ""
   title: Playlists
+confspeakers:
+  id: speakers
+  title: Conference Speakers
+  subtitle: More Speakers Will Be Announced Soon
+  items:
+    - fields:
+        bio: >-
+          Nikita has 15 years of overall experience in various areas of software
+          development. He’s been a Node.js Tech Speaker at over 20 conferences,
+          conveying the belief ‘software is easy, people are challenging.’ \
+
+          Nikita loves to develop a clean code using JavaScript/TypeScript, Node.js, Docker and AWS/GCP and he’s the author of Node Recipes at <https://node.recipes>.
+        city: Kyiv
+        name: Nikita Galkin
+        socialLinks:
+          - src: https://www.facebook.com/nikita.galkin
+            icon: icon-facebook-square
+          - src: https://twitter.com/galk_in
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/nikitagalkin/
+            icon: icon-linkedin-square
+          - src: http://github.com/galkin
+            icon: icon-github
+        country: Ukraine
+        title: System Architect, Cloud Engineer
+        id: nikita_galkin
+        image: /uploads/nikita_galkin.jpg
+        company: Independent Contractor
+      talk: ""
+      active: "true"
+    - fields:
+        bio: |-
+          Co-founder BeerJS Zhytomyr \
+          Co-organizer frontend://zt \
+          10+ years in dev \
+          5+ year in leading \
+          Football referee :)
+        city: Zhytomyr
+        name: Roman Savitskyi
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Competence Center Lead
+        id: roman_savitskyi
+        image: /uploads/roman-savitskyi.jpg
+        company: Infopulse
+      talk: ""
+      active: "true"
+    - fields:
+        bio: >-
+          Tech Enthusiast, Interviewer, Architect. 
+
+
+          Trying to get to the bottom of things. First principles thinker. Passionate ‘bout neuropsychology and perception development.
+        city: Kyiv
+        name: Vitalii Ratushnyi
+        socialLinks:
+          - src: https://www.linkedin.com/in/v-ratyshnyi/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Solutions Architect
+        id: vitalii_ratushnyi
+        image: /uploads/vitalii_ratushnyi-cropped.jpg
+        company: Shareitt
+      talk: ""
+      active: "true"
 speakers:
   id: speakers
   items:
+    - fields:
+        bio: I was born in a small town in the Kyiv region and have 2 higher educations.
+          I have been working in the IT sphere for over 6 years. In the company
+          I am responsible for the external brand of the employer and the
+          recruitment of talents. I have 2 cats and a horse. My hobbies are
+          horse riding, cooking, and singing. I love traveling and mountains and
+          know 4 foreign languages.
+        city: Kyiv
+        name: Alina Gapieieva
+        socialLinks:
+          - src: https://www.facebook.com/alinka.gapeeva
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/alina-gapeeva-06919378/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Team Lead (Candidate communication group,Recruiting
+        id: alina_gapieieva
+        image: /uploads/alina-gapieieva-cropped.jpg
+        company: Infopulse
+      talk: ""
+      active: "true"
+    - fields:
+        bio: |-
+          Lead Software Engineer\
+          Delivery Manager\
+          Co-organizer of VinnytsiaJS
+        city: Vinnytsia
+        name: Kostiantyn Hryshyn
+        socialLinks:
+          - src: https://www.linkedin.com/in/khryshyn/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Lead Software Engineer, Delivery Manager
+        id: kostiantyn_hryshyn
+        image: /uploads/kostiantyn-hryshyn-2.jpg
+        company: EPAM Systems
+      talk: ""
+      active: "true"
     - fields:
         bio: 3+ years experience in IT
         city: Vinnytsia
