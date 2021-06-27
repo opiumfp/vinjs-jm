@@ -305,7 +305,7 @@ speakers:
           - src: https://www.linkedin.com/in/alina-gapeeva-06919378/
             icon: icon-linkedin-square
         country: Ukraine
-        title: Team Lead (Candidate communication group,Recruiting
+        title: Team Lead (Candidate communication group, Recruiting)
         id: alina_gapieieva
         image: /uploads/alina-gapieieva-cropped.jpg
         company: Infopulse
