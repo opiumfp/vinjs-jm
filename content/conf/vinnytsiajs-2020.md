@@ -1022,7 +1022,7 @@ pricing:
       status: default
       title: Last Chance
   subtitle: ""
-  title: Tickets
+  title: Conference Tickets
 location:
   logo: /uploads/foot_logo.png
   name: Butterfly
