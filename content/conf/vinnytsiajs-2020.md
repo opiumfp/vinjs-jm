@@ -537,7 +537,7 @@ speakers:
 talks:
   id: talks
   title: Talks
-  subtitle: More Talks will be Announced Soon
+  subtitle: More Conference Talks will be Announced Soon
   items:
     - talk:
         id: talk21_02
