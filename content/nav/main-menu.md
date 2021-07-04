@@ -3,7 +3,7 @@ title: Main Menu
 data:
   button:
     active: true
-    src: "#pubtalks"
+    src: "#schedule"
     title: Join Us
   items:
     - active: true

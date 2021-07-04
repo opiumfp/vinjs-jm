@@ -4,7 +4,7 @@ startDate: Saturday, July 31, 2021 9:00 PM
 nav:
   button:
     active: true
-    src: "#pubtalks"
+    src: "#schedule"
     title: Join Us
   items:
     - active: true
