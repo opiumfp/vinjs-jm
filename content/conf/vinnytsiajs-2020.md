@@ -239,10 +239,12 @@ confspeakers:
         id: nikita_galkin
         image: /uploads/nikita_galkin.jpg
         company: Independent Contractor
-      talk: 
-        id: ""
-        title: ""
-        description: ""
+      talk:
+        id: talk21_02
+        title: Cloud Native Approach for Node.js Developers
+        description: What are cloud-native applications? How do you design and develop
+          cloud-native applications? During this talk, Nikita will share recipes
+          on how to develop in a cloud-native environment with Node.js stack.
       active: "true"
     - fields:
         bio: |-
@@ -261,7 +263,7 @@ confspeakers:
         id: roman_savitskyi
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
-      talk: 
+      talk:
         id: ""
         title: ""
         description: ""
@@ -282,10 +284,62 @@ confspeakers:
         id: vitalii_ratushnyi
         image: /uploads/vitalii_ratushnyi-cropped.jpg
         company: Shareitt
-      talk: 
-        id: ""
-        title: ""
-        description: ""
+      talk:
+        id: talk21_03
+        title: Several "days" in the product development life cycle
+        description: Presentations and talks at conferences are often devoted to how to
+          make software development processes efficient and easy to manage. To
+          do this, it is necessary to clearly define the concepts used. The
+          basic terms "day 0 / day 1 / day 2" are often understood intuitively,
+          which can add some ambiguity when talking about the software life
+          cycle. In this talk, I want to consider the main stages of product
+          development and where in all this the code we write.
+      active: "true"
+    - fields:
+        bio: "Engineer with more than 17 years of experience in IT. For the last 10
+          years I have been working in EPAM company. Main areas of my
+          professional interest are - javascript based technologies, frontend
+          and backend architecture, mobile development, web development, IoT and
+          hardware development, TDD, CI/CD, DevOps, Databases etc. Open source
+          contributor: author and maintainer of popular copy/paste detector
+          named jscpd."
+        city: Kyiv
+        name: Andrey Kucherenko
+        socialLinks:
+          - src: ""
+            icon: icon-github
+        country: Ukraine
+        title: Chief Software Engineer
+        id: andrey_kucherenko
+        image: /uploads/andrey-kucherenko-cropped.jpg
+        company: EPAM Systems
+      talk: ""
+      active: "true"
+    - fields:
+        bio: Vitalii Ruban, the technical leader at one of the European software
+          development companies, web-security enthusiast, a member of the
+          Program Committee of the JSFest - one of the biggest Eastern European
+          conferences for JavaScript developers.
+        city: Kyiv
+        name: Vitalii Ruban
+        socialLinks:
+          - src: https://twitter.com/drag137
+            icon: icon-twitter
+          - src: https://github.com/Drag13
+            icon: icon-github
+        country: Ukraine
+        title: Tech Lead
+        id: vitalii_ruban
+        image: /uploads/vitalii-ruban-cropped.jpg
+        company: Itera
+      talk:
+        id: talk21_01
+        title: Nobody cares about web performance. It's hard, expensive and unneeded
+        description: In this talk, we will speak about the main concerns about
+          performance optimization in Web - cost, maintainability, and
+          redundancy in 2021. We will discover some latest statistics about
+          performance budget and discuss how to start web performance in the
+          already ongoing project
       active: "true"
 speakers:
   id: speakers
@@ -309,7 +363,7 @@ speakers:
         id: alina_gapieieva
         image: /uploads/alina-gapieieva-cropped.jpg
         company: Infopulse
-      talk: 
+      talk:
         id: ""
         title: ""
         description: ""
@@ -329,7 +383,7 @@ speakers:
         id: kostiantyn_hryshyn
         image: /uploads/kostiantyn-hryshyn-2.jpg
         company: EPAM Systems
-      talk: 
+      talk:
         id: ""
         title: ""
         description: ""
@@ -348,7 +402,7 @@ speakers:
         id: dmytro_parpalos
         image: /uploads/dmytro_parpalos-cropped.jpg
         company: PBS Consulting
-      talk: 
+      talk:
         id: ""
         title: ""
         description: ""
