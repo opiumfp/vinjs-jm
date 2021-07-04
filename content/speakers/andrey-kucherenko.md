@@ -16,5 +16,5 @@ data:
   title: Chief Software Engineer
   id: andrey_kucherenko
   image: /uploads/andrey-kucherenko-cropped.jpg
-  company: EPAM
+  company: EPAM Systems
 ---
