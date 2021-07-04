@@ -313,7 +313,10 @@ confspeakers:
         id: andrey_kucherenko
         image: /uploads/andrey-kucherenko-cropped.jpg
         company: EPAM Systems
-      talk: ""
+      talk:
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: Vitalii Ruban, the technical leader at one of the European software
