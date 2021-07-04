@@ -7,13 +7,13 @@
     ></hero>
     <!-- vjs-bg-logo-purple -->
     <div class="layer layer-content">
-      <section>
+      <!-- <section>
         <hero-pt
           v-if="$page.pageData.heropt.image"
           :id="$page.pageData.heropt.id"
           :heroPTData="$page.pageData.heropt"
         ></hero-pt>
-      </section>
+      </section> -->
       <section>
         <hero-pt
           v-if="$page.pageData.herocf.image"
