@@ -540,28 +540,87 @@ talks:
   subtitle: More Talks will be Announced Soon
   items:
     - talk:
-        id: talk_006
-        title: Extending your [browser] sense
-        description: We will talk about browser extensions, look in a new way at some
-          obscene things in the usual web, features, tricks and problems from
-          the development experience.
+        id: talk21_02
+        title: Cloud Native Approach for Node.js Developers
+        description: What are cloud-native applications? How do you design and develop
+          cloud-native applications? During this talk, Nikita will share recipes
+          on how to develop in a cloud-native environment with Node.js stack.
       speaker:
-        bio: FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In the holy
-          wars of frameworks on the side of common sense. These days he was
-          spotted creating Chrome extension, and that’s what he will talk about.
-        city: Chernivtsi
-        name: Bohdan Dvorianov
+        bio: >-
+          Nikita has 15 years of overall experience in various areas of software
+          development. He’s been a Node.js Tech Speaker at over 20 conferences,
+          conveying the belief ‘software is easy, people are challenging.’ \
+
+          Nikita loves to develop a clean code using JavaScript/TypeScript, Node.js, Docker and AWS/GCP and he’s the author of Node Recipes at <https://node.recipes>.
+        city: Kyiv
+        name: Nikita Galkin
         socialLinks:
-          - src: https://www.facebook.com/b.dvorianov
+          - src: https://www.facebook.com/nikita.galkin
             icon: icon-facebook-square
-          - src: https://www.linkedin.com/in/bdvorianov
+          - src: https://twitter.com/galk_in
+            icon: icon-twitter
+          - src: https://www.linkedin.com/in/nikitagalkin/
+            icon: icon-linkedin-square
+          - src: http://github.com/galkin
+            icon: icon-github
+        country: Ukraine
+        title: System Architect, Cloud Engineer
+        id: nikita_galkin
+        image: /uploads/nikita_galkin.jpg
+        company: Independent Contractor
+      active: "true"
+    - talk:
+        id: talk21_01
+        title: Nobody cares about web performance. It's hard, expensive and unneeded
+        description: In this talk, we will speak about the main concerns about
+          performance optimization in Web - cost, maintainability, and
+          redundancy in 2021. We will discover some latest statistics about
+          performance budget and discuss how to start web performance in the
+          already ongoing project
+      speaker:
+        bio: Vitalii Ruban, the technical leader at one of the European software
+          development companies, web-security enthusiast, a member of the
+          Program Committee of the JSFest - one of the biggest Eastern European
+          conferences for JavaScript developers.
+        city: Kyiv
+        name: Vitalii Ruban
+        socialLinks:
+          - src: https://twitter.com/drag137
+            icon: icon-twitter
+          - src: https://github.com/Drag13
+            icon: icon-github
+        country: Ukraine
+        title: Tech Lead
+        id: vitalii_ruban
+        image: /uploads/vitalii-ruban-cropped.jpg
+        company: Itera
+      active: "true"
+    - talk:
+        id: talk21_03
+        title: Several "days" in the product development life cycle
+        description: Presentations and talks at conferences are often devoted to how to
+          make software development processes efficient and easy to manage. To
+          do this, it is necessary to clearly define the concepts used. The
+          basic terms "day 0 / day 1 / day 2" are often understood intuitively,
+          which can add some ambiguity when talking about the software life
+          cycle. In this talk, I want to consider the main stages of product
+          development and where in all this the code we write.
+      speaker:
+        bio: >-
+          Tech Enthusiast, Interviewer, Architect. 
+
+
+          Trying to get to the bottom of things. First principles thinker. Passionate ‘bout neuropsychology and perception development.
+        city: Kyiv
+        name: Vitalii Ratushnyi
+        socialLinks:
+          - src: https://www.linkedin.com/in/v-ratyshnyi/
             icon: icon-linkedin-square
         country: Ukraine
-        title: Frontend Developer
-        id: bohdan_dvorianov
-        image: /uploads/bohdan-dvorianov.jpeg
-        company: "AgiliWay "
-      image: /uploads/bohdan-dvorianov.jpeg
+        title: Solutions Architect
+        id: vitalii_ratushnyi
+        image: /uploads/vitalii_ratushnyi-cropped.jpg
+        company: Shareitt
       active: "true"
 schedule:
   id: schedule
