@@ -293,7 +293,10 @@ confspeakers:
         id: sergiy_babich
         image: /uploads/sergiy-babich-cropped.jpg
         company: SkillReveal
-      talk: ""
+      talk:
+        id: ""
+        title: ""
+        description: ""
       active: "true"
     - fields:
         bio: >-
