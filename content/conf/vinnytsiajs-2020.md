@@ -264,9 +264,36 @@ confspeakers:
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
       talk:
-        id: ""
-        title: ""
-        description: ""
+        id: talk21_04
+        title: "*******, JS, *********"
+        description: "React, Angular, Vue, Svelte: are these networks essential in
+          software development or they just replace JavaScript because of lack
+          of knowledge? Who are you, JS developer? If you know only JavaScript,
+          probably, it'll be difficult to grow your career without Docker,
+          Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
+          frameworks and technologies to sort things out."
+      active: "true"
+    - fields:
+        bio: The Main Viking of Ukrainian IT, founder and organizer of the conference
+          LvivCSS, developer with more than 10 years of experience. He is
+          interested in mentoring and teaching, which allows him to transfer the
+          accumulated knowledge and bring young professionals to the world of
+          IT. He likes old and time-tested things, that's why he is a fan of
+          Black Sabbath and HTML, but always tries to keep up with the times and
+          even writes on React.
+        city: Lviv
+        name: Sergiy Babich
+        socialLinks:
+          - src: https://www.linkedin.com/in/babichss/
+            icon: icon-linkedin-square
+          - src: https://github.com/sergiybabich
+            icon: icon-github
+        country: Ukraine
+        title: Awesome Frontend Developer
+        id: sergiy_babich
+        image: /uploads/sergiy-babich-cropped.jpg
+        company: SkillReveal
+      talk: ""
       active: "true"
     - fields:
         bio: >-
@@ -594,6 +621,33 @@ talks:
         id: vitalii_ruban
         image: /uploads/vitalii-ruban-cropped.jpg
         company: Itera
+      active: "true"
+    - talk:
+        id: talk21_04
+        title: "*******, JS, *********"
+        description: "React, Angular, Vue, Svelte: are these networks essential in
+          software development or they just replace JavaScript because of lack
+          of knowledge? Who are you, JS developer? If you know only JavaScript,
+          probably, it'll be difficult to grow your career without Docker,
+          Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
+          frameworks and technologies to sort things out."
+      speaker:
+        bio: |-
+          Co-founder BeerJS Zhytomyr \
+          Co-organizer frontend://zt \
+          10+ years in dev \
+          5+ year in leading \
+          Football referee :)
+        city: Zhytomyr
+        name: Roman Savitskyi
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Competence Center Lead
+        id: roman_savitskyi
+        image: /uploads/roman-savitskyi.jpg
+        company: Infopulse
       active: "true"
     - talk:
         id: talk21_03
