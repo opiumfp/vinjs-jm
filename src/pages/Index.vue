@@ -63,8 +63,7 @@
           </div>
         </div>
       </section>
-
-      <section class="position-relative pt-5 pb-5">
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
         <div class="container">
           <div class="row">
@@ -78,7 +77,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
         <div class="anchor-id" id="cfp"></div>
         <div class="container">
@@ -126,16 +125,7 @@
           <div class="h5">Join Us:</div><a href="#pricing" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
         </div>
       </section>
-      <hr/>
-      <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
-        <page-title
-                class="position-relative"
-                :title="$page.pageData.schedule.title"
-        ></page-title>
-        <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
-      </section>
-      <section class="position-relative pb-5">
+            <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <page-title
           class="pt-5 pb-4"
@@ -149,6 +139,15 @@
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title> -->
       </section>
+      <!-- <hr/>
+      <section class="position-relative pt-5 pb-5">
+        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
+        <page-title
+                class="position-relative"
+                :title="$page.pageData.schedule.title"
+        ></page-title>
+        <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
+      </section> -->
       <hr />
       <section class="position-relative">
         <div class="anchor-id" :id="$page.pageData.partners.id"></div>
