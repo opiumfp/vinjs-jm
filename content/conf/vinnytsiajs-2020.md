@@ -1093,24 +1093,24 @@ pricing:
   items:
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
-      caption: Limited Quantity
+      caption: Sold Out
       price: "1700"
-      status: active
+      status: sold
       title: Early Bird
     - btnLabel: Take Ticket
-      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_smartbird
       caption: Limited Quantity
       price: "2100"
-      status: default
+      status: active
       title: Smart Bird
     - btnLabel: Take Ticket
-      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_regularbird
       caption: Limited Quantity
       price: "2800"
       status: default
       title: Regular
     - btnLabel: Take Ticket
-      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_earlybird
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_lastchance
       caption: Limited Quantity
       price: "3500"
       status: default
