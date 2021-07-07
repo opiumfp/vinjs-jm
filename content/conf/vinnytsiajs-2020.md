@@ -265,7 +265,7 @@ confspeakers:
         company: Infopulse
       talk:
         id: talk21_04
-        title: "*******, JS, *********"
+        title: "Who are you, JS developer?"
         description: "React, Angular, Vue, Svelte: are these networks essential in
           software development or they just replace JavaScript because of lack
           of knowledge? Who are you, JS developer? If you know only JavaScript,
@@ -664,7 +664,7 @@ talks:
       active: "true"
     - talk:
         id: talk21_04
-        title: "*******, JS, *********"
+        title: "Who are you, JS developer?"
         description: "React, Angular, Vue, Svelte: are these networks essential in
           software development or they just replace JavaScript because of lack
           of knowledge? Who are you, JS developer? If you know only JavaScript,
