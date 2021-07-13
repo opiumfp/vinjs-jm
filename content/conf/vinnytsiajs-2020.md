@@ -1099,15 +1099,15 @@ pricing:
       title: Early Bird
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_smartbird
-      caption: Limited Quantity
+      caption: Sold Out
       price: "2100"
-      status: active
+      status: sold
       title: Smart Bird
     - btnLabel: Take Ticket
-      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_regularbird
+      btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_regular
       caption: Limited Quantity
       price: "2800"
-      status: default
+      status: active
       title: Regular
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_lastchance
