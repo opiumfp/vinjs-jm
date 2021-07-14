@@ -114,7 +114,7 @@ stat:
       title: |-
         2 \
         Streams
-    - paragraph: High-level talks by speakers from Ukraine and abroad.
+    - paragraph: High-level talks by Ukrainian top-speakers.
       title: |-
         15+ \
         Speakers

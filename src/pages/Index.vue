@@ -14,25 +14,25 @@
           :heroPTData="$page.pageData.heropt"
         ></hero-pt>
       </section> -->
-      <section>
+      <!-- <section>
         <hero-pt
           v-if="$page.pageData.herocf.image"
           :id="$page.pageData.herocf.id"
           :heroPTData="$page.pageData.herocf"
           :center="true"
         ></hero-pt>
-      </section>
+      </section> -->
       <section
         class="py-7 vjs-bg-logo vjs-bg-logo-blue text-white section-vh-100 d-flex align-items-center justify-content-center"
         :id="$page.pageData.about.id"
       >
         <about v-if="$page.pageData.about.title" :aboutData="$page.pageData.about"></about>
       </section>
-      <!--
+      
       <section :id="$page.pageData.stat.id">
         <stat v-if="$page.pageData.stat.items" :statData="$page.pageData.stat"></stat>
       </section>
-      -->
+     
       <section :id="$page.pageData.mediaTiles.id" class="vjs-bg-logo vjs-bg-logo-red text-white">
         <div class="container">
           <div class="row">
