@@ -24,8 +24,8 @@
             </div>
             <div v-if="item.btnLabel" class="pricing_item_btn text-center py-4">
               <component 
-                :is="item.status==='default' ? 'div' : 'a'"
-                :href="item.btnSrc" 
+                :is="item.status==='active' ? 'a' : 'div'"
+                :href="item.status==='active' && item.btnSrc" 
                 class="btn my-2 my-sm-0"
                 :class="(`btn-${( item.status=='active' ?  'success' : 'primary' )}`)"
                 target="_blank"
