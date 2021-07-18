@@ -265,7 +265,7 @@ confspeakers:
         company: Infopulse
       talk:
         id: talk21_04
-        title: "Who are you, JS developer?"
+        title: Who are you, JS developer?
         description: "React, Angular, Vue, Svelte: are these networks essential in
           software development or they just replace JavaScript because of lack
           of knowledge? Who are you, JS developer? If you know only JavaScript,
@@ -664,7 +664,7 @@ talks:
       active: "true"
     - talk:
         id: talk21_04
-        title: "Who are you, JS developer?"
+        title: Who are you, JS developer?
         description: "React, Angular, Vue, Svelte: are these networks essential in
           software development or they just replace JavaScript because of lack
           of knowledge? Who are you, JS developer? If you know only JavaScript,
@@ -1018,6 +1018,13 @@ partners:
         src: https://www.infopulse.com/
         title: Infopulse
       image: /uploads/infopulse-logo-web-rgb.svg
+    - active: "true"
+      fields:
+        title: Onseo
+        src: https://onseostudio.com/index.php/uk/careers-ua/
+        description: ""
+        image: /uploads/logo_onseo_lightbgr-1-.png
+      image: /uploads/logo_onseo_lightbgr-1-.png
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
@@ -1051,6 +1058,13 @@ mediapartners:
   title: Media Partners
   subtitle: ""
   items:
+    - active: "true"
+      fields:
+        title: BeerJS ZT
+        src: https://www.facebook.com/groups/beerJSZhytomyr/
+        description: ""
+        image: /uploads/beerjs_zt_logo.svg
+      image: /uploads/beerjs_zt_logo.svg
     - active: "true"
       fields:
         title: Node.js Recipes
