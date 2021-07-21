@@ -1100,6 +1100,13 @@ mediapartners:
         description: ""
         image: /uploads/webnotbombs-logo-short.png
       image: /uploads/webnotbombs-logo-short.png
+    - active: "true"
+      fields:
+        title: DNA325 - IT recruitment
+        src: https://dna325.com/
+        description: ""
+        image: /uploads/dna325-logo.png
+      image: /uploads/dna325-logo.png
 pricing:
   col: 4
   currency: ₴
