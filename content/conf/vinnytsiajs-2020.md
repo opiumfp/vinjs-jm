@@ -1102,11 +1102,25 @@ mediapartners:
       image: /uploads/webnotbombs-logo-short.png
     - active: "true"
       fields:
+        title: Beetroot Academy
+        src: https://beetroot.academy/
+        description: ""
+        image: /uploads/beetroot-logo.svg
+      image: /uploads/beetroot-logo.svg
+    - active: "true"
+      fields:
         title: DNA325 - IT recruitment
         src: https://dna325.com/
         description: ""
         image: /uploads/dna325-logo.png
       image: /uploads/dna325-logo.png
+    - active: "true"
+      fields:
+        title: iHub Vinnytsia
+        src: https://ihub.world/?page_id=280&lang=ua
+        description: ""
+        image: /uploads/ihub-logo.png
+      image: /uploads/ihub-logo.png
 pricing:
   col: 4
   currency: ₴
