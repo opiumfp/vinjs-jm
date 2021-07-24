@@ -380,6 +380,34 @@ confspeakers:
           performance budget and discuss how to start web performance in the
           already ongoing project
       active: "true"
+    - fields:
+        bio: I am a Software Engineer, in work use JavaScript and Golang. Helped to
+          start the careers of a dozen junior developers as a mentor
+          (node.js/react/angular), conducted about a hundred interviews with
+          developers from more than 20 countries. I write technical articles and
+          speak at online/offline conferences. Currently, work on my own
+          projects
+        city: Kyiv
+        name: Oleksii Novokhatskyi
+        socialLinks:
+          - src: https://www.linkedin.com/in/novokhatskyioleksii
+            icon: icon-linkedin-square
+          - src: https://github.com/novokhatskyioleksii
+            icon: icon-github
+        country: Ukraine
+        title: Software Engineer
+        id: oleksii_novokhatskyi
+        image: /uploads/oleksii-novokhatskyi-sq.jpg
+        company: Independent Contractor
+      talk:
+        id: talk21_06
+        title: Worker Threads vs C ++ Addons (part 2)
+        description: There are so many ways to handle CPU-bound tasks with Node.js -
+          Child Processes, Cluster, Worker Threads or even use of other
+          programming languages (C, C++, Rust, Go). Let’s try to solve some
+          common cases (hash functions, work with xlsx files, json format) and
+          decide which option performs better
+      active: "true"
 speakers:
   id: speakers
   items:
@@ -716,6 +744,34 @@ talks:
         image: /uploads/vitalii_ratushnyi-cropped.jpg
         company: Shareitt
       active: "true"
+    - talk:
+        id: talk21_06
+        title: Worker Threads vs C ++ Addons (part 2)
+        description: There are so many ways to handle CPU-bound tasks with Node.js -
+          Child Processes, Cluster, Worker Threads or even use of other
+          programming languages (C, C++, Rust, Go). Let’s try to solve some
+          common cases (hash functions, work with xlsx files, json format) and
+          decide which option performs better
+      speaker:
+        bio: I am a Software Engineer, in work use JavaScript and Golang. Helped to
+          start the careers of a dozen junior developers as a mentor
+          (node.js/react/angular), conducted about a hundred interviews with
+          developers from more than 20 countries. I write technical articles and
+          speak at online/offline conferences. Currently, work on my own
+          projects
+        city: Kyiv
+        name: Oleksii Novokhatskyi
+        socialLinks:
+          - src: https://www.linkedin.com/in/novokhatskyioleksii
+            icon: icon-linkedin-square
+          - src: https://github.com/novokhatskyioleksii
+            icon: icon-github
+        country: Ukraine
+        title: Software Engineer
+        id: oleksii_novokhatskyi
+        image: /uploads/oleksii-novokhatskyi-sq.jpg
+        company: Independent Contractor
+      active: "true"
 schedule:
   id: schedule
   title: Schedule
@@ -1025,6 +1081,20 @@ partners:
         description: ""
         image: /uploads/logo_onseo_lightbgr-1-.png
       image: /uploads/logo_onseo_lightbgr-1-.png
+    - active: "true"
+      fields:
+        title: ITVDN
+        src: https://itvdn.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promo
+        description: ""
+        image: /uploads/logo_itvdn.png
+      image: /uploads/logo_itvdn.png
+    - active: "true"
+      fields:
+        title: CyberBionic
+        src: http://edu.cbsystematics.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promoc
+        description: ""
+        image: /uploads/cbs_one-color.png
+      image: /uploads/cbs_one-color.png
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
