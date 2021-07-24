@@ -1081,20 +1081,6 @@ partners:
         description: ""
         image: /uploads/logo_onseo_lightbgr-1-.png
       image: /uploads/logo_onseo_lightbgr-1-.png
-    - active: "true"
-      fields:
-        title: ITVDN
-        src: https://itvdn.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promo
-        description: ""
-        image: /uploads/logo_itvdn.png
-      image: /uploads/logo_itvdn.png
-    - active: "true"
-      fields:
-        title: CyberBionic
-        src: http://edu.cbsystematics.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promoc
-        description: ""
-        image: /uploads/cbs_one-color.png
-      image: /uploads/cbs_one-color.png
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
@@ -1191,6 +1177,20 @@ mediapartners:
         description: ""
         image: /uploads/ihub-logo.png
       image: /uploads/ihub-logo.png
+    - active: "true"
+      fields:
+        title: ITVDN
+        src: https://itvdn.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promo
+        description: ""
+        image: /uploads/logo_itvdn.png
+      image: /uploads/logo_itvdn.png
+    - active: "true"
+      fields:
+        title: CyberBionic
+        src: http://edu.cbsystematics.com/ru?utm_source=infopartner&utm_medium=logo&utm_campaign=promoc
+        description: ""
+        image: /uploads/cbs_one-color.png
+      image: /uploads/cbs_one-color.png
 pricing:
   col: 4
   currency: ₴
