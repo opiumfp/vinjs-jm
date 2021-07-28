@@ -1081,6 +1081,20 @@ partners:
         description: ""
         image: /uploads/logo_onseo_lightbgr-1-.png
       image: /uploads/logo_onseo_lightbgr-1-.png
+    - active: "true"
+      fields:
+        title: Astound Commerce
+        src: https://careers.astoundcommerce.com/
+        description: ""
+        image: /uploads/astd_logo-r-_full_colour_cmyk.svg
+      image: /uploads/astd_logo-r-_full_colour_cmyk.svg
+    - active: "true"
+      fields:
+        title: Grid Dynamics
+        src: https://www.griddynamics.com/
+        description: ""
+        image: /uploads/grid_dynamics__logotype__h-1-.svg
+      image: /uploads/grid_dynamics__logotype__h-1-.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
