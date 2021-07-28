@@ -799,6 +799,33 @@ talks:
         image: /uploads/oleksii-novokhatskyi-sq.jpg
         company: Independent Contractor
       active: "true"
+    - talk:
+        id: talk21_07
+        title: How to be a good developer and stay in touch with the changes that
+          happens so fast?
+        description: In today's world, the developer faces a huge number of challenges -
+          from career issues to self-development issues. And there is not enough
+          time to do everything at once. Let's talk about what are the
+          priorities, how to discard unnecessary things and how not to waste
+          time watching cats on YouTube
+      speaker:
+        bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
+          many project management conferences, blogger. Programmer with 20 years
+          of experience. Almost 15 of them are in Java. Sergey was Project
+          Manager at Ciklum, Team Leader at Luxoft, NetCracker and IntroPro.
+        city: Kyiv
+        name: Sergey Nemchinskiy
+        socialLinks:
+          - src: https://www.facebook.com/sergey.nemchinskiy/
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/pro100fox/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: CEO/Owner
+        id: sergey_nemchinskiy
+        image: /uploads/sergey-nemchinskiy.jpg
+        company: foxmindEd
+      active: "true"
 schedule:
   id: schedule
   title: Schedule
