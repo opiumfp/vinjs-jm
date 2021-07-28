@@ -355,32 +355,6 @@ confspeakers:
         description: ""
       active: "true"
     - fields:
-        bio: Vitalii Ruban, the technical leader at one of the European software
-          development companies, web-security enthusiast, a member of the
-          Program Committee of the JSFest - one of the biggest Eastern European
-          conferences for JavaScript developers.
-        city: Kyiv
-        name: Vitalii Ruban
-        socialLinks:
-          - src: https://twitter.com/drag137
-            icon: icon-twitter
-          - src: https://github.com/Drag13
-            icon: icon-github
-        country: Ukraine
-        title: Tech Lead
-        id: vitalii_ruban
-        image: /uploads/vitalii-ruban-cropped.jpg
-        company: Itera
-      talk:
-        id: talk21_01
-        title: Nobody cares about web performance. It's hard, expensive and unneeded
-        description: In this talk, we will speak about the main concerns about
-          performance optimization in Web - cost, maintainability, and
-          redundancy in 2021. We will discover some latest statistics about
-          performance budget and discuss how to start web performance in the
-          already ongoing project
-      active: "true"
-    - fields:
         bio: I am a Software Engineer, in work use JavaScript and Golang. Helped to
           start the careers of a dozen junior developers as a mentor
           (node.js/react/angular), conducted about a hundred interviews with
@@ -407,6 +381,32 @@ confspeakers:
           programming languages (C, C++, Rust, Go). Let’s try to solve some
           common cases (hash functions, work with xlsx files, json format) and
           decide which option performs better
+      active: "true"
+    - fields:
+        bio: Vitalii Ruban, the technical leader at one of the European software
+          development companies, web-security enthusiast, a member of the
+          Program Committee of the JSFest - one of the biggest Eastern European
+          conferences for JavaScript developers.
+        city: Kyiv
+        name: Vitalii Ruban
+        socialLinks:
+          - src: https://twitter.com/drag137
+            icon: icon-twitter
+          - src: https://github.com/Drag13
+            icon: icon-github
+        country: Ukraine
+        title: Tech Lead
+        id: vitalii_ruban
+        image: /uploads/vitalii-ruban-cropped.jpg
+        company: Itera
+      talk:
+        id: talk21_01
+        title: Nobody cares about web performance. It's hard, expensive and unneeded
+        description: In this talk, we will speak about the main concerns about
+          performance optimization in Web - cost, maintainability, and
+          redundancy in 2021. We will discover some latest statistics about
+          performance budget and discuss how to start web performance in the
+          already ongoing project
       active: "true"
     - fields:
         bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
