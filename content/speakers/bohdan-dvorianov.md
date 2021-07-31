@@ -1,9 +1,9 @@
 ---
 name: Bohdan Dvorianov
 data:
-  bio: FrontEnd-developer, ChernivtsiJS and GlobalCSS team member. In the holy
-    wars of frameworks on the side of common sense. These days he was spotted
-    creating Chrome extension, and that’s what he will talk about.
+  bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
+    you meet Bogdan somewhere: browser extensions that are now in the react and
+    web3."
   city: Chernivtsi
   name: Bohdan Dvorianov
   socialLinks:
@@ -15,5 +15,5 @@ data:
   title: Frontend Developer
   id: bohdan_dvorianov
   image: /uploads/bohdan-dvorianov.jpeg
-  company: "AgiliWay "
+  company: "SapientPro "
 ---
