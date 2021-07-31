@@ -826,6 +826,30 @@ talks:
         image: /uploads/sergey-nemchinskiy.jpg
         company: foxmindEd
       active: "true"
+    - talk:
+        id: talk21_08
+        title: Old new manifest and its inevitability
+        description: >-
+          Last December beta of extensions manifest v3 was released.
+
+          This time we’ll take a closer look at what’s new, what hasn’t changed and why was needed. Sure, with tips for those, who plan to upgrade to v3 from v2 and explanations for those who didn’t know it even exist before.
+      speaker:
+        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
+          you meet Bogdan somewhere: browser extensions that are now in the
+          react and web3."
+        city: Chernivtsi
+        name: Bohdan Dvorianov
+        socialLinks:
+          - src: https://www.facebook.com/b.dvorianov
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/bdvorianov
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Frontend Developer
+        id: bohdan_dvorianov
+        image: /uploads/bohdan-dvorianov.jpeg
+        company: "SapientPro "
+      active: "true"
 schedule:
   id: schedule
   title: Schedule
