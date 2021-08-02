@@ -1197,6 +1197,20 @@ partners:
         description: ""
         image: /uploads/grid_dynamics__logotype__h-1-.svg
       image: /uploads/grid_dynamics__logotype__h-1-.svg
+    - active: "true"
+      fields:
+        title: Lohika
+        src: https://www.lohika.com.ua/
+        description: ""
+        image: /uploads/lohika-cap-logo-2021apr-blue-gray-1-.svg
+      image: /uploads/lohika-cap-logo-2021apr-blue-gray-1-.svg
+    - active: "true"
+      fields:
+        title: Capgemini Engineering
+        src: https://www.capgemini.com/
+        description: ""
+        image: /uploads/capgeminiengineering_logo_2col_rgb-1-.svg
+      image: /uploads/capgeminiengineering_logo_2col_rgb-1-.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
