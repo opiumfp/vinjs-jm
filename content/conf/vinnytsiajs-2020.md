@@ -459,6 +459,51 @@ confspeakers:
 
           This time we’ll take a closer look at what’s new, what hasn’t changed and why was needed. Sure, with tips for those, who plan to upgrade to v3 from v2 and explanations for those who didn’t know it even exist before.
       active: "true"
+    - fields:
+        bio: 5+ years experience in WEB dev. Teacher in the Beetroot academy.
+        city: Vinnytsia
+        name: Alex Ordynski
+        socialLinks:
+          - src: https://www.facebook.com/alexandr.ordynski
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/alexandr-ordynski-94651188/
+            icon: icon-linkedin-square
+          - src: https://github.com/AlexOrd
+            icon: icon-github
+        country: Ukraine
+        title: Full Stack JS Engeneer
+        id: alex_ordynski
+        image: /uploads/aleksander-ordynski-sq.jpg
+        company: ElifTech
+      talk:
+        id: talk21_10
+        title: Using Web Assembly to speed up your WEB Application
+        description: Web Assembly is faster than JavaScript and can run in the most
+          popular browsers today. We will discover how we can compile any C
+          program into Web Assembly and the use inside of a web application to
+          speed things up.
+      active: "true"
+    - fields:
+        bio: 5+ years of experience, working in rapidly growing company with its own
+          product, which has robust delivery and development process. My current
+          stack is Angular, Nx, NgRX, Typescript, GraphQL
+        city: Vinnytsia
+        name: Maksym Kuznetsov
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Software Engineer
+        id: maksym_kuznetsov
+        image: /uploads/maksym-kuznetsov.jpg
+        company: Neocles
+      talk:
+        id: talk21_09
+        title: How to make robust and scalable front-end using layers
+        description: Divide and conquer principle in front-end architecture. Basics of
+          creation reliable, reusable and testable data flow, and to onboard new
+          developers faster using examples on Angular, NgRx, Redux
+      active: "true"
 speakers:
   id: speakers
   items:
@@ -873,6 +918,51 @@ talks:
         id: bohdan_dvorianov
         image: /uploads/bohdan-dvorianov.jpeg
         company: "SapientPro "
+      active: "true"
+    - talk:
+        id: talk21_10
+        title: Using Web Assembly to speed up your WEB Application
+        description: Web Assembly is faster than JavaScript and can run in the most
+          popular browsers today. We will discover how we can compile any C
+          program into Web Assembly and the use inside of a web application to
+          speed things up.
+      speaker:
+        bio: 5+ years experience in WEB dev. Teacher in the Beetroot academy.
+        city: Vinnytsia
+        name: Alex Ordynski
+        socialLinks:
+          - src: https://www.facebook.com/alexandr.ordynski
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/alexandr-ordynski-94651188/
+            icon: icon-linkedin-square
+          - src: https://github.com/AlexOrd
+            icon: icon-github
+        country: Ukraine
+        title: Full Stack JS Engeneer
+        id: alex_ordynski
+        image: /uploads/aleksander-ordynski-sq.jpg
+        company: ElifTech
+      active: "true"
+    - talk:
+        id: talk21_09
+        title: How to make robust and scalable front-end using layers
+        description: Divide and conquer principle in front-end architecture. Basics of
+          creation reliable, reusable and testable data flow, and to onboard new
+          developers faster using examples on Angular, NgRx, Redux
+      speaker:
+        bio: 5+ years of experience, working in rapidly growing company with its own
+          product, which has robust delivery and development process. My current
+          stack is Angular, Nx, NgRX, Typescript, GraphQL
+        city: Vinnytsia
+        name: Maksym Kuznetsov
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Software Engineer
+        id: maksym_kuznetsov
+        image: /uploads/maksym-kuznetsov.jpg
+        company: Neocles
       active: "true"
 schedule:
   id: schedule
