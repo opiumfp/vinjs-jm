@@ -436,9 +436,7 @@ confspeakers:
           already ongoing project
       active: "true"
     - fields:
-        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
-          you meet Bogdan somewhere: browser extensions that are now in the
-          react and web3."
+        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if you meet Bogdan somewhere: browser extensions, react and web3."
         city: Chernivtsi
         name: Bohdan Dvorianov
         socialLinks:
@@ -903,9 +901,7 @@ talks:
 
           This time we’ll take a closer look at what’s new, what hasn’t changed and why was needed. Sure, with tips for those, who plan to upgrade to v3 from v2 and explanations for those who didn’t know it even exist before.
       speaker:
-        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
-          you meet Bogdan somewhere: browser extensions that are now in the
-          react and web3."
+        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if you meet Bogdan somewhere: browser extensions, react and web3."
         city: Chernivtsi
         name: Bohdan Dvorianov
         socialLinks:
