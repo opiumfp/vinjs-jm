@@ -528,6 +528,35 @@ confspeakers:
           possible solutions, and ways to protect your team from repeating them
           in the future.
       active: "true"
+    - fields:
+        bio: >-
+          6 years of development experience
+
+          Passed all stages of work from studio, outsource, outstaff to product and e-commerce
+
+          I am interested in community building and I want to contribute a little bit of myself and my experience to the  Vinnytsia community
+        city: Vinnytsia
+        name: Denis Furman
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Developer
+        id: denis_furman
+        image: /uploads/denis_furman_sq.jpg
+        company: Libertex
+      talk:
+        id: talk21_11
+        title: Interviews are a great and invaluable experience
+        description: >-
+          You choose the job, not the job that chooses you!\
+
+          In this report, I will talk about the trends in vacancies in the frontend industry and what employers want from you.\
+
+          We will see what will be really relevant, not just on the hype\
+
+          I will tell you how to learn to successfully pass interviews without stress, how to properly prepare and what weaknesses need to be corrected
+      active: "true"
 speakers:
   id: speakers
   items:
@@ -986,6 +1015,35 @@ talks:
         id: maksym_kuznetsov
         image: /uploads/maksym-kuznetsov.jpg
         company: Neocles
+      active: "true"
+    - talk:
+        id: talk21_11
+        title: Interviews are a great and invaluable experience
+        description: >-
+          You choose the job, not the job that chooses you!\
+
+          In this report, I will talk about the trends in vacancies in the frontend industry and what employers want from you.\
+
+          We will see what will be really relevant, not just on the hype\
+
+          I will tell you how to learn to successfully pass interviews without stress, how to properly prepare and what weaknesses need to be corrected
+      speaker:
+        bio: >-
+          6 years of development experience
+
+          Passed all stages of work from studio, outsource, outstaff to product and e-commerce
+
+          I am interested in community building and I want to contribute a little bit of myself and my experience to the  Vinnytsia community
+        city: Vinnytsia
+        name: Denis Furman
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Developer
+        id: denis_furman
+        image: /uploads/denis_furman_sq.jpg
+        company: Libertex
       active: "true"
 schedule:
   id: schedule
