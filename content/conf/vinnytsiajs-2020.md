@@ -436,7 +436,8 @@ confspeakers:
           already ongoing project
       active: "true"
     - fields:
-        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if you meet Bogdan somewhere: browser extensions, react and web3."
+        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
+          you meet Bogdan somewhere: browser extensions, react and web3."
         city: Chernivtsi
         name: Bohdan Dvorianov
         socialLinks:
@@ -501,6 +502,31 @@ confspeakers:
         description: Divide and conquer principle in front-end architecture. Basics of
           creation reliable, reusable and testable data flow, and to onboard new
           developers faster using examples on Angular, NgRx, Redux
+      active: "true"
+    - fields:
+        bio: Self-proclaimed accessibility advocate, 5+ years of experience in Frontend
+          and a horrible sense of humor. Average sports fan and NFL enjoyer with
+          a goal of going to snowy Lambeau Field.
+        city: Vinnytsia
+        name: Oleksandr Kovtun
+        socialLinks:
+          - src: https://www.linkedin.com/in/staluxa/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Senior Front-end Developer
+        id: oleksandr_kovtun
+        image: /uploads/oleksandr-kovtun-r.jpg
+        company: EPAM Systems
+      talk:
+        id: talk21_10
+        title: Accessibility audit and what's after it
+        description: Accessible UI is slowly becoming a common requirement, yet we
+          rarely have resources to confirm results with all kinds of people with
+          all possible sorts of disabilities. This time we will avoid specific
+          issues that you could hear in every other accessibility talk. Instead,
+          we will discuss main ideas on how to search for accessibility issues,
+          possible solutions, and ways to protect your team from repeating them
+          in the future.
       active: "true"
 speakers:
   id: speakers
@@ -901,7 +927,8 @@ talks:
 
           This time we’ll take a closer look at what’s new, what hasn’t changed and why was needed. Sure, with tips for those, who plan to upgrade to v3 from v2 and explanations for those who didn’t know it even exist before.
       speaker:
-        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if you meet Bogdan somewhere: browser extensions, react and web3."
+        bio: "Frontier, organizer in ChernivtsiJS and LvivCSS. Topics to talk about if
+          you meet Bogdan somewhere: browser extensions, react and web3."
         city: Chernivtsi
         name: Bohdan Dvorianov
         socialLinks:
