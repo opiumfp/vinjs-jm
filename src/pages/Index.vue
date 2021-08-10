@@ -88,11 +88,12 @@
                 title="Call for Papers"
               ></page-title>
               <p class="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
-              <a
+              <button
                 href="https://forms.gle/p7sLi6SnGKMWRSM86"
+                disabled
                 class="btn btn-primary my-2 px-5 my-sm-0"
                 target="_blank"
-              >Submit</a>
+              >Closed</button>
             </div>
           </div>
         </div>
