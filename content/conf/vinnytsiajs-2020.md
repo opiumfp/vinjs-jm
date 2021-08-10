@@ -350,9 +350,11 @@ confspeakers:
         image: /uploads/andrey-kucherenko-cropped.jpg
         company: EPAM Systems
       talk:
-        id: ""
-        title: ""
-        description: ""
+        id: talk21_12
+        title: "What projects do you need to develop to become a JavaScript developer? "
+        description: The best teacher is a real-life experience in which we'll walk
+          through the applications of our favorite language that provide unique
+          knowledge and "rock" us as specialists.
       active: "true"
     - fields:
         bio: I am a Software Engineer, in work use JavaScript and Golang. Helped to
@@ -1044,6 +1046,31 @@ talks:
         id: denis_furman
         image: /uploads/denis_furman_sq.jpg
         company: Libertex
+      active: "true"
+    - talk:
+        id: talk21_12
+        title: "What projects do you need to develop to become a JavaScript developer? "
+        description: The best teacher is a real-life experience in which we'll walk
+          through the applications of our favorite language that provide unique
+          knowledge and "rock" us as specialists.
+      speaker:
+        bio: "Engineer with more than 17 years of experience in IT. For the last 10
+          years I have been working in EPAM company. Main areas of my
+          professional interest are - javascript based technologies, frontend
+          and backend architecture, mobile development, web development, IoT and
+          hardware development, TDD, CI/CD, DevOps, Databases etc. Open source
+          contributor: author and maintainer of popular copy/paste detector
+          named jscpd."
+        city: Kyiv
+        name: Andrey Kucherenko
+        socialLinks:
+          - src: ""
+            icon: icon-github
+        country: Ukraine
+        title: Chief Software Engineer
+        id: andrey_kucherenko
+        image: /uploads/andrey-kucherenko-cropped.jpg
+        company: EPAM Systems
       active: "true"
 schedule:
   id: schedule
