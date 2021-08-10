@@ -1382,6 +1382,13 @@ partners:
         description: ""
         image: /uploads/capgeminiengineering_logo_2col_rgb-1-.svg
       image: /uploads/capgeminiengineering_logo_2col_rgb-1-.svg
+    - active: "true"
+      fields:
+        title: Ukrsibbank
+        src: https://my.ukrsibbank.com/ua/personal/
+        description: ""
+        image: /uploads/ukrsibbank-214.svg
+      image: /uploads/ukrsibbank-214.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
