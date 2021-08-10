@@ -1431,6 +1431,20 @@ mediapartners:
       image: /uploads/njs_symbol-text2.svg
     - active: "true"
       fields:
+        title: LvivCSS
+        src: https://www.facebook.com/lvivcss/
+        description: ""
+        image: /uploads/lvivcss-logo-cropped.png
+      image: /uploads/lvivcss-logo-cropped.png
+    - active: "true"
+      fields:
+        title: ChernivtsiJS
+        src: https://www.facebook.com/chernivtsijs
+        description: ""
+        image: /uploads/chernivtsijs-logo.svg
+      image: /uploads/chernivtsijs-logo.svg
+    - active: "true"
+      fields:
         description: ""
         image: /uploads/it-association.png
         src: https://www.it-association.vn.ua/
@@ -1492,6 +1506,13 @@ mediapartners:
         description: ""
         image: /uploads/cbs_one-color.png
       image: /uploads/cbs_one-color.png
+    - active: "true"
+      fields:
+        title: ITEA - IT Education Academy
+        src: https://guide.itea.ua/
+        description: ""
+        image: /uploads/itea_logo_10-crop.png
+      image: /uploads/itea_logo_10-crop.png
 pricing:
   col: 4
   currency: ₴
