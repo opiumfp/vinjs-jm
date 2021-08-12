@@ -305,33 +305,6 @@ confspeakers:
           But now I am using React and feel quite happy without Redux. How? Why? Let me tell you about this in my talk, share some secrets of happy Redux-less life, and show you some very complicated examples that can ease life. At least mine.
       active: "true"
     - fields:
-        bio: >-
-          Tech Enthusiast, Interviewer, Architect. 
-
-
-          Trying to get to the bottom of things. First principles thinker. Passionate ‘bout neuropsychology and perception development.
-        city: Kyiv
-        name: Vitalii Ratushnyi
-        socialLinks:
-          - src: https://www.linkedin.com/in/v-ratyshnyi/
-            icon: icon-linkedin-square
-        country: Ukraine
-        title: Solutions Architect
-        id: vitalii_ratushnyi
-        image: /uploads/vitalii_ratushnyi-cropped.jpg
-        company: Shareitt
-      talk:
-        id: talk21_03
-        title: Several "days" in the product development life cycle
-        description: Presentations and talks at conferences are often devoted to how to
-          make software development processes efficient and easy to manage. To
-          do this, it is necessary to clearly define the concepts used. The
-          basic terms "day 0 / day 1 / day 2" are often understood intuitively,
-          which can add some ambiguity when talking about the software life
-          cycle. In this talk, I want to consider the main stages of product
-          development and where in all this the code we write.
-      active: "true"
-    - fields:
         bio: In IT for about 15 years. Now works as a solution architect in financial
           services and integration domains. Head of Java competency in
           Vinnytsya. Also, I am a resident of API and Integration competency
@@ -407,6 +380,33 @@ confspeakers:
         description: The best teacher is a real-life experience in which we'll walk
           through the applications of our favorite language that provide unique
           knowledge and "rock" us as specialists.
+      active: "true"
+    - fields:
+        bio: >-
+          Tech Enthusiast, Interviewer, Architect. 
+
+
+          Trying to get to the bottom of things. First principles thinker. Passionate ‘bout neuropsychology and perception development.
+        city: Kyiv
+        name: Vitalii Ratushnyi
+        socialLinks:
+          - src: https://www.linkedin.com/in/v-ratyshnyi/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Solutions Architect
+        id: vitalii_ratushnyi
+        image: /uploads/vitalii_ratushnyi-cropped.jpg
+        company: Shareitt
+      talk:
+        id: talk21_03
+        title: Several "days" in the product development life cycle
+        description: Presentations and talks at conferences are often devoted to how to
+          make software development processes efficient and easy to manage. To
+          do this, it is necessary to clearly define the concepts used. The
+          basic terms "day 0 / day 1 / day 2" are often understood intuitively,
+          which can add some ambiguity when talking about the software life
+          cycle. In this talk, I want to consider the main stages of product
+          development and where in all this the code we write.
       active: "true"
     - fields:
         bio: I am a Software Engineer, in work use JavaScript and Golang. Helped to
