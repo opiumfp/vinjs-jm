@@ -332,6 +332,58 @@ confspeakers:
           development and where in all this the code we write.
       active: "true"
     - fields:
+        bio: In IT for about 15 years. Now works as a solution architect in financial
+          services and integration domains. Head of Java competency in
+          Vinnytsya. Also, I am a resident of API and Integration competency
+          centers. In recent 5 years, my projects are connected with
+          integrations, REST API, developers experience, API management
+        city: Vinnytsia
+        name: Oleksandr Reshetnik
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Competency head
+        id: oleksandr_reshetnik
+        image: /uploads/oleksandr-reshetnik_sq.jpg
+        company: EPAM Systems
+      talk:
+        id: talk21_13
+        title: Refactoring of REST API
+        description: In the talk, I plan to share my experience in REST API refactoring.
+          I plan to have a quick review of patterns and antipatterns. You will
+          see some bad ideas that make your API uncomfortable. Finally we review
+          tips and tricks that can help you make your API better. Also, we
+          review some API management tools that also help with API refactoring
+      active: "true"
+    - fields:
+        bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
+          many project management conferences, blogger. Programmer with 20 years
+          of experience. Almost 15 of them are in Java. Sergey was Project
+          Manager at Ciklum, Team Leader at Luxoft, NetCracker and IntroPro.
+        city: Kyiv
+        name: Sergey Nemchinskiy
+        socialLinks:
+          - src: https://www.facebook.com/sergey.nemchinskiy/
+            icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/pro100fox/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: CEO/Owner
+        id: sergey_nemchinskiy
+        image: /uploads/sergey-nemchinskiy.jpg
+        company: foxmindEd
+      talk:
+        id: talk21_07
+        title: How to be a good developer and stay in touch with the changes that
+          happens so fast?
+        description: In today's world, the developer faces a huge number of challenges -
+          from career issues to self-development issues. And there is not enough
+          time to do everything at once. Let's talk about what are the
+          priorities, how to discard unnecessary things and how not to waste
+          time watching cats on YouTube
+      active: "true"
+    - fields:
         bio: "Engineer with more than 17 years of experience in IT. For the last 10
           years I have been working in EPAM company. Main areas of my
           professional interest are - javascript based technologies, frontend
@@ -383,33 +435,6 @@ confspeakers:
           programming languages (C, C++, Rust, Go). Let’s try to solve some
           common cases (hash functions, work with xlsx files, json format) and
           decide which option performs better
-      active: "true"
-    - fields:
-        bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
-          many project management conferences, blogger. Programmer with 20 years
-          of experience. Almost 15 of them are in Java. Sergey was Project
-          Manager at Ciklum, Team Leader at Luxoft, NetCracker and IntroPro.
-        city: Kyiv
-        name: Sergey Nemchinskiy
-        socialLinks:
-          - src: https://www.facebook.com/sergey.nemchinskiy/
-            icon: icon-facebook-square
-          - src: https://www.linkedin.com/in/pro100fox/
-            icon: icon-linkedin-square
-        country: Ukraine
-        title: CEO/Owner
-        id: sergey_nemchinskiy
-        image: /uploads/sergey-nemchinskiy.jpg
-        company: foxmindEd
-      talk:
-        id: talk21_07
-        title: How to be a good developer and stay in touch with the changes that
-          happens so fast?
-        description: In today's world, the developer faces a huge number of challenges -
-          from career issues to self-development issues. And there is not enough
-          time to do everything at once. Let's talk about what are the
-          priorities, how to discard unnecessary things and how not to waste
-          time watching cats on YouTube
       active: "true"
     - fields:
         bio: Vitalii Ruban, the technical leader at one of the European software
@@ -558,31 +583,6 @@ confspeakers:
           We will see what will be really relevant, not just on the hype\
 
           I will tell you how to learn to successfully pass interviews without stress, how to properly prepare and what weaknesses need to be corrected
-      active: "true"
-    - fields:
-        bio: In IT for about 15 years. Now works as a solution architect in financial
-          services and integration domains. Head of Java competency in
-          Vinnytsya. Also, I am a resident of API and Integration competency
-          centers. In recent 5 years, my projects are connected with
-          integrations, REST API, developers experience, API management
-        city: Vinnytsia
-        name: Oleksandr Reshetnik
-        socialLinks:
-          - src: ""
-            icon: icon-facebook-square
-        country: Ukraine
-        title: Competency head
-        id: oleksandr_reshetnik
-        image: /uploads/oleksandr-reshetnik_sq.jpg
-        company: EPAM Systems
-      talk:
-        id: talk21_13
-        title: Refactoring of REST API
-        description: In the talk, I plan to share my experience in REST API refactoring.
-          I plan to have a quick review of patterns and antipatterns. You will
-          see some bad ideas that make your API uncomfortable. Finally we review
-          tips and tricks that can help you make your API better. Also, we
-          review some API management tools that also help with API refactoring
       active: "true"
 speakers:
   id: speakers
@@ -921,6 +921,31 @@ talks:
         company: Shareitt
       active: "true"
     - talk:
+        id: talk21_12
+        title: "What projects do you need to develop to become a JavaScript developer? "
+        description: The best teacher is a real-life experience in which we'll walk
+          through the applications of our favorite language that provide unique
+          knowledge and "rock" us as specialists.
+      speaker:
+        bio: "Engineer with more than 17 years of experience in IT. For the last 10
+          years I have been working in EPAM company. Main areas of my
+          professional interest are - javascript based technologies, frontend
+          and backend architecture, mobile development, web development, IoT and
+          hardware development, TDD, CI/CD, DevOps, Databases etc. Open source
+          contributor: author and maintainer of popular copy/paste detector
+          named jscpd."
+        city: Kyiv
+        name: Andrey Kucherenko
+        socialLinks:
+          - src: ""
+            icon: icon-github
+        country: Ukraine
+        title: Chief Software Engineer
+        id: andrey_kucherenko
+        image: /uploads/andrey-kucherenko-cropped.jpg
+        company: EPAM Systems
+      active: "true"
+    - talk:
         id: talk21_06
         title: Worker Threads vs C ++ Addons (part 2)
         description: There are so many ways to handle CPU-bound tasks with Node.js -
@@ -1071,31 +1096,6 @@ talks:
         id: denis_furman
         image: /uploads/denis_furman_sq.jpg
         company: Libertex
-      active: "true"
-    - talk:
-        id: talk21_12
-        title: "What projects do you need to develop to become a JavaScript developer? "
-        description: The best teacher is a real-life experience in which we'll walk
-          through the applications of our favorite language that provide unique
-          knowledge and "rock" us as specialists.
-      speaker:
-        bio: "Engineer with more than 17 years of experience in IT. For the last 10
-          years I have been working in EPAM company. Main areas of my
-          professional interest are - javascript based technologies, frontend
-          and backend architecture, mobile development, web development, IoT and
-          hardware development, TDD, CI/CD, DevOps, Databases etc. Open source
-          contributor: author and maintainer of popular copy/paste detector
-          named jscpd."
-        city: Kyiv
-        name: Andrey Kucherenko
-        socialLinks:
-          - src: ""
-            icon: icon-github
-        country: Ukraine
-        title: Chief Software Engineer
-        id: andrey_kucherenko
-        image: /uploads/andrey-kucherenko-cropped.jpg
-        company: EPAM Systems
       active: "true"
     - talk:
         id: talk21_13
