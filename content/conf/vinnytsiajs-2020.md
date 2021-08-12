@@ -1122,6 +1122,31 @@ talks:
         image: /uploads/denis_furman_sq.jpg
         company: Libertex
       active: "true"
+    - talk:
+        id: talk21_14
+        title: Accessibility audit and what's after it
+        description: Accessible UI is slowly becoming a common requirement, yet we
+          rarely have resources to confirm results with all kinds of people with
+          all possible sorts of disabilities. This time we will avoid specific
+          issues that you could hear in every other accessibility talk. Instead,
+          we will discuss main ideas on how to search for accessibility issues,
+          possible solutions, and ways to protect your team from repeating them
+          in the future.
+      speaker:
+        bio: Self-proclaimed accessibility advocate, 5+ years of experience in Frontend
+          and a horrible sense of humor. Average sports fan and NFL enjoyer with
+          a goal of going to snowy Lambeau Field.
+        city: Vinnytsia
+        name: Oleksandr Kovtun
+        socialLinks:
+          - src: https://www.linkedin.com/in/staluxa/
+            icon: icon-linkedin-square
+        country: Ukraine
+        title: Senior Front-end Developer
+        id: oleksandr_kovtun
+        image: /uploads/oleksandr-kovtun-r.jpg
+        company: EPAM Systems
+      active: "true"
 schedule:
   id: schedule
   title: Schedule
