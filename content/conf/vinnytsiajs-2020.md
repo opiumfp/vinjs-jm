@@ -1573,15 +1573,15 @@ pricing:
       title: Smart Bird
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_regular
-      caption: Limited Quantity
+      caption: Sold Out
       price: "2800"
-      status: active
+      status: sold
       title: Regular
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_lastchance
       caption: Limited Quantity
       price: "3500"
-      status: default
+      status: active
       title: Last Chance
   subtitle: ""
   title: Conference Tickets
