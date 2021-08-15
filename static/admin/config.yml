@@ -289,8 +289,16 @@ collections:
               displayFields: ["name"]
               required: false
               default: ''
-            - {label: "Active", name: "active", widget: "boolean", default: "true"}            
-
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+    - label: "ScheduleTable"
+      name: "scheduletable"
+      default: ''
+      widget: "relation"
+      collection: "scheduletable"
+      searchFields: ["name"]
+      valueField: "data"
+      displayFields: ["name"]
+      required: false
     - label: "Partners"
       name: "partners"
       widget: "object"
