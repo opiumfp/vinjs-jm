@@ -2,8 +2,12 @@
 name: VinnytsiaJS 2021
 data:
   items:
-    - talk: ""
-      speaker: ""
+    - talk:
+        id: ""
+        title: ""
+      speaker:
+        name: ""
+        id: ""
     - talk:
         id: talk21_02
         title: Cloud Native Approach for Node.js Developers
