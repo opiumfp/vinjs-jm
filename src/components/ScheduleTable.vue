@@ -39,10 +39,23 @@
                 <tr>
                     <td><span class="schedule-table_time">11:10</span></td>
                     <td>
-                        <div class="schedule-table_talk"><a :href="`#${data[1].talk.id}`">{{ data[1].talk.title }}</a></div>
-                        <div class="schedule-table_speaker"><a :href="`#${data[1].speaker.id}`">{{ data[1].speaker.name }}</a></div>
+                        <template v-if="data[1].talk.id">
+                            <div class="schedule-table_talk"><a :href="`#${data[1].talk.id}`">{{ data[1].talk.title }}</a></div>
+                            <div class="schedule-table_speaker"><a :href="`#${data[1].speaker.id}`">{{ data[1].speaker.name }}</a></div>
+                        </template>
+                        <template v-else>
+                            <div>TBA</div>
+                        </template>
                     </td>
-                    <td></td>
+                    <td>
+                        <template v-if="data[2].talk.id">
+                            <div class="schedule-table_talk"><a :href="`#${data[2].talk.id}`">{{ data[2].talk.title }}</a></div>
+                            <div class="schedule-table_speaker"><a :href="`#${data[2].speaker.id}`">{{ data[2].speaker.name }}</a></div>
+                        </template>
+                        <template v-else>
+                            <div>TBA</div>
+                        </template>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="schedule-table_time">11:50</span></td>
