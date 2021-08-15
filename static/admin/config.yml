@@ -674,6 +674,44 @@ collections:
           displayFields: ["name"]
           required: false
           default: ''
+- name: "scheduletable" # Used in routes, e.g., /admin/collections/blog
+  label: "Schedule Table" # Used in the UI
+  folder: "content/scheduletable" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Name", name: "name", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        required: false
+        default: ''
+        fields:
+        - label: "Talk"
+          name: "talk"
+          widget: "relation"
+          collection: "talks"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+        - label: "Speaker"
+          name: "speaker"
+          widget: "relation"
+          collection: "speakers"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
 - name: "policy" # Used in routes, e.g., /admin/collections/blog
   label: "Policy" # Used in the UI
   folder: "content/policy" # The path to the folder where the documents are stored

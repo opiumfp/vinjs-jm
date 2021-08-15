@@ -123,6 +123,7 @@
         <div class="h6 text-center"><span>Location: </span><a href="#location">Recreation Base "Butterfly"</a></div>
         <h4 class="h5 text-center py-4">The Conference Schedule Will Be Announced Soon</h4>
         <div class="schedule_slot_talk_buttons text-center mb-5">
+          <schedule-table></schedule-table>
           <div class="h5">Join Us:</div><a href="#pricing" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
         </div>
       </section>
@@ -497,6 +498,7 @@ import Pricing from "@/components/Pricing";
 import Speakers from "@/components/Speakers";
 import Talks from "@/components/Talks";
 import Schedule from "@/components/Schedule";
+import ScheduleTable from "@/components/ScheduleTable";
 import Partners from "@/components/Partners";
 import Location from "@/components/Location";
 import ContactUs from "@/components/ContactUs";
@@ -542,6 +544,7 @@ export default {
     Speakers,
     Talks,
     Schedule,
+    ScheduleTable,
     Partners,
     Location,
     ContactUs,
