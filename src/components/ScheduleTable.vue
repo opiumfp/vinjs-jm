@@ -26,11 +26,22 @@
                 </tr>
                 <tr>
                     <td><span class="schedule-table_time">10:30</span></td>
-                    <td colspan="2"></td>
+                    <td colspan="2">
+                      <template v-if="data[0].talk.id">
+                          <div class="schedule-table_talk"><a :href="`#${data[0].talk.id}`">{{ data[0].talk.title }}</a></div>
+                          <div class="schedule-table_speaker"><a :href="`#${data[0].speaker.id}`">{{ data[0].speaker.name }}</a></div>
+                      </template>
+                      <template v-else>
+                          <div>TBA</div>
+                      </template>
+                    </td>
                 </tr>
                 <tr>
                     <td><span class="schedule-table_time">11:10</span></td>
-                    <td></td>
+                    <td>
+                        <div class="schedule-table_talk"><a :href="`#${data[1].talk.id}`">{{ data[1].talk.title }}</a></div>
+                        <div class="schedule-table_speaker"><a :href="`#${data[1].speaker.id}`">{{ data[1].speaker.name }}</a></div>
+                    </td>
                     <td></td>
                 </tr>
                 <tr>
@@ -136,6 +147,12 @@ export default {
   &_thead,
   &_time {
     font-weight: bold;
+  }
+  &_talk {
+    font-weight: bold;
+  }
+  &_speaker a{
+    color: $dark;
   }
   &_col {
     &-1 {
