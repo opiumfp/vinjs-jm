@@ -1568,33 +1568,31 @@ scheduletable:
         image: /uploads/vitalii-ruban-cropped.jpg
         company: Itera
     - talk:
-        id: talk21_11
-        title: Interviews are a great and invaluable experience
-        description: >-
-          You choose the job, not the job that chooses you!\
-
-          In this report, I will talk about the trends in vacancies in the frontend industry and what employers want from you.\
-
-          We will see what will be really relevant, not just on the hype\
-
-          I will tell you how to learn to successfully pass interviews without stress, how to properly prepare and what weaknesses need to be corrected
+        id: talk21_04
+        title: Who are you, JS developer?
+        description: "React, Angular, Vue, Svelte: are these networks essential in
+          software development or they just replace JavaScript because of lack
+          of knowledge? Who are you, JS developer? If you know only JavaScript,
+          probably, it'll be difficult to grow your career without Docker,
+          Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
+          frameworks and technologies to sort things out."
       speaker:
-        bio: >-
-          6 years of development experience
-
-          Passed all stages of work from studio, outsource, outstaff to product and e-commerce
-
-          I am interested in community building and I want to contribute a little bit of myself and my experience to the  Vinnytsia community
-        city: Vinnytsia
-        name: Denis Furman
+        bio: |-
+          Co-founder BeerJS Zhytomyr \
+          Co-organizer frontend://zt \
+          10+ years in dev \
+          5+ year in leading \
+          Football referee :)
+        city: Zhytomyr
+        name: Roman Savitskyi
         socialLinks:
           - src: ""
             icon: icon-facebook-square
         country: Ukraine
-        title: Frontend Developer
-        id: denis_furman
-        image: /uploads/denis_furman_sq.jpg
-        company: Libertex
+        title: Frontend Competence Center Lead
+        id: roman_savitskyi
+        image: /uploads/roman-savitskyi.jpg
+        company: Infopulse
     - talk:
         id: talk21_06
         title: Worker Threads vs C ++ Addons (part 2)
@@ -1667,29 +1665,31 @@ scheduletable:
         image: /uploads/oleksandr-kovtun-r.jpg
         company: EPAM Systems
     - talk:
-        id: talk21_13
-        title: Refactoring of REST API
-        description: In the talk, I plan to share my experience in REST API refactoring.
-          I plan to have a quick review of patterns and antipatterns. You will
-          see some bad ideas that make your API uncomfortable. Finally we review
-          tips and tricks that can help you make your API better. Also, we
-          review some API management tools that also help with API refactoring
+        id: talk21_07
+        title: How to be a good developer and stay in touch with the changes that
+          happens so fast?
+        description: In today's world, the developer faces a huge number of challenges -
+          from career issues to self-development issues. And there is not enough
+          time to do everything at once. Let's talk about what are the
+          priorities, how to discard unnecessary things and how not to waste
+          time watching cats on YouTube
       speaker:
-        bio: In IT for about 15 years. Now works as a solution architect in financial
-          services and integration domains. Head of Java competency in
-          Vinnytsya. Also, I am a resident of API and Integration competency
-          centers. In recent 5 years, my projects are connected with
-          integrations, REST API, developers experience, API management
-        city: Vinnytsia
-        name: Oleksandr Reshetnik
+        bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
+          many project management conferences, blogger. Programmer with 20 years
+          of experience. Almost 15 of them are in Java. Sergey was Project
+          Manager at Ciklum, Team Leader at Luxoft, NetCracker and IntroPro.
+        city: Kyiv
+        name: Sergey Nemchinskiy
         socialLinks:
-          - src: ""
+          - src: https://www.facebook.com/sergey.nemchinskiy/
             icon: icon-facebook-square
+          - src: https://www.linkedin.com/in/pro100fox/
+            icon: icon-linkedin-square
         country: Ukraine
-        title: Competency head
-        id: oleksandr_reshetnik
-        image: /uploads/oleksandr-reshetnik_sq.jpg
-        company: EPAM Systems
+        title: CEO/Owner
+        id: sergey_nemchinskiy
+        image: /uploads/sergey-nemchinskiy.jpg
+        company: foxmindEd
     - talk:
         id: talk21_08
         title: Old new manifest and its inevitability
@@ -1737,63 +1737,59 @@ scheduletable:
         image: /uploads/aleksander-ordynski-sq.jpg
         company: ElifTech
     - talk:
-        id: talk21_07
-        title: How to be a good developer and stay in touch with the changes that
-          happens so fast?
-        description: In today's world, the developer faces a huge number of challenges -
-          from career issues to self-development issues. And there is not enough
-          time to do everything at once. Let's talk about what are the
-          priorities, how to discard unnecessary things and how not to waste
-          time watching cats on YouTube
+        id: talk21_13
+        title: Refactoring of REST API
+        description: In the talk, I plan to share my experience in REST API refactoring.
+          I plan to have a quick review of patterns and antipatterns. You will
+          see some bad ideas that make your API uncomfortable. Finally we review
+          tips and tricks that can help you make your API better. Also, we
+          review some API management tools that also help with API refactoring
       speaker:
-        bio: Sergei Nemchinsky - CEO and owner of foxmindEd training company. Speaker of
-          many project management conferences, blogger. Programmer with 20 years
-          of experience. Almost 15 of them are in Java. Sergey was Project
-          Manager at Ciklum, Team Leader at Luxoft, NetCracker and IntroPro.
-        city: Kyiv
-        name: Sergey Nemchinskiy
-        socialLinks:
-          - src: https://www.facebook.com/sergey.nemchinskiy/
-            icon: icon-facebook-square
-          - src: https://www.linkedin.com/in/pro100fox/
-            icon: icon-linkedin-square
-        country: Ukraine
-        title: CEO/Owner
-        id: sergey_nemchinskiy
-        image: /uploads/sergey-nemchinskiy.jpg
-        company: foxmindEd
-    - talk:
-        id: talk21_04
-        title: Who are you, JS developer?
-        description: "React, Angular, Vue, Svelte: are these networks essential in
-          software development or they just replace JavaScript because of lack
-          of knowledge? Who are you, JS developer? If you know only JavaScript,
-          probably, it'll be difficult to grow your career without Docker,
-          Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
-          frameworks and technologies to sort things out."
-      speaker:
-        bio: |-
-          Co-founder BeerJS Zhytomyr \
-          Co-organizer frontend://zt \
-          10+ years in dev \
-          5+ year in leading \
-          Football referee :)
-        city: Zhytomyr
-        name: Roman Savitskyi
+        bio: In IT for about 15 years. Now works as a solution architect in financial
+          services and integration domains. Head of Java competency in
+          Vinnytsya. Also, I am a resident of API and Integration competency
+          centers. In recent 5 years, my projects are connected with
+          integrations, REST API, developers experience, API management
+        city: Vinnytsia
+        name: Oleksandr Reshetnik
         socialLinks:
           - src: ""
             icon: icon-facebook-square
         country: Ukraine
-        title: Frontend Competence Center Lead
-        id: roman_savitskyi
-        image: /uploads/roman-savitskyi.jpg
-        company: Infopulse
+        title: Competency head
+        id: oleksandr_reshetnik
+        image: /uploads/oleksandr-reshetnik_sq.jpg
+        company: EPAM Systems
     - talk:
-        id: ""
-        title: ""
+        id: talk21_11
+        title: Interviews are a great and invaluable experience
+        description: >-
+          You choose the job, not the job that chooses you!\
+
+          In this report, I will talk about the trends in vacancies in the frontend industry and what employers want from you.\
+
+          We will see what will be really relevant, not just on the hype\
+
+          I will tell you how to learn to successfully pass interviews without stress, how to properly prepare and what weaknesses need to be corrected
       speaker:
-        name: ""
-        id: 
+        bio: >-
+          6 years of development experience
+
+          Passed all stages of work from studio, outsource, outstaff to product and e-commerce
+
+          I am interested in community building and I want to contribute a little bit of myself and my experience to the  Vinnytsia community
+        city: Vinnytsia
+        name: Denis Furman
+        socialLinks:
+          - src: ""
+            icon: icon-facebook-square
+        country: Ukraine
+        title: Frontend Developer
+        id: denis_furman
+        image: /uploads/denis_furman_sq.jpg
+        company: Libertex
+    - talk: ""
+      speaker: ""
 partners:
   id: partners
   items:
