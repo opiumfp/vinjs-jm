@@ -121,7 +121,7 @@
         ></page-title>
         <h5 class="text-center pt-3 pt-lg-4">21.08<span class="font-weight-normal"> - VinnytsiaJS 2021 - Open Air Conference</span></h5>
         <div class="h6 text-center"><span>Location: </span><a href="#location">Recreation Base "Butterfly"</a></div>
-        <h4 class="h5 text-center py-4">The Conference Schedule Will Be Announced Soon</h4>
+        <h4 class="h5 text-center py-4">Minor Changes Are Possible</h4>
         <div class="schedule_slot_talk_buttons text-center mb-5">
           <schedule-table :scheduleTableData="$page.pageData.scheduletable.items"></schedule-table>
           <div class="h5">Join Us:</div><a href="#pricing" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
@@ -197,7 +197,7 @@
       <div class="spacer-nav-bottom"></div>
     </div>
 
-    <telegram-widget channel="vinjs" postid="94"></telegram-widget>
+    <telegram-widget channel="vinjs" postid="114"></telegram-widget>
 
   </Layout>
 </template>

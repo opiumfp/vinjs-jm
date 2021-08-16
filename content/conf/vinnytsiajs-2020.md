@@ -1788,8 +1788,12 @@ scheduletable:
         id: roman_savitskyi
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
-    - talk: ""
-      speaker: ""
+    - talk:
+        id: ""
+        title: ""
+      speaker:
+        name: ""
+        id: 
 partners:
   id: partners
   items:
