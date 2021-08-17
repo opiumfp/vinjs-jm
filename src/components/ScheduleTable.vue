@@ -57,7 +57,10 @@
                 </tr>
                 <tr>
                     <td class="schedule-table_time"><span>11:50</span></td>
-                    <td colspan="2" class="schedule-table_activity"><span>Coffee Break</span></td>
+                    <td colspan="2" class="schedule-table_activity">
+                        <div>Coffee Break</div>
+                        <div class="schedule-table_activity_panel">Panel Discussion: Web performance: when and why?</div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="schedule-table_time"><span>12:20</span></td>
@@ -171,7 +174,10 @@
                 </tr>
                 <tr>
                     <td class="schedule-table_time"><span>16:20</span></td>
-                    <td colspan="2" class="schedule-table_activity"><span>Coffee Break</span></td>
+                    <td colspan="2" class="schedule-table_activity">
+                        <div>Coffee Break</div>
+                        <div class="schedule-table_activity_panel">Panel Discussion: Personal brand and how to be a Hero</div>
+                    </td>
                 </tr>
                 <tr>
                     <td class="schedule-table_time"><span>16:50</span></td>
@@ -278,7 +284,10 @@ export default {
     color: $dark;
   }
   &_activity{
-    background-color: rgba($dark, 0.03)
+    background-color: rgba($dark, 0.03);
+    &_panel {
+        color: $link-color;
+    }
   }
   &_col {
     &-1 {
