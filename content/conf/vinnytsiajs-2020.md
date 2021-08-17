@@ -1941,6 +1941,13 @@ partners:
         description: ""
         image: /uploads/et-logo-cut.png
       image: /uploads/et-logo-cut.png
+    - active: "true"
+      fields:
+        title: Toyota Motors
+        src: https://toyota.vn.ua/
+        description: ""
+        image: /uploads/toyota-logo.png
+      image: /uploads/toyota-logo.png
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
