@@ -1934,6 +1934,13 @@ partners:
         description: ""
         image: /uploads/lampa-logo.svg
       image: /uploads/lampa-logo.svg
+    - active: "true"
+      fields:
+        title: Eliftech
+        src: https://www.eliftech.com/
+        description: ""
+        image: /uploads/et-logo-cut.png
+      image: /uploads/et-logo-cut.png
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
