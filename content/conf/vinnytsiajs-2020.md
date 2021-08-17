@@ -214,7 +214,7 @@ playlists:
 confspeakers:
   id: speakers
   title: Conference Speakers
-  subtitle: More Speakers Will Be Announced Soon
+  subtitle: ""
   items:
     - fields:
         bio: 15 years in IT. Teach people, Study, Work :)
@@ -298,6 +298,28 @@ confspeakers:
           probably, it'll be difficult to grow your career without Docker,
           Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
           frameworks and technologies to sort things out."
+      active: "true"
+    - fields:
+        bio: Former markup-developer, switched into world of WebGL and weird animations
+        city: Kyiv
+        name: Yuri Artiukh
+        socialLinks:
+          - src: https://www.facebook.com/akella
+            icon: icon-facebook-square
+          - src: https://twitter.com/akella
+            icon: icon-twitter
+          - src: https://github.com/akella
+            icon: icon-github
+        country: Ukraine
+        title: CTO
+        id: yuri_artiukh
+        image: /uploads/yuri-artyukh_sq.png
+        company: Coderiver
+      talk:
+        id: talk21_16
+        title: How i came up with my talk
+        description: A short trip into some projects creation with some really weird
+          technologies involved (math).
       active: "true"
     - fields:
         bio: The Main Viking of Ukrainian IT, founder and organizer of the conference
@@ -1199,6 +1221,28 @@ talks:
         image: /uploads/oleksandr-kovtun-r.jpg
         company: EPAM Systems
       active: "true"
+    - talk:
+        id: talk21_16
+        title: How i came up with my talk
+        description: A short trip into some projects creation with some really weird
+          technologies involved (math).
+      speaker:
+        bio: Former markup-developer, switched into world of WebGL and weird animations
+        city: Kyiv
+        name: Yuri Artiukh
+        socialLinks:
+          - src: https://www.facebook.com/akella
+            icon: icon-facebook-square
+          - src: https://twitter.com/akella
+            icon: icon-twitter
+          - src: https://github.com/akella
+            icon: icon-github
+        country: Ukraine
+        title: CTO
+        id: yuri_artiukh
+        image: /uploads/yuri-artyukh_sq.png
+        company: Coderiver
+      active: "true"
 schedule:
   id: schedule
   title: Schedule
@@ -1859,8 +1903,27 @@ scheduletable:
         id: denis_furman
         image: /uploads/denis_furman_sq.jpg
         company: Libertex
-    - talk: ""
-      speaker: ""
+    - talk:
+        id: talk21_16
+        title: How i came up with my talk
+        description: A short trip into some projects creation with some really weird
+          technologies involved (math).
+      speaker:
+        bio: Former markup-developer, switched into world of WebGL and weird animations
+        city: Kyiv
+        name: Yuri Artiukh
+        socialLinks:
+          - src: https://www.facebook.com/akella
+            icon: icon-facebook-square
+          - src: https://twitter.com/akella
+            icon: icon-twitter
+          - src: https://github.com/akella
+            icon: icon-github
+        country: Ukraine
+        title: CTO
+        id: yuri_artiukh
+        image: /uploads/yuri-artyukh_sq.png
+        company: Coderiver
 partners:
   id: partners
   items:
