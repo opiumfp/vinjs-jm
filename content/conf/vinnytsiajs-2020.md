@@ -1936,11 +1936,11 @@ partners:
       image: /uploads/Effective_Programming_for_America_logo.svg
     - active: "true"
       fields:
-        title: Exadel
-        src: https://exadel.com/
+        title: Astound Commerce
+        src: https://careers.astoundcommerce.com/
         description: ""
-        image: /uploads/blue-vertical-rgb-pd2.svg
-      image: /uploads/blue-vertical-rgb-pd2.svg
+        image: /uploads/astd_logo-r-_full_colour_cmyk.svg
+      image: /uploads/astd_logo-r-_full_colour_cmyk.svg
     - active: "true"
       fields:
         description: ""
@@ -1950,25 +1950,25 @@ partners:
       image: /uploads/infopulse-logo-web-rgb.svg
     - active: "true"
       fields:
+        title: Exadel
+        src: https://exadel.com/
+        description: ""
+        image: /uploads/blue-vertical-rgb-pd2.svg
+      image: /uploads/blue-vertical-rgb-pd2.svg
+    - active: "true"
+      fields:
+        title: Eliftech
+        src: https://www.eliftech.com/
+        description: ""
+        image: /uploads/et-logo-cut.png
+      image: /uploads/et-logo-cut.png
+    - active: "true"
+      fields:
         title: Onseo
         src: https://onseostudio.com/index.php/uk/careers-ua/
         description: ""
         image: /uploads/logo_onseo_lightbgr-1-.png
       image: /uploads/logo_onseo_lightbgr-1-.png
-    - active: "true"
-      fields:
-        title: Astound Commerce
-        src: https://careers.astoundcommerce.com/
-        description: ""
-        image: /uploads/astd_logo-r-_full_colour_cmyk.svg
-      image: /uploads/astd_logo-r-_full_colour_cmyk.svg
-    - active: "true"
-      fields:
-        title: Grid Dynamics
-        src: https://www.griddynamics.com/
-        description: ""
-        image: /uploads/grid_dynamics__logotype__h-1-.svg
-      image: /uploads/grid_dynamics__logotype__h-1-.svg
     - active: "true"
       fields:
         title: Lohika
@@ -1985,6 +1985,13 @@ partners:
       image: /uploads/capgeminiengineering_logo_2col_rgb-1-.svg
     - active: "true"
       fields:
+        title: Grid Dynamics
+        src: https://www.griddynamics.com/
+        description: ""
+        image: /uploads/grid_dynamics__logotype__h-1-.svg
+      image: /uploads/grid_dynamics__logotype__h-1-.svg
+    - active: "true"
+      fields:
         title: Ukrsibbank
         src: https://my.ukrsibbank.com/ua/personal/
         description: ""
@@ -1997,13 +2004,6 @@ partners:
         description: ""
         image: /uploads/lampa-logo.svg
       image: /uploads/lampa-logo.svg
-    - active: "true"
-      fields:
-        title: Eliftech
-        src: https://www.eliftech.com/
-        description: ""
-        image: /uploads/et-logo-cut.png
-      image: /uploads/et-logo-cut.png
     - active: "true"
       fields:
         title: SoftServe
