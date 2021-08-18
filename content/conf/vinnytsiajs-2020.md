@@ -2006,11 +2006,25 @@ partners:
       image: /uploads/et-logo-cut.png
     - active: "true"
       fields:
+        title: SoftServe
+        src: https://www.softserveinc.com/uk-ua
+        description: ""
+        image: /uploads/softserve_logo.svg
+      image: /uploads/softserve_logo.svg
+    - active: "true"
+      fields:
         title: Toyota Motors
         src: https://toyota.vn.ua/
         description: ""
         image: /uploads/toyota-logo.png
       image: /uploads/toyota-logo.png
+    - active: "true"
+      fields:
+        title: Hyndai
+        src: https://hyundai.vn.ua/
+        description: ""
+        image: /uploads/hyundai_motor_company_logo.svg
+      image: /uploads/hyundai_motor_company_logo.svg
   subtitle: Who Makes This Event Possible!
   title: Partners
 friends:
