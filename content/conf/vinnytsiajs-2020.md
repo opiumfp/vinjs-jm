@@ -2181,9 +2181,9 @@ pricing:
       title: Regular
     - btnLabel: Take Ticket
       btnSrc: https://secure.wayforpay.com/payment/vinnytsiajs_2021_lastchance
-      caption: Limited Quantity
+      caption: Sold Out
       price: "3500"
-      status: active
+      status: sold
       title: Last Chance
   subtitle: ""
   title: Conference Tickets

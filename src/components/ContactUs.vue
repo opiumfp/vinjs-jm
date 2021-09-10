@@ -22,7 +22,7 @@
               </li>
               <li>
                 <span>Transfer:</span>
-                <a href="tel:+380632007748">+38 063 200-77-48</a>
+                <a href="tel:+380688186200">+38 068 818 62 00</a>
               </li>
               <li>
                 <a href="mailto:info@vinnytsiajs.org">info@vinnytsiajs.org</a>
