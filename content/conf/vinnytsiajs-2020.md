@@ -127,8 +127,8 @@ mediaTiles:
     - active: "true"
       colDesk: 6
       type: youtube
-      src: https://youtu.be/LGtTlNWVWyA
-      title: VinnytsiaJS 2021
+      src: https://www.youtube.com/watch?v=LGtTlNWVWyA
+      title: Highlights 2021
       image: /uploads/241734849_1478686065834639_3360101219723271296_n.jpg
     - active: "true"
       colDesk: 6
@@ -155,17 +155,17 @@ mediaTiles:
       title: Pub Talks
       image: /uploads/vjs-pt1.jpg
     - active: "true"
-      colDesk: 4
-      image: /uploads/68243012_887538998282685_393295670032728064_o.jpg
-      src: https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=887519681617950
-      title: JS People 2019
-      type: gallery
-    - active: "true"
-      colDesk: 4
+      colDesk: 6
       image: /uploads/68691439_887530854950166_8983022278241419264_o.jpg
       src: https://www.youtube.com/watch?v=M3m25mdBBYM
       title: Highlights 2019
       type: youtubePopup
+    - active: "true"
+      colDesk: 6
+      image: /uploads/68243012_887538998282685_393295670032728064_o.jpg
+      src: https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=887519681617950
+      title: JS People 2019
+      type: gallery
     - active: "true"
       colDesk: 4
       image: /uploads/2018-1.jpg
@@ -173,13 +173,13 @@ mediaTiles:
       title: JS People 2018
       type: gallery
     - active: "true"
-      colDesk: 6
+      colDesk: 4
       image: /uploads/2018.jpg
       src: https://www.youtube.com/watch?v=2bAmvd337CM
       title: Highlights 2018
       type: youtubePopup
     - active: "true"
-      colDesk: 6
+      colDesk: 4
       image: /uploads/20746125_468162560220333_8774226596478771812_o.jpg
       src: https://www.facebook.com/pg/VinnytsiaJS/photos/?tab=album&album_id=468145436888712
       title: JS People 2017
