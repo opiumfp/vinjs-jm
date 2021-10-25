@@ -126,7 +126,7 @@ mediaTiles:
   items:
     - active: "true"
       colDesk: 6
-      type: youtube
+      type: youtubePopup
       src: https://www.youtube.com/watch?v=LGtTlNWVWyA
       title: Highlights 2021
       image: /uploads/241734849_1478686065834639_3360101219723271296_n.jpg
