@@ -141,7 +141,7 @@ mediaTiles:
       type: gallery
       src: https://www.facebook.com/media/set/?vanity=VinnytsiaJS&set=a.1429409200762326
       title: "Pub Talks #3"
-      image: /uploads/210824741_1429393527430560_7510711417365490375_n.jpg
+      image: /uploads/202170462_1429392617430651_6018623864467480536_n.jpg
     - active: "true"
       colDesk: 4
       type: youtubelink
