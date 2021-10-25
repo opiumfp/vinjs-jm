@@ -126,12 +126,30 @@ mediaTiles:
   items:
     - active: "true"
       colDesk: 6
+      type: youtube
+      src: https://youtu.be/LGtTlNWVWyA
+      title: VinnytsiaJS 2021
+      image: /uploads/241734849_1478686065834639_3360101219723271296_n.jpg
+    - active: "true"
+      colDesk: 6
+      type: gallery
+      src: https://www.facebook.com/media/set?vanity=VinnytsiaJS&set=a.1478698372500075
+      title: JS People 2021
+      image: /uploads/242069876_1478685992501313_419098388093812675_n.jpg
+    - active: "true"
+      colDesk: 4
+      type: gallery
+      src: https://www.facebook.com/media/set/?vanity=VinnytsiaJS&set=a.1429409200762326
+      title: "Pub Talks #3"
+      image: /uploads/210824741_1429393527430560_7510711417365490375_n.jpg
+    - active: "true"
+      colDesk: 4
       type: youtubelink
       src: https://www.youtube.com/watch?v=9CnW5XLOFmg&list=PL7GMpyIlGWSVZ-96txrpA2RkwWZ_JN1H2
       title: Online Thursdays 2020
       image: /uploads/vjs20-bg-logo-a.jpg
     - active: "true"
-      colDesk: 6
+      colDesk: 4
       type: gallery
       src: https://www.facebook.com/media/set/?vanity=VinnytsiaJS&set=a.1053063675063549
       title: Pub Talks
