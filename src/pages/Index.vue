@@ -197,7 +197,7 @@
       <div class="spacer-nav-bottom"></div>
     </div>
 
-    <telegram-widget channel="vinjs" postid="114"></telegram-widget>
+    <telegram-widget channel="vinjs" postid="141"></telegram-widget>
 
   </Layout>
 </template>
