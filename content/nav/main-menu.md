@@ -18,7 +18,7 @@ data:
     - active: true
       src: "#speakers"
       title: Speakers
-    - active: false
+    - active: true
       src: "#cfp"
       title: CFP
     - active: true
