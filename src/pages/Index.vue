@@ -151,29 +151,29 @@
       </section> -->
       <hr />
       <section class="position-relative">
-        <div class="anchor-id" :id="$page.pageData.partners.id"></div>
+        <div class="anchor-id" :id="$page.partnersData.partners.id"></div>
         <page-title
           class="pt-5 pb-4"
-          :title="$page.pageData.partners.title"
-          :subtitle="$page.pageData.partners.subtitle"
+          :title="$page.partnersData.partners.title"
+          :subtitle="$page.partnersData.partners.subtitle"
         ></page-title>
-        <partners :partnersData="$page.pageData.partners" mode="xlarge"></partners>
+        <partners :partnersData="$page.partnersData.partners" mode="xlarge"></partners>
       </section>
       <section>
         <page-title
           class="pt-5 pb-4"
-          :title="$page.pageData.friends.title"
-          :subtitle="$page.pageData.friends.subtitle"
+          :title="$page.partnersData.friends.title"
+          :subtitle="$page.partnersData.friends.subtitle"
         ></page-title>
-        <partners :partnersData="$page.pageData.friends" mode="large"></partners>
+        <partners :partnersData="$page.partnersData.friends" mode="large"></partners>
       </section>
       <section>
         <page-title
           class="pt-5 pb-4"
-          :title="$page.pageData.mediapartners.title"
-          :subtitle="$page.pageData.mediapartners.subtitle"
+          :title="$page.partnersData.mediapartners.title"
+          :subtitle="$page.partnersData.mediapartners.subtitle"
         ></page-title>
-        <partners :partnersData="$page.pageData.mediapartners" mode="small"></partners>
+        <partners :partnersData="$page.partnersData.mediapartners" mode="small"></partners>
         <div class="text-center pt-5 pb-4">
           <a
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
@@ -302,20 +302,6 @@ query Conf {
         image (quality:40)
       }
     }
-    partners {
-      title
-      subtitle
-      id
-      items {
-        active
-        fields {
-          description
-          image (quality:90, width:400)
-          src
-          title
-        }
-      }
-    }
     pricing {
       title
       subtitle
@@ -331,34 +317,6 @@ query Conf {
         price
       }
     }
-    friends {
-      title
-      subtitle
-      id
-      items {
-        active
-        fields {
-          description
-          image (quality:90, width:400)
-          src
-          title
-        }
-      }
-    }
-    mediapartners {
-      title
-      subtitle
-      id
-      items {
-        active
-        fields {
-          description
-          image (quality:90, width:400)
-          src
-          title
-        }
-      }
-    }
     location {
       id
       title
@@ -372,7 +330,7 @@ query Conf {
       mapLinkGoogle
     }
   }
-  speakersData: conf (path: "/content/conf/speakers-2022") {
+  speakersData: conf (path: "/content/conf/speakersdata/speakers-2022") {
     title
     confspeakers {
       title
@@ -460,10 +418,52 @@ query Conf {
       }
     }
   }
+  partnersData: partners (path: "/content/conf/partnersdata/partners-2022") {
+    title
+    partners {
+      title
+      subtitle
+      id
+      items {
+        active
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
+      }
+    }
+    friends {
+      title
+      subtitle
+      id
+      items {
+        active
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
+      }
+    }
+    mediapartners {
+      title
+      subtitle
+      id
+      items {
+        active
+        fields {
+          description
+          image (quality:90, width:400)
+          src
+          title
+        }
+      }
+    }
+  }  
 }
-</page-query>
-
-<page-query>
 </page-query>
 
 <script>

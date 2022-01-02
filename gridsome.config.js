@@ -21,8 +21,17 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/conf/speakersData/**/*.md',
+        path: 'content/conf/speakersdata/**/*.md',
         typeName: 'Speakersdata',
+        resolveAbsolutePaths: true,
+        remark: {}
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/conf/partnersdata/**/*.md',
+        typeName: 'Partners',
         resolveAbsolutePaths: true,
         remark: {}
       }
