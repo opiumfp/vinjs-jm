@@ -203,7 +203,7 @@
 
 <page-query>
 query Conf {
-  pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
+  pageData: conf (path: "/content/conf/vinnytsiajs-2022-conference") {
     nav {
       button {
         active
@@ -494,6 +494,20 @@ query Conf {
       mapLinkGoogle
     }
   }
+  speakersData: conf (path: "/content/conf/vinnytsiajs-2020") {
+    herocf {
+      id
+      title
+      subtitle
+      date
+      image (quality:95)
+      imagePt (quality:65)
+      button {
+        title
+        link
+      }
+    }
+  }
 }
 
 </page-query>
@@ -563,7 +577,7 @@ export default {
   },
   mounted() {
     // console.log('this.$page.pageData ::: ', this.$page.pageData)
-    // debugger
+    debugger
   }
 };
 </script>
