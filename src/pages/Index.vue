@@ -113,7 +113,7 @@
         </div>
       </section>
       <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.schedule.id"></div>
         <page-title
                 class="position-relative"
                 :title="'Conference Schedule'"
@@ -122,32 +122,32 @@
         <div class="h6 text-center"><span>Location: </span><a href="#location">Recreation Base "Butterfly"</a></div>
         <h4 class="h5 text-center py-4">Minor Changes Are Possible</h4>
         <div class="schedule_slot_talk_buttons text-center mb-5">
-          <schedule-table :scheduleTableData="$page.pageData.scheduletable.items"></schedule-table>
+          <schedule-table :scheduleTableData="$page.speakersData.scheduletable.items"></schedule-table>
           <div class="h5">Join Us:</div><a href="#pricing" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
         </div>
       </section>
             <section class="position-relative pb-5">
-        <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.pricing.id"></div>
         <page-title
           class="pt-5 pb-4"
-          :title="$page.pageData.pricing.title"
-          :subtitle="$page.pageData.pricing.subtitle"
+          :title="$page.speakersData.pricing.title"
+          :subtitle="$page.speakersData.pricing.subtitle"
         ></page-title>
-        <pricing :pricingData="$page.pageData.pricing" />
+        <pricing :pricingData="$page.speakersData.pricing" />
         <!-- <page-title
           class="pt-6 pb-4"
-          :title="$page.pageData.pricing.title"
+          :title="$page.speakersData.pricing.title"
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title> -->
       </section>
       <!-- <hr/>
       <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.schedule.id"></div>
         <page-title
                 class="position-relative"
-                :title="$page.pageData.schedule.title"
+                :title="$page.speakersData.schedule.title"
         ></page-title>
-        <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
+        <schedule :scheduleData="$page.speakersData.schedule.schedules"></schedule>
       </section> -->
       <hr />
       <section class="position-relative">
@@ -302,59 +302,6 @@ query Conf {
         image (quality:40)
       }
     }
-    schedule {
-      title
-      id
-      schedules {
-        schedule {
-          collapsed
-          location
-          locationlink
-          description
-          fulltitle
-          title
-          starttime
-          endtime
-          link
-          linkyoutube
-          linkdiscord
-          linkbuy
-          items {
-            time
-            titlee
-            titleedescription
-            talk {
-              id
-              title
-              description
-            }
-            speaker {
-              name
-              image
-              id
-            }
-            speaker2 {
-              name
-              image
-              id
-            }
-          }
-        }
-        active
-      }
-    }
-    scheduletable {
-      items {
-        talk {
-          id
-          title
-        }
-        speaker {
-          id
-          name
-        }
-      }
-    }
     partners {
       title
       subtitle
@@ -493,6 +440,59 @@ query Conf {
           id
           name
           image (quality:90, width:200)
+        }
+      }
+    }
+    schedule {
+      title
+      id
+      schedules {
+        schedule {
+          collapsed
+          location
+          locationlink
+          description
+          fulltitle
+          title
+          starttime
+          endtime
+          link
+          linkyoutube
+          linkdiscord
+          linkbuy
+          items {
+            time
+            titlee
+            titleedescription
+            talk {
+              id
+              title
+              description
+            }
+            speaker {
+              name
+              image
+              id
+            }
+            speaker2 {
+              name
+              image
+              id
+            }
+          }
+        }
+        active
+      }
+    }
+    scheduletable {
+      items {
+        talk {
+          id
+          title
+        }
+        speaker {
+          id
+          name
         }
       }
     }
