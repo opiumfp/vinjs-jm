@@ -12,6 +12,13 @@ partners:
         src: https://www.epam.com/
         title: EPAM Systems
       image: /uploads/Effective_Programming_for_America_logo.svg
+    - active: "true"
+      fields:
+        title: Eliftech
+        src: https://www.eliftech.com/
+        description: ""
+        image: /uploads/et-logo-cut.png
+      image: /uploads/et-logo-cut.png
 friends:
   id: friends
   title: Friends
