@@ -1,9 +1,9 @@
 ---
 title: Speakers 2022
 confspeakers:
-  id: talks
-  title: Talks
-  subtitle: More Conference Talks will be Announced Soon
+  id: speakers
+  title: Speakers
+  subtitle: More Speakers will be Announced Soon
   items:
     - fields:
         bio: |-
@@ -68,7 +68,7 @@ speakers:
 talks:
   id: talks
   title: Talks
-  subtitle: "More Conference Talks will be Announced Soon   items:"
+  subtitle: More Conference Talks will be Announced Soon
   items:
     - talk:
         id: talk21_04
