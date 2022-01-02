@@ -59,6 +59,13 @@ mediapartners:
       image: /uploads/beerjs_zt_logo.svg
     - active: "true"
       fields:
+        title: LvivCSS
+        src: https://www.facebook.com/lvivcss/
+        description: ""
+        image: /uploads/lvivcss-logo-cropped.png
+      image: /uploads/lvivcss-logo-cropped.png
+    - active: "true"
+      fields:
         description: ""
         image: /uploads/it-association.png
         src: https://www.it-association.vn.ua/
@@ -71,4 +78,25 @@ mediapartners:
         description: ""
         image: /uploads/ihub-logo.png
       image: /uploads/ihub-logo.png
+    - active: "true"
+      fields:
+        title: FrontSpot
+        src: https://www.facebook.com/groups/FrontSpot/
+        description: ""
+        image: /uploads/1_ubg12udfi8_qgit2n4odyq-2x.png
+      image: /uploads/1_ubg12udfi8_qgit2n4odyq-2x.png
+    - active: "true"
+      fields:
+        title: WebNotBombs
+        src: " https://www.facebook.com/groups/webnotbombs/"
+        description: ""
+        image: /uploads/webnotbombs-logo-short.png
+      image: /uploads/webnotbombs-logo-short.png
+    - active: "true"
+      fields:
+        title: Node.js Recipes
+        src: http://node.recipes/
+        description: ""
+        image: /uploads/njs_symbol-text2.svg
+      image: /uploads/njs_symbol-text2.svg
 ---
