@@ -95,7 +95,7 @@ about:
     year meet the community dedicated to JavaScript development. That will be a
     set of meetups, our excited Open-Air Conference and a series of online
     events with high-level talks by speakers from Ukraine and abroad.
-  title: VinnytsiaJS 2021
+  title: VinnytsiaJS 2022
   titleI18N:
     en: VinnytsiaJS 2020
     ua: Вінниця JS
@@ -106,7 +106,7 @@ stat:
   items:
     - paragraph: Old friends and experts in JavaScript to get acquainted with.
       title: |-
-        300+ \
+        400+ \
         Attendees
     - paragraph: |-
         General + **Lightnings**. \
