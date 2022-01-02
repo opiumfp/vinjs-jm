@@ -48,7 +48,7 @@
         <media-tiles :mediaTilesData="$page.pageData.mediaTiles"></media-tiles>
       </section>
 
-      <section class="position-relative pt-5 pb-5">
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.speakersData.confspeakers.id"></div>
         <div class="container">
           <div class="row">
@@ -62,7 +62,8 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.speakersData.speakers.id"></div>
         <div class="container">
@@ -97,7 +98,8 @@
           </div>
         </div>
       </section>
-      <section class="position-relative pt-5 pb-5">
+
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.speakersData.talks.id"></div>
         <div class="container">
           <div class="row">
@@ -111,8 +113,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="position-relative pt-5 pb-5">
+      </section> -->
+
+      <!-- <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.speakersData.schedule.id"></div>
         <page-title
                 class="position-relative"
@@ -125,22 +128,25 @@
           <schedule-table :scheduleTableData="$page.speakersData.scheduletable.items"></schedule-table>
           <div class="h5">Join Us:</div><a href="#pricing" class="btn btn-primary mt-2 mx-2">Get Ticket</a>
         </div>
-      </section>
-            <section class="position-relative pb-5">
+      </section> -->
+
+      <!-- <section class="position-relative pb-5">
         <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <page-title
           class="pt-5 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="$page.pageData.pricing.subtitle"
-        ></page-title>
-        <pricing :pricingData="$page.pageData.pricing" />
+        ></page-title> -->
+        <!-- <pricing :pricingData="$page.pageData.pricing" /> -->
         <!-- <page-title
           class="pt-6 pb-4"
           :title="$page.pageData.pricing.title"
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title> -->
-      </section>
+      <!-- </section> -->
+
       <!-- <hr/>
+
       <section class="position-relative pt-5 pb-5">
         <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
@@ -149,7 +155,9 @@
         ></page-title>
         <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section> -->
-      <hr />
+
+      <!-- <hr /> -->
+
       <section class="position-relative">
         <div class="anchor-id" :id="$page.partnersData.partners.id"></div>
         <page-title
@@ -157,7 +165,13 @@
           :title="$page.partnersData.partners.title"
           :subtitle="$page.partnersData.partners.subtitle"
         ></page-title>
-        <partners :partnersData="$page.partnersData.partners" mode="xlarge"></partners>
+        <!-- <partners :partnersData="$page.partnersData.partners" mode="xlarge"></partners> -->
+        <div class="text-center pt-5 pb-4">
+          <a
+            href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
+            class="btn btn-primary my-2 my-sm-0"
+          >Become a Partner</a>
+        </div>
       </section>
       <section>
         <page-title
