@@ -160,7 +160,36 @@ collections:
                 - {label: "Static text", value: "text"}
             - {label: "Link", name: "src", widget: "string", default: '', required: false}
             - {label: "Image", name: "image", widget: "image", default: null, required: false}
-
+    - label: "Partners"
+      name: "partners"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data"
+              displayFields: ["title"]
+            - label: "Logo"
+              name: "image"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data.image"
+              displayFields: ["title"]
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
     - label: "Friends"
       name: "friends"
       widget: "object"
@@ -418,36 +447,6 @@ collections:
       valueField: "data"
       displayFields: ["name"]
       required: false
-    - label: "Partners"
-      name: "partners"
-      widget: "object"
-      default: ''
-      required: false
-      fields:
-        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
-        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
-        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
-        - label: "Items"
-          name: "items"
-          widget: "list"
-          default: ''
-          required: false
-          fields:
-            - label: "Fields"
-              name: "fields"
-              widget: "relation"
-              collection: "partners"
-              searchFields: ["title"]
-              valueField: "data"
-              displayFields: ["title"]
-            - label: "Logo"
-              name: "image"
-              widget: "relation"
-              collection: "partners"
-              searchFields: ["title"]
-              valueField: "data.image"
-              displayFields: ["title"]
-            - {label: "Active", name: "active", widget: "boolean", default: "true"}
             
 #socialicons Data
 - name: "socialicons" # Used in routes, e.g., /admin/collections/blog
