@@ -446,43 +446,6 @@ query Conf {
     schedule {
       title
       id
-      schedules {
-        schedule {
-          collapsed
-          location
-          locationlink
-          description
-          fulltitle
-          title
-          starttime
-          endtime
-          link
-          linkyoutube
-          linkdiscord
-          linkbuy
-          items {
-            time
-            titlee
-            titleedescription
-            talk {
-              id
-              title
-              description
-            }
-            speaker {
-              name
-              image
-              id
-            }
-            speaker2 {
-              name
-              image
-              id
-            }
-          }
-        }
-        active
-      }
     }
     scheduletable {
       items {
