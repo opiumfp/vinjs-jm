@@ -1,6 +1,6 @@
 ---
 title: VinnytsiaJS 2022 - Conference
-startDate: Saturday, July 31, 2021 9:00 PM
+startDate: Saturday, July 23, 2022 9:00 PM
 nav:
   button:
     active: true
