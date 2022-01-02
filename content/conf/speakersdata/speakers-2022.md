@@ -32,6 +32,31 @@ confspeakers:
           Redis, GraphQL, React, Angular, Node, etc. I'll tell you more about
           frameworks and technologies to sort things out."
       active: "true"
+    - fields:
+        bio: Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa IT Academy. I
+          have experience in developing fast, scalable, highly loaded solutions.
+          I'm working on developing VR interfaces and interested in machine
+          learning and AI. I like to think a lot and write a little.
+        city: Vinnytsia
+        name: Borys Mohyla
+        socialLinks:
+          - icon: icon-facebook-square
+            src: https://www.facebook.com/BorysMohyla
+          - icon: icon-twitter
+            src: https://twitter.com/BoryaMogila
+          - icon: icon-github
+            src: https://boryamogila.github.io/
+        country: Ukraine
+        title: Senior full-stack developer
+        id: borys_mohyla
+        image: /uploads/Borys Mohyla -1x1.jpg
+        company: RIA.COM
+      talk:
+        id: talk_001
+        title: JS Quiz
+        description: Fun and entertaining Quiz about JS and friends. Goes well with
+          light beer
+      active: "true"
 speakers:
   id: ""
   title: ""
@@ -71,6 +96,31 @@ talks:
         id: roman_savitskyi
         image: /uploads/roman-savitskyi.jpg
         company: Infopulse
+      active: "true"
+    - talk:
+        id: talk_001
+        title: JS Quiz
+        description: Fun and entertaining Quiz about JS and friends. Goes well with
+          light beer
+      speaker:
+        bio: Co-organizer of VinnytsiaJS conference. Lecturer at Vinnitsa IT Academy. I
+          have experience in developing fast, scalable, highly loaded solutions.
+          I'm working on developing VR interfaces and interested in machine
+          learning and AI. I like to think a lot and write a little.
+        city: Vinnytsia
+        name: Borys Mohyla
+        socialLinks:
+          - icon: icon-facebook-square
+            src: https://www.facebook.com/BorysMohyla
+          - icon: icon-twitter
+            src: https://twitter.com/BoryaMogila
+          - icon: icon-github
+            src: https://boryamogila.github.io/
+        country: Ukraine
+        title: Senior full-stack developer
+        id: borys_mohyla
+        image: /uploads/Borys Mohyla -1x1.jpg
+        company: RIA.COM
       active: "true"
 schedule:
   id: schedule
