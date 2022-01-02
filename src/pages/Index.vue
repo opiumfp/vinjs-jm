@@ -127,27 +127,27 @@
         </div>
       </section>
             <section class="position-relative pb-5">
-        <div class="anchor-id" :id="$page.speakersData.pricing.id"></div>
+        <div class="anchor-id" :id="$page.pageData.pricing.id"></div>
         <page-title
           class="pt-5 pb-4"
-          :title="$page.speakersData.pricing.title"
-          :subtitle="$page.speakersData.pricing.subtitle"
+          :title="$page.pageData.pricing.title"
+          :subtitle="$page.pageData.pricing.subtitle"
         ></page-title>
-        <pricing :pricingData="$page.speakersData.pricing" />
+        <pricing :pricingData="$page.pageData.pricing" />
         <!-- <page-title
           class="pt-6 pb-4"
-          :title="$page.speakersData.pricing.title"
+          :title="$page.pageData.pricing.title"
           :subtitle="'Sale of tickets on the event is temporary suspended!'"
         ></page-title> -->
       </section>
       <!-- <hr/>
       <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.speakersData.schedule.id"></div>
+        <div class="anchor-id" :id="$page.pageData.schedule.id"></div>
         <page-title
                 class="position-relative"
-                :title="$page.speakersData.schedule.title"
+                :title="$page.pageData.schedule.title"
         ></page-title>
-        <schedule :scheduleData="$page.speakersData.schedule.schedules"></schedule>
+        <schedule :scheduleData="$page.pageData.schedule.schedules"></schedule>
       </section> -->
       <hr />
       <section class="position-relative">
@@ -498,7 +498,9 @@ query Conf {
     }
   }
 }
+</page-query>
 
+<page-query>
 </page-query>
 
 <script>
