@@ -49,31 +49,31 @@
       </section>
 
       <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.confspeakers.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.confspeakers.id"></div>
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
               <page-title
                 class="position-relative"
-                :title="$page.pageData.confspeakers.title"
-                :subtitle="$page.pageData.confspeakers.subtitle"
+                :title="$page.speakersData.confspeakers.title"
+                :subtitle="$page.speakersData.confspeakers.subtitle"
               ></page-title>
-              <speakers class="mt-5" :speakersData="$page.pageData.confspeakers"></speakers>
+              <speakers class="mt-5" :speakersData="$page.speakersData.confspeakers"></speakers>
             </div>
           </div>
         </div>
       </section>
       <!-- <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.speakers.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.speakers.id"></div>
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
               <page-title
                 class="position-relative"
-                :title="$page.pageData.speakers.title"
-                :subtitle="$page.pageData.speakers.subtitle"
+                :title="$page.speakersData.speakers.title"
+                :subtitle="$page.speakersData.speakers.subtitle"
               ></page-title>
-              <speakers class="mt-5" :speakersData="$page.pageData.speakers"></speakers>
+              <speakers class="mt-5" :speakersData="$page.speakersData.speakers"></speakers>
             </div>
           </div>
         </div>
@@ -98,16 +98,16 @@
         </div>
       </section>
       <section class="position-relative pt-5 pb-5">
-        <div class="anchor-id" :id="$page.pageData.talks.id"></div>
+        <div class="anchor-id" :id="$page.speakersData.talks.id"></div>
         <div class="container">
           <div class="row">
             <div class="col-12">
               <page-title
                 class="position-relative"
-                :title="$page.pageData.talks.title"
-                :subtitle="$page.pageData.talks.subtitle"
+                :title="$page.speakersData.talks.title"
+                :subtitle="$page.speakersData.talks.subtitle"
               ></page-title>
-              <talks class="mt-5" :talksData="$page.pageData.talks"></talks>
+              <talks class="mt-5" :talksData="$page.speakersData.talks"></talks>
             </div>
           </div>
         </div>
@@ -302,75 +302,6 @@ query Conf {
         image (quality:40)
       }
     }
-    confspeakers {
-      title
-      subtitle
-      id
-      items {
-        fields {
-          bio
-          city
-          name
-          socialLinks {
-            src
-            icon
-          }
-          id
-          country
-          title
-          image (quality:90, width:200)
-          company
-        }
-        talk {
-          id
-          title
-          description
-        }
-      }
-    }    
-    speakers {
-      title
-      subtitle
-      id
-      items {
-        fields {
-          bio
-          city
-          name
-          socialLinks {
-            src
-            icon
-          }
-          id
-          country
-          title
-          image (quality:90, width:200)
-          company
-        }
-        talk {
-          id
-          title
-          description
-        }
-      }
-    }
-    talks {
-      title
-      subtitle
-      id
-      items {
-        talk {
-          id
-          title
-          description
-        }
-        speaker {
-          id
-          name
-          image (quality:90, width:200)
-        }
-      }
-    }
     schedule {
       title
       id
@@ -494,17 +425,75 @@ query Conf {
       mapLinkGoogle
     }
   }
-  speakersData: conf (path: "/content/conf/vinnytsiajs-2020") {
-    herocf {
-      id
+  speakersData: conf (path: "/content/conf/speakers-2022") {
+    title
+    confspeakers {
       title
       subtitle
-      date
-      image (quality:95)
-      imagePt (quality:65)
-      button {
-        title
-        link
+      id
+      items {
+        fields {
+          bio
+          city
+          name
+          socialLinks {
+            src
+            icon
+          }
+          id
+          country
+          title
+          image (quality:90, width:200)
+          company
+        }
+        talk {
+          id
+          title
+          description
+        }
+      }
+    }    
+    speakers {
+      title
+      subtitle
+      id
+      items {
+        fields {
+          bio
+          city
+          name
+          socialLinks {
+            src
+            icon
+          }
+          id
+          country
+          title
+          image (quality:90, width:200)
+          company
+        }
+        talk {
+          id
+          title
+          description
+        }
+      }
+    }
+    talks {
+      title
+      subtitle
+      id
+      items {
+        talk {
+          id
+          title
+          description
+        }
+        speaker {
+          id
+          name
+          image (quality:90, width:200)
+        }
       }
     }
   }
