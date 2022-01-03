@@ -18,9 +18,9 @@
             muted="muted"
             loop="loop"
           >
-            <source src="../../assets/videos/vjs19.mp4" type="video/mp4" />
-            <source src="../../assets/videos/vjs19.ogg" type="video/ogg" />
-            <source src="../../assets/videos/vjs19.webm" type="video/webm" />
+            <source src="../../assets/videos/vjs21.mp4" type="video/mp4" />
+            <source src="../../assets/videos/vjs21.ogg" type="video/ogg" />
+            <source src="../../assets/videos/vjs21.webm" type="video/webm" />
           </video>
         </template>
         <g-image
@@ -73,6 +73,10 @@ export default {
     this.herovideo = this.$refs.herovideo;
 
     if (this.device.isShowVideo) {
+      this.herovideo.addEventListener('loadeddata', (e) => {
+        e.target.classList.add('hero_bg_video-loaded');
+      }, false);
+
       this.herovideo.play();
 
       let videoHide = false;
@@ -189,6 +193,11 @@ export default {
       display: none;
       html.browser:not(.ie):not(.edge) & {
         display: block;
+      }
+      opacity: 0;
+      @include transition(all ease-in-out 1.5s);
+      &-loaded {
+        opacity: 100%;
       }
     }
     &_video {
