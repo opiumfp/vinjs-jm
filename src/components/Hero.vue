@@ -73,11 +73,11 @@ export default {
     this.herovideo = this.$refs.herovideo;
 
     if (this.device.isShowVideo) {
-      this.herovideo.addEventListener('loadeddata', (e) => {
-        e.target.classList.add('hero_bg_video-loaded');
-      }, false);
-
       this.herovideo.play();
+
+      setTimeout(() => {
+        this.herovideo.classList.add('hero_bg_video-loaded');
+      }, 1);
 
       let videoHide = false;
       let windowHeight = window.innerHeight;
@@ -197,7 +197,7 @@ export default {
       opacity: 0;
       @include transition(all ease-in-out 1.5s);
       &-loaded {
-        opacity: 100%;
+        opacity: 1;
       }
     }
     &_video {
