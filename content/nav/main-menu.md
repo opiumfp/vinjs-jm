@@ -3,8 +3,8 @@ title: Main Menu
 data:
   button:
     active: true
-    src: "#schedule"
-    title: Join Us
+    src: "#cfp"
+    title: Call For Papers
   items:
     - active: true
       src: "#home"
@@ -15,19 +15,19 @@ data:
     - active: false
       src: "#schedule"
       title: Schedule
-    - active: true
+    - active: false
       src: "#speakers"
       title: Speakers
     - active: true
       src: "#cfp"
       title: CFP
-    - active: true
+    - active: false
       title: Schedule
       src: "#schedule"
     - active: true
       src: "#partners"
       title: Partners
-    - active: true
+    - active: false
       src: "#pricing"
       title: Tickets
     - active: true
