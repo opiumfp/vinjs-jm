@@ -1,6 +1,6 @@
 ---
 title: VinnytsiaJS - Community
-startDate: Saturday, July 23, 2022 9:00 PM
+startDate: Tuesday, February 14, 2023 12:10 AM
 nav:
   button:
     active: true
