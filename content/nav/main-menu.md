@@ -3,8 +3,8 @@ title: Main Menu
 data:
   button:
     active: true
-    src: "#cfp"
-    title: Call For Papers
+    src: https://t.me/vinjs
+    title: Follow Us
   items:
     - active: true
       src: "#home"
