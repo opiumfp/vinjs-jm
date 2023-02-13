@@ -3,7 +3,7 @@ title: Main Menu
 data:
   button:
     active: true
-    src: https://t.me/vinjs
+    src: ""
     title: Follow Us
   items:
     - active: true
