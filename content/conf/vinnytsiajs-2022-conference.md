@@ -4,8 +4,8 @@ startDate: Saturday, July 23, 2022 9:00 PM
 nav:
   button:
     active: true
-    src: "#cfp"
-    title: Call For Papers
+    src: https://t.me/vinjs
+    title: Follow Us
   items:
     - active: true
       src: "#home"
