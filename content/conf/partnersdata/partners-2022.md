@@ -66,18 +66,18 @@ mediapartners:
       image: /uploads/lvivcss-logo-cropped.png
     - active: "true"
       fields:
-        description: ""
-        image: /uploads/itvn_2023.png
-        src: https://www.it-association.vn.ua/
-        title: IT Association Vinnytsia
-      image: /uploads/itvn_2023.png
-    - active: "true"
-      fields:
         title: iHub Vinnytsia
         src: https://ihub.world/?page_id=280&lang=ua
         description: ""
         image: /uploads/ihub-logo.png
       image: /uploads/ihub-logo.png
+    - active: "true"
+      fields:
+        description: ""
+        image: /uploads/itvn_2023.png
+        src: https://www.it-association.vn.ua/
+        title: IT Association Vinnytsia
+      image: /uploads/itvn_2023.png
     - active: "true"
       fields:
         title: FrontSpot
