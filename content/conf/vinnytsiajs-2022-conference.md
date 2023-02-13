@@ -95,7 +95,7 @@ about:
     year meet the community dedicated to JavaScript development. That will be a
     set of meetups, our excited Open-Air Conference and a series of online
     events with high-level talks by speakers from Ukraine and abroad.
-  title: VinnytsiaJS 2022
+  title: VinnytsiaJS
   titleI18N:
     en: VinnytsiaJS 2020
     ua: Вінниця JS
