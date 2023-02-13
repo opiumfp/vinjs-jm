@@ -67,10 +67,10 @@ mediapartners:
     - active: "true"
       fields:
         description: ""
-        image: /uploads/it-association.png
+        image: /uploads/іт-асоціяація-темна.png
         src: https://www.it-association.vn.ua/
         title: IT Association Vinnytsia
-      image: /uploads/it-association.png
+      image: /uploads/іт-асоціяація-темна.png
     - active: "true"
       fields:
         title: iHub Vinnytsia
