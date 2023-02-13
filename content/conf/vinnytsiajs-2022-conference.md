@@ -1,5 +1,5 @@
 ---
-title: VinnytsiaJS 2022 - Conference
+title: VinnytsiaJS - Community
 startDate: Saturday, July 23, 2022 9:00 PM
 nav:
   button:
@@ -65,10 +65,10 @@ hero:
   image: /uploads/bg.jpg
   imagePt: /uploads/bg-v.jpg
   subtitle: Javascript Community Meetups
-  title: VinnytsiaJS 2022
+  title: VinnytsiaJS
 herocf:
   id: heroconf
-  title: VinnytsiaJS 2022
+  title: VinnytsiaJS
   subtitle: Open Air Conference
   date: August 21
   image: /uploads/stat.jpg

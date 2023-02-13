@@ -1,9 +1,8 @@
 ---
 title: IT Association Vinnytsia
 data:
-  description: ''
-  image: /uploads/it-association.png
-  src: 'https://www.it-association.vn.ua/'
+  description: ""
+  image: /uploads/іт-асоціяація-темна.png
+  src: https://www.it-association.vn.ua/
   title: IT Association Vinnytsia
 ---
-
