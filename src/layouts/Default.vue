@@ -146,6 +146,7 @@ html {
   .nav_dropmenu-show &,
   .body-blurred & {
     filter: blur(5px);
+    overflow: hidden;
   }
 }
 </style>

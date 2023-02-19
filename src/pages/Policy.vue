@@ -53,7 +53,7 @@ query Policy {
     description
     descriptionUA
   }
-  pageData: conf (path: "/content/conf/vinnytsiajs-2020") {
+  pageData: conf (path: "/content/conf/vinnytsiajs-2022-conference") {
     nav {
       button {
         active
