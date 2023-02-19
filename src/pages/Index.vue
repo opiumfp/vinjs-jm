@@ -197,10 +197,10 @@
       </section>
       <hr />
       
-      <section :id="$page.pageData.location.id">
+      <!-- <section :id="$page.pageData.location.id">
         <page-title class="pt-4 pb-3" title="Location" id="location"></page-title>
         <location :locationData="$page.pageData.location"></location>
-      </section>
+      </section> -->
      
       <section class="position-relative">
         <div class="anchor-id" id="contact"></div>

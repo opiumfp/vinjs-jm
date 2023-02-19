@@ -12,18 +12,18 @@
               <social-icons :socialIconsData="this.socialData.socialicons"></social-icons>
             </div>
             <div class="mb-3">
-              <a class="btn btn-secondary py-1 m-1" :href="/policy/">Policy</a></a>
-              <a class="btn btn-secondary py-1 m-1" href="http://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf">Code of Conduct</a></a>
+              <a class="btn btn-secondary py-1 m-1" :href="/policy/">Policy</a>
+              <a class="btn btn-secondary py-1 m-1" href="https://vinnytsiajs.org/docs/Code_of_Conduct_-_VinnytsiaJS.pdf" target="_blank">Code of Conduct</a>
             </div>
             <ul class="list-unstyled">
-              <li>
+              <!-- <li>
                 <span>Partnership:</span>
                 <a href="tel:+380636310436">+38 063 63 104 36</a>
               </li>
               <li>
                 <span>Transfer:</span>
                 <a href="tel:+380688186200">+38 068 818 62 00</a>
-              </li>
+              </li> -->
               <li>
                 <a href="mailto:info@vinnytsiajs.org">info@vinnytsiajs.org</a>
               </li>
