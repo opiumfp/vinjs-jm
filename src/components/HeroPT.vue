@@ -122,7 +122,7 @@ export default {
     color: $white;
     transform: translate(-50%, -50%);
     width: 100%;
-    top: calc(50% - #{$nav-height/2});
+    top: calc(50% - #{$nav-height * 0.5});
     left: 50%;
     @include media-breakpoint-down(lg) {
       top: 50%;

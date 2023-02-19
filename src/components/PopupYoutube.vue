@@ -109,7 +109,7 @@ $indent: -1.5em;
   &_body {
     position: absolute;
     // background-color: $body-bg;
-    top: calc(50% - #{$nav-height/2});
+    top: calc(50% - #{$nav-height * 0.5});
     left: 50%;
     transform: translate(-50%, -50%);
     width: 130vh;
@@ -141,8 +141,8 @@ $indent: -1.5em;
       position: absolute;
       width: 1.5em;
       height: 1.5em;
-      right: $indent/1.1;
-      top: $indent/1.1;
+      right: $indent * 0.9;
+      top: $indent* 0.9;
     }
   }
   @include media-breakpoint-down(lg) {
