@@ -8,6 +8,7 @@
     "deploy": "gridsome build && npx gh-pages -d dist"
   },
   "dependencies": {
+    "@babel/code-frame": "^7.29.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "babel-runtime": "^6.26.0",

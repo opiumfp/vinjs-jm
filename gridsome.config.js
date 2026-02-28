@@ -6,8 +6,8 @@
 
 module.exports = {
   siteName: 'Vinnytsia JS',
-  // siteUrl: 'http://vinnytsiajs.org',
-  // pathPrefix: '/tmp',
+  siteUrl: 'https://opiumfp.github.io/vinjs-jm',
+  pathPrefix: '/vinjs-jm',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
