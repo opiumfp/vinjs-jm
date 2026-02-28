@@ -26,7 +26,7 @@
           <a 
             v-if="item.active" 
             class="vjs-navbar_link nav-link scroll text-uppercase" 
-            :href="`/`+item.src"
+            :href="computeHref(item.src)"
             @click="closeDropNav"
             >
             {{item.title}}
@@ -87,6 +87,21 @@ export default {
     },
     closeDropNav: () => {
       document.querySelector("body").classList.remove("nav_dropmenu-show");
+    }
+    ,
+    // Build href that respects the router base (pathPrefix) so links work when site is served from a subpath
+    computeHref(src) {
+      try {
+        const base = (this.$router && this.$router.options && this.$router.options.base) ? this.$router.options.base : '';
+        // normalize base (no trailing slash)
+        const normBase = base && base !== '/' ? (base.endsWith('/') ? base.slice(0, -1) : base) : '';
+        // ensure src has leading slash
+        const normSrc = src.startsWith('/') ? src : '/' + src;
+        // If src is a hash like '#home', prepend a slash before hash to form '/#home'
+        return normBase + normSrc;
+      } catch (e) {
+        return src.startsWith('/') ? src : '/' + src;
+      }
     }
   }
 };
