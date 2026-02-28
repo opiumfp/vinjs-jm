@@ -2,9 +2,13 @@
   "name": "vinjs-site",
   "private": true,
   "scripts": {
+    "start": "npm run develop",
+    "serve": "npm run develop",
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
+    "develop:legacy": "cross-env NODE_OPTIONS=--openssl-legacy-provider gridsome develop",
+    "build:legacy": "cross-env NODE_OPTIONS=--openssl-legacy-provider gridsome build",
     "deploy": "cross-env NODE_OPTIONS=--openssl-legacy-provider gridsome build && npx gh-pages -d dist"
   },
   "dependencies": {
