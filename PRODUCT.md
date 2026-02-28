@@ -33,7 +33,7 @@ Full-screen opening section with:
 - Background image (landscape and portrait variants) **or** a looping background video
 - Event title, subtitle, and date
 - CTA button (e.g., "Join Pub Talks", "Registration")
-- Multiple hero variants supported: main conference (`Hero`), Pub Talks (`HeroPT`), and dedicated conference (`HeroCF`)
+- Active variant: `Hero` (main conference). `HeroPT` (Pub Talks) and `HeroCF` (Conference) are available components but currently toggled off in the template.
 
 ### About
 Community introduction including:
@@ -58,17 +58,14 @@ Responsive image/video grid showcasing highlights from every year since **2016**
 ### Call for Papers (CFP)
 A dedicated section with a submit button linking to the Google Forms talk submission form. Visibility and link are configurable in the content file.
 
-### Speakers
-Speaker card grid fed from `content/conf/speakersdata/`. Each card can include photo, name, title, and social links. The section is togglable (shown/hidden per event edition).
+### Conference Speakers
+Speaker card grid sourced from `content/conf/speakersdata/speakers-2022.md` (`confspeakers` data block). Each card includes photo, name, job title, company, city/country, bio, and social links. A second general Speakers view exists but is currently inactive.
 
 ### Talks
-Listing of accepted talks. Togglable per edition.
+Listing of accepted conference talks including title, description, speaker name and photo.
 
-### Schedule
-Day-by-day event timeline supporting multiple formats:
-- Multi-day conference schedule (`Schedule` component)
-- Tabular timetable (`ScheduleTable` component)
-- Dedicated pages for online event days (Online Thursdays, Pub Talks series)
+### Conference Schedule
+Tabular timetable rendered by `ScheduleTable` showing the full conference day (currently hardcoded to 21 August — VinnytsiaJS 2021 Open Air at Recreation Base "Butterfly"). Includes a "Get Ticket" CTA button inline. An alternative multi-day `Schedule` timeline component is available but currently inactive.
 
 ### Tickets / Pricing
 Ticket tier cards with:
@@ -76,6 +73,7 @@ Ticket tier cards with:
 - Price in UAH (₴)
 - Status badge (available / sold out)
 - Purchase CTA linking to **WayForPay** payment gateway
+- A notice "Sale of tickets on the event is temporarily suspended" is displayed below the pricing grid when sales are paused.
 
 ### Location
 Venue details including:
@@ -85,10 +83,19 @@ Venue details including:
 - Background venue photo
 
 ### Partners
-Sponsor / community partner logo grid. Partner data is stored in `content/conf/partnersdata/` and can be added/removed without code changes.
+Partner data is sourced from `content/conf/partnersdata/partners-2022.md` and rendered as three distinct sections by the same `Partners` component:
 
-### Contact / Social
-Social media icon links and an embedded **Telegram** channel widget for direct community engagement.
+| Section | Display mode | CTA |
+|---|---|---|
+| Main Partners | Extra-large logos | "Become a Partner" button |
+| Community Friends | Large logos | — |
+| Media Partners | Small logos | "Become a Partner" button |
+
+### Contact Us
+Social media icon links rendered via `ContactUs` component using the `nav.socialicons` data.
+
+### Telegram Widget
+An embedded Telegram channel widget (`@vinjs`) is displayed at the bottom of the page for instant community following.
 
 ---
 
@@ -108,8 +115,8 @@ Social media icon links and an embedded **Telegram** channel widget for direct c
 All website content is managed through **Markdown files with YAML frontmatter** — no CMS login or database required. Editors update:
 
 - `content/conf/vinnytsiajs-2022-conference.md` — all section data (nav, hero text, statistics, media, tickets, location…)
-- `content/conf/speakersdata/*.md` — individual speaker profiles
-- `content/conf/partnersdata/*.md` — partner entries
+- `content/conf/speakersdata/speakers-2022.md` — speaker profiles for the active edition
+- `content/conf/partnersdata/partners-2022.md` — partner entries for the active edition
 - `uploads/` — images referenced from Markdown
 
 A **Netlify CMS** admin interface (`static/admin/`) is present for optional GUI-based content editing.

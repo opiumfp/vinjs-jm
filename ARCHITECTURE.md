@@ -96,28 +96,48 @@ pageData: conf(path: "/content/conf/vinnytsiajs-2022-conference") {
 }
 ```
 
-**Page queries** (bound to the current page node):  
-`Index.vue` issues a `<page-query>` that pulls the full conference config object (hero, about, stat, mediaTiles, pricing, location, speakers, schedule, etc.) plus `Speakersdata` nodes into `$page`.
+**Page queries** — `Index.vue` issues a single `<page-query>` with three named roots:
+
+```graphql
+query Conf {
+  # Site config: hero, about, stat, mediaTiles, pricing, location, nav
+  pageData: conf(path: "/content/conf/vinnytsiajs-2022-conference") { … }
+
+  # Conference speakers, talks, and schedule table
+  speakersData: conf(path: "/content/conf/speakersdata/speakers-2022") { … }
+
+  # Partners grouped into three tiers: partners, friends, mediapartners
+  partnersData: partners(path: "/content/conf/partnersdata/partners-2022") { … }
+}
+```
+
+All three results are available in the template as `$page.pageData`, `$page.speakersData`, and `$page.partnersData`.
 
 ---
 
 ## Key Components
 
-| Component | Role |
-|---|---|
-| `NavBar` | Fixed-bottom Bootstrap navbar; scroll spy; collapsible on mobile |
-| `Hero` | Full-screen section with background image **or** looping video |
-| `HeroPT` / `HeroCF` | Hero variants for Pub Talks / Conference modes |
-| `About` | Community description + Code of Conduct link |
-| `Stat` | Statistics tiles (attendees, speakers, streams, format) |
-| `MediaTiles` | Responsive grid of photo galleries & YouTube highlights |
-| `Speakers` | Speaker card grid |
-| `Talks` | Talk listing |
-| `Schedule` / `ScheduleTable` | Day-by-day event timetable |
-| `Pricing` | Ticket tier cards with CTA buttons |
-| `Location` | Venue details + OpenStreetMap embed |
-| `Partners` | Sponsor logo grid |
-| `SocialIcons` | Icon links (Facebook, Instagram, Twitter, YouTube, Telegram) |
+| Component | Active | Role |
+|---|---|---|
+| `NavBar` | ✅ | Fixed-bottom Bootstrap navbar; scroll spy; collapsible on mobile |
+| `Hero` | ✅ | Full-screen section with background image **or** looping video |
+| `HeroPT` | ⬜ commented out | Hero variant for Pub Talks events |
+| `HeroCF` | ⬜ commented out | Hero variant for dedicated Conference mode |
+| `About` | ✅ | Community description + Code of Conduct link |
+| `Stat` | ✅ | Statistics tiles (attendees, speakers, streams, format) |
+| `MediaTiles` | ✅ | Responsive grid of photo galleries & YouTube highlights |
+| `Speakers` | ✅ | Conference speaker card grid (`confspeakers` data from `speakersdata/speakers-2022`) |
+| `Talks` | ✅ | Accepted talk listing |
+| `ScheduleTable` | ✅ | Tabular conference timetable |
+| `Schedule` | ⬜ commented out | Alternative multi-day timeline view |
+| `Pricing` | ✅ | Ticket tier cards with WayForPay CTA; shows suspension notice |
+| `Partners` | ✅ × 3 | Sponsor logo grid rendered three times: `xlarge` (main), `large` (friends), `small` (media) |
+| `Location` | ✅ | Venue details + OpenStreetMap embed |
+| `ContactUs` | ✅ | Social icons contact block |
+| `TelegramWidget` | ✅ | Embedded Telegram channel widget |
+| `SocialIcons` | ✅ | Icon links (Facebook, Instagram, Twitter, YouTube, Telegram) |
+| `PopupYoutube` | ✅ | Lightbox YouTube player (triggered from `MediaTiles`) |
+| `PageTitle` | ✅ | Reusable section heading |
 | `PopupYoutube` | Lightbox YouTube player (event-bus triggered) |
 | `TelegramWidget` | Embedded Telegram channel widget |
 | `PageTitle` | Reusable section heading |

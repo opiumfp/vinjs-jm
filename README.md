@@ -58,8 +58,8 @@ gridsome.config.js  # Site config, plugins, pathPrefix
 All page content (text, images, navigation, tickets, social links) is managed through Markdown files — no code changes required:
 
 - **Site config / sections:** `content/conf/vinnytsiajs-2022-conference.md`
-- **Speaker profiles:** `content/conf/speakersdata/*.md`
-- **Partners / sponsors:** `content/conf/partnersdata/*.md`
+- **Speaker profiles:** `content/conf/speakersdata/speakers-2022.md`
+- **Partners / sponsors:** `content/conf/partnersdata/partners-2022.md`
 - **Uploaded images:** `uploads/`
 
 ---
