@@ -1,0 +1,749 @@
+backend:
+  name: git-gateway
+  repo: https://github.com/opiumfp/vinjs-jm
+  branch: dev # Branch to update (optional; defaults to master)
+media_folder: "/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploa
+collections:
+- name: "conf" # Used in routes, e.g., /admin/collections/blog
+  label: "Conference Page" # Used in the UI
+  folder: "content/conf" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Conference Date"
+      name: "startDate"
+      widget: "datetime"
+      default: ''
+      format: "LLLL"
+      required: false
+    - label: "Nav Menu"
+      name: "nav"
+      widget: "relation"
+      collection: "nav"
+      searchFields: ["title"]
+      valueField: "data"
+      displayFields: ["title"]
+
+    - label: "Hero"
+      name: "hero"
+      widget: "object"
+      fields:
+      - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Sub title", name: "subtitle", widget: "string", required: false, default: ''}
+      - {label: "Date", name: "date", widget: "string", required: false, default: ''}
+      - {label: "Image", name: "image", widget: "image", required: false, default: ''}
+      - {label: "Image Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "link", name: "link", widget: "string", required: false, default: ''}
+
+    - label: "HeroCF"
+      name: "herocf"
+      widget: "object"
+      fields:
+      - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Sub title", name: "subtitle", widget: "string", required: false, default: ''}
+      - {label: "Date", name: "date", widget: "string", required: false, default: ''}
+      - {label: "Image", name: "image", widget: "image", required: false, default: ''}
+      - {label: "Image Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "link", name: "link", widget: "string", required: false, default: ''}
+
+
+    - label: "HeroPT"
+      name: "heropt"
+      widget: "object"
+      fields:
+      - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Sub title", name: "subtitle", widget: "string", required: false, default: ''}
+      - {label: "Date", name: "date", widget: "string", required: false, default: ''}
+      - {label: "Image", name: "image", widget: "image", required: false, default: ''}
+      - {label: "Image Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "link", name: "link", widget: "string", required: false, default: ''}
+
+    - label: "About"
+      name: "about"
+      widget: "object"
+      fields:
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
+        - {label: "logo", name: "logo", widget: "image", required: false, default: ''}
+        - {label: "Button Title", name: "linkTitle", widget: "string", required: false, default: ''}
+        - {label: "Button Link", name: "link", widget: "string", required: false, default: ''}
+
+    - label: "Stat"
+      name: "stat"
+      widget: "object"
+      fields:
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Background", name: "image", widget: "image", required: false, default: ''}
+        - {label: "Backgound Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          required: false
+          default: ''
+          fields:
+          - {label: "Title", name: "title", widget: "markdown", required: false, default: ''}
+          - {label: "Paragraph", name: "paragraph", widget: "markdown", required: false, default: ''}
+
+    - label: "Media Tiles"
+      name: "mediaTiles"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            - {label: "Coumn Width (desktop)", name: "colDesk", widget: "number", default: 4, required: false}
+            - label: "Type"
+              name: "type"
+              widget: "select"
+              required: true
+              default: "gallery"
+              options:
+                - {label: "Image/Video Gallary", value: "gallery"}
+                - {label: "Youtube Popup", value: "youtubePopup"}
+                - {label: "Youtube Link", value: "youtubelink"}
+                - {label: "Youtube Video", value: "youtube"}
+            - {label: "Link/ID", name: "src", widget: "string", default: '', required: false}
+            - {label: "Image", name: "image", widget: "image", default: null, required: false}
+
+    - label: "Playlists"
+      name: "playlists"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            - {label: "Coumn Width (desktop)", name: "colDesk", widget: "number", default: 4, required: false}
+            - label: "Type"
+              name: "type"
+              widget: "select"
+              required: true
+              default: "gallery"
+              options:
+                - {label: "Image/Video Gallary", value: "gallery"}
+                - {label: "Youtube Video", value: "youtube"}
+                - {label: "Static text", value: "text"}
+            - {label: "Link", name: "src", widget: "string", default: '', required: false}
+            - {label: "Image", name: "image", widget: "image", default: null, required: false}
+
+    - label: "Pricing"
+      name: "pricing"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Section ID", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Currency Symbol", name: "currency", widget: "string"}
+        - {label: "Coumns count (desktop)", name: "col", widget: "number", default: 4, required: false}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          fields: 
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Price", name: "price", widget: "string"}
+            - {label: "Caption", name: "caption", widget: "string"}
+            - {label: "Button Label", name: "btnLabel", widget: "string"}
+            - {label: "Button Link", name: "btnSrc", widget: "string"}
+            - label: "Status"
+              name: "status"
+              widget: "select"
+              required: true
+              default: "default"
+              options:
+                - {label: "Default", value: "default"}
+                - {label: "Active", value: "active"}
+                - {label: "Sold", value: "sold"}
+            
+    - label: "Location"
+      name: "location"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - {label: "Background", name: "image", widget: "image", required: false, default: ''}
+        - {label: "Backgound Portrait", name: "imagePt", widget: "image", required: false, default: ''}
+        - {label: "Location Logo", name: "logo", widget: "image", required: false, default: ''}
+        - {label: "Location Name", name: "name", widget: "string", required: false, default: ''}
+        - {label: "Location Address", name: "address", widget: "string", required: false, default: ''}
+        - {label: "Map iframe Link", name: "mapLinkIframe", widget: "string", required: false, default: ''}
+        - {label: "Map Direct Link", name: "mapLinkDirect", widget: "string", required: false, default: ''}
+        - {label: "Map GoogleMap Link", name: "mapLinkGoogle", widget: "string", required: false, default: ''}
+
+#Nav Menu
+- name: "nav" # Used in routes, e.g., /admin/collections/blog
+  label: "Nav Menu" # Used in the UI
+  folder: "content/nav" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      fields:
+      - label: "Nav Menu Items"
+        name: "items"
+        widget: "list"
+        fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Link", name: "src", widget: "string"}
+          - {label: "Active", name: "active", widget: "boolean", default: true}
+      - label: "Social Icons"
+        name: "socialicons"
+        widget: "relation"
+        collection: "socialicons"
+        searchFields: ["title"]
+        valueField: "data"
+        required: false
+        default: ''
+        displayFields: ["title"] 
+      - label: "Button"
+        name: "button"
+        widget: "object"
+        required: false 
+        default: ''
+        fields:
+        - {label: "Active", name: "active", widget: "boolean", required: false, default: true}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Link", name: "src", widget: "string", required: false, default: ''}
+
+#speakersData Config
+- name: "confSpeakers" # Used in routes, e.g., /admin/collections/blog
+  label: "Speakers Data" # Used in the UI
+  folder: "content/conf/speakersdata" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Conf Speakers"
+      name: "confspeakers"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "speakers"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Talk"
+              name: "talk"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+            
+    - label: "Speakers"
+      name: "speakers"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "speakers"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Talk"
+              name: "talk"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+    - label: "Talks"
+      name: "talks"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Talk"
+              name: "talk"
+              widget: "relation"
+              collection: "talks"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - label: "Speaker"
+              name: "speaker"
+              widget: "relation"
+              collection: "speakers"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+
+    - label: "Schedule"
+      name: "schedule"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Schedules"
+          name: "schedules"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Schedule"
+              name: "schedule"
+              widget: "relation"
+              collection: "schedule"
+              searchFields: ["name"]
+              valueField: "data"
+              displayFields: ["name"]
+              required: false
+              default: ''
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+    - label: "ScheduleTable"
+      name: "scheduletable"
+      default: ''
+      widget: "relation"
+      collection: "scheduletable"
+      searchFields: ["name"]
+      valueField: "data"
+      displayFields: ["name"]
+      required: false
+
+#Parnters Config
+- name: "confPartners" # Used in routes, e.g., /admin/collections/blog
+  label: "Partners Data" # Used in the UI
+  folder: "content/conf/partnersdata" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Partners"
+      name: "partners"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data"
+              displayFields: ["title"]
+            - label: "Logo"
+              name: "image"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data.image"
+              displayFields: ["title"]
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+    - label: "Friends"
+      name: "friends"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data"
+              displayFields: ["title"]
+            - label: "Logo"
+              name: "image"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data.image"
+              displayFields: ["title"]
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+
+
+    - label: "MediaPartners"
+      name: "mediapartners"
+      widget: "object"
+      default: ''
+      required: false
+      fields:
+        - {label: "Id", name: "id", widget: "string", required: false, default: ''}
+        - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+        - {label: "Subtitle", name: "subtitle", widget: "string", required: false, default: ''}
+        - label: "Items"
+          name: "items"
+          widget: "list"
+          default: ''
+          required: false
+          fields:
+            - label: "Fields"
+              name: "fields"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data"
+              displayFields: ["title"]
+            - label: "Logo"
+              name: "image"
+              widget: "relation"
+              collection: "partners"
+              searchFields: ["title"]
+              valueField: "data.image"
+              displayFields: ["title"]
+            - {label: "Active", name: "active", widget: "boolean", default: "true"}
+#socialicons Data
+- name: "socialicons" # Used in routes, e.g., /admin/collections/blog
+  label: "Social Icons" # Used in the UI
+  folder: "content/socialicons" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - label: "Social Icons"
+        name: "items"
+        widget: "list"
+        fields: 
+          - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+          - {label: "Link", name: "src", widget: "string", required: false, default: ''}
+          - label: "Icon"
+            name: "icon"
+            widget: "select"
+            required: true
+            default: "icon-facebook-square"
+            options:
+              - { label: "icon-facebook-square", value: "icon-facebook-square"}      
+              - { label: "icon-twitter", value: "icon-twitter"}
+              - { label: "icon-youtube-play", value: "icon-youtube-play"}
+              - { label: "icon-instagram", value: "icon-instagram"}
+              - { label: "icon-github", value: "icon-github"}
+              - { label: "icon-telegram", value: "icon-telegram"}
+              - { label: "icon-phone", value: "icon-phone"}
+              - { label: "icon-envelope", value: "icon-envelope"}
+          - {label: "Active", name: "active", widget: "boolean", required: false, default: true}
+
+
+- name: "partners" # Used in routes, e.g., /admin/collections/blog
+  label: "Partners" # Used in the UI
+  folder: "content/partners" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Link", name: "src", widget: "string", required: false, default: ''}
+      - {label: "Logo", name: "image", widget: "image", required: false, default: null}
+      - {label: "Description", name: "description", widget: "markdown", required: false, default: ''}
+
+- name: "speakers" # Used in routes, e.g., /admin/collections/blog
+  label: "Speakers" # Used in the UI
+  folder: "content/speakers" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Name", name: "name", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - {label: "ID", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Name", name: "name", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Company", name: "company", widget: "string", required: false, default: ''}
+      - {label: "City", name: "city", widget: "string", required: false, default: ''}
+      - {label: "Country", name: "country", widget: "string", required: false, default: ''}
+      - {label: "Bio", name: "bio", widget: "markdown", required: false, default: ''}
+      - label: "Social Links"
+        name: "socialLinks"
+        required: false
+        default: ''
+        widget: "list"
+        fields: 
+          - {label: "Link", name: "src", widget: "string", required: false, default: ''}
+          - label: "Icon"
+            name: "icon"
+            widget: "select"
+            required: false
+            default: "icon-facebook-square"
+            options:
+              - { label: "icon-facebook-square", value: "icon-facebook-square"}      
+              - { label: "icon-twitter", value: "icon-twitter"}
+              - { label: "icon-youtube-play", value: "icon-youtube-play"}
+              - { label: "icon-instagram", value: "icon-instagram"}
+              - { label: "icon-github", value: "icon-github"}
+              - { label: "icon-linkedin-square", value: "icon-linkedin-square"}
+              - { label: "icon-telegram", value: "icon-telegram"}
+              - { label: "icon-phone", value: "icon-phone"}
+              - { label: "icon-envelope", value: "icon-envelope"}
+      - {label: "Photo", name: "image", widget: "image", required: false, default: null}
+
+- name: "talks" # Used in routes, e.g., /admin/collections/blog
+  label: "Talks" # Used in the UI
+  folder: "content/talks" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Name", name: "name", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - {label: "ID", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - {label: "Description", name: "description", widget: "markdown", required: false, default: ''}
+
+- name: "schedule" # Used in routes, e.g., /admin/collections/blog
+  label: "Schedule" # Used in the UI
+  folder: "content/schedule" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Name", name: "name", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - {label: "Collapsed", name: "collapsed", widget: "boolean", default: true}
+      - {label: "ID", name: "id", widget: "string", required: false, default: ''}
+      - {label: "Title", name: "title", widget: "string", required: false, default: ''}
+      - label: "Start time"
+        name: "starttime"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+        timeFormat: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        pickerUtc: false
+      - label: "End time"
+        name: "endtime"
+        widget: "datetime"
+        default: ""
+        dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+        timeFormat: "HH:mm" # e.g. 21:07
+        format: "LLL"
+        pickerUtc: false
+      - {label: "Full Title", name: "fulltitle", widget: "string", required: false, default: ''}  
+      - {label: "Description", name: "description", widget: "string", required: false, default: ''}  
+      - {label: "Location", name: "location", widget: "string", required: false, default: ''}  
+      - {label: "Location Link", name: "locationlink", widget: "string", required: false, default: ''}  
+      - {label: "Online Link", name: "link", widget: "string", required: false, default: ''}  
+      - {label: "Youtube Link", name: "linkyoutube", widget: "string", required: false, default: ''}  
+      - {label: "Discord Link", name: "linkdiscord", widget: "string", required: false, default: ''}  
+      - {label: "Buy Link", name: "linkbuy", widget: "string", required: false, default: ''}  
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        required: false
+        default: ''
+        fields:
+        - label: "Time"
+          name: "time"
+          widget: "datetime"
+          default: ""
+          dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+          timeFormat: "HH:mm" # e.g. 21:07
+          format: "LLL"
+          required: false
+          pickerUtc: false
+        - {label: "Activity (non talk)", name: "titlee", widget: "string", required: false, default: ''}
+        - {label: "Activity Description", name: "titleedescription", widget: "markdown", required: false, default: ''}
+        - label: "Talk"
+          name: "talk"
+          widget: "relation"
+          collection: "talks"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+        - label: "Speaker"
+          name: "speaker"
+          widget: "relation"
+          collection: "speakers"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+        - label: "Second Speaker"
+          name: "speaker2"
+          widget: "relation"
+          collection: "speakers"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+- name: "scheduletable" # Used in routes, e.g., /admin/collections/blog
+  label: "Schedule Table" # Used in the UI
+  folder: "content/scheduletable" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Name", name: "name", widget: "string", required: true}
+    - label: "Data"
+      name: "data"
+      widget: "object"
+      required: false 
+      default: ''
+      fields:
+      - label: "Items"
+        name: "items"
+        widget: "list"
+        required: false
+        default: ''
+        fields:
+        - label: "Talk"
+          name: "talk"
+          widget: "relation"
+          collection: "talks"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+        - label: "Speaker"
+          name: "speaker"
+          widget: "relation"
+          collection: "speakers"
+          searchFields: ["name"]
+          valueField: "data"
+          displayFields: ["name"]
+          required: false
+          default: ''
+- name: "policy" # Used in routes, e.g., /admin/collections/blog
+  label: "Policy" # Used in the UI
+  folder: "content/policy" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  identifier_field: name
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Title", name: "title", widget: "string", required: true}
+    - {label: "Title Ukraine", name: "titleUA", widget: "string", required: true}
+    - {label: "Description", name: "description", widget: "markdown", required: false, default: ''}    
+    - {label: "Description Ukraine", name: "descriptionUA", widget: "markdown", required: false, default: ''}    
