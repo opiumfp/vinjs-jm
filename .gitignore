@@ -1,10 +1,18 @@
-*.log
-.cache
-.DS_Store
-src/.temp
-node_modules
-dist
-.env
-.env.*
+# Dependencies
+node_modules/
 package-lock.json
 yarn.lock
+
+# Next.js build output
+.next/
+out/
+
+# OS / Editor
+*.log
+.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.production
+!.env.local.example
