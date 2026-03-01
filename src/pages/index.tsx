@@ -77,7 +77,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       </section>
 
       {/* Speakers Section */}
-      <section className="position-relative pt-5 pb-5">
+      {/* <section className="position-relative pt-5 pb-5">
         <div className="anchor-id" id={speakersData.confspeakers?.id}></div>
         <div className="container">
           <div className="row">
@@ -91,7 +91,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call for Papers */}
       <section className="vjs-bg-logo vjs-bg-logo-blue text-white py-6">
@@ -115,7 +115,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       </section>
 
       {/* Talks Section */}
-      <section className="position-relative pt-5 pb-5">
+      {/* <section className="position-relative pt-5 pb-5">
         <div className="anchor-id" id={speakersData.talks?.id}></div>
         <div className="container">
           <div className="row">
@@ -129,10 +129,10 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Schedule Section */}
-      <section className="position-relative pt-5 pb-5">
+      {/* <section className="position-relative pt-5 pb-5">
         <div className="anchor-id" id={speakersData.schedule?.id}></div>
         <PageTitle className="position-relative" title="Conference Schedule" />
         <h5 className="text-center pt-3 pt-lg-4">
@@ -150,10 +150,10 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
           <div className="h5">Join Us:</div>
           <a href="#pricing" className="btn btn-primary mt-2 mx-2">Get Ticket</a>
         </div>
-      </section>
+      </section> */}
 
       {/* Pricing Section */}
-      <section className="position-relative pb-5">
+      {/* <section className="position-relative pb-5">
         <div className="anchor-id" id={pageData.pricing?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
@@ -166,12 +166,12 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
           title={pageData.pricing?.title}
           subtitle="Sale of tickets on the event is temporary suspended!"
         />
-      </section>
+      </section> */}
 
-      <hr />
+      {/* <hr /> */}
 
       {/* Partners Section */}
-      <section className="position-relative">
+      {/* <section className="position-relative">
         <div className="anchor-id" id={partnersData.partners?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
@@ -187,7 +187,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             Become a Partner
           </a>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <PageTitle
