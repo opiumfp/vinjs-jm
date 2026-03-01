@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"stores\\\\deviceStore.tsx -> react-device-detect\":{\"id\":\"stores\\\\deviceStore.tsx -> react-device-detect\",\"files\":[\"static/chunks/node_modules_react-device-detect_dist_lib_js.js\"]}}"
