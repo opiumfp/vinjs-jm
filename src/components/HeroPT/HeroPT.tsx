@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default function HeroPT({ id, heroPTData, center }: Props) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <div className="heropt" id={id}>

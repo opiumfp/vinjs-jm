@@ -15,7 +15,7 @@ interface Props {
 
 const PolicyPage: NextPage<Props> = ({ navData, policyData }) => {
   const [lang, setLang] = useState<'EN' | 'UA'>('EN');
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <DefaultLayout navData={navData}>

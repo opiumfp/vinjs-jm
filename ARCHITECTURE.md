@@ -159,7 +159,7 @@ npm run deploy
 # && npx gh-pages -d dist
 ```
 
-The site is served from `https://opiumfp.github.io/vinjs-jm`; `pathPrefix: '/vinjs-jm'` is set in `gridsome.config.js` so all internal links and assets resolve correctly under the subpath.
+The project historically used a subpath (`/vinjs-jm`) for GitHub Pages. The Next.js migration uses root paths by default (no `pathPrefix`/`basePath`) so internal links and assets resolve from `/`. If you need to deploy under a subpath, set `basePath` accordingly in `next.config.js`.
 
 ---
 

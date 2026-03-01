@@ -39,7 +39,7 @@ export default function Hero({ id, heroData }: Props) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [device]);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <div className="hero" id={id}>

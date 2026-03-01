@@ -7,7 +7,7 @@ interface Props {
 
 export default function Stat({ statData }: Props) {
   const colWidth = statData.items.length ? Math.floor(12 / statData.items.length) : 12;
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <div className="stat">

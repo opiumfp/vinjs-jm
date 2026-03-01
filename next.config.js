@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/vinjs-jm',
-  // Ensure static assets are served from the repo subpath when deployed to GitHub Pages
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/vinjs-jm' : '',
+  basePath: '',
+  // Ensure static assets are served from root when deployed to production
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,

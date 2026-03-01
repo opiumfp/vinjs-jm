@@ -100,7 +100,7 @@ npm install gh-pages cross-env
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',             // Static export (replaces gridsome build)
-  basePath: '/vinjs-jm',        // Replaces gridsome.config.js pathPrefix
+  basePath: '',        // Replaces gridsome.config.js pathPrefix (use empty string for root)
   trailingSlash: true,          // GitHub Pages compatibility
   images: {
     unoptimized: true,          // Required for static export
@@ -895,7 +895,7 @@ jobs:
 
 ```bash
 # .env.production
-NEXT_PUBLIC_BASE_PATH=/vinjs-jm
+NEXT_PUBLIC_BASE_PATH=
 ```
 
 ---
@@ -997,9 +997,9 @@ After completing each phase, validate the following:
 
 ### Deployment
 - [ ] `npm run build` produces `out/` directory
-- [ ] All asset paths include `/vinjs-jm` prefix (set via `basePath`)
+- [ ] All asset paths are root-relative (no `/vinjs-jm` prefix)
 - [ ] `npx gh-pages -d out` deploys correctly
-- [ ] Site accessible at `https://opiumfp.github.io/vinjs-jm`
+- [ ] Site accessible at the expected URL (no subpath prefix unless intentionally deployed under one)
 
 ---
 

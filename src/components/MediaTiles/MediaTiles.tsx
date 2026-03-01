@@ -15,7 +15,7 @@ function getYoutubeID(url: string): string | false {
 export default function MediaTiles({ mediaTilesData }: Props) {
   const device = useDevice();
   const openYoutubePopup = useOpenYoutubePopup();
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   const linkClick = (
     e: React.MouseEvent<HTMLAnchorElement>,

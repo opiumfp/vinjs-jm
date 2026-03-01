@@ -5,7 +5,7 @@ interface Props {
 }
 
 export default function Location({ locationData }: Props) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/vinjs-jm';
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   return (
     <div className="location">
