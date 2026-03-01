@@ -147,7 +147,7 @@ mediaTiles:
       type: youtubelink
       src: https://www.youtube.com/watch?v=9CnW5XLOFmg&list=PL7GMpyIlGWSVZ-96txrpA2RkwWZ_JN1H2
       title: Online Thursdays 2020
-      image: /uploads/vjs20-bg-logo-a.jpg
+      image: /uploads/vjs20-bg-logo-3x2.jpg
     - active: "true"
       colDesk: 4
       type: gallery
