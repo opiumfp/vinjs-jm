@@ -36,7 +36,7 @@ html {
     background-color: rgba($dark, 0.6) !important;
     height: auto;
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     top: 0;
     bottom: auto;
     padding-top: 0;
@@ -44,7 +44,7 @@ html {
   }
   &_collaplse {
     justify-content: space-between;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       display: none;
       height: calc(100vh - #{$nav-height});
       flex-direction: column;
