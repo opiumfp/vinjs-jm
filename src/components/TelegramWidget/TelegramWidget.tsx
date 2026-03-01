@@ -8,11 +8,36 @@ interface Props {
 
 function TelegramWidgetClient({ channel, postid }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleTme = () => {
     setIsOpen((prev) => !prev);
   };
+
+  // Close when clicking outside the overlay
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const onPointerDown = (ev: PointerEvent) => {
+      const target = ev.target as Node | null;
+      // If click is inside overlay or on the toggle button, ignore
+      if (
+        overlayRef.current &&
+        target &&
+        overlayRef.current.contains(target)
+      ) {
+        return;
+      }
+      const toggleBtn = document.querySelector('.tme_button');
+      if (toggleBtn && target && toggleBtn.contains(target)) return;
+
+      setIsOpen(false);
+    };
+
+    document.addEventListener('pointerdown', onPointerDown);
+    return () => document.removeEventListener('pointerdown', onPointerDown);
+  }, [isOpen]);
 
   return (
     <div id="tme" className="tme">
@@ -22,6 +47,7 @@ function TelegramWidgetClient({ channel, postid }: Props) {
       <div className="tme_main">
         <div
           id="tme_main_overlay"
+          ref={overlayRef}
           className={`tme_main_overlay${isOpen ? ' show' : ''}`}
         >
           <button onClick={toggleTme} className="tme_main_btn-close">
