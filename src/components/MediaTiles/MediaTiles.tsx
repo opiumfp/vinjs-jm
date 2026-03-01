@@ -54,6 +54,8 @@ export default function MediaTiles({ mediaTilesData }: Props) {
                         className="media-tiles_item_img"
                         src={`${basePath}${item.image}`}
                         alt={`VinnytsiaJS - ${item.title}`}
+                        loading="lazy"
+                        decoding="async"
                       />
                     )}
                     <div className="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center">

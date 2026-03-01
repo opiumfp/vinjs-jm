@@ -33,14 +33,14 @@ const PolicyPage: NextPage<Props> = ({ navData, policyData }) => {
                     className="btn btn-secondary policy_btn-lang flex align-items-center"
                     onClick={() => setLang('EN')}
                   >
-                    <img className="flag" src={`${basePath}/assets/images/flags/en.svg`} alt="EN" />
+                      <img className="flag" src={`${basePath}/assets/images/flags/en.svg`} alt="EN" loading="lazy" decoding="async" />
                     <span className="label">EN</span>
                   </button>
                   <button
                     className="btn btn-secondary policy_btn-lang flex align-items-center"
                     onClick={() => setLang('UA')}
                   >
-                    <img className="flag" src={`${basePath}/assets/images/flags/ua.svg`} alt="UA" />
+                    <img className="flag" src={`${basePath}/assets/images/flags/ua.svg`} alt="UA" loading="lazy" decoding="async" />
                     <span className="label">UA</span>
                   </button>
                 </div>

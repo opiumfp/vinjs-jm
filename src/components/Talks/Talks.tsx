@@ -25,6 +25,8 @@ export default function Talks({ talksData, className }: Props) {
                             className="talks_img"
                             src={`${basePath}${item.speaker.image}`}
                             alt={item.speaker.name}
+                            loading="lazy"
+                            decoding="async"
                           />
                         )}
                         {item.speaker.name && (

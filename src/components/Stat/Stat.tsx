@@ -19,6 +19,8 @@ export default function Stat({ statData }: Props) {
                 className="stat_bg_img stat_bg_img-portrait"
                 src={`${basePath}${statData.imagePt}`}
                 alt="Vinnytsia JS - UA Frontend Conference"
+                loading="lazy"
+                decoding="async"
               />
             )}
             <div className="stat_bg_prlx">
@@ -27,6 +29,8 @@ export default function Stat({ statData }: Props) {
                   className="stat_bg_img stat_bg_img-landscape"
                   src={`${basePath}${statData.image}`}
                   alt="Vinnytsia JS - UA Frontend Conference"
+                  loading="lazy"
+                  decoding="async"
                 />
               )}
             </div>

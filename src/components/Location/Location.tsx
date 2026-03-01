@@ -39,12 +39,16 @@ export default function Location({ locationData }: Props) {
                   className="location_bg_img location_bg_img-landscape"
                   src={`${basePath}${locationData.image}`}
                   alt="VinnytsiaJS - Butterfly"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {locationData.imagePt && (
                   <img
                     className="location_bg_img location_bg_img-portrait"
                     src={`${basePath}${locationData.imagePt}`}
                     alt="VinnytsiaJS - Butterfly"
+                    loading="lazy"
+                    decoding="async"
                   />
                 )}
               </div>
@@ -65,6 +69,8 @@ export default function Location({ locationData }: Props) {
                     className="location_logo"
                     src={`${basePath}${locationData.logo}`}
                     alt="Butterfly"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </a>
               )}

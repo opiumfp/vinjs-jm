@@ -18,6 +18,8 @@ export default function HeroPT({ id, heroPTData, center }: Props) {
               className="heropt_bg_image heropt_bg_image-landscape"
               src={`${basePath}${heroPTData.image}`}
               alt="Vinnytsia JS - Javascript Open Air"
+              loading="lazy"
+              decoding="async"
             />
           )}
           {heroPTData.imagePt && (
@@ -25,6 +27,8 @@ export default function HeroPT({ id, heroPTData, center }: Props) {
               className="heropt_bg_image heropt_bg_image-portrait"
               src={`${basePath}${heroPTData.imagePt}`}
               alt="Vinnytsia JS - Javascript Open Air"
+              loading="lazy"
+              decoding="async"
             />
           )}
         </div>
@@ -64,6 +68,8 @@ export default function HeroPT({ id, heroPTData, center }: Props) {
                     className="heropt_logo d-block mx-auto my-4"
                     src={`${basePath}/assets/images/logo/VinJS_PUB_TALKS-LOGO.png`}
                     alt="VinnytsiaJS - Javascript Open Air Conference"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               )}

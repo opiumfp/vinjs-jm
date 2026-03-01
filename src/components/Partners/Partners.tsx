@@ -38,6 +38,8 @@ export default function Partners({ partnersData, mode }: Props) {
                         className="partners_img"
                         src={`${basePath}${item.fields.image}`}
                         alt={item.fields.title}
+                        loading="lazy"
+                        decoding="async"
                       />
                     )}
                   </a>

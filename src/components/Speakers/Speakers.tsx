@@ -21,6 +21,8 @@ export default function Speakers({ speakersData, className }: Props) {
                     className="speakers_img"
                     src={`${basePath}${item.fields.image}`}
                     alt={item.fields.title}
+                    loading="lazy"
+                    decoding="async"
                   />
                 )}
                 {item.fields.name && (
