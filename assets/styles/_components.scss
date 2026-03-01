@@ -36,7 +36,7 @@ html {
     background-color: rgba($dark, 0.6) !important;
     height: auto;
   }
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     top: 0;
     bottom: auto;
     padding-top: 0;
@@ -44,7 +44,7 @@ html {
   }
   &_collaplse {
     justify-content: space-between;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       display: none;
       height: calc(100vh - #{$nav-height});
       flex-direction: column;
@@ -982,7 +982,7 @@ $popup-indent: -1.5em;
     z-index: 9;
     top: auto;
     bottom: calc(#{$nav-height} + .2em);
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       bottom: 15px;
       right: 25px;
     }
