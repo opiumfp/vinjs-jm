@@ -189,7 +189,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
         </div>
       </section> */}
 
-      <section>
+      <section className="position-relative">
+        <div className="anchor-id" id={partnersData.partners?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
           title={partnersData.friends?.title}
