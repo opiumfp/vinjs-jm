@@ -139,7 +139,7 @@ npm run deploy
 # && npx gh-pages -d dist
 ```
 
-The site is served from `https://opiumfp.github.io/vinjs-jm`; `pathPrefix: '/vinjs-jm'` is set in `gridsome.config.js` so all internal links and assets resolve correctly under the subpath.
+The site is served from `https://vinnytsiajs.org`; `pathPrefix` is set to an empty string in `gridsome.config.js` so internal links and assets resolve at the site root.
 
 ---
 

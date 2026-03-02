@@ -3,7 +3,7 @@
 The official website for the **VinnytsiaJS** JavaScript community in Vinnytsia, Ukraine.  
 Built as a Jamstack static site with [Gridsome](https://gridsome.org/) (Vue.js) and deployed to GitHub Pages.
 
-🌐 **Live site:** https://opiumfp.github.io/vinjs-jm
+🌐 **Live site:** https://vinnytsiajs.org
 
 ---
 
