@@ -12,7 +12,7 @@ export default function About({ aboutData }: Props) {
           <div className="col-lg-8 align-self-center text-center">
             <div className="about_descrition">
               <h1 className="font-weight-bold">{aboutData.title}</h1>
-              <p className="my-4">{aboutData.paragraph}</p>
+              <p className="about_descrition-paragraph my-4">{aboutData.paragraph}</p>
               <a href={aboutData.link} className="btn btn-primary my-2 my-sm-0">
                 {aboutData.linkTitle}
               </a>

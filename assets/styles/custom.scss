@@ -17,10 +17,17 @@
   background-color: $black;
   // background: #000 url(https://vinjs.netlify.com/assets/static/vinnytsiajs-logo.bf5654a.38eacaf72fc68115816616ecfa921a28.svg) no-repeat fixed 50% 50%;
   position: relative;
+
+  // hide background on mobile devices, because of performance issues
+  @include media-breakpoint-down(lg) {
+    background: none;
+  }
+
   // html.edge &,
   html.ie & {
     background-attachment: scroll;
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -30,17 +37,21 @@
     bottom: 0;
     box-shadow: inset 0 0 15px rgba($black, .7);
   }
+
   &-purple:before {
-    background-color: rgba($vjs-purple, .95) ;
+    background-color: rgba($vjs-purple, .95);
   }
+
   &-blue:before {
-    background-color: rgba(darken($vjs-blue, 5%), .95) ;
+    background-color: rgba(darken($vjs-blue, 5%), .95);
   }
+
   &-red:before {
-    background-color: rgba($vjs-red, .95) ;
+    background-color: rgba($vjs-red, .95);
   }
+
   &-green:before {
-    background-color: rgba($vjs-green, .95) ;
+    background-color: rgba($vjs-green, .95);
   }
 }
 
@@ -56,6 +67,7 @@
   height: 1px;
   left: 0;
   top: 0;
+
   @include media-breakpoint-down(lg) {
     top: -$nav-height;
   }

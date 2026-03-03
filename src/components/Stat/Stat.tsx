@@ -34,7 +34,7 @@ export default function Stat({ statData }: Props) {
                   alt="Vinnytsia JS - UA Frontend Conference"
                   loading="lazy"
                   decoding="async"
-                  objectFit='cover'
+                  style={{ objectFit: 'cover' }}
                   fill
                   sizes="100vw"
                 />
