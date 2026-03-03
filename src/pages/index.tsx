@@ -171,26 +171,25 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       {/* <hr /> */}
 
       {/* Partners Section */}
-      {/* <section className="position-relative">
+      <section className="position-relative">
         <div className="anchor-id" id={partnersData.partners?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
           title={partnersData.partners?.title}
           subtitle={partnersData.partners?.subtitle}
         />
-        <Partners partnersData={partnersData.partners} mode="xlarge" />
-        <div className="text-center pt-5 pb-4">
+        {/* <Partners partnersData={partnersData.partners} mode="xlarge" /> */}
+        {/* <div className="text-center pt-5 pb-4">
           <a
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
             className="btn btn-primary my-2 my-sm-0"
           >
             Become a Partner
           </a>
-        </div>
-      </section> */}
+        </div> */}
+      </section>
 
       <section className="position-relative">
-        <div className="anchor-id" id={partnersData.partners?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
           title={partnersData.friends?.title}
