@@ -49,19 +49,20 @@ export default function MediaTiles({ mediaTilesData }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => linkClick(e, item.type, item.src)}
-                    style={{ position: 'relative', display: 'block', aspectRatio: '16/9', minHeight: 180 }}
                   >
                     {item.image && (
-                      <Image
-                        className="media-tiles_item_img"
-                        src={`${basePath}${item.image}`}
-                        alt={`VinnytsiaJS - ${item.title}`}
-                        loading='lazy'
-                        decoding='async'
-                        style={{ objectFit: "cover" }}
-                        fill
-                        sizes={+item.colDesk === 6 ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 100vw, 33vw'}
-                      />
+                      <div className="media-tiles_item_img_wrap" style={{ position: 'relative', paddingTop: '56.25%', minHeight: 160 }}>
+                        <Image
+                          className="media-tiles_item_img"
+                          src={`${basePath}${item.image}`}
+                          alt={`VinnytsiaJS - ${item.title}`}
+                          loading="lazy"
+                          decoding="async"
+                          objectFit='cover'
+                          fill
+                          sizes={+item.colDesk === 6 ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 100vw, 33vw'}
+                        />
+                      </div>
                     )}
                     <div className="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center">
                       <div className="media-tiles_item_overlay_tile">
