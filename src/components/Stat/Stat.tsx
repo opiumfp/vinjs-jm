@@ -28,12 +28,15 @@ export default function Stat({ statData }: Props) {
             )}
             <div className="stat_bg_prlx">
               {statData.image && (
-                <img
+                <Image
                   className="stat_bg_img stat_bg_img-landscape"
                   src={`${basePath}${statData.image}`}
                   alt="Vinnytsia JS - UA Frontend Conference"
                   loading="lazy"
                   decoding="async"
+                  objectFit='cover'
+                  fill
+                  sizes="100vw"
                 />
               )}
             </div>
