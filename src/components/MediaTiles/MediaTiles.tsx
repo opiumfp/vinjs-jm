@@ -58,7 +58,7 @@ export default function MediaTiles({ mediaTilesData }: Props) {
                           alt={`VinnytsiaJS - ${item.title}`}
                           loading="lazy"
                           decoding="async"
-                          objectFit='cover'
+                          style={{ objectFit: 'cover' }}
                           fill
                           sizes={+item.colDesk === 6 ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 100vw, 33vw'}
                         />
