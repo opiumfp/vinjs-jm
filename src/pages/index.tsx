@@ -218,10 +218,10 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       <hr />
 
       {/* Location Section */}
-      <section id={pageData.location?.id}>
+      {/* <section id={pageData.location?.id}>
         <PageTitle className="pt-4 pb-3" title="Location" id="location" />
         <Location locationData={pageData.location} />
-      </section>
+      </section> */}
 
       {/* Contact Us Section */}
       <section className="position-relative">
