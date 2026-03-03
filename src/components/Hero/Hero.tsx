@@ -91,9 +91,10 @@ export default function Hero({ id, heroData }: Props) {
                     {heroData.date}
                   </h2>
                 )}
+                {/* Conference Logo */}
                 <img
                   className="hero_logo d-block mx-auto my-4"
-                  src={`${basePath}/assets/images/logo/VinnytsiaJS_20-logo-sm.png`}
+                  src={`${basePath}/assets/images/logo/VinnytsiaJS-2020-logo.svg`}
                   alt="VinnytsiaJS - Javascript Open Air Conference"
                 />
                 <h2 className="h1 hero_subtitle text-uppercase font-weight-bold">
