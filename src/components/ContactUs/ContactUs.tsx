@@ -33,7 +33,7 @@ export default function ContactUs({ contactUsData, socialIconsData }: Props) {
               </div>
               <ul className="list-unstyled">
                 <li>
-                  <a href="mailto:info@vinnytsiajs.org">info@vinnytsiajs.org</a>
+                  <a href="mailto:vinnytsiajs@gmail.com">vinnytsiajs@gmail.com</a>
                 </li>
               </ul>
             </div>
