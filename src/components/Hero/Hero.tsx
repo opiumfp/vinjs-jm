@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useDevice } from '@/stores/deviceStore';
 import type { HeroData } from '@/types/content';
+import Image from 'next/image';
 
 interface Props {
   id?: string;
@@ -48,12 +49,12 @@ export default function Hero({ id, heroData }: Props) {
           {device && !device.isShowVideo ? (
             <>
               {heroData.image && (
-                <img
+                <Image
                   className="hero_bg_image hero_bg_image-landscape"
                   src={`${basePath}${heroData.image}`}
                   alt="Vinnytsia JS - Javascript Open Air"
-                  loading="lazy"
-                  decoding="async"
+                  fill
+                  sizes='100vw'
                 />
               )}
             </>
@@ -72,12 +73,12 @@ export default function Hero({ id, heroData }: Props) {
             </video>
           )}
           {heroData.imagePt && (
-            <img
+            <Image
               className="hero_bg_image hero_bg_image-portrait"
               src={`${basePath}${heroData.imagePt}`}
               alt="Vinnytsia JS - Javascript Open Air"
-              loading="lazy"
-              decoding="async"
+              fill
+              sizes='100vw'
             />
           )}
         </div>
@@ -94,8 +95,6 @@ export default function Hero({ id, heroData }: Props) {
                   className="hero_logo d-block mx-auto my-4"
                   src={`${basePath}/assets/images/logo/VinnytsiaJS_20-logo-sm.png`}
                   alt="VinnytsiaJS - Javascript Open Air Conference"
-                  loading="lazy"
-                  decoding="async"
                 />
                 <h2 className="h1 hero_subtitle text-uppercase font-weight-bold">
                   Javascript Community
