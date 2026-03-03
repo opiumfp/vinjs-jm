@@ -33,6 +33,54 @@ export default function NavBar({ navData }: Props) {
     };
   }, []);
 
+  // Ensure in-page anchor links (class "scroll") jump to the right
+  // position on mobile/with fixed bottom navbar and when loading with a hash.
+  useEffect(() => {
+    const scrollToHash = (hash: string, behavior: ScrollBehavior = 'auto') => {
+      if (!hash) return;
+      const id = decodeURIComponent(hash.replace('#', ''));
+      const el = document.getElementById(id) || (document.getElementsByName(id)[0] as HTMLElement | undefined);
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const absoluteTop = window.scrollY + rect.top;
+      window.scrollTo({ top: Math.max(0, absoluteTop), behavior });
+    };
+
+    const onDocumentClick = (ev: Event) => {
+      const target = ev.target as HTMLElement | null;
+      if (!target) return;
+      const anchor = target.closest('a') as HTMLAnchorElement | null;
+      if (!anchor) return;
+      // only handle anchors that have a hash and the "scroll" class
+      if (!anchor.hash || !anchor.classList.contains('scroll')) return;
+
+      ev.preventDefault();
+      // close mobile drop nav immediately
+      closeDropNav();
+
+      const hash = anchor.hash;
+      // update URL without navigating
+      try {
+        history.pushState(null, '', hash);
+      } catch {}
+
+      // give the UI a moment to update (menu close) before scrolling
+      setTimeout(() => scrollToHash(hash, 'smooth'), 50);
+    };
+
+    document.addEventListener('click', onDocumentClick);
+
+    // If the page loaded with a hash, adjust scroll after mount.
+    if (window.location.hash) {
+      // Delay briefly so layout (and any mobile nav state) stabilizes.
+      setTimeout(() => scrollToHash(window.location.hash, 'auto'), 50);
+    }
+
+    return () => {
+      document.removeEventListener('click', onDocumentClick);
+    };
+  }, []);
+
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
   const computeHref = (src: string) => {
