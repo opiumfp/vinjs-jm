@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import type { StatData } from '@/types/content';
+import Image from 'next/image';
 
 interface Props {
   statData: StatData;
@@ -15,12 +16,14 @@ export default function Stat({ statData }: Props) {
         <div className="stat_bg">
           <div className="stat_bg_wrap">
             {statData.imagePt && (
-              <img
+              <Image
                 className="stat_bg_img stat_bg_img-portrait"
                 src={`${basePath}${statData.imagePt}`}
                 alt="Vinnytsia JS - UA Frontend Conference"
                 loading="lazy"
                 decoding="async"
+                fill
+                sizes="100vw"
               />
             )}
             <div className="stat_bg_prlx">
