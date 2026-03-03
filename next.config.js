@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   basePath: '',
   // Ensure static assets are served from root when deployed to production
   assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
   sassOptions: {
     includePaths: [

@@ -1,6 +1,7 @@
 import { useDevice } from '@/stores/deviceStore';
 import { useOpenYoutubePopup } from '@/stores/youtubeStore';
 import type { MediaTilesData } from '@/types/content';
+import Image from 'next/image';
 
 interface Props {
   mediaTilesData: MediaTilesData;
@@ -48,14 +49,18 @@ export default function MediaTiles({ mediaTilesData }: Props) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => linkClick(e, item.type, item.src)}
+                    style={{ position: 'relative', display: 'block', aspectRatio: '16/9', minHeight: 180 }}
                   >
                     {item.image && (
-                      <img
+                      <Image
                         className="media-tiles_item_img"
                         src={`${basePath}${item.image}`}
                         alt={`VinnytsiaJS - ${item.title}`}
-                        loading="lazy"
-                        decoding="async"
+                        loading='lazy'
+                        decoding='async'
+                        style={{ objectFit: "cover" }}
+                        fill
+                        sizes={+item.colDesk === 6 ? '(max-width: 768px) 100vw, 50vw' : '(max-width: 768px) 100vw, 33vw'}
                       />
                     )}
                     <div className="media-tiles_item_overlay d-flex align-items-center justify-content-center text-center">
