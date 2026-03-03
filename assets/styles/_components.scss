@@ -67,7 +67,7 @@ html {
       min-height: $nav-height;
     }
     @include media-breakpoint-down(lg) {
-      header .nav-link {
+      header & .nav-link {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         @include media-breakpoint-between(sm, md) {
