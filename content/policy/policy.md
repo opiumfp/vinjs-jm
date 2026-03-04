@@ -1,6 +1,8 @@
 ---
 title: Policy
 titleUA: Політика
+titlePL: Polityka
+titleDE: Datenschutz
 description: >-
   Your privacy is important to us. It is VinnytsiaJS policy to respect your
   privacy regarding any information we may collect from you across our website
@@ -97,6 +99,20 @@ description: >-
   \
 
   This policy is effective as of 01 Feb 2021.
+descriptionPL: >-
+  Twoja prywatność jest dla nas ważna. Polityka VinnytsiaJS szanuje Twoją
+  prywatność w odniesieniu do wszelkich informacji, które możemy zbierać na
+  naszej stronie https://vinnytsiajs.org/ oraz innych stronach, którymi
+  zarządzamy. Prosimy o dane osobowe tylko wtedy, gdy są nam naprawdę potrzebne
+  do świadczenia usług. Nie udostępniamy publicznie żadnych danych
+  identyfikujących użytkownika. Niniejsza polityka obowiązuje od 01 lutego 2021.
+descriptionDE: >-
+  Ihre Privatsphäre ist uns wichtig. Die VinnytsiaJS-Richtlinie respektiert
+  Ihre Privatsphäre in Bezug auf alle Informationen, die wir auf unserer
+  Website https://vinnytsiajs.org/ und anderen von uns betriebenen Seiten
+  erheben können. Wir erfragen persönliche Daten nur, wenn wir sie wirklich
+  benötigen. Wir geben keine personenbezogenen Daten öffentlich weiter. Diese
+  Richtlinie gilt ab dem 01. Februar 2021.
 descriptionUA: >-
   Ваша конфіденційність важлива для нас. Політика VinnytsiaJS поважає вашу
   конфіденційність щодо будь-якої інформації, яку ми можемо збирати від вас на

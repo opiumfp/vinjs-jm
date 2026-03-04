@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Start",
+    "aboutUs": "Über uns",
+    "schedule": "Programm",
+    "speakers": "Referenten",
+    "cfp": "CFP",
+    "partners": "Partner",
+    "tickets": "Tickets",
+    "contactUs": "Kontakt",
+    "followUs": "Folgen Sie uns"
+  },
+  "hero": {
+    "subtitle": "JavaScript-Community-Treffen",
+    "subtitleShort": "JavaScript-Community",
+    "subtitleShortLine1": "JavaScript",
+    "subtitleShortLine2": "Community"
+  },
+  "about": {
+    "title": "VinnytsiaJS",
+    "paragraph": "Die Veranstaltungen werden von der Vinnytsia JS Community organisiert. Dieses Jahr trifft die Community für JavaScript-Entwicklung. Es wird eine Reihe von Meetups, unsere Open-Air-Konferenz und eine Serie von Online-Events mit Vorträgen von Speakern aus der Ukraine und dem Ausland geben.",
+    "linkTitle": "Verhaltenskodex"
+  },
+  "stat": {
+    "items": {
+      "0": {
+        "title": "400+ Teilnehmer",
+        "paragraph": "Alte Freunde und JavaScript-Experten zum Kennenlernen."
+      },
+      "1": {
+        "title": "2 Streams",
+        "paragraph": "Allgemein + **Lightnings**. Der Schwerpunkt auf den neuesten Trends."
+      },
+      "2": {
+        "title": "15+ Referenten",
+        "paragraph": "Vorträge von ukrainischen Top-Speakern."
+      },
+      "3": {
+        "title": "Open Air",
+        "paragraph": "Lernen, entdecken, vernetzen und die Sommerstimmung am Pool genießen."
+      }
+    }
+  },
+  "mediaTiles": {
+    "title": "Spür die Stimmung",
+    "subtitle": "Die besten Meeting-Erlebnisse"
+  },
+  "partners": {
+    "partnersTitle": "Partner",
+    "partnersSubtitle": "Wer diese Veranstaltung möglich macht!",
+    "friendsTitle": "Freunde",
+    "friendsSubtitle": "",
+    "mediapartnersTitle": "Medienpartner",
+    "mediapartnersSubtitle": ""
+  },
+  "cfp": {
+    "title": "Call for Papers",
+    "lead": "Haben Sie etwas Wertvolles beizutragen? Reichen Sie Ihren Vortrag ein!",
+    "submit": "Einreichen"
+  },
+  "partnersCta": {
+    "becomePartner": "Partner werden"
+  },
+  "contact": {
+    "followUs": "Folgen Sie uns in den sozialen Medien für mehr Informationen und Neuigkeiten zur Konferenz.",
+    "seeYouSoon": "Bis bald!",
+    "policy": "Datenschutz",
+    "codeOfConduct": "Verhaltenskodex",
+    "contactUs": "Kontakt"
+  },
+  "language": {
+    "en": "EN",
+    "uk": "UA",
+    "pl": "PL",
+    "de": "DE"
+  }
+}

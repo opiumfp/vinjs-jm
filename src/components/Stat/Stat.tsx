@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import { useTranslation } from 'react-i18next';
 import type { StatData } from '@/types/content';
 import Image from 'next/image';
 
@@ -7,6 +8,7 @@ interface Props {
 }
 
 export default function Stat({ statData }: Props) {
+  const { t } = useTranslation();
   const colWidth = statData.items.length ? Math.floor(12 / statData.items.length) : 12;
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
@@ -45,20 +47,29 @@ export default function Stat({ statData }: Props) {
       )}
       <div className="container pt-6 pb-6">
         <div className="row justify-content-center">
-          {statData.items.map((item, index) => (
+          {statData.items.map((item, index) => {
+            const titleKey = `stat.items.${index}.title`;
+            const paragraphKey = `stat.items.${index}.paragraph`;
+            const title = t(titleKey);
+            const paragraph = t(paragraphKey);
+            const useTranslated = title !== titleKey;
+            const displayTitle = useTranslated ? title : item.title;
+            const displayParagraph = useTranslated ? paragraph : item.paragraph;
+
+            return (
             <div
               key={index}
               className={`stat_col col-12 col-lg-${colWidth}`}
             >
               <div className="stat_item text-center">
-                {item.title && (
+                {displayTitle && (
                   <div className="h3 stat_title mb-2 mb-lg-3">
-                    <ReactMarkdown components={{ p: ({ children }) => <span>{children}</span> }}>{item.title}</ReactMarkdown>
+                    <ReactMarkdown components={{ p: ({ children }) => <span>{children}</span> }}>{displayTitle}</ReactMarkdown>
                   </div>
                 )}
-                {item.paragraph && (
+                {displayParagraph && (
                   <div className="stat_paragraph">
-                    <ReactMarkdown>{item.paragraph}</ReactMarkdown>
+                    <ReactMarkdown>{displayParagraph}</ReactMarkdown>
                   </div>
                 )}
                 {index !== statData.items.length - 1 && (
@@ -66,7 +77,8 @@ export default function Stat({ statData }: Props) {
                 )}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

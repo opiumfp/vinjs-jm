@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
+import { useTranslation } from 'react-i18next';
 import DefaultLayout from '@/layouts/DefaultLayout';
 import Hero from '@/components/Hero/Hero';
 import About from '@/components/About/About';
@@ -23,7 +24,10 @@ interface Props {
   partnersData: PartnersData;
 }
 
-const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) => (
+const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) => {
+  const { t } = useTranslation();
+
+  return (
   <DefaultLayout navData={pageData.nav}>
     <Head>
       <title>Javascript Open Air Conference and Meetups</title>
@@ -67,8 +71,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             <div className="col-12">
               <PageTitle
                 className="position-relative py-8"
-                title={pageData.mediaTiles?.title}
-                subtitle={pageData.mediaTiles?.subtitle}
+                title={t('mediaTiles.title')}
+                subtitle={t('mediaTiles.subtitle')}
               />
             </div>
           </div>
@@ -99,15 +103,15 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              <PageTitle className="position-relative" title="Call for Papers" />
-              <p className="my-4 lead">Have to contribute anything of value? Submit your talk!</p>
+              <PageTitle className="position-relative" title={t('cfp.title')} />
+              <p className="my-4 lead">{t('cfp.lead')}</p>
               <a
                 href="https://forms.gle/hExVNTtWWDpuFgrH8"
                 className="btn btn-primary my-2 px-5 my-sm-0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Submit
+                {t('cfp.submit')}
               </a>
             </div>
           </div>
@@ -175,8 +179,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
         <div className="anchor-id" id={partnersData.partners?.id}></div>
         <PageTitle
           className="pt-5 pb-4"
-          title={partnersData.partners?.title}
-          subtitle={partnersData.partners?.subtitle}
+          title={t('partners.partnersTitle')}
+          subtitle={t('partners.partnersSubtitle')}
         />
         {/* <Partners partnersData={partnersData.partners} mode="xlarge" /> */}
         {/* <div className="text-center pt-5 pb-4">
@@ -184,7 +188,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
             className="btn btn-primary my-2 my-sm-0"
           >
-            Become a Partner
+            {t('partnersCta.becomePartner')}
           </a>
         </div> */}
       </section>
@@ -192,8 +196,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       <section className="position-relative">
         <PageTitle
           className="pt-5 pb-4"
-          title={partnersData.friends?.title}
-          subtitle={partnersData.friends?.subtitle}
+          title={t('partners.friendsTitle')}
+          subtitle={t('partners.friendsSubtitle')}
         />
         <Partners partnersData={partnersData.friends} mode="large" />
       </section>
@@ -201,8 +205,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       <section>
         <PageTitle
           className="pt-5 pb-4"
-          title={partnersData.mediapartners?.title}
-          subtitle={partnersData.mediapartners?.subtitle}
+          title={t('partners.mediapartnersTitle')}
+          subtitle={t('partners.mediapartnersSubtitle')}
         />
         <Partners partnersData={partnersData.mediapartners} mode="small" />
         <div className="text-center pt-5 pb-4">
@@ -210,7 +214,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
             href="mailto:partners@vinnytsiajs.org?subject=VinnytsiaJS%202020%3A%20Became%20a%20Partner"
             className="btn btn-primary my-2 my-sm-0"
           >
-            Become a Partner
+            {t('partnersCta.becomePartner')}
           </a>
         </div>
       </section>
@@ -226,7 +230,7 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
       {/* Contact Us Section */}
       <section className="position-relative">
         <div className="anchor-id" id="contact"></div>
-        <PageTitle className="pt-5 pb-3" title="Contact Us" />
+        <PageTitle className="pt-5 pb-3" title={t('contact.contactUs')} />
         <ContactUs contactUsData={{}} socialIconsData={pageData.nav} />
       </section>
 
@@ -235,7 +239,8 @@ const IndexPage: NextPage<Props> = ({ pageData, speakersData, partnersData }) =>
 
     <TelegramWidget channel="vinjs" postid="141" />
   </DefaultLayout>
-);
+  );
+};
 
 export const getStaticProps: GetStaticProps = async () => {
   const pageData = getConferenceData();

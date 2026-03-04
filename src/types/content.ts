@@ -206,6 +206,10 @@ export interface SpeakersDataFile {
 export interface PolicyData {
   title: string;
   titleUA: string;
+  titlePL: string;
+  titleDE: string;
   description: string;
   descriptionUA: string;
+  descriptionPL: string;
+  descriptionDE: string;
 }
