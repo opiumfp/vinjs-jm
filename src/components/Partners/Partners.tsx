@@ -1,4 +1,5 @@
 import type { PartnerGroup } from '@/types/content';
+import Image from 'next/image';
 
 interface Props {
   partnersData: PartnerGroup;
@@ -34,13 +35,20 @@ export default function Partners({ partnersData, mode }: Props) {
                 <div className="partners_item text-center pb-4 px-1">
                   <a href={item.fields.src} target="_blank" rel="noopener noreferrer">
                     {item.fields.image && (
-                      <img
-                        className="partners_img"
-                        src={`${basePath}${item.fields.image}`}
-                        alt={item.fields.title}
-                        loading="lazy"
-                        decoding="async"
-                      />
+                      <span className="partners_img_wrap">
+                        <Image
+                          className="partners_img"
+                          src={`${basePath}${item.fields.image}`}
+                          alt={item.fields.title}
+                          loading="lazy"
+                          decoding="async"
+                          placeholder="blur"
+                          blurDataURL={`${basePath}${item.fields.image}`}
+                          fill
+                          sizes="(max-width: 768px) 100px, 150px"
+                          style={{ objectFit: 'contain' }}
+                        />
+                      </span>
                     )}
                   </a>
                 </div>

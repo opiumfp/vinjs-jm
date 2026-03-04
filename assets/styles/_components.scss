@@ -816,6 +816,12 @@ $pricing-border-color-active: lighten($vjs-green, 0%);
 
 // Partners
 .partners {
+  &_img_wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+  }
   &_img {
     width: 100%;
   }
