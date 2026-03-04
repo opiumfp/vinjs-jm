@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDevice } from '@/stores/deviceStore';
 import type { HeroData } from '@/types/content';
 import Image from 'next/image';
@@ -9,6 +10,7 @@ interface Props {
 }
 
 export default function Hero({ id, heroData }: Props) {
+  const { t } = useTranslation();
   const device = useDevice();
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -98,10 +100,12 @@ export default function Hero({ id, heroData }: Props) {
                   alt="VinnytsiaJS - Javascript Open Air Conference"
                 />
                 <h2 className="h1 hero_subtitle text-uppercase font-weight-bold">
-                  Javascript Community
+                  {t('hero.subtitleShort')}
                 </h2>
                 <div className="h1 hero_subtitle-pt text-uppercase font-weight-bold">
-                  Javascript<br />Community
+                  {t('hero.subtitleShortLine1')}
+                  <br />
+                  {t('hero.subtitleShortLine2')}
                 </div>
               </div>
             </div>

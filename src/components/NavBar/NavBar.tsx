@@ -1,12 +1,26 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import SocialIcons from '@/components/SocialIcons/SocialIcons';
 import type { NavData } from '@/types/content';
+
+const SRC_TO_KEY: Record<string, string> = {
+  '#home': 'nav.home',
+  '#about': 'nav.aboutUs',
+  '#schedule': 'nav.schedule',
+  '#speakers': 'nav.speakers',
+  '#cfp': 'nav.cfp',
+  '#partners': 'nav.partners',
+  '#pricing': 'nav.tickets',
+  '#contact': 'nav.contactUs',
+};
 
 interface Props {
   navData: NavData;
 }
 
 export default function NavBar({ navData }: Props) {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleOrientationChange = () => {
       document.querySelector('body')?.classList.remove('nav_dropmenu-show');
@@ -130,7 +144,7 @@ export default function NavBar({ navData }: Props) {
                   href={computeHref(item.src)}
                   onClick={closeDropNav}
                 >
-                  {item.title}
+                  {SRC_TO_KEY[item.src] ? t(SRC_TO_KEY[item.src]) : item.title}
                   <span className="sr-only">(current)</span>
                 </a>
               )}
@@ -145,7 +159,7 @@ export default function NavBar({ navData }: Props) {
               rel="noopener noreferrer"
               className="btn btn-primary d-inline-block mx-auto ml-lg-auto mr-lg-0 px-4 px-lg-5"
             >
-              {navData.button.title}
+              {t('nav.followUs')}
             </a>
           )}
         </div>

@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Головна",
+    "aboutUs": "Про нас",
+    "schedule": "Розклад",
+    "speakers": "Спікери",
+    "cfp": "CFP",
+    "partners": "Партнери",
+    "tickets": "Квитки",
+    "contactUs": "Контакти",
+    "followUs": "Підписатися"
+  },
+  "hero": {
+    "subtitle": "Зустрічі JavaScript спільноти",
+    "subtitleShort": "JavaScript спільнота",
+    "subtitleShortLine1": "JavaScript",
+    "subtitleShortLine2": "спільнота"
+  },
+  "about": {
+    "title": "VinnytsiaJS",
+    "paragraph": "Події організовуються та проводяться спільнотою Vinnytsia JS. Цього року зустрічайте спільноту, присвячену JavaScript розробці. Це буде серія мітапів, наша Open-Air конференція та серія онлайн-подій з доповідями спікерів з України та за кордоном.",
+    "linkTitle": "Кодекс поведінки"
+  },
+  "stat": {
+    "items": {
+      "0": {
+        "title": "400+ учасників",
+        "paragraph": "Старі друзі та експерти з JavaScript, з якими можна познайомитися."
+      },
+      "1": {
+        "title": "2 потоки",
+        "paragraph": "Загальний + **Лайтнінги**. Акцент на останніх трендах."
+      },
+      "2": {
+        "title": "15+ спікерів",
+        "paragraph": "Доповіді топових українських спікерів."
+      },
+      "3": {
+        "title": "Open Air",
+        "paragraph": "Вчіться, досліджуйте, знайомтеся та насолоджуйтесь літньою атмосферою та басейном."
+      }
+    }
+  },
+  "mediaTiles": {
+    "title": "Почуй атмосферу",
+    "subtitle": "Найкращий досвід зустрічей"
+  },
+  "partners": {
+    "partnersTitle": "Партнери",
+    "partnersSubtitle": "Хто робить цю подію можливою!",
+    "friendsTitle": "Друзі",
+    "friendsSubtitle": "",
+    "mediapartnersTitle": "Медіа-партнери",
+    "mediapartnersSubtitle": ""
+  },
+  "cfp": {
+    "title": "Заявки на доповіді",
+    "lead": "Маєте що сказати? Подайте заявку на доповідь!",
+    "submit": "Подати"
+  },
+  "partnersCta": {
+    "becomePartner": "Стати партнером"
+  },
+  "contact": {
+    "followUs": "Слідкуйте за нами в соцмережах, щоб дізнаватися більше про конференцію.",
+    "seeYouSoon": "До зустрічі!",
+    "policy": "Політика",
+    "codeOfConduct": "Кодекс поведінки",
+    "contactUs": "Контакти"
+  },
+  "language": {
+    "en": "EN",
+    "uk": "UK",
+    "pl": "PL",
+    "de": "DE"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "aboutUs": "O nas",
+    "schedule": "Harmonogram",
+    "speakers": "Prelegenci",
+    "cfp": "CFP",
+    "partners": "Partnerzy",
+    "tickets": "Bilety",
+    "contactUs": "Kontakt",
+    "followUs": "Obserwuj nas"
+  },
+  "hero": {
+    "subtitle": "Spotkania społeczności JavaScript",
+    "subtitleShort": "Społeczność JavaScript",
+    "subtitleShortLine1": "Społeczność",
+    "subtitleShortLine2": "JavaScript"
+  },
+  "about": {
+    "title": "VinnytsiaJS",
+    "paragraph": "Wydarzenia są organizowane przez społeczność Vinnytsia JS. W tym roku spotkaj społeczność związaną z rozwojem JavaScript. Będzie to seria meetupów, nasza konferencja Open-Air oraz seria wydarzeń online z prelekcjami speakerów z Ukrainy i zagranicy.",
+    "linkTitle": "Kodeks postępowania"
+  },
+  "stat": {
+    "items": {
+      "0": {
+        "title": "400+ uczestników",
+        "paragraph": "Starsi przyjaciele i eksperci JavaScript do poznania."
+      },
+      "1": {
+        "title": "2 streamy",
+        "paragraph": "Ogólny + **Lightnings**. Nacisk na najnowsze trendy."
+      },
+      "2": {
+        "title": "15+ prelegentów",
+        "paragraph": "Prelekcje czołowych ukraińskich speakerów."
+      },
+      "3": {
+        "title": "Open Air",
+        "paragraph": "Ucz się, odkrywaj, łącz i ciesz się letnią atmosferą oraz basenem."
+      }
+    }
+  },
+  "mediaTiles": {
+    "title": "Poczuj klimat",
+    "subtitle": "Najlepsze doświadczenia spotkań"
+  },
+  "partners": {
+    "partnersTitle": "Partnerzy",
+    "partnersSubtitle": "Kto sprawia, że to wydarzenie jest możliwe!",
+    "friendsTitle": "Przyjaciele",
+    "friendsSubtitle": "",
+    "mediapartnersTitle": "Partnerzy medialni",
+    "mediapartnersSubtitle": ""
+  },
+  "cfp": {
+    "title": "Zgłoś prelekcję",
+    "lead": "Masz coś wartościowego do przekazania? Zgłoś swoją prelekcję!",
+    "submit": "Wyślij"
+  },
+  "partnersCta": {
+    "becomePartner": "Zostań partnerem"
+  },
+  "contact": {
+    "followUs": "Obserwuj nas w mediach społecznościowych, aby dowiedzieć się więcej o konferencji.",
+    "seeYouSoon": "Do zobaczenia!",
+    "policy": "Polityka",
+    "codeOfConduct": "Kodeks postępowania",
+    "contactUs": "Kontakt"
+  },
+  "language": {
+    "en": "EN",
+    "uk": "UK",
+    "pl": "PL",
+    "de": "DE"
+  }
+}
