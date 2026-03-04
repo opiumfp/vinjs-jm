@@ -15,13 +15,20 @@ export default function ContactUs({ contactUsData, socialIconsData }: Props) {
     <div className="contact-us">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-10 col-lg-6">
             <div className="text-center pb-4">
               <p className="h5 font-weight-normal">
                 {t('contact.followUs')}
                 <br />
                 {t('contact.seeYouSoon')}
               </p>
+
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-12 col-md-10">
+            <div className="text-center pb-4">
               <div className="contact-us_social-icons navbar-expand d-inline-block h4 my-3">
                 <SocialIcons socialIconsData={socialIconsData.socialicons} />
               </div>
