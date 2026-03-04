@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import SocialIcons from '@/components/SocialIcons/SocialIcons';
 import type { NavData } from '@/types/content';
+
+const NAV_SCROLL_DURATION = 500;
 
 const SRC_TO_KEY: Record<string, string> = {
   '#home': 'nav.home',
@@ -47,57 +50,11 @@ export default function NavBar({ navData }: Props) {
     };
   }, []);
 
-  // Ensure in-page anchor links (class "scroll") jump to the right
-  // position on mobile/with fixed bottom navbar and when loading with a hash.
-  useEffect(() => {
-    const scrollToHash = (hash: string, behavior: ScrollBehavior = 'auto') => {
-      if (!hash) return;
-      const id = decodeURIComponent(hash.replace('#', ''));
-      const el = document.getElementById(id) || (document.getElementsByName(id)[0] as HTMLElement | undefined);
-      if (!el) return;
-      const rect = el.getBoundingClientRect();
-      const absoluteTop = window.scrollY + rect.top;
-      window.scrollTo({ top: Math.max(0, absoluteTop), behavior });
-    };
-
-    const onDocumentClick = (ev: Event) => {
-      const target = ev.target as HTMLElement | null;
-      if (!target) return;
-      const anchor = target.closest('a') as HTMLAnchorElement | null;
-      if (!anchor) return;
-      // only handle anchors that have a hash and the "scroll" class
-      if (!anchor.hash || !anchor.classList.contains('scroll')) return;
-
-      ev.preventDefault();
-      // close mobile drop nav immediately
-      closeDropNav();
-
-      const hash = anchor.hash;
-      // update URL without navigating
-      try {
-        history.pushState(null, '', hash);
-      } catch {}
-
-      // give the UI a moment to update (menu close) before scrolling
-      setTimeout(() => scrollToHash(hash, 'smooth'), 50);
-    };
-
-    document.addEventListener('click', onDocumentClick);
-
-    // If the page loaded with a hash, adjust scroll after mount.
-    if (window.location.hash) {
-      // Delay briefly so layout (and any mobile nav state) stabilizes.
-      setTimeout(() => scrollToHash(window.location.hash, 'auto'), 50);
-    }
-
-    return () => {
-      document.removeEventListener('click', onDocumentClick);
-    };
-  }, []);
-
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
+  /** Same-page hash links use plain #id; external paths use basePath. */
   const computeHref = (src: string) => {
+    if (src.startsWith('#')) return src;
     try {
       const normBase = basePath && basePath !== '/' ? (basePath.endsWith('/') ? basePath.slice(0, -1) : basePath) : '';
       const normSrc = src.startsWith('/') ? src : '/' + src;
@@ -138,16 +95,30 @@ export default function NavBar({ navData }: Props) {
         <ul className="vjs-navbar_nav navbar-nav">
           {navData.items.map((item, index) => (
             <li key={index} className="nav-item">
-              {item.active && (
-                <a
-                  className="vjs-navbar_link nav-link scroll text-uppercase"
-                  href={computeHref(item.src)}
-                  onClick={closeDropNav}
-                >
-                  {SRC_TO_KEY[item.src] ? t(SRC_TO_KEY[item.src]) : item.title}
-                  <span className="sr-only">(current)</span>
-                </a>
-              )}
+              {item.active &&
+                (item.src.startsWith('#') ? (
+                  <Link
+                    to={item.src.slice(1)}
+                    href={item.src}
+                    smooth
+                    duration={NAV_SCROLL_DURATION}
+                    offset={0}
+                    className="vjs-navbar_link nav-link text-uppercase"
+                    onClick={closeDropNav}
+                  >
+                    {SRC_TO_KEY[item.src] ? t(SRC_TO_KEY[item.src]) : item.title}
+                    <span className="sr-only">(current)</span>
+                  </Link>
+                ) : (
+                  <a
+                    className="vjs-navbar_link nav-link text-uppercase"
+                    href={computeHref(item.src)}
+                    onClick={closeDropNav}
+                  >
+                    {SRC_TO_KEY[item.src] ? t(SRC_TO_KEY[item.src]) : item.title}
+                    <span className="sr-only">(current)</span>
+                  </a>
+                ))}
             </li>
           ))}
         </ul>

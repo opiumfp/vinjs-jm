@@ -61,12 +61,19 @@
   }
 }
 
+// Scroll targets: avoid content hiding under fixed bottom navbar
+section[id] {
+  scroll-margin-bottom: $nav-height;
+}
+
 .anchor-id {
   position: absolute;
   width: 1px;
   height: 1px;
   left: 0;
   top: 0;
+  // Keep target visible above fixed bottom navbar when scrolling
+  scroll-margin-bottom: $nav-height;
 
   @include media-breakpoint-down(lg) {
     top: -$nav-height;
