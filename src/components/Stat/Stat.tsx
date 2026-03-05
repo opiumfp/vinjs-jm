@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import { useTranslation } from 'react-i18next';
 import type { StatData } from '@/types/content';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Props {
   statData: StatData;
@@ -18,7 +18,7 @@ export default function Stat({ statData }: Props) {
         <div className="stat_bg">
           <div className="stat_bg_wrap">
             {statData.imagePt && (
-              <Image
+              <ExportedImage
                 className="stat_bg_img stat_bg_img-portrait"
                 src={`${basePath}${statData.imagePt}`}
                 alt="Vinnytsia JS - UA Frontend Conference"
@@ -30,7 +30,7 @@ export default function Stat({ statData }: Props) {
             )}
             <div className="stat_bg_prlx">
               {statData.image && (
-                <Image
+                <ExportedImage
                   className="stat_bg_img stat_bg_img-landscape"
                   src={`${basePath}${statData.image}`}
                   alt="Vinnytsia JS - UA Frontend Conference"

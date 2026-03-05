@@ -1,7 +1,7 @@
 import { useDevice } from '@/stores/deviceStore';
 import { useOpenYoutubePopup } from '@/stores/youtubeStore';
 import type { MediaTilesData } from '@/types/content';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Props {
   mediaTilesData: MediaTilesData;
@@ -52,7 +52,7 @@ export default function MediaTiles({ mediaTilesData }: Props) {
                   >
                     {item.image && (
                       <div className="media-tiles_item_img_wrap" style={{ position: 'relative', paddingTop: '56.25%', minHeight: 160 }}>
-                        <Image
+                        <ExportedImage
                           className="media-tiles_item_img"
                           src={`${basePath}${item.image}`}
                           alt={`VinnytsiaJS - ${item.title}`}

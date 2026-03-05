@@ -1,5 +1,5 @@
 import type { PartnerGroup } from '@/types/content';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Props {
   partnersData: PartnerGroup;
@@ -36,14 +36,13 @@ export default function Partners({ partnersData, mode }: Props) {
                   <a href={item.fields.src} target="_blank" rel="noopener noreferrer">
                     {item.fields.image && (
                       <span className="partners_img_wrap">
-                        <Image
+                        <ExportedImage
                           className="partners_img"
                           src={`${basePath}${item.fields.image}`}
                           alt={item.fields.title}
                           loading="lazy"
                           decoding="async"
                           placeholder="blur"
-                          blurDataURL={`${basePath}${item.fields.image}`}
                           fill
                           sizes="(max-width: 768px) 100px, 150px"
                           style={{ objectFit: 'contain' }}

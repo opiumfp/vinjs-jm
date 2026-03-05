@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDevice } from '@/stores/deviceStore';
 import type { HeroData } from '@/types/content';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Props {
   id?: string;
@@ -51,7 +51,7 @@ export default function Hero({ id, heroData }: Props) {
           {device && !device.isShowVideo ? (
             <>
               {heroData.image && (
-                <Image
+                <ExportedImage
                   className="hero_bg_image hero_bg_image-landscape"
                   src={`${basePath}${heroData.image}`}
                   alt="Vinnytsia JS - Javascript Open Air"
@@ -75,7 +75,7 @@ export default function Hero({ id, heroData }: Props) {
             </video>
           )}
           {heroData.imagePt && (
-            <Image
+            <ExportedImage
               className="hero_bg_image hero_bg_image-portrait"
               src={`${basePath}${heroData.imagePt}`}
               alt="Vinnytsia JS - Javascript Open Air"

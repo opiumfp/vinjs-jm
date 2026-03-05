@@ -1,5 +1,5 @@
 import type { LocationData } from '@/types/content';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 interface Props {
   locationData: LocationData;
@@ -36,24 +36,24 @@ export default function Location({ locationData }: Props) {
           <div className="location_bg">
             <div className="location_bg_wrap">
               <div className="location_bg_prlx">
-                <Image
+                <ExportedImage
                   className="location_bg_img location_bg_img-landscape"
                   src={`${basePath}${locationData.image}`}
                   alt="VinnytsiaJS - Butterfly"
                   loading="lazy"
                   decoding="async"
-                  objectFit='cover'
+                  style={{ objectFit: 'cover' }}
                   fill
                   sizes="100vw"
                 />
                 {locationData.imagePt && (
-                  <Image
+                  <ExportedImage
                     className="location_bg_img location_bg_img-portrait"
                     src={`${basePath}${locationData.imagePt}`}
                     alt="VinnytsiaJS - Butterfly"
                     loading="lazy"
                     decoding="async"
-                    objectFit='cover'
+                    style={{ objectFit: 'cover' }}
                     fill
                     sizes="100vw"
                   />

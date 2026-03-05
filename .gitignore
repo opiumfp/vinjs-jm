@@ -6,6 +6,7 @@ yarn.lock
 # Next.js build output
 .next/
 out/
+public/
 
 # OS / Editor
 *.log
